@@ -5,6 +5,7 @@ const topics = defineCollection({
     title: z.string(),
     description: z.string().optional(),
     order: z.number().optional(),
+    icon: z.string().optional(),
   }),
 });
 
