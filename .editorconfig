@@ -1,0 +1,64 @@
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = crlf
+charset = utf-8
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+# -----------------------------------------
+# JS / TS / Astro / React
+# -----------------------------------------
+[*.{js,jsx,ts,tsx,astro}]
+max_line_length = 90
+
+# -----------------------------------------
+# Markdown / MDX
+# Mantener espacios finales para listas y bloques
+# -----------------------------------------
+[*.{md,mdx}]
+trim_trailing_whitespace = false
+insert_final_newline = true
+max_line_length = off
+
+# -----------------------------------------
+# CSS y estilos
+# -----------------------------------------
+[*.{css,scss,pcss}]
+max_line_length = 90
+
+# CSS Modules
+[*.module.css]
+max_line_length = 90
+
+# -----------------------------------------
+# JSON y YAML
+# (JSON sin newline final por convenciones de algunos linters)
+# -----------------------------------------
+[*.json]
+insert_final_newline = ignore
+
+[*.{yml,yaml}]
+indent_size = 2
+
+# -----------------------------------------
+# Archivos minimizados
+# -----------------------------------------
+[**.min.js]
+indent_style = ignore
+insert_final_newline = ignore
+trim_trailing_whitespace = false
+
+# -----------------------------------------
+# Tests (integración / UI)
+# -----------------------------------------
+[*.test.{js,jsx,ts,tsx}]
+max_line_length = 100
+
+# -----------------------------------------
+# Scripts de configuración (config.*)
+# -----------------------------------------
+[config.*]
+indent_size = 2
