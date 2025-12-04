@@ -105,25 +105,25 @@ p {
 }
 
 h1 {
-  font-size: 2.5rem; /* 40px */
+  font-size: 4rem; /* 40px */
 }
 
 h2 {
-  font-size: 2rem; /* 32px */
+  font-size: 3.2rem; /* 32px */
 }
 
 h3 {
-  font-size: 1.75rem; /* 28px */
+  font-size: 2.8rem; /* 28px */
 }
 
 h4 {
-  font-size: 1.5rem; /* 24px */
+  font-size: 2.4rem; /* 24px */
 }
 
 h5 {
-  font-size: 1.25rem; /* 20px */
+  font-size: 2rem; /* 20px */
 }
 
 small {
-  font-size: 0.75rem; /* 12px */
+  font-size: 1.2rem; /* 12px */
 }
