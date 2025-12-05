@@ -1,0 +1,48 @@
+<aside class="week-progress">
+  <label for="weekProgress" class="progress-label"> Progreso semanal </label>
+  <progress id="weekProgress" class="progress-bar" value="0" max="9"></progress>
+  <output id="weekProgressText" class="progress-text" for="weekProgress">
+    Semana 0 de 9 (0%)
+  </output>
+</aside>
+
+<style>
+  .week-progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 1rem 2rem;
+    background: var(--bg-soft);
+  }
+
+  .progress-label {
+    color: var(--text-secondary);
+  }
+
+  .progress-bar {
+    width: 100%;
+    height: 12px;
+    appearance: none;
+  }
+
+  progress::-webkit-progress-bar {
+    background: #e5e7eb;
+    border-radius: var(--radius-sm);
+  }
+
+  progress::-webkit-progress-value {
+    background: linear-gradient(90deg, #28a745, #20c997);
+    border-radius: var(--radius-sm);
+  }
+
+  progress::-moz-progress-bar {
+    background: linear-gradient(90deg, #28a745, #20c997);
+    border-radius: var(--radius-sm);
+  }
+
+  .progress-text {
+    font-weight: 500;
+    color: var(--text-muted);
+  }
+</style>
