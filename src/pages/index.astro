@@ -1,4 +1,6 @@
 ---
+import { Icon } from "astro-icon/components";
+
 import HomeLayout from "@/layouts/HomeLayout.astro";
 ---
 
@@ -7,7 +9,32 @@ import HomeLayout from "@/layouts/HomeLayout.astro";
 <HomeLayout
   title="Proyecto de Aula - Servicios de Tecnología de la Información"
   description="Proyecto de aula de la asignatura Servicios de Tecnología de la Información de la carrera Ingeniería Informática en la Fundación Universitaria Internacional de La Rioja (UNIR)."
+  week={9}
+  maxWeeks={9}
 >
-
+  <h3><Icon name="graduation-cap" />Bienvenido al Proyecto de Aula</h3>
+  <p>
+    Este proyecto de aula funciona como <strong>material complementario</strong> a las clases
+    presenciales, organizado en <strong>3 secciones principales</strong> que facilitan el aprendizaje
+    y la evaluación.
+  </p>
 </HomeLayout>
-<style></style>
+<style>
+  h3 {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4cap;
+  }
+
+  [data-icon="graduation-cap"] {
+    width: 1.5cap;
+    height: 1.5cap;
+    display: block;
+    flex-shrink: 0;
+    stroke-width: 2;
+  }
+
+  p {
+    text-wrap: wrap;
+  }
+</style>
