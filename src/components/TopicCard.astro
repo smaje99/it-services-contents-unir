@@ -1,0 +1,68 @@
+---
+import { Icon } from "astro-icon/components";
+
+import CardRoot from "./ui/card/CardRoot.astro";
+import CardHeader from "./ui/card/CardHeader.astro";
+import CardTitle from "./ui/card/CardTitle.astro";
+import CardDescription from "./ui/card/CardDescription.astro";
+import CardFooter from "./ui/card/CardFooter.astro";
+
+interface Props {
+  title: string,
+  description: string,
+  icon: string,
+  color: string,
+  status: boolean,
+}
+
+const { title, description, icon, color, status } = Astro.props;
+---
+
+<CardRoot class="topic-card" data-status={status ? "completed" : "pending"}>
+  <CardHeader>
+    <div class="topic-icon" style={`background:${color}`}>
+      <Icon name={icon} />
+    </div>
+
+    <CardTitle>{title}</CardTitle>
+  </CardHeader>
+
+  <CardDescription>{description}</CardDescription>
+
+  <CardFooter>
+    <small class="topic-status">{status ? "Completado" : "Pendiente"}</small>
+  </CardFooter>
+</CardRoot>
+
+<style>
+  .topic-card {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    padding: 1.25rem;
+    cursor: pointer;
+
+    &[data-status="completed"] {
+      border-color: 4px solid var(--success);
+      background-color: hsl(from var(--success) calc(h - 8) s calc(l + 20%));
+    }
+
+    &[data-status="pending"] {
+      opacity: 0.75;
+    }
+  }
+
+  .topic-icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .topic-status {
+    color: var(--text-secondary);
+  }
+</style>

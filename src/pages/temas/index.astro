@@ -1,0 +1,44 @@
+---
+import { getCollection } from "astro:content";
+import { Icon } from "astro-icon/components";
+
+import HomeLayout from "@/layouts/HomeLayout.astro";
+import TopicGrid from "@/components/TopicGrid.astro";
+import TopicCard from "@/components/TopicCard.astro";
+import { isPublished } from "@/utils/isPublished";
+
+const topics = (await getCollection("topics")).sort(
+  (a, b) => (a.data.order ?? 999) - (b.data.order ?? 999)
+);
+---
+
+<HomeLayout title="Temas" description="Temas del curso" week={9} maxWeeks={9}>
+  <h3><Icon name="list" />Temas del Curso</h3>
+  <!-- Aquí inyectamos topics desde content collections -->
+  <TopicGrid>
+    {topics.map((topic) => (
+      <TopicCard
+        title={topic.data.title}
+        description={topic.data.description}
+        icon={topic.data.icon}
+        color={topic.data.color}
+        status={isPublished(topic.data.publishAt)}
+      />
+    ))}
+  </TopicGrid>
+</HomeLayout>
+<style>
+  h3 {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4cap;
+  }
+
+  [data-icon="graduation-cap"] {
+    width: 1.5cap;
+    height: 1.5cap;
+    display: block;
+    flex-shrink: 0;
+    stroke-width: 2;
+  }
+</style>
