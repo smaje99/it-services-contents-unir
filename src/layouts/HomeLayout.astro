@@ -1,0 +1,27 @@
+---
+import BaseLayout from "./BaseLayout.astro";
+import NavTabs from "@/components/NavTabs.astro";
+import WeekProgressBar from "@/components/WeekProgressBar.astro";
+
+interface Props {
+  title: string;
+  description: string;
+  week: number;
+  maxWeeks: number;
+}
+
+const { title = "Proyecto de Aula", description, week = 0, maxWeeks = 9 } = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <WeekProgressBar week={week} maxWeeks={maxWeeks} />
+  <NavTabs />
+  <main class="main">
+    <slot />
+  </main>
+</BaseLayout>
+<style>
+  .main {
+    padding: 2rem 1rem;
+  }
+</style>
