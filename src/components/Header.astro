@@ -1,0 +1,39 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<header class="header">
+  <h1><Icon name="graduation-cap" /> Proyecto de Aula</h1>
+  <h2>Servicios de Tecnologías de la Información</h2>
+  <p class="subtitle">Material complementario para el curso de Ingeniería Informática</p>
+</header>
+<style>
+  .header {
+    background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+    color: var(--bg-base);
+    padding: 2.8rem;
+    text-align: center;
+  }
+
+  .header h1 {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4cap;
+  }
+
+  [data-icon="graduation-cap"] {
+    width: 1.5cap;
+    height: 1.5cap;
+    display: block;
+    flex-shrink: 0;
+    stroke-width: 2;
+  }
+
+  .header h2 {
+    opacity: 0.9;
+  }
+
+  .subtitle {
+    opacity: 0.8;
+  }
+</style>

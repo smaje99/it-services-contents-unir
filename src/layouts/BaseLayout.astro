@@ -1,5 +1,6 @@
 ---
-import '@/styles/globals.css'
+import Header from "@/components/Header.astro";
+import "@/styles/globals.css";
 
 interface Props {
   title: string;
@@ -20,11 +21,19 @@ const { title, description } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <main>
+    <div class="container">
+      <Header />
       <slot />
-    </main>
+    </div>
   </body>
 </html>
 
-<style is:global>
+<style>
+  .container {
+    max-width: 90vw;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: var(--bg-base);
+    box-shadow: var(--shadow-sm);
+  }
 </style>
