@@ -1,0 +1,61 @@
+---
+import { Icon } from "astro-icon/components";
+
+const tabs = [
+  { id: "overview", label: "Inicio", icon: "home", href: "/" },
+  { id: "topics", label: "Temas", icon: "list", href: "/temas" },
+  { id: "progress", label: "Progreso", icon: "chart-line", href: "/progreso" },
+];
+
+const current = Astro.url.pathname;
+---
+
+<nav class="nav-tabs">
+  {
+    tabs.map((tab) => (
+      <a href={tab.href} class={`nav-tab ${current === tab.href ? "active" : ""}`}>
+        <Icon name={tab.icon} />
+        {tab.label}
+      </a>
+    ))
+  }
+</nav>
+<style>
+  .nav-tabs {
+    display: flex;
+    background: var(--bg-soft);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .nav-tab {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4cap;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-secondary);
+    transition: all 0.25s ease;
+
+    &:hover {
+      background: var(--bg-elevated);
+    }
+
+    &.active {
+      background: var(--bg-base);
+      color: var(--brand-primary);
+      border-bottom: 3px solid var(--brand-primary);
+    }
+  }
+
+  [data-icon] {
+    width: 1.5cap;
+    height: 1.5cap;
+    display: block;
+    flex-shrink: 0;
+    stroke-width: 2;
+  }
+</style>
