@@ -1,4 +1,13 @@
-<div class="card-root">
+---
+interface Props {
+  class?: string;
+  [key: string]: any;
+}
+
+const { class: userClass, ...rest } = Astro.props;
+---
+
+<div class:list={["card-root", userClass]} {...rest}>
   <slot />
 </div>
 
@@ -8,7 +17,7 @@
     border-radius: var(--radius-md);
     border: 1px solid var(--border-color);
     box-shadow: var(--shadow-sm);
-    padding: 2rem;
+    padding: 1.2rem;
     transition: all 0.3s ease;
     overflow: hidden;
 
