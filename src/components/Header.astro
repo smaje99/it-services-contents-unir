@@ -3,7 +3,7 @@ import { Icon } from "astro-icon/components";
 ---
 
 <header class="header">
-  <h1><Icon name="graduation-cap" /> Proyecto de Aula</h1>
+  <a href="/"><h1><Icon name="graduation-cap" /> Proyecto de Aula</h1></a>
   <h2>Servicios de Tecnologías de la Información</h2>
   <p class="subtitle">Material complementario para el curso de Ingeniería Informática</p>
 </header>
@@ -19,6 +19,13 @@ import { Icon } from "astro-icon/components";
     display: inline-flex;
     align-items: center;
     gap: 0.4cap;
+    text-decoration: none;
+  }
+
+  .header a {
+    display: inline-block;
+    color: var(--bg-base);
+    text-decoration: none;
   }
 
   [data-icon="graduation-cap"] {
