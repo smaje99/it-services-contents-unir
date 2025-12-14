@@ -1,4 +1,13 @@
-<h5 class="card-title"><slot /></h5>
+---
+interface Props {
+  class?: string;
+  [key: string]: any;
+}
+
+const { class: userClass, ...rest } = Astro.props;
+---
+
+<h5 class:list={["card-title", userClass]} {...rest}><slot /></h5>
 
 <style>
   .card-title {
