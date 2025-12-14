@@ -1,0 +1,17 @@
+<section class="stats-grid" aria-label="Progreso del curso">
+  <slot />
+</section>
+
+<style>
+  .stats-grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  @media (max-width: 900px) {
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

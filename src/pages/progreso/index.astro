@@ -1,0 +1,55 @@
+---
+import { Icon } from "astro-icon/components";
+
+import HomeLayout from "@/layouts/HomeLayout.astro";
+import ProgressStats from "@/components/stats/ProgressStats.astro";
+import StatCard from "@/components/stats/StatCard.astro";
+
+const weekCompleted = 9;
+const maxWeeks = 9;
+const sectionsAvailable = 3;
+const sectionsTotal = 3;
+const progressPercent =
+  weekCompleted === maxWeeks ? 100 : Math.floor((weekCompleted / maxWeeks) * 100);
+---
+
+<HomeLayout
+  title="Progreso"
+  description="Seguimiento del progreso del curso"
+  week={weekCompleted}
+  maxWeeks={maxWeeks}
+>
+  <h3><Icon name="chart-line" />Bienvenido al Proyecto de Aula</h3>
+  <!-- Próximos componentes de estadísticas -->
+  <ProgressStats>
+    <StatCard
+      icon="calendar-check"
+      title="Semanas Completadas"
+      value={`${weekCompleted}/${maxWeeks}`}
+    />
+
+    <StatCard
+      icon="clipboard-list"
+      title="Secciones Disponibles"
+      value={`${sectionsAvailable}/${sectionsTotal}`}
+    />
+
+    <StatCard icon="percentage" title="Progreso Total" value={`${progressPercent}%`} />
+  </ProgressStats>
+</HomeLayout>
+<style>
+  h3 {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4cap;
+    margin-bottom: 2rem;
+  }
+
+  [data-icon="chart-line"] {
+    width: 1.5cap;
+    height: 1.5cap;
+    display: block;
+    flex-shrink: 0;
+    stroke-width: 2;
+  }
+</style>
