@@ -1,0 +1,62 @@
+---
+import { Icon } from "astro-icon/components";
+
+interface Props {
+  courseName: string;
+  academicProgram: string;
+  modality: string;
+  durationInWeeks: number;
+}
+
+const { courseName, academicProgram, modality, durationInWeeks } = Astro.props;
+---
+
+<section class="course-info">
+  <h4 class="info-title"><Icon name="info-circle" /> Información del Curso</h4>
+  <ul class="info-list">
+    <li class="info-item"><strong>Nombre del Curso:</strong> {courseName}</li>
+    <li class="info-item"><strong>Programa Académico:</strong> {academicProgram}</li>
+    <li class="info-item"><strong>Modalidad:</strong> {modality}</li>
+    <li class="info-item"><strong>Duración:</strong> {durationInWeeks} semanas</li>
+  </ul>
+</section>
+
+<style>
+  .course-info {
+    border: 1px solid var(--border-color);
+    padding: 2.4rem;
+    border-radius: var(--radius-md);
+    background-color: var(--bg-soft);
+  }
+
+  .info-title {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4cap;
+    color: var(--text-secondary);
+  }
+
+  [data-icon="course-info"] {
+    width: 1.5cap;
+    height: 1.5cap;
+    display: block;
+    flex-shrink: 0;
+    stroke-width: 2;
+  }
+
+  .info-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.2rem;
+    padding: 0;
+    margin: 1.6rem 0 0 0;
+  }
+
+  .info-item {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+    text-wrap: wrap;
+  }
+</style>

@@ -2,6 +2,7 @@
 import { Icon } from "astro-icon/components";
 
 import HomeLayout from "@/layouts/HomeLayout.astro";
+import CourseInfo from "@/components/CourseInfo.astro";
 ---
 
 <!-- Below is your "component template." It's just HTML, but with
@@ -18,6 +19,13 @@ import HomeLayout from "@/layouts/HomeLayout.astro";
     presenciales, organizado en <strong>3 secciones principales</strong> que facilitan el aprendizaje
     y la evaluación.
   </p>
+
+  <CourseInfo
+    courseName="Servicios de Tecnología de la Información"
+    academicProgram="Ingeniería Informática"
+    modality="Proyecto de aula complementario"
+    durationInWeeks={9}
+  />
 </HomeLayout>
 <style>
   h3 {
