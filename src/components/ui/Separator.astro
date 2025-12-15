@@ -1,0 +1,42 @@
+---
+interface Props {
+  orientation?: "horizontal" | "vertical";
+  thickness?: string;
+  decorative?: boolean;
+  class?: string;
+}
+
+const {
+  orientation = "horizontal",
+  thickness = "1",
+  decorative = true,
+  class: className = "",
+} = Astro.props;
+---
+
+<hr
+  role={decorative ? "none" : "separator"}
+  aria-hidden={decorative ? "true" : "false"}
+  class:list={["separator", className]}
+  data-orientation={orientation}
+  data-thickness={thickness}
+/>
+
+<style>
+  .separator {
+    flex-shrink: 0;
+    border: none;
+    margin: 0;
+    background-color: var(--border-color);
+
+    &[data-orientation="horizontal"] {
+      width: 100%;
+      height: calc(attr(data-thickness) * 1px);
+    }
+
+    &[data-orientation="vertical"] {
+      width: calc(attr(data-thickness) * 1px);
+      height: 100%;
+    }
+  }
+</style>
