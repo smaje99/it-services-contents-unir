@@ -1,11 +1,31 @@
 ---
+import NavTabs from '@/components/NavTabs.astro';
+import TopicHeader from '@/components/topic/TopicHeader.astro';
+
 import BaseLayout from './BaseLayout.astro';
 
-const { frontmatter } = Astro.props;
+interface Props {
+  title: string;
+  description: string;
+  icon: string;
+  color: string;
+}
+
+const { title, description, icon, color } = Astro.props;
 ---
 
-<BaseLayout title={frontmatter.title} description={frontmatter.description}>
-  <article class='contenido'>
+<BaseLayout title={title} description={description}>
+  <NavTabs />
+  <article class='content'>
+    <TopicHeader title={title} description={description} icon={icon} color={color} />
     <slot />
   </article>
 </BaseLayout>
+
+z<style>
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem 1rem 8rem 1rem;
+  }
+</style>

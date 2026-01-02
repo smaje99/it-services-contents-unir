@@ -1,0 +1,29 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { type CollectionEntry, getCollection } from 'astro:content';
+
+import TopicLayout from '@/layouts/TopicLayout.astro';
+
+type TopicEntry = CollectionEntry<'topics'>;
+interface Props {
+  topic: TopicEntry;
+}
+
+export const getStaticPaths = (async () => {
+  const topics = await getCollection('topics');
+
+  return topics.map((topic) => ({
+    params: { slug: topic.slug },
+    props: { topic },
+  }));
+}) satisfies GetStaticPaths;
+
+const { topic } = Astro.props;
+const { title, description, icon, color } = topic.data;
+
+const { Content } = await topic.render();
+---
+
+<TopicLayout title={title} description={description} icon={icon} color={color}>
+  <Content />
+</TopicLayout>
