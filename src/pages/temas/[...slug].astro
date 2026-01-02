@@ -19,11 +19,17 @@ export const getStaticPaths = (async () => {
 }) satisfies GetStaticPaths;
 
 const { topic } = Astro.props;
-const { title, description, icon, color } = topic.data;
+const { title, description, icon, color, order } = topic.data;
 
 const { Content } = await topic.render();
 ---
 
-<TopicLayout title={title} description={description} icon={icon} color={color}>
+<TopicLayout
+  title={title}
+  description={description}
+  icon={icon}
+  color={color}
+  order={order}
+>
   <Content />
 </TopicLayout>
