@@ -14,6 +14,7 @@ html {
   --text-primary: #1a1a1a;
   --text-secondary: #4a4a4a;
   --text-muted: #6f6f6f;
+  --text-destructive: #fff;
 
   /* Backgrounds */
   --bg-base: #ffffff;
@@ -48,6 +49,10 @@ html {
   --gray-700: #374151;
   --gray-800: #1f2937;
   --gray-900: #111827;
+
+  --ring: rgb(59 130 246 / 0.6);
+  --muted: rgb(0 0 0 / 0.06);
+  --destructive: #ef4444;
 }
 
 html.dark {

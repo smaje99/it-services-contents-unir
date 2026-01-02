@@ -1,0 +1,157 @@
+---
+interface Props {
+  href: string;
+  variant?: 'default' | 'secondary' | 'outline' | 'ghost' | 'link' | 'destructive';
+  size?: 'default' | 'sm' | 'lg' | 'icon';
+  class?: string;
+  target?: string;
+  rel?: string;
+  ariaLabel?: string;
+  ariaCurrent?: 'page' | 'step' | 'location' | 'date' | 'time' | 'true' | 'false';
+}
+
+const {
+  href,
+  variant = 'default',
+  size = 'default',
+  class: className = '',
+  target,
+  rel,
+  ariaLabel,
+  ariaCurrent,
+  ...rest
+} = Astro.props;
+
+// Si target=_blank y no viene rel, añadimos seguridad
+const safeRel = target === '_blank' ? (rel ? rel : 'noopener noreferrer') : rel;
+---
+
+<a
+  href={href}
+  class:list={['btn-link', className]}
+  target={target}
+  rel={safeRel}
+  aria-label={ariaLabel}
+  aria-current={ariaCurrent}
+  data-variant={variant}
+  data-size={size}
+  {...rest}
+>
+  <slot />
+</a>
+
+<style>
+  .btn-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+
+    border-radius: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    transition:
+      background-color 120ms ease,
+      border-color 120ms ease,
+      opacity 120ms ease;
+    outline: none;
+
+    &:focus-visible {
+      outline: 2px solid var(--ring);
+      outline-offset: 2px;
+    }
+
+    /* Sizes */
+    &[data-size='default'] {
+      height: 4rem;
+      padding: 0 1.6rem;
+    }
+
+    &[data-size='sm'] {
+      height: 3.2rem;
+      padding: 0 1.2rem;
+      font-size: 1.4rem;
+      border-radius: 0.8rem;
+    }
+
+    &[data-size='lg'] {
+      height: 4.4rem;
+      padding: 0 2rem;
+    }
+
+    &[data-size='icon'] {
+      height: 4rem;
+      width: 4rem;
+      padding: 0;
+    }
+
+    /* Variants */
+    &[data-variant='default'] {
+      background: var(--brand-primary);
+      color: var(--text-primary);
+      border: 1px solid transparent;
+
+      &:hover {
+        opacity: 0.95;
+      }
+    }
+
+    &[data-variant='secondary'] {
+      background: var(--muted);
+      color: var(--text-muted);
+      border: 1px solid transparent;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+    &[data-variant='outline'] {
+      background-color: transparent;
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &[data-variant='ghost'] {
+      background: transparent;
+      color: var(--text-primary);
+      border: 1px solid transparent;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    &[data-variant='link'] {
+      background: transparent;
+      color: var(--text-primary);
+      border: 1px solid transparent;
+      padding: 0;
+      height: auto;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+
+    &[data-variant='destructive'] {
+      background: var(--destructive);
+      color: var(--text-destructive);
+      border: 1px solid transparent;
+
+      &:hover {
+        opacity: 0.95;
+      }
+    }
+  }
+</style>

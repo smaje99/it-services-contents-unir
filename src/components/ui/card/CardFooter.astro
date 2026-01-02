@@ -1,4 +1,13 @@
-<footer class="card-footer">
+---
+interface Props {
+  class?: string;
+  [key: string]: unknown;
+}
+
+const { class: className, ...rest } = Astro.props;
+---
+
+<footer class:list={['card-footer', className]} {...rest}>
   <slot />
 </footer>
 
