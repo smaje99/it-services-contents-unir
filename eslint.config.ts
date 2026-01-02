@@ -20,6 +20,7 @@ import * as mdx from 'eslint-plugin-mdx'
 import css from "@eslint/css";
 
 import { importX } from 'eslint-plugin-import-x';
+import { createTypeScriptImportResolver } from "eslint-import-resolver-typescript";
 
 import prettierPlugin from 'eslint-plugin-prettier';
 import eslintConfigPrettier from 'eslint-config-prettier';
@@ -32,16 +33,16 @@ const __dirname = path.dirname(__filename);
 export default defineConfig([
   // ignores
   {
-    ignores: ['node_modules/**', 'dist/**', '.astro/**'],
+    ignores: ['node_modules/**', 'dist/**', '.astro/**', 'env.d.ts', 'eslint.config.ts', 'prettier.config.mjs'],
   },
 
-   // base recommended
+  // base recommended
   js.configs.recommended,
 
-  // Import X
+  // Import-X
   {
     plugins: { 'import-x': importX },
-    extends: ['plugin:import-x/recommended'],
+    extends: ['import-x/flat/recommended'],
     rules: {
       // Ejemplo de regla personalizada para import-x (a ajustar según necesidades)
       'import-x/no-dynamic-require': 'warn',
@@ -62,6 +63,7 @@ export default defineConfig([
   {
     files: ['**/*.{js,jsx,ts,tsx,astro}'],
     languageOptions: {
+      parser: tsParser,
       ecmaVersion: 2024,
       sourceType: 'module',
       globals: {
@@ -69,7 +71,7 @@ export default defineConfig([
         ...globals.es2024,
       },
       parserOptions: {
-        project: ['./tsconfig.json'],
+        project: ['./tsconfig.eslint.json'],
         tsconfigRootDir: __dirname,
         extraFileExtensions: ['.astro'],
       }
@@ -84,6 +86,17 @@ export default defineConfig([
       'import/parsers': {
         '@typescript-eslint/parser': ['.ts', '.tsx'],
       },
+      'import-x/resolver-next': [
+        createTypeScriptImportResolver({
+          alwaysTryTypes: true,
+          project: ['./tsconfig.eslint.json'],
+          extensions: [".astro", ".ts", ".tsx", ".js", ".jsx", ".mjs", ".cjs", ".mts", ".cts"],
+        }),
+      ],
+      'import-x/core-modules': [
+        'astro',
+        'astro:content',
+      ]
     },
     plugins: {
       js,
