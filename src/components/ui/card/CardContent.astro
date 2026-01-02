@@ -1,13 +1,13 @@
 ---
 interface Props {
   class?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 const { class: userClass, ...rest } = Astro.props;
 ---
 
-<section class:list={["card-content", userClass]} {...rest}>
+<section class:list={['card-content', userClass]} {...rest}>
   <slot />
 </section>
 

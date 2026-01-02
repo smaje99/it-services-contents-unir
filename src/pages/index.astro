@@ -1,29 +1,32 @@
 ---
-import { Icon } from "astro-icon/components";
+import { Icon } from 'astro-icon/components';
 
-import HomeLayout from "@/layouts/HomeLayout.astro";
-import CourseInfo from "@/components/CourseInfo.astro";
+import CourseInfo from '@/components/CourseInfo.astro';
+import HomeLayout from '@/layouts/HomeLayout.astro';
 ---
 
 <!-- Below is your "component template." It's just HTML, but with
     some magic sprinkled in to help you build great templates. -->
 <HomeLayout
-  title="Proyecto de Aula - Servicios de Tecnología de la Información"
-  description="Proyecto de aula de la asignatura Servicios de Tecnología de la Información de la carrera Ingeniería Informática en la Fundación Universitaria Internacional de La Rioja (UNIR)."
+  title='Proyecto de Aula - Servicios de Tecnología de la Información'
+  description={'Proyecto de aula de la asignatura Servicios de Tecnología de la ' +
+    'Información de la carrera Ingeniería Informática en la Fundación Universitaria ' +
+    'Internacional de La Rioja (UNIR).'}
   week={9}
   maxWeeks={9}
 >
-  <h3><Icon name="graduation-cap" />Bienvenido al Proyecto de Aula</h3>
+  <h3><Icon name='graduation-cap' />Bienvenido al Proyecto de Aula</h3>
   <p>
-    Este proyecto de aula funciona como <strong>material complementario</strong> a las clases
-    presenciales, organizado en <strong>3 secciones principales</strong> que facilitan el aprendizaje
-    y la evaluación.
+    {/* eslint-disable-next-line prettier/prettier */}
+    Este proyecto de aula funciona como <strong>material complementario</strong> a las
+    clases presenciales, organizado en <strong>3 secciones principales</strong> que
+    facilitan el aprendizaje y la evaluación.
   </p>
 
   <CourseInfo
-    courseName="Servicios de Tecnología de la Información"
-    academicProgram="Ingeniería Informática"
-    modality="Proyecto de aula complementario"
+    courseName='Servicios de Tecnología de la Información'
+    academicProgram='Ingeniería Informática'
+    modality='Proyecto de aula complementario'
     durationInWeeks={9}
   />
 </HomeLayout>
@@ -34,7 +37,7 @@ import CourseInfo from "@/components/CourseInfo.astro";
     gap: 0.4cap;
   }
 
-  [data-icon="graduation-cap"] {
+  [data-icon='graduation-cap'] {
     width: 1.5cap;
     height: 1.5cap;
     display: block;

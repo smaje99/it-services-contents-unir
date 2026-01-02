@@ -1,13 +1,13 @@
 ---
 interface Props {
   class?: string;
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 const { class: userClass, ...rest } = Astro.props;
 ---
 
-<div class:list={["card-root", userClass]} {...rest}>
+<div class:list={['card-root', userClass]} {...rest}>
   <slot />
 </div>
 

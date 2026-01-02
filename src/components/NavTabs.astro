@@ -1,19 +1,19 @@
 ---
-import { Icon } from "astro-icon/components";
+import { Icon } from 'astro-icon/components';
 
 const tabs = [
-  { id: "overview", label: "Inicio", icon: "home", href: "/" },
-  { id: "topics", label: "Temas", icon: "list", href: "/temas" },
-  { id: "progress", label: "Progreso", icon: "chart-line", href: "/progreso" },
+  { id: 'overview', label: 'Inicio', icon: 'home', href: '/' },
+  { id: 'topics', label: 'Temas', icon: 'list', href: '/temas' },
+  { id: 'progress', label: 'Progreso', icon: 'chart-line', href: '/progreso' },
 ];
 
 const current = Astro.url.pathname;
 ---
 
-<nav class="nav-tabs">
+<nav class='nav-tabs'>
   {
     tabs.map((tab) => (
-      <a href={tab.href} class={`nav-tab ${current === tab.href ? "active" : ""}`}>
+      <a href={tab.href} class={`nav-tab ${current === tab.href ? 'active' : ''}`}>
         <Icon name={tab.icon} />
         {tab.label}
       </a>
@@ -39,15 +39,21 @@ const current = Astro.url.pathname;
     text-decoration: none;
     color: var(--text-secondary);
     transition: all 0.25s ease;
+    outline: none;
 
     &:hover {
-      background: var(--bg-elevated);
+      background-color: var(--bg-elevated);
     }
 
     &.active {
-      background: var(--bg-base);
+      background-color: var(--bg-base);
       color: var(--brand-primary);
       border-bottom: 3px solid var(--brand-primary);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--ring);
+      outline-offset: 2px;
     }
   }
 

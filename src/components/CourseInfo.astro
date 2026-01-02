@@ -1,5 +1,5 @@
 ---
-import { Icon } from "astro-icon/components";
+import { Icon } from 'astro-icon/components';
 
 interface Props {
   courseName: string;
@@ -11,13 +11,13 @@ interface Props {
 const { courseName, academicProgram, modality, durationInWeeks } = Astro.props;
 ---
 
-<section class="course-info">
-  <h4 class="info-title"><Icon name="info-circle" /> Información del Curso</h4>
-  <ul class="info-list">
-    <li class="info-item"><strong>Nombre del Curso:</strong> {courseName}</li>
-    <li class="info-item"><strong>Programa Académico:</strong> {academicProgram}</li>
-    <li class="info-item"><strong>Modalidad:</strong> {modality}</li>
-    <li class="info-item"><strong>Duración:</strong> {durationInWeeks} semanas</li>
+<section class='course-info'>
+  <h4 class='info-title'><Icon name='info-circle' /> Información del Curso</h4>
+  <ul class='info-list'>
+    <li class='info-item'><strong>Nombre del Curso:</strong> {courseName}</li>
+    <li class='info-item'><strong>Programa Académico:</strong> {academicProgram}</li>
+    <li class='info-item'><strong>Modalidad:</strong> {modality}</li>
+    <li class='info-item'><strong>Duración:</strong> {durationInWeeks} semanas</li>
   </ul>
 </section>
 
@@ -36,7 +36,7 @@ const { courseName, academicProgram, modality, durationInWeeks } = Astro.props;
     color: var(--text-secondary);
   }
 
-  [data-icon="course-info"] {
+  [data-icon='course-info'] {
     width: 1.5cap;
     height: 1.5cap;
     display: block;

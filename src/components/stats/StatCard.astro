@@ -1,10 +1,9 @@
 ---
-import { Icon } from "astro-icon/components";
+import { Icon } from 'astro-icon/components';
 
-import CardRoot from "../ui/card/CardRoot.astro";
-import CardHeader from "../ui/card/CardHeader.astro";
-import CardTitle from "../ui/card/CardTitle.astro";
-import CardContent from "../ui/card/CardContent.astro";
+import CardContent from '../ui/card/CardContent.astro';
+import CardRoot from '../ui/card/CardRoot.astro';
+import CardTitle from '../ui/card/CardTitle.astro';
 
 interface Props {
   icon: string; // tabler icon name
@@ -15,13 +14,13 @@ interface Props {
 const { icon, title, value } = Astro.props;
 ---
 
-<CardRoot class="stat-card">
-  <CardContent class="stat-content">
-    <div class="stat-icon" aria-hidden="true">
+<CardRoot class='stat-card'>
+  <CardContent class='stat-content'>
+    <div class='stat-icon' aria-hidden='true'>
       <Icon name={icon} />
     </div>
-    <CardTitle class="stat-title">{title}</CardTitle>
-    <span class="stat-value">{value}</span>
+    <CardTitle class='stat-title'>{title}</CardTitle>
+    <span class='stat-value'>{value}</span>
   </CardContent>
 </CardRoot>
 

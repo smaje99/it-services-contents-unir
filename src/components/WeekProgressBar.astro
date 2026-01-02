@@ -8,10 +8,10 @@ const { week = 0, maxWeeks = 9 } = Astro.props;
 const percentage = maxWeeks > 0 ? Math.round((week / maxWeeks) * 100) : 0;
 ---
 
-<aside class="week-progress">
-  <label for="weekProgress" class="progress-label"> Progreso semanal </label>
-  <progress id="weekProgress" class="progress-bar" value={week} max={maxWeeks}></progress>
-  <output id="weekProgressText" class="progress-text" for="weekProgress">
+<aside class='week-progress'>
+  <label for='weekProgress' class='progress-label'> Progreso semanal </label>
+  <progress id='weekProgress' class='progress-bar' value={week} max={maxWeeks}></progress>
+  <output id='weekProgressText' class='progress-text' for='weekProgress'>
     Semana {week} de {maxWeeks} ({percentage}%)
   </output>
 </aside>
