@@ -5,18 +5,18 @@ import Separator from '../ui/Separator.astro';
 
 interface Props {
   title: string;
-  icon: string;
+  icon?: string;
 }
 
 const { title, icon } = Astro.props;
 ---
 
-<section class="topic-concept-section">
-  <section class="topic-concept-section__header">
-    <h3 data-heading="icon"><Icon name={icon} />{title}</h3>
-    <Separator class="topic-concept-section__separator" thickness={3.2} />
+<section class='topic-concept-section'>
+  <section class='topic-concept-section__header'>
+    <h3 data-heading='icon'>{icon && <Icon name={icon} />}{title}</h3>
+    <Separator class='topic-concept-section__separator' thickness={3.2} />
   </section>
-  <section class="topic-concept-section__content">
+  <section class='topic-concept-section__content'>
     <slot />
   </section>
 </section>
