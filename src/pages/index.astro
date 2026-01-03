@@ -15,7 +15,9 @@ import HomeLayout from '@/layouts/HomeLayout.astro';
   week={9}
   maxWeeks={9}
 >
-  <h3><Icon name='graduation-cap' />Bienvenido al Proyecto de Aula</h3>
+  <h3 data-heading='icon'>
+    <Icon name='graduation-cap' />Bienvenido al Proyecto de Aula
+  </h3>
   <p>
     {/* eslint-disable-next-line prettier/prettier */}
     Este proyecto de aula funciona como <strong>material complementario</strong> a las
@@ -30,21 +32,8 @@ import HomeLayout from '@/layouts/HomeLayout.astro';
     durationInWeeks={9}
   />
 </HomeLayout>
+
 <style>
-  h3 {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4cap;
-  }
-
-  [data-icon='graduation-cap'] {
-    width: 1.5cap;
-    height: 1.5cap;
-    display: block;
-    flex-shrink: 0;
-    stroke-width: 2;
-  }
-
   p {
     text-wrap: wrap;
   }

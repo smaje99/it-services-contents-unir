@@ -11,8 +11,8 @@ interface Props {
 const { title, description, icon, color } = Astro.props;
 ---
 
-<header class="topic-header" style={`--topic-color: ${color}`}>
-  <h1><Icon name={icon} />{title}</h1>
+<header class='topic-header' style={`--topic-color: ${color}`}>
+  <h1 data-heading='icon' data-align='first-line'><Icon name={icon} />{title}</h1>
   <p>{description}</p>
 </header>
 
@@ -31,19 +31,5 @@ const { title, description, icon, color } = Astro.props;
       color: white;
       text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     }
-  }
-
-  h1 {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4cap;
-  }
-
-  [data-icon='graduation-cap'] {
-    width: 1.5cap;
-    height: 1.5cap;
-    display: block;
-    flex-shrink: 0;
-    stroke-width: 2;
   }
 </style>

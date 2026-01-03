@@ -1,0 +1,20 @@
+/* mixins.css */
+@layer utilities {
+
+  /* "mixin" para headings con icono (aplícalo con clase o data-attr) */
+  :where(.mx-heading-icon),
+  :where([data-heading="icon"]) {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4cap;
+  }
+
+  /* Estilo del icono SOLO cuando está dentro del heading que "invoca" el mixin */
+  :where(.mx-heading-icon, [data-heading="icon"]) :where([data-icon]) {
+    width: 1.5cap;
+    height: 1.5cap;
+    display: block;
+    flex-shrink: 0;
+    stroke-width: 2;
+  }
+}

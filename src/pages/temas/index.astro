@@ -13,7 +13,7 @@ const topics = (await getCollection('topics')).sort(
 ---
 
 <HomeLayout title='Temas' description='Temas del curso' week={9} maxWeeks={9}>
-  <h3><Icon name='list' />Temas del Curso</h3>
+  <h3 data-heading='icon'><Icon name='list' />Temas del Curso</h3>
   <!-- Aquí inyectamos topics desde content collections -->
   <TopicGrid>
     {
@@ -30,18 +30,3 @@ const topics = (await getCollection('topics')).sort(
     }
   </TopicGrid>
 </HomeLayout>
-<style>
-  h3 {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4cap;
-  }
-
-  [data-icon='graduation-cap'] {
-    width: 1.5cap;
-    height: 1.5cap;
-    display: block;
-    flex-shrink: 0;
-    stroke-width: 2;
-  }
-</style>
