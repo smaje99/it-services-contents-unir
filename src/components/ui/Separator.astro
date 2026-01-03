@@ -1,14 +1,14 @@
 ---
 interface Props {
   orientation?: 'horizontal' | 'vertical';
-  thickness?: string;
+  thickness?: number;
   decorative?: boolean;
   class?: string;
 }
 
 const {
   orientation = 'horizontal',
-  thickness = '1',
+  thickness = 1,
   decorative = true,
   class: className = '',
 } = Astro.props;
@@ -19,7 +19,7 @@ const {
   aria-hidden={decorative ? 'true' : 'false'}
   class:list={['separator', className]}
   data-orientation={orientation}
-  data-thickness={thickness}
+  style={`--separator-thickness: ${thickness}px;`}
 />
 
 <style>
@@ -31,11 +31,11 @@ const {
 
     &[data-orientation='horizontal'] {
       width: 100%;
-      height: calc(attr(data-thickness) * 1px);
+      height: var(--separator-thickness, 1px);
     }
 
     &[data-orientation='vertical'] {
-      width: calc(attr(data-thickness) * 1px);
+      width: var(--separator-thickness, 1px);
       height: 100%;
     }
   }
