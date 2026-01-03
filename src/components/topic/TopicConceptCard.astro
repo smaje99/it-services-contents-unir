@@ -1,0 +1,40 @@
+---
+import CardContent from '../ui/card/CardContent.astro';
+import CardHeader from '../ui/card/CardHeader.astro';
+import CardRoot from '../ui/card/CardRoot.astro';
+import CardTitle from '../ui/card/CardTitle.astro';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<CardRoot class='topic-concept-card'>
+  <CardHeader>
+    <CardTitle>{title}</CardTitle>
+  </CardHeader>
+  <CardContent class='topic-concept-card__content'>
+    <slot />
+  </CardContent>
+</CardRoot>
+
+<style>
+  .topic-concept-card {
+    background-color: var(--gray-200);
+    border-color: var(--gray-300);
+    border-left: 6px solid var(--success);
+    border-radius: var(--radius-sm);
+  }
+
+  .topic-concept-card__content {
+    strong {
+      color: var(--info);
+    }
+
+    li::marker {
+      color: var(--brand-primary);
+    }
+  }
+</style>

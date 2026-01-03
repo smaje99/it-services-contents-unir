@@ -7,13 +7,88 @@ color: '#28a745'
 publishAt: '2025-10-14 20:00:00'
 ---
 
-import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
+import TopicConceptCard from '@/components/topic/TopicConceptCard.astro';
 import TopicConceptSection from '@/components/topic/TopicConceptSection.astro';
+import TopicGrid from '@/components/topic/TopicGrid.astro';
+import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
 
 <TopicSectionGroup title='Conceptos Clave' icon='bulb'>
   <TopicConceptSection title='I+D+i: Investigación, Desarrollo e innovación' icon='bulb'>
     **Definición:** La I+D+i es el acrónimo de Investigación, Desarrollo e innovación,
     representando el proceso completo de generación de conocimiento y su aplicación
     práctica.
+
+    <TopicGrid>
+      <TopicConceptCard title="Investigación (I)">
+        Búsqueda sistemática de nuevos conocimientos y comprensión de fenómenos. Incluye
+        investigación básica y aplicada.
+      </TopicConceptCard>
+      <TopicConceptCard title="Desarrollo (D)">
+        Aplicación de conocimientos para crear nuevos productos, procesos o servicios.
+        Enfocado en la implementación práctica.
+      </TopicConceptCard>
+      <TopicConceptCard title="Innovación (i)">
+        Introducción de algo nuevo o mejorado que genera valor. Puede ser incremental
+        o disruptiva.
+      </TopicConceptCard>
+    </TopicGrid>
+
   </TopicConceptSection>
+
+  <TopicConceptSection title='Clasificación de Tecnologías' icon='settings-cog'>
+    **Importancia:** La clasificación de tecnologías permite a las empresas tomar
+    decisiones estratégicas sobre inversiones tecnológicas.
+
+    <TopicGrid>
+      <TopicConceptCard title="Tecnologías Básicas">
+        **Características:** Accesibles a todos los competidores, no suponen ventaja
+        competitiva.
+
+        **Ejemplos:** Procesadores de texto, hojas de cálculo, sistemas operativos
+        estándar.
+
+        **Estrategia:** Mantenimiento y optimización, no diferenciación.
+      </TopicConceptCard>
+      <TopicConceptCard title="Tecnologías Emergentes">
+        **Características:** En la brecha tecnológica, suponen un activo competitivo
+        temporal.
+
+        **Ejemplos:** Inteligencia artificial, blockchain, IoT.
+
+        **Estrategia:** Adopción temprana para obtener ventaja competitiva.
+      </TopicConceptCard>
+      <TopicConceptCard title="Tecnologías Clave">
+        **Características:** A medio/largo plazo serán tecnologías fundamentales para el
+        negocio.
+
+        **Ejemplos:** Cloud computing, análisis de big data, automatización.
+
+        **Estrategia:** Inversión estratégica para preparar el futuro.
+      </TopicConceptCard>
+    </TopicGrid>
+
+  </TopicConceptSection>
+
+  <TopicConceptSection title='SCM: Supply Chain Management' icon='truck-filled'>
+    **Definición:** Gestión integral de la cadena de suministro que coordina todos los
+    procesos desde proveedores hasta clientes finales.
+
+    <TopicGrid>
+      <TopicConceptCard title="Tecnologías Básicas">
+        * **Planificación**: Predicción de demanda y planificación de recursos
+        * **Abastecimiento**: Gestión de proveedores y compras
+        * **Producción**: Manufactura y ensamblaje
+        * **Distribución**: Almacenamiento y entrega
+        * **Retorno**: Gestión de devoluciones y reciclaje
+      </TopicConceptCard>
+      <TopicConceptCard title="Beneficios de SCM">
+        * Reducción de costos operativos
+        * Mejora en la satisfacción del cliente
+        * Optimización del inventario
+        * Mayor visibilidad de la cadena
+        * Respuesta más rápida a cambios del mercado
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
 </TopicSectionGroup>
