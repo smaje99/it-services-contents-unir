@@ -1,0 +1,50 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  title: string;
+  icon: string;
+}
+
+const { title, icon } = Astro.props;
+---
+
+<section class='topic-section-group'>
+  <section class='topic-section-group__header'>
+    <h2 data-heading='icon'><Icon name={icon} />{title}</h2>
+  </section>
+  <section class='topic-section-group__content'>
+    <slot />
+  </section>
+</section>
+
+<style>
+  .topic-section-group {
+    background-color: var(--gray-300);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--gray-400);
+  }
+
+  .topic-section-group__header {
+    background-image: linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--gray-400) 90%, black),
+      color-mix(in srgb, var(--gray-400) 75%, white)
+    );
+    padding: 1.6rem 2.4rem;
+    border: 1px solid var(--gray-400);
+
+    & h2 {
+      color: var(--gray-900);
+    }
+  }
+
+  .topic-section-group__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    padding: 2.4rem;
+    color: var(--gray-900);
+  }
+</style>
