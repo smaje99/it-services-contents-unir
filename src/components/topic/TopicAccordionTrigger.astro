@@ -1,0 +1,28 @@
+---
+import { Icon } from 'astro-icon/components';
+import AccordionTrigger from '../ui/accordion/AccordionTrigger.astro';
+
+interface Props {
+  title: string;
+  icon?: string;
+}
+
+const { title, icon = 'star-filled' } = Astro.props;
+---
+
+<AccordionTrigger>
+  <h4 data-heading='icon'>
+    {icon && <Icon name={icon} />}
+    {title}
+  </h4>
+</AccordionTrigger>
+
+<style>
+  [data-icon] {
+    color: var(--brand-primary)
+  }
+
+  [data-icon='star-filled'] {
+    color: #fbbf24;
+  }
+</style>
