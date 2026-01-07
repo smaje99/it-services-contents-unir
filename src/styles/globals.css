@@ -1,5 +1,6 @@
 @import url('./reset.css') layer(reset);
 @import url('./mixins.css') layer(utilities);
+@import url('./animations.css') layer(animations);
 
 html {
   font-size: 62.5%; /* 1rem = 10px */

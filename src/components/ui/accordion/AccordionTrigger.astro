@@ -1,0 +1,57 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className = '' } = Astro.props;
+---
+
+<summary class:list={['accordion-trigger', className]}>
+  <slot />
+</summary>
+
+<style>
+  .accordion-trigger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+    padding: 1.2rem 0;
+    cursor: pointer;
+
+    font-weight: 600;
+    color: var(--text-primary);
+    background: transparent;
+    border: 0;
+    list-style: none; /* summary marker */
+
+    &:focus-visible {
+      outline: 2px solid var(--ring, rgba(59, 130, 246, 0.6));
+      outline-offset: 3px;
+      border-radius: 0.6rem;
+    }
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+
+    &::marker {
+      content: '';
+    }
+
+    &::after {
+      content: '+';
+      font-size: 2.4rem;
+      margin-inline-end: 12px;
+      transition: transform 300ms ease;
+    }
+
+    /* Rotación cuando está abierto */
+    .accordion-item[open] &::after {
+      content: '\2212'; /* Símbolo de menos */
+      transform: rotate(180deg);
+    }
+  }
+</style>

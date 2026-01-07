@@ -1,0 +1,18 @@
+---
+interface Props {
+  open?: boolean;
+  class?: string;
+}
+
+const { open = false, class: className = '' } = Astro.props;
+---
+
+<details class:list={['accordion-item', className]} open={open}>
+  <slot />
+</details>
+
+<style>
+  .accordion-item {
+    border-bottom: 1px solid var(--border-color, rgb(0 0 0 / 0.12));
+  }
+</style>

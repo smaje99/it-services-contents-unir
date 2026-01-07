@@ -1,0 +1,29 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className = '' } = Astro.props;
+---
+
+<div class:list={['accordion-content', className]}>
+  <div class='accordion-content-inner'>
+    <slot />
+  </div>
+</div>
+
+<style>
+  .accordion-content {
+    padding: 0 0 1.2rem 0;
+  }
+
+  /* Animación simple (sin height:auto anim) */
+  .accordion-content-inner {
+    animation: accordion-in 160ms ease;
+    transform-origin: top;
+
+    .accordion-item:not([open]) & {
+      animation: accordion-out 140ms ease;
+    }
+  }
+</style>

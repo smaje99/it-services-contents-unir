@@ -1,0 +1,38 @@
+---
+interface Props {
+  type?: 'single' | 'multiple';
+  class?: string;
+}
+
+const { type = 'multiple', class: className = '' } = Astro.props;
+---
+
+<section class:list={['accordion', className]} data-accordion={type}>
+  <slot />
+</section>
+
+<!-- Opcional: modo single (solo 1 abierto) -->
+{type === 'single' && (
+  <script is:inline>
+    (() => {
+      const root = document.currentScript?.previousElementSibling;
+      if (!root) return;
+
+      root.addEventListener('toggle', (e) => {
+        const item = e.target;
+        if (!(item instanceof HTMLDetailsElement)) return;
+        if (!item.open) return;
+
+        root.querySelectorAll('details.accordion-item[open]').forEach((other) => {
+          if (other !== item) other.open = false;
+        });
+      }, true);
+    })();
+  </script>
+)}
+
+<style>
+  .accordion {
+    width: 100%;
+  }
+</style>
