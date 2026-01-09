@@ -1,0 +1,130 @@
+{
+  "topic1": [
+    {
+      "title": "Amazon: De librería online a ecosistema global",
+      "description": "Amazon comenzó como una librería online en 1994 y se transformó en el ecosistema global más grande del mundo.",
+      "development": {
+        "intro": "La transformación incluyó:",
+        "steps": [
+          "Expansión de productos más allá de libros",
+          "Desarrollo de AWS (Amazon Web Services)",
+          "Implementación de logística avanzada con centros de distribución",
+          "Creación de servicios digitales como Prime Video y Alexa",
+          "Adquisición estratégica de empresas como Whole Foods"
+        ],
+        "outro": "Esta transformación digital le permitió a Amazon generar ingresos de más de $470 mil millones en 2021."
+      },
+      "lessons": "La clave del éxito fue la visión a largo plazo, la inversión continua en tecnología y la capacidad de adaptarse a las necesidades cambiantes del mercado."
+    },
+    {
+      "title": "Netflix: De alquiler de DVDs a streaming global",
+      "description": "Netflix revolucionó la industria del entretenimiento transformándose de un servicio de alquiler de DVDs a la plataforma de streaming líder mundial.",
+      "development": {
+        "intro": "Los pasos clave en la transformación de Netflix incluyeron:",
+        "steps": [
+          "Transición del modelo físico al digital",
+          "Desarrollo de algoritmos de recomendación personalizados",
+          "Producción de contenido original (Netflix Originals)",
+          "Expansión global a más de 190 países",
+          "Inversión en tecnología de streaming de alta calidad"
+        ],
+        "outro": "Netflix pasó de tener 1 millón de suscriptores en 2002 a más de 220 millones en 2022."
+      },
+      "lessons": "La anticipación de tendencias tecnológicas y la inversión en contenido propio fueron factores clave para el éxito de la transformación."
+    }
+  ],
+  "topic2": [
+    {
+      "title": "Botanas del Valle: Implementación de ERP",
+      "description": "PYME del sector alimentario que enfrentaba problemas en recolección, producción, distribución y cobros.",
+      "development": "Situación inicial: La empresa tenía procesos manuales que generaban ineficiencias. Problemas identificados: 1) Falta de control en la recolección de materias primas, 2) Producción sin planificación adecuada, 3) Distribución desorganizada, 4) Cobros tardíos. Solución implementada: ERP integrado que incluyó módulos de: 1) Gestión de proveedores y compras, 2) Planificación de producción, 3) Control de inventarios, 4) Gestión de ventas y facturación, 5) Reportes gerenciales. Resultados: Incremento del 25% en la eficiencia operativa y reducción del 30% en tiempos de procesamiento.",
+      "lessons": "La implementación exitosa requirió análisis detallado de procesos, capacitación del personal y gestión del cambio organizacional."
+    }
+  ],
+  "topic3": [
+    {
+      "title": "Bancolombia: Implementación de COBIT para auditoría y control",
+      "description": "El banco más grande de Colombia implementó COBIT para mejorar su gobierno de TI y cumplir con regulaciones financieras.",
+      "development": "Contexto: Bancolombia necesitaba fortalecer su gobierno de TI para cumplir con regulaciones del sector financiero. Implementación: 1) Evaluación del estado actual usando COBIT 2019, 2) Identificación de los 5 dominios más críticos (EDM, APO, BAI, DSS, MEA), 3) Selección de 15 objetivos de control prioritarios, 4) Desarrollo de políticas y procedimientos, 5) Capacitación de equipos técnicos y gerenciales. Resultados: Mejora del 40% en tiempos de auditoría, reducción del 25% en riesgos operacionales, y certificación ISO 27001.",
+      "lessons": "La implementación de marcos de gobierno requiere compromiso de la alta dirección y recursos dedicados para la capacitación continua."
+    }
+  ],
+  "topic4": [
+    {
+      "title": "Empresa Manufacturera: Implementación de ISO 38500",
+      "description": "Empresa manufacturera mediana que implementó ISO 38500 para mejorar su gobierno corporativo de TIC.",
+      "development": "Situación inicial: La empresa tenía inversiones dispersas en TIC sin una estrategia clara. Implementación: 1) Evaluación del estado actual del gobierno de TIC, 2) Aplicación de los 6 principios de ISO 38500: Responsabilidad (matriz RACI), Estrategia (plan estratégico de TIC), Adquisición (proceso de evaluación de proveedores), Rendimiento (dashboard de KPIs), Conformidad (auditorías regulares), Factor Humano (programas de capacitación), 3) Establecimiento de procesos de evaluación, dirección y monitorización. Resultados: Incremento del 20% en ROI de inversiones TIC, reducción del 35% en riesgos tecnológicos, y mejora en la satisfacción de usuarios internos.",
+      "lessons": "La implementación exitosa requiere alineación con objetivos de negocio y participación activa de todas las áreas de la organización."
+    }
+  ],
+  "topic5": [
+    {
+      "title": "Colegio Privado Bilingüe: Auditoría de Administración de Recursos Humanos con COBIT",
+      "description": "Colegio privado con orientación bilingüe (Español-Inglés) que brinda servicio de educación a niños de preescolar y primaria. Aplicación de COBIT para auditar el proceso de Administración de Recursos Humanos.",
+      "development": "Contexto: El colegio necesitaba mejorar el control y gestión de su proceso de Administración de Recursos Humanos. Aplicación de COBIT: 1) Selección del proceso PO7 (Administración de Recursos Humanos) del dominio Planificación y Organización, 2) Evaluación de objetivos de control específicos del proceso, 3) Identificación de áreas de mejora en la gestión de personal docente y administrativo, 4) Implementación de controles recomendados por COBIT, 5) Establecimiento de métricas de desempeño. Resultados: Mejora del 30% en la eficiencia de procesos de RRHH, reducción del 20% en tiempos de contratación, mejor cumplimiento de normativas laborales, y mayor satisfacción del personal.",
+      "lessons": "COBIT proporciona un marco estructurado para auditar y mejorar procesos específicos de TI, incluso en organizaciones educativas. La aplicación sistemática de objetivos de control ayuda a identificar y corregir deficiencias en la gestión."
+    },
+    {
+      "title": "Empresa Financiera: Implementación de COBIT para Control de Seguridad",
+      "description": "Empresa del sector financiero que implementó COBIT para fortalecer el control de seguridad en la gestión de servicios de TI.",
+      "development": "Situación inicial: La empresa enfrentaba desafíos en el control de seguridad de sus sistemas de información. Implementación: 1) Aplicación de procesos del dominio Entrega y Soporte (ES5: Garantizar la seguridad de los sistemas), 2) Implementación de procesos del dominio Planificación y Organización (PO9: Evaluación de Riesgos), 3) Establecimiento de controles de seguridad basados en objetivos de control de COBIT, 4) Capacitación del personal en procesos de seguridad, 5) Auditorías regulares usando el dominio Supervisión y Evaluación. Resultados: Reducción del 40% en incidentes de seguridad, mejora del 50% en tiempos de respuesta a incidentes, cumplimiento de regulaciones financieras, y certificación ISO 27001.",
+      "lessons": "COBIT es especialmente efectivo para organizaciones que requieren cumplimiento estricto de normativas. La integración de múltiples dominios permite una gestión holística de la seguridad."
+    }
+  ],
+  "topic6": [
+    {
+      "title": "Empresa de Servicios Financieros: Implementación de Service Desk con ITIL",
+      "description": "Empresa del sector financiero que implementó ITIL para mejorar la gestión de servicios de TI, enfocándose en la fase de Operación del Servicio.",
+      "development": "Situación inicial: La empresa tenía problemas en la gestión de incidencias y solicitudes de usuarios, con tiempos de respuesta elevados y falta de visibilidad. Implementación ITIL: 1) Establecimiento de Service Desk como punto único de contacto, 2) Implementación del proceso de Gestión de Incidencias con clasificación y priorización, 3) Implementación de Gestión de Problemas para identificar causas raíz, 4) Establecimiento de SLA (Service Level Agreements) con objetivos medibles, 5) Implementación de Gestión de Configuración (CMDB) para rastrear activos, 6) Capacitación del personal en procesos ITIL. Resultados: Reducción del 45% en tiempo medio de resolución de incidencias, mejora del 60% en satisfacción del usuario, reducción del 30% en incidentes recurrentes mediante gestión de problemas, y cumplimiento del 95% de los SLA establecidos.",
+      "lessons": "La implementación de ITIL en la fase de Operación del Servicio proporciona estructura y procesos claros que mejoran significativamente la calidad del servicio. El Service Desk funciona como punto central de coordinación y visibilidad."
+    },
+    {
+      "title": "Organización de Salud: Gestión de Cambios con ITIL",
+      "description": "Hospital que implementó el proceso de Gestión de Cambios de ITIL para controlar y coordinar cambios en sistemas críticos de información médica.",
+      "development": "Contexto: El hospital necesitaba gestionar cambios en sistemas críticos (historia clínica electrónica, sistemas de laboratorio) sin afectar la operación. Implementación: 1) Establecimiento del proceso de Gestión de Cambios siguiendo ITIL (Transición del Servicio), 2) Creación de Comité de Cambios (CAB) para evaluar cambios importantes, 3) Implementación de clasificación de cambios (Normal, Estándar, Urgente, Emergencia), 4) Proceso de evaluación, aprobación y planificación de cambios, 5) Validación y pruebas antes del despliegue, 6) Gestión de retrocesión en caso de problemas. Resultados: Reducción del 70% en cambios fallidos, cumplimiento del 100% en pruebas de cambios críticos, reducción del 50% en tiempo de implementación de cambios estándar, y cero incidentes relacionados con cambios mal planificados.",
+      "lessons": "La Gestión de Cambios de ITIL es fundamental en entornos críticos. Proporciona control, visibilidad y reducción de riesgos, especialmente cuando se trata de sistemas que afectan directamente la operación del negocio."
+    },
+    {
+      "title": "Empresa Manufacturera: Ciclo de Vida Completo del Servicio con ITIL",
+      "description": "Empresa manufacturera que implementó ITIL en todas las fases del ciclo de vida del servicio para gestionar un nuevo sistema ERP.",
+      "development": "Situación: La empresa necesitaba implementar un nuevo ERP y gestionarlo de manera estructurada. Aplicación del ciclo de vida ITIL: 1) Estrategia: Definición del portfolio de servicios, análisis de demanda y gestión financiera, 2) Diseño: Creación del catálogo de servicios, definición de SLA, diseño de capacidad y disponibilidad, plan de continuidad, 3) Transición: Gestión de cambios, configuración del CMDB, despliegue controlado, validación y pruebas, 4) Operación: Service Desk, gestión de incidencias y problemas, gestión de eventos, 5) Mejora: Proceso de mejora continua con medición de KPIs, generación de informes, plan de mejora del servicio (SIP). Resultados: Implementación exitosa del ERP en tiempo y presupuesto, cumplimiento del 98% de SLA durante los primeros 6 meses, reducción del 40% en costos operativos de TI, mejora continua documentada trimestralmente, y satisfacción del cliente del 92%.",
+      "lessons": "Aplicar ITIL en todas las fases del ciclo de vida del servicio proporciona una gestión integral y estructurada. La fase de Mejora asegura que los servicios evolucionen continuamente para satisfacer las necesidades cambiantes del negocio."
+    }
+  ],
+  "topic7": [
+    {
+      "title": "Empresa de Servicios TI: Certificación ISO/IEC 20000-1",
+      "description": "Empresa proveedora de servicios de TI que implementó y certificó ISO/IEC 20000-1 para mejorar la gestión de sus servicios y obtener reconocimiento en el mercado.",
+      "development": "Situación inicial: La empresa tenía procesos de gestión de servicios desorganizados, con alta tasa de incidencias y baja satisfacción del cliente. Implementación: 1) Evaluación del estado actual según requisitos de ISO/IEC 20000-1, 2) Establecimiento del Sistema de Gestión del Servicio (SGS) con los 5 grupos de procesos, 3) Implementación de procesos de diseño y transición de servicios, 4) Establecimiento de procesos de provisión del servicio (gestión de nivel de servicio, continuidad, capacidad, seguridad), 5) Implementación de procesos de control, resolución y relación, 6) Capacitación del personal en la norma, 7) Auditoría y certificación por organismo acreditado. Resultados: Reducción del 50% en tiempo de resolución de incidencias, mejora del 70% en satisfacción del cliente, certificación ISO/IEC 20000-1 obtenida, incremento del 30% en nuevos contratos gracias al reconocimiento de la certificación, y mejora continua documentada.",
+      "lessons": "La certificación ISO/IEC 20000-1 proporciona un marco estructurado y certificable que mejora significativamente la calidad de los servicios TI. La implicación de la alta dirección es fundamental para el éxito de la implementación."
+    },
+    {
+      "title": "Organización Gubernamental: Implementación de SGS con ISO/IEC 20000",
+      "description": "Organización del sector público que implementó el Sistema de Gestión del Servicio basado en ISO/IEC 20000 para estandarizar la provisión de servicios TI a diferentes dependencias.",
+      "development": "Contexto: La organización necesitaba estandarizar la gestión de servicios TI para múltiples dependencias gubernamentales. Implementación: 1) Análisis de requisitos de servicio de cada dependencia, 2) Diseño del SGS centralizado siguiendo ISO/IEC 20000-1, 3) Implementación de procesos de diseño y transición para nuevos servicios, 4) Establecimiento de procesos de provisión con SLA diferenciados por dependencia, 5) Implementación de procesos de control y resolución centralizados, 6) Generación de informes estandarizados para todas las dependencias, 7) Adopción incremental según ISO/IEC 20000-5. Resultados: Estandarización exitosa de servicios TI, reducción del 40% en costos operativos mediante centralización, mejora del 60% en tiempos de entrega de servicios, satisfacción del 85% de las dependencias, y base sólida para futura certificación.",
+      "lessons": "La adopción incremental de ISO/IEC 20000 permite implementar el SGS de manera gradual, especialmente útil en organizaciones grandes. La estandarización mejora la eficiencia y reduce costos operativos."
+    }
+  ],
+  "topic8": [
+    {
+      "title": "Tecnofor: Certificación ISO/IEC 19770-1:2008 en empresa de formación",
+      "description": "Empresa pequeña especializada en formación en tecnología, gobierno TI y gestión de proyectos que implementó un SGAS como caso piloto para certificación según UNE-ISO/IEC 19770-1:2008.",
+      "development": "Contexto: Tecnofor es una pequeña empresa del sector de formación que necesitaba gestionar eficientemente sus activos de software. Implementación: 1) Definición de objetivos estratégicos (gestión de riesgos, control de costes, ventaja competitiva), 2) Creación de caso de negocio justificando la inversión, 3) Planteamiento del proyecto de implantación, 4) Definición de procesos según ISO/IEC 19770-1 (procesos de gestión organizativa, procesos centrales, interfaces), 5) Establecimiento de política de software, 6) Configuración de base de datos de gestión de configuración (CMDB), 7) Selección e implementación de herramientas, 8) Formación y certificación profesional del equipo. Resultados: Recuperación de la inversión en el primer año, control efectivo de costes, aumento de la productividad, reducción significativa de riesgos asociados a la gestión de activos de software, y obtención de la certificación ISO/IEC 19770-1:2008.",
+      "lessons": "La correcta implantación de un SGAS puede salvaguardar riesgos relacionados con la falta de gestión eficiente de activos y colaborar directamente con la consecución de objetivos estratégicos mediante reducción de costes y aumento de productividad. La certificación aporta prestigio y credibilidad a la organización."
+    }
+  ],
+  "topic9": [
+    {
+      "title": "Aseguradora de Salud: Implementación de BCM a nivel nacional",
+      "description": "Aseguradora de salud que opera a nivel nacional con hospitales y centros médicos propios y franquiciados, con 2,500 empleados y infraestructura informática para procesamiento de datos y comunicación entre centros.",
+      "development": "Contexto: La organización opera a nivel nacional con múltiples hospitales y centros médicos (propios y franquiciados), empleando a 2,500 personas. La infraestructura informática es crítica para el procesamiento de datos y la comunicación entre centros. Problemática: La organización necesita asegurar la continuidad del negocio ante problemas o incidentes que atenten contra la disponibilidad de datos o información, considerando la crítica de los servicios de salud, la dependencia de sistemas de información, la necesidad de comunicación continua entre centros y el impacto potencial en pacientes y operaciones. Implementación del BCM: 1) Planificación del BCM con alcance nacional, 2) Análisis de impacto (BIA) identificando procesos críticos relacionados con atención médica, procesamiento de datos de pacientes y comunicación entre centros, 3) Análisis de riesgos considerando fallos de sistemas, desastres naturales, interrupciones de red y ataques cibernéticos, 4) Desarrollo de estrategia incluyendo centros de respaldo, replicación de datos en tiempo real, sistemas de comunicación alternativos y proveedores de servicios cloud, 5) Desarrollo del BCP con procedimientos detallados para cada escenario, 6) Concienciación y capacitación del personal médico y administrativo, 7) Pruebas y ejercicios periódicos incluyendo simulacros de interrupción, 8) Mantenimiento y actualización continua del plan. Resultados: Disponibilidad garantizada de datos críticos de pacientes, mantenimiento de comunicación entre centros médicos incluso durante interrupciones, protección efectiva de información sensible, garantía de continuidad de servicios de salud críticos, y minimización del impacto de interrupciones en operaciones.",
+      "lessons": "La implementación de un BCM es esencial en organizaciones del sector salud donde la disponibilidad de información puede afectar directamente la atención a pacientes. La correcta implementación del BCM permite asegurar la continuidad del negocio ante problemas o incidentes que atenten contra la disponibilidad de datos o información. La combinación de análisis de impacto, desarrollo de estrategias y pruebas periódicas es fundamental para el éxito."
+    },
+    {
+      "title": "Virtualización y Cloud Computing como Solución BCM",
+      "description": "Análisis de las ventajas e inconvenientes de arquitecturas cloud como solución para planes de continuidad de negocio, basado en entrevista con especialista de IBM.",
+      "development": "Contexto: A través de entrevista realizada por el Profesor Castillo a un especialista en virtualización y computación en la nube de IBM, se analizan las ventajas e inconvenientes de este tipo de arquitectura de recursos como servicio a clientes. Análisis: Las arquitecturas cloud ofrecen ventajas significativas para BCM: redundancia geográfica automática que protege contra desastres locales, escalabilidad rápida para adaptarse a cambios en demanda, recuperación rápida ante desastres mediante replicación automática, reducción de costos de infraestructura al eliminar necesidad de centros de respaldo propios, y disponibilidad mejorada mediante infraestructura distribuida. Consideraciones: Este tipo de servicios basados en arquitecturas cloud son una de las soluciones en las que pueden basarse los planes de continuidad de negocio, especialmente para organizaciones que buscan reducir costos y mejorar resiliencia sin inversiones masivas en infraestructura propia.",
+      "lessons": "Los servicios basados en arquitecturas cloud representan una solución viable y eficiente para planes de continuidad de negocio, especialmente para organizaciones que buscan optimizar costos mientras mejoran su capacidad de recuperación. La virtualización y cloud computing permiten implementar estrategias de BCM más flexibles y escalables."
+    }
+  ]
+}

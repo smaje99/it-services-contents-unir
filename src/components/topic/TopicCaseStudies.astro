@@ -1,0 +1,49 @@
+---
+import caseStudies from '@/data/case-studies.json';
+import type { CaseStudy } from '@/types/case-study';
+
+import AccordionContent from '../ui/accordion/AccordionContent.astro';
+import AccordionItem from '../ui/accordion/AccordionItem.astro';
+import TopicAccordionTrigger from './TopicAccordionTrigger.astro';
+
+interface Props {
+  topic: keyof typeof caseStudies;
+}
+
+const { topic } = Astro.props;
+const cases = caseStudies[topic] as CaseStudy[];
+---
+
+{
+  cases.length === 0 ? (
+    <p>No hay estudios de caso disponibles para este tema.</p>
+  ) : (
+    cases.map(({ title, description, development, lessons }) => (
+      <AccordionItem>
+        <TopicAccordionTrigger title={title} />
+
+        <AccordionContent>
+          <p>{description}</p>
+
+          <h5>Desarrollo:</h5>
+          {typeof development === 'string' ? (
+            <p>{development}</p>
+          ) : (
+            <>
+              <p>{development.intro}</p>
+              <ol>
+                {development.steps.map((step) => (
+                  <li>{step}</li>
+                ))}
+              </ol>
+              <p>{development.outro}</p>
+            </>
+          )}
+
+          <h5>Lecciones aprendidas:</h5>
+          <p>{lessons}</p>
+        </AccordionContent>
+      </AccordionItem>
+    ))
+  )
+}

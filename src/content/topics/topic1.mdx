@@ -11,6 +11,7 @@ import AccordionContent from '@/components/ui/accordion/AccordionContent.astro';
 import AccordionItem from '@/components/ui/accordion/AccordionItem.astro';
 import AccordionRoot from '@/components/ui/accordion/AccordionRoot.astro';
 import TopicAccordionTrigger from '@/components/topic/TopicAccordionTrigger.astro';
+import TopicCaseStudies from '@/components/topic/TopicCaseStudies.astro';
 import TopicConceptCard from '@/components/topic/TopicConceptCard.astro';
 import TopicConceptSection from '@/components/topic/TopicConceptSection.astro';
 import TopicGrid from '@/components/topic/TopicGrid.astro';
@@ -171,35 +172,7 @@ import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
 <TopicSectionGroup title='Ejemplos Prácticos' icon='flask'>
   <TopicConceptSection title="Casos Globales">
     <AccordionRoot type='single'>
-      <AccordionItem>
-        <TopicAccordionTrigger title='Amazon: De librería online a ecosistema global' />
-        <AccordionContent>
-          Amazon comenzó como una librería online en 1994 y se transformó en el
-          ecosistema global más grande del mundo.
-
-          ##### Desarrollo:
-          La transformación incluyó:
-          1. Expansión de productos más allá de libros,
-          2. Desarrollo de AWS (Amazon Web Services),
-          3. Implementación de logística avanzada con centros de distribución,
-          4. Creación de servicios digitales como Prime Video y Alexa,
-          5. Adquisición estratégica de empresas como Whole Foods. Esta transformación
-          digital le permitió a Amazon generar ingresos de más de $470 mil millones en 2021.
-
-          ##### Lecciones aprendidas:
-          La clave del éxito fue la visión a largo plazo, la inversión continua en
-          tecnología y la capacidad de adaptarse a las necesidades cambiantes del
-          mercado.
-        </AccordionContent>
-      </AccordionItem>
-
-      <AccordionItem>
-        <TopicAccordionTrigger title='Caso 1: Implementación de un ERP en una empresa manufacturera' />
-        <AccordionContent>
-          Descripción detallada del caso, desafíos enfrentados, soluciones implementadas
-          y resultados obtenidos.
-        </AccordionContent>
-      </AccordionItem>
+      <TopicCaseStudies topic='topic1' />
     </AccordionRoot>
   </TopicConceptSection>
 
