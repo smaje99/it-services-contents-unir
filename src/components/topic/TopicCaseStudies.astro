@@ -12,10 +12,14 @@ import TopicAccordionTrigger from './TopicAccordionTrigger.astro';
 
 interface Props {
   topic: keyof typeof caseStudies;
+  isNational?: boolean;
 }
 
-const { topic } = Astro.props;
-const cases = caseStudies[topic] as CaseStudy[];
+const { topic, isNational = false } = Astro.props;
+const allCases = caseStudies[topic] as CaseStudy[];
+const cases = allCases.filter(
+  (caseStudy) => (caseStudy.isNational ?? false) === isNational,
+);
 ---
 
 {

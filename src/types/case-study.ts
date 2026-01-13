@@ -19,6 +19,7 @@ type Development = string | DevelopmentWithSteps | DevelopmentWithSituation;
 export interface CaseStudy {
   title: string;
   description: string;
+  isNational?: boolean;
   development: Development;
   lessons: string;
 }
