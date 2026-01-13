@@ -31,6 +31,40 @@
         "outro": "Netflix pasó de tener 1 millón de suscriptores en 2002 a más de 220 millones en 2022."
       },
       "lessons": "La anticipación de tendencias tecnológicas y la inversión en contenido propio fueron factores clave para el éxito de la transformación."
+    },
+    {
+      "title": "Tesla: Automóviles eléctricos y autónomos",
+      "description": "Tesla transformó la industria automotriz al combinar vehículos eléctricos, software y una estrategia de datos para habilitar mejoras continuas, automatización avanzada y un ecosistema energético integrado.",
+      "development": {
+        "intro": "La transformación incluyó:",
+        "steps": [
+          "Modelo de producto definido por software: actualizaciones OTA (over-the-air) que mejoran rendimiento, seguridad y funcionalidades sin pasar por taller",
+          "Arquitectura tecnológica integrada: diseño propio de hardware (baterías, tren motriz, sensores) y software de control para optimizar eficiencia y costos",
+          "Plataforma de datos para conducción asistida: recolección y análisis de telemetría para entrenar y mejorar capacidades de Autopilot/FSD",
+          "Estrategia de infraestructura: despliegue de red de Superchargers y optimización de la experiencia de recarga como parte del producto",
+          "Ecosistema energético: integración con soluciones de almacenamiento y generación (Powerwall, Solar) para ampliar la propuesta de valor más allá del vehículo",
+          "Modelo comercial directo al consumidor: ventas online, menor dependencia de concesionarios y una relación digital continua con el cliente"
+        ],
+        "outro": "Esta estrategia permitió a Tesla diferenciarse por iteración rápida del producto, capacidad de escalar mejoras por software y creación de ventajas competitivas basadas en datos e infraestructura."
+      },
+      "lessons": "La transformación digital en productos físicos requiere integrar hardware, software, datos e infraestructura en una sola estrategia. Las organizaciones que tratan el producto como una plataforma (actualizable, medible y mejorable) pueden acelerar la innovación y construir barreras de entrada sostenibles."
+    },
+    {
+      "title": "Spotify: Música digital y personalizada",
+      "description": "Spotify evolucionó el consumo de música al combinar streaming, analítica de datos y personalización a escala, transformando la experiencia del usuario y el modelo de distribución musical.",
+      "development": {
+        "intro": "La transformación incluyó:",
+        "steps": [
+          "Cambio de propiedad a acceso: consolidación del modelo de streaming bajo suscripción y publicidad, reemplazando descargas y formatos físicos",
+          "Personalización basada en datos: algoritmos de recomendación que combinan comportamiento del usuario (escuchas, skips, guardados) con señales de contenido",
+          "Curación híbrida (humano + máquina): playlists editoriales y automatizadas (p. ej., Discover Weekly) para balancear descubrimiento y calidad percibida",
+          "Estrategia de producto con experimentación continua: pruebas A/B y optimización del engagement (retención, tiempo de escucha, conversión a premium)",
+          "Expansión de plataforma: incorporación de podcasts y contenido hablado para diversificar catálogo, aumentar tiempo de uso y reducir dependencia del licenciamiento musical",
+          "Ecosistema para creadores y partners: herramientas para artistas, analítica de audiencia y distribución que fortalecen relaciones y propuesta de valor"
+        ],
+        "outro": "Con esta estrategia, Spotify construyó una experiencia altamente personalizada y escalable, alineando datos, producto y negocio para mejorar retención y descubrimiento de contenido."
+      },
+      "lessons": "La ventaja competitiva en productos digitales suele venir de la personalización y de la mejora continua basada en datos. Combinar recomendación algorítmica, curación editorial y experimentación sistemática permite escalar valor para el usuario sin sacrificar calidad."
     }
   ],
   "topic2": [
