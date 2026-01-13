@@ -65,7 +65,98 @@
         "outro": "Con esta estrategia, Spotify construyó una experiencia altamente personalizada y escalable, alineando datos, producto y negocio para mejorar retención y descubrimiento de contenido."
       },
       "lessons": "La ventaja competitiva en productos digitales suele venir de la personalización y de la mejora continua basada en datos. Combinar recomendación algorítmica, curación editorial y experimentación sistemática permite escalar valor para el usuario sin sacrificar calidad."
+    },
+    {
+      "title": "Rappi: Entrega de comida y productos",
+      "description": "Rappi impulsó la digitalización del comercio urbano en Colombia al integrar restaurantes, supermercados, farmacias y mensajería en una plataforma on-demand con logística de última milla.",
+      "isNational": true,
+      "development": {
+        "situation": "La demanda por entregas rápidas y convenientes crecía, pero el ecosistema estaba fragmentado entre múltiples comercios, canales de pedido poco integrados y baja visibilidad logística.",
+        "problems": [
+          "Experiencia de compra dispersa entre distintos comercios y canales",
+          "Tiempos de entrega variables por falta de coordinación logística",
+          "Dificultad para escalar operaciones en picos de demanda",
+          "Baja trazabilidad del pedido y limitada comunicación en tiempo real"
+        ],
+        "solution": {
+          "summary": "Plataforma on-demand que integra comercios, pagos y última milla con operación basada en datos.",
+          "modules": [
+            "Marketplace multi-categoría (restaurantes, supermercados, farmacias, etc.)",
+            "Asignación y despacho de repartidores con geolocalización",
+            "Pagos digitales y conciliación operativa",
+            "Seguimiento en tiempo real y comunicaciones dentro de la app",
+            "Estrategias de fidelización y suscripción (p. ej., envíos)",
+            "Analítica para optimización de tiempos, zonas y demanda"
+          ]
+        },
+        "results": "Mejoró la conveniencia del usuario y permitió a comercios ampliar alcance con un canal digital; la operación basada en datos habilita optimizaciones continuas en tiempos y cobertura."
+      },
+      "lessons": "La transformación digital de servicios urbanos requiere orquestar tres capacidades: experiencia de usuario, operación logística y analítica. La ventaja sostenida viene de optimizar la red (oferta + demanda + reparto) con datos en tiempo real."
+    },
+    {
+      "title": "MercadoLibre: E-commerce en Latinoamérica",
+      "description": "MercadoLibre consolidó un ecosistema regional de comercio electrónico al combinar marketplace, pagos y logística, reduciendo fricción para compradores y vendedores en múltiples países.",
+      "isNational": true,
+      "development": {
+        "intro": "La transformación incluyó:",
+        "steps": [
+          "Construcción de un marketplace escalable para conectar oferta y demanda con confianza (reputación, protección al comprador)",
+          "Integración de pagos digitales (Mercado Pago) para reducir fricción y ampliar medios de pago",
+          "Desarrollo de capacidades logísticas (fulfillment y envíos) para mejorar tiempos y confiabilidad de entrega",
+          "Herramientas para vendedores: publicación masiva, publicidad, analítica, financiamiento y gestión de inventario",
+          "Optimización con datos: búsqueda, recomendación, pricing, detección de fraude y segmentación",
+          "Expansión por categorías y servicios complementarios para aumentar recurrencia"
+        ],
+        "outro": "El enfoque de ecosistema (comercio + pagos + logística) reduce fricciones estructurales del e-commerce y habilita escala regional con mejoras incrementales continuas."
+      },
+      "lessons": "En mercados complejos, el e-commerce no se gana solo con catálogo: se gana resolviendo pagos, confianza y logística. Integrar capacidades críticas en un ecosistema crea barreras de entrada y mejora la experiencia extremo a extremo."
+    },
+    {
+      "title": "Bancolombia: Banca digital",
+      "description": "Bancolombia avanzó en la digitalización de servicios financieros mediante canales móviles y procesos más automatizados, buscando mejorar experiencia, seguridad y eficiencia operativa.",
+      "isNational": true,
+      "development": {
+        "situation": "Los usuarios demandaban más operaciones digitales (24/7), mientras el banco debía mantener altos estándares de seguridad, cumplimiento y continuidad en servicios críticos.",
+        "problems": [
+          "Procesos presenciales o semipresenciales que generaban fricción y tiempos de espera",
+          "Incremento de riesgos (fraude, suplantación) al crecer el uso de canales digitales",
+          "Necesidad de mayor resiliencia y disponibilidad en canales móviles",
+          "Heterogeneidad de sistemas y procesos que dificultaba acelerar cambios"
+        ],
+        "solution": {
+          "summary": "Evolución de canales digitales y operación con foco en experiencia, seguridad y automatización.",
+          "modules": [
+            "Fortalecimiento de apps/canales digitales para transacciones y autogestión",
+            "Autenticación reforzada y monitoreo antifraude basado en señales de riesgo",
+            "Optimización de procesos (onboarding, transferencias, pagos, atención) con mayor autoservicio",
+            "Observabilidad y monitoreo para continuidad y tiempos de respuesta",
+            "Gestión de cambios y releases más controlados para reducir incidentes",
+            "Analítica para personalización, segmentación y mejora de journeys"
+          ]
+        },
+        "results": "Mayor adopción de canales digitales, reducción de fricción en operaciones frecuentes y mejoras en control de riesgo y estabilidad operativa mediante monitoreo y automatización."
+      },
+      "lessons": "La banca digital exige equilibrio: experiencia simple para el usuario, controles robustos de seguridad y operación resiliente. El progreso real se logra estandarizando procesos, automatizando controles y midiendo continuamente desempeño y riesgo."
+    },
+    {
+      "title": "Éxito: Retail digital",
+      "description": "Éxito fortaleció su canal digital para ofrecer experiencias omnicanal (compra online con entrega o recogida), integrando operaciones de inventario, catálogo y última milla.",
+      "isNational": true,
+      "development": {
+        "intro": "La transformación incluyó:",
+        "steps": [
+          "Evolución del e-commerce con catálogo robusto, búsqueda y experiencia mobile-first",
+          "Integración de inventario y disponibilidad para reducir quiebres y mejorar promesa de entrega",
+          "Habilitación de modelos omnicanal (recogida en tienda, entrega programada, etc.)",
+          "Optimización logística: preparación de pedidos, rutas y coordinación con última milla",
+          "Mejoras en pagos y promociones para reducir fricción y aumentar conversión",
+          "Analítica para optimizar surtido, demanda, campañas y experiencia del cliente"
+        ],
+        "outro": "El foco omnicanal integra tiendas físicas y canal digital, incrementando conveniencia y mejorando la eficiencia al sincronizar inventario, operación y logística."
+      },
+      "lessons": "En retail, digitalizar no es solo “tener web”: es integrar inventario, operación y logística para cumplir la promesa. La ventaja competitiva se construye con omnicanalidad real y excelencia operativa respaldada por datos."
     }
+
   ],
   "topic2": [
     {
