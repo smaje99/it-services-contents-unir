@@ -1,6 +1,10 @@
 ---
 import caseStudies from '@/data/case-studies.json';
-import type { CaseStudy } from '@/types/case-study';
+import type {
+  CaseStudy,
+  DevelopmentWithSituation,
+  DevelopmentWithSteps,
+} from '@/types/case-study';
 
 import AccordionContent from '../ui/accordion/AccordionContent.astro';
 import AccordionItem from '../ui/accordion/AccordionItem.astro';
@@ -26,18 +30,48 @@ const cases = caseStudies[topic] as CaseStudy[];
           <p>{description}</p>
 
           <h5>Desarrollo:</h5>
-          {typeof development === 'string' ? (
-            <p>{development}</p>
-          ) : (
+          {Object.prototype.hasOwnProperty.call(development, 'steps') ? (
             <>
-              <p>{development.intro}</p>
+              <p>{(development as DevelopmentWithSteps).intro}</p>
               <ol>
-                {development.steps.map((step) => (
+                {(development as DevelopmentWithSteps).steps.map((step) => (
                   <li>{step}</li>
                 ))}
               </ol>
-              <p>{development.outro}</p>
+              <p>{(development as DevelopmentWithSteps).outro}</p>
             </>
+          ) : Object.prototype.hasOwnProperty.call(development, 'situation') ? (
+            <>
+              <p>
+                <strong>Situación inicial:</strong>{' '}
+                {(development as DevelopmentWithSituation).situation}
+              </p>
+              <p>
+                <strong>Problemas identificados:</strong>
+              </p>
+              <ol>
+                {(development as DevelopmentWithSituation).problems.map((problem) => (
+                  <li>{problem}</li>
+                ))}
+              </ol>
+              <p>
+                <strong>Solución implementada:</strong>{' '}
+                {(development as DevelopmentWithSituation).solution.summary}
+              </p>
+              <ol>
+                {(development as DevelopmentWithSituation).solution.modules.map(
+                  (module) => (
+                    <li>{module}</li>
+                  ),
+                )}
+              </ol>
+              <p>
+                <strong>Resultados:</strong>{' '}
+                {(development as DevelopmentWithSituation).results}
+              </p>
+            </>
+          ) : (
+            <p>{development as string}</p>
           )}
 
           <h5>Lecciones aprendidas:</h5>
