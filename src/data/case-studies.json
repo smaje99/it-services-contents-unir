@@ -156,7 +156,6 @@
       },
       "lessons": "En retail, digitalizar no es solo “tener web”: es integrar inventario, operación y logística para cumplir la promesa. La ventaja competitiva se construye con omnicanalidad real y excelencia operativa respaldada por datos."
     }
-
   ],
   "topic2": [
     {
@@ -183,6 +182,100 @@
         "results": "Incremento del 25% en la eficiencia operativa y reducción del 30% en tiempos de procesamiento."
       },
       "lessons": "La implementación exitosa requirió análisis detallado de procesos, capacitación del personal y gestión del cambio organizacional."
+    },
+    {
+      "title": "Implantación de ERP en PYME: Empresa manufacturera",
+      "description": "PYME manufacturera que necesitaba integrar compras, producción, inventario y finanzas para reducir reprocesos, mejorar trazabilidad y controlar costos operativos.",
+      "isNational": false,
+      "development": {
+        "situation": "La empresa operaba con hojas de cálculo y sistemas aislados. La información de inventario, órdenes de producción y costos no era consistente, lo que generaba demoras, errores y falta de visibilidad gerencial.",
+        "problems": [
+          "Inventario inexacto y quiebres frecuentes por falta de trazabilidad",
+          "Planeación de producción reactiva y sin capacidad de balancear cargas",
+          "Costeo de productos poco confiable y baja visibilidad de márgenes",
+          "Retrasos en compras y abastecimiento por ausencia de alertas y previsión",
+          "Cierres contables lentos por conciliaciones manuales"
+        ],
+        "solution": {
+          "summary": "Implantación de un ERP modular con estandarización de procesos y datos maestros para unificar la operación punta a punta.",
+          "modules": [
+            "Compras y gestión de proveedores (requisiciones, órdenes, recepción)",
+            "Inventarios y almacenes (entradas/salidas, ubicaciones, lotes/series)",
+            "Planificación y control de producción (BOM, rutas, MRP básico)",
+            "Costos y contabilidad (costeo estándar/real, centros de costo)",
+            "Ventas y facturación (pedidos, despacho, cuentas por cobrar)",
+            "Reportes gerenciales (KPIs de producción, inventario, OTIF)"
+          ]
+        },
+        "results": "Mejora en la precisión del inventario, reducción de reprocesos, mayor control de costos y tiempos de cierre contable, con trazabilidad operativa desde compras hasta despacho."
+      },
+      "lessons": "Un ERP en PYME exige disciplina en datos maestros y procesos. El éxito depende más de la estandarización, capacitación y gobierno del cambio que del software en sí."
+    },
+    {
+      "title": "Migración a la nube: Empresa de servicios",
+      "description": "Empresa de servicios con aplicaciones on-premise que migró a la nube para mejorar disponibilidad, escalabilidad y tiempos de entrega, reduciendo costos de infraestructura y operación.",
+      "isNational": false,
+      "development": {
+        "intro": "La migración incluyó:",
+        "steps": [
+          "Evaluación del portafolio de aplicaciones (criticidad, dependencias, costos) y definición de estrategia (rehost, replatform, refactor)",
+          "Diseño de arquitectura objetivo (red, identidades, seguridad, observabilidad) y gobierno de la nube (FinOps, tagging, políticas)",
+          "Implementación de identidad y acceso (IAM), segmentación de red y controles de seguridad (WAF, cifrado, secretos)",
+          "Migración por oleadas: entornos no críticos primero, luego cargas core, con ventanas controladas y plan de rollback",
+          "Adopción de CI/CD e infraestructura como código para estandarizar despliegues y reducir errores",
+          "Configuración de monitoreo, alertas y trazabilidad (logs, métricas, APM) para operación 24/7",
+          "Optimización post-migración (costos, performance, autoescalado) y hardening continuo"
+        ],
+        "outro": "El resultado fue una plataforma más resiliente y escalable, con despliegues más frecuentes y mejor visibilidad operativa, apoyada por prácticas de seguridad y control de costos."
+      },
+      "lessons": "Migrar a la nube no es solo mover servidores: requiere gobierno (seguridad, costos, operación) y automatización (IaC/CI-CD). Las migraciones por oleadas con observabilidad reducen riesgo."
+    },
+    {
+      "title": "Implementación de CRM: Empresa de ventas",
+      "description": "Empresa comercial con fuerza de ventas distribuida que implementó un CRM para estandarizar el pipeline, mejorar seguimiento de oportunidades y aumentar la conversión.",
+      "isNational": false,
+      "development": {
+        "situation": "La gestión comercial dependía de agendas personales y hojas de cálculo. No había trazabilidad del embudo ni control de actividades, y la dirección carecía de métricas confiables para pronóstico y desempeño.",
+        "problems": [
+          "Pérdida de oportunidades por falta de seguimiento y recordatorios",
+          "Pipeline inconsistente y etapas definidas de manera subjetiva",
+          "Pronósticos de ventas imprecisos por datos incompletos",
+          "Duplicidad de contactos y baja calidad de datos",
+          "Baja colaboración entre ventas, marketing y servicio"
+        ],
+        "solution": {
+          "summary": "Implementación de un CRM con modelo de datos unificado, pipeline estándar, automatización de tareas y tableros de desempeño.",
+          "modules": [
+            "Gestión de leads y cuentas (deduplicación, enriquecimiento básico)",
+            "Pipeline de oportunidades (etapas, probabilidades, motivos de pérdida)",
+            "Actividades y seguimiento (tareas, recordatorios, cadencias)",
+            "Automatización y reglas (asignación de leads, SLA internos)",
+            "Dashboards (conversión por etapa, forecast, productividad)",
+            "Integración con correo y formularios/landing para captura de leads"
+          ]
+        },
+        "results": "Mayor visibilidad del pipeline, incremento en disciplina de seguimiento, mejora del pronóstico y reducción de pérdida de oportunidades por falta de contacto, con métricas homogéneas para la dirección."
+      },
+      "lessons": "El CRM no arregla un proceso inexistente: primero define etapas, criterios y responsabilidades; luego automatiza. La calidad de datos y el hábito de uso diario determinan el ROI."
+    },
+    {
+      "title": "Sistema de gestión documental: Oficina de abogados",
+      "description": "Firma de abogados que digitalizó y centralizó expedientes para mejorar control documental, trazabilidad de versiones y tiempos de respuesta en casos y contratos.",
+      "isNational": false,
+      "development": {
+        "intro": "La implementación incluyó:",
+        "steps": [
+          "Levantamiento de tipologías documentales (expedientes, contratos, evidencias) y definición de taxonomía (cliente, caso, fecha, estado)",
+          "Diseño de permisos y confidencialidad por roles (socios, asociados, auxiliares) y criterios de acceso por caso",
+          "Implementación de repositorio central con control de versiones, check-in/check-out y búsqueda por metadatos",
+          "Flujos de revisión y aprobación (borrador → revisión → aprobado → archivado) con bitácora de cambios",
+          "Plantillas estandarizadas (contratos, memoriales) y nomenclatura para reducir inconsistencias",
+          "Políticas de retención y respaldo (backups, borrado seguro, auditoría) y capacitación del equipo",
+          "Digitalización progresiva de archivos físicos y estrategia de “cero papel” por etapas"
+        ],
+        "outro": "Se logró mayor trazabilidad, menos pérdidas de documentos, búsquedas más rápidas y control de acceso, mejorando tiempos de respuesta y reduciendo riesgo por versiones incorrectas o filtraciones."
+      },
+      "lessons": "En gestión documental, el diseño de taxonomía, permisos y flujos vale más que la herramienta. Sin gobierno de metadatos y control de versiones, la digitalización solo traslada el desorden."
     }
   ],
   "topic3": [
