@@ -1,10 +1,10 @@
 ---
 import caseStudies from '@/data/case-studies.json';
 import type {
-  CaseStudy,
   CaseStudyTopic,
   DevelopmentWithSituation,
   DevelopmentWithSteps,
+  TopicContent,
 } from '@/types/case-study';
 
 import AccordionContent from '../ui/accordion/AccordionContent.astro';
@@ -17,7 +17,8 @@ interface Props {
 }
 
 const { topic, isNational = false } = Astro.props;
-const allCases = caseStudies[topic] as CaseStudy[];
+const content = caseStudies[topic] as TopicContent;
+const allCases = content.caseStudies;
 const cases = allCases.filter(
   (caseStudy) => (caseStudy.isNational ?? false) === isNational,
 );
