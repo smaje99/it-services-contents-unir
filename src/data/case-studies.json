@@ -189,7 +189,6 @@
       {
         "title": "Implantación de ERP en PYME: Empresa manufacturera",
         "description": "PYME manufacturera que necesitaba integrar compras, producción, inventario y finanzas para reducir reprocesos, mejorar trazabilidad y controlar costos operativos.",
-        "isNational": false,
         "development": {
           "situation": "La empresa operaba con hojas de cálculo y sistemas aislados. La información de inventario, órdenes de producción y costos no era consistente, lo que generaba demoras, errores y falta de visibilidad gerencial.",
           "problems": [
@@ -217,7 +216,6 @@
       {
         "title": "Migración a la nube: Empresa de servicios",
         "description": "Empresa de servicios con aplicaciones on-premise que migró a la nube para mejorar disponibilidad, escalabilidad y tiempos de entrega, reduciendo costos de infraestructura y operación.",
-        "isNational": false,
         "development": {
           "intro": "La migración incluyó:",
           "steps": [
@@ -236,7 +234,6 @@
       {
         "title": "Implementación de CRM: Empresa de ventas",
         "description": "Empresa comercial con fuerza de ventas distribuida que implementó un CRM para estandarizar el pipeline, mejorar seguimiento de oportunidades y aumentar la conversión.",
-        "isNational": false,
         "development": {
           "situation": "La gestión comercial dependía de agendas personales y hojas de cálculo. No había trazabilidad del embudo ni control de actividades, y la dirección carecía de métricas confiables para pronóstico y desempeño.",
           "problems": [
@@ -264,7 +261,6 @@
       {
         "title": "Sistema de gestión documental: Oficina de abogados",
         "description": "Firma de abogados que digitalizó y centralizó expedientes para mejorar control documental, trazabilidad de versiones y tiempos de respuesta en casos y contratos.",
-        "isNational": false,
         "development": {
           "intro": "La implementación incluyó:",
           "steps": [
@@ -430,7 +426,6 @@
       {
         "title": "Bancos: Gobierno corporativo para cumplimiento regulatorio (ISO 38500)",
         "description": "Banco que formalizó estructuras de decisión y monitoreo para inversiones TI, riesgo y continuidad, alineando TI con regulaciones y estrategia del negocio.",
-        "isNational": true,
         "development": {
           "intro": "La implementación incluyó:",
           "steps": [
@@ -447,7 +442,6 @@
       {
         "title": "Empresas manufactureras: Alineación de TIC con procesos de producción",
         "description": "Manufacturera que alineó TI con operación de planta para reducir paradas, mejorar calidad de datos y priorizar automatización con retorno claro.",
-        "isNational": false,
         "development": {
           "situation": "TI ejecutaba iniciativas sin priorización por impacto en planta; los sistemas críticos tenían dependencias no documentadas y cambios poco controlados.",
           "problems": [
@@ -474,7 +468,6 @@
       {
         "title": "Organizaciones públicas: Transparencia y rendición de cuentas",
         "description": "Entidad pública que fortaleció transparencia en compras TI, decisiones de priorización y seguimiento de proyectos, con evidencia para control y auditoría.",
-        "isNational": true,
         "development": {
           "intro": "La implementación incluyó:",
           "steps": [
@@ -491,7 +484,6 @@
       {
         "title": "PYMEs: Adaptación de principios de gobierno a recursos limitados",
         "description": "PYME que implementó un “gobierno ligero” para controlar riesgos, inversiones y operación sin burocracia.",
-        "isNational": true,
         "development": {
           "situation": "La empresa dependía de pocos sistemas clave, pero no existía control formal sobre proveedores, cambios, accesos y continuidad.",
           "problems": [
@@ -517,7 +509,6 @@
       {
         "title": "Empresas tecnológicas: Gestión de innovación y desarrollo",
         "description": "Empresa tecnológica que gobernó su portafolio de productos y plataformas, controlando riesgo y enfocando inversión en valor medible.",
-        "isNational": false,
         "development": {
           "intro": "La implementación incluyó:",
           "steps": [
@@ -588,7 +579,6 @@
       {
         "title": "Bancos: Control de seguridad y cumplimiento regulatorio (COBIT)",
         "description": "Banco que aplicó COBIT para fortalecer control interno TI, reducir riesgos y mejorar auditoría y cumplimiento.",
-        "isNational": true,
         "development": {
           "intro": "La implementación incluyó:",
           "steps": [
@@ -605,7 +595,6 @@
       {
         "title": "Empresas manufactureras: Gestión de proyectos de TI con COBIT",
         "description": "Manufacturera que estandarizó gobierno de proyectos TI para mejorar entregas, control de cambios y alineación a necesidades de operación.",
-        "isNational": false,
         "development": {
           "situation": "Los proyectos TI se ejecutaban sin criterios uniformes, con cambios de alcance frecuentes y baja visibilidad del avance y riesgos.",
           "problems": [
@@ -631,7 +620,6 @@
       {
         "title": "Organizaciones públicas: Auditoría de procesos de TI con COBIT",
         "description": "Entidad pública que usó COBIT para estructurar auditorías TI, controles y evidencias, reduciendo hallazgos repetitivos.",
-        "isNational": true,
         "development": {
           "intro": "La iniciativa incluyó:",
           "steps": [
@@ -648,7 +636,6 @@
       {
         "title": "Colegios privados: Administración de Recursos Humanos (COBIT)",
         "description": "Colegio privado que aplicó COBIT para auditar y mejorar el proceso de administración de RRHH con enfoque en control y métricas.",
-        "isNational": true,
         "development": {
           "intro": "La aplicación incluyó:",
           "steps": [
@@ -695,7 +682,6 @@
       {
         "title": "Empresa Financiera: Implementación de Service Desk",
         "description": "Entidad financiera que implementó ITIL para profesionalizar la atención a usuarios, reducir tiempos de resolución y mejorar la trazabilidad operativa mediante un Service Desk centralizado.",
-        "isNational": false,
         "development": {
           "intro": "La implementación incluyó:",
           "steps": [
@@ -875,7 +861,6 @@
       {
         "title": "Empresas de Tecnología: Control de licencias de desarrollo",
         "description": "Empresa tecnológica que implementó SAM para controlar licencias de IDEs, repositorios, herramientas de CI/CD y suites de testing, reduciendo riesgos de auditoría y costos por sobredimensionamiento.",
-        "isNational": false,
         "development": {
           "intro": "La implementación incluyó:",
           "steps": [
@@ -893,7 +878,6 @@
       {
         "title": "Instituciones Educativas: Gestión de software académico",
         "description": "Institución educativa que gestionó licencias de software académico (laboratorios, suites de diseño, simuladores) para asegurar disponibilidad, cumplimiento y control de costos.",
-        "isNational": true,
         "development": {
           "situation": "Existían múltiples licencias y versiones instaladas en laboratorios sin control central; los docentes solicitaban herramientas de forma reactiva y el cumplimiento era difícil de demostrar.",
           "problems": [
@@ -919,7 +903,6 @@
       {
         "title": "Sector Salud: Control de software médico y administrativo",
         "description": "Clínica que gestionó activos de software clínico (HCE, laboratorio, imágenes) y administrativo (ERP, facturación) para asegurar continuidad, cumplimiento y trazabilidad.",
-        "isNational": true,
         "development": {
           "intro": "La implementación incluyó:",
           "steps": [
@@ -937,7 +920,6 @@
       {
         "title": "Manufactura: Gestión de software de producción y ERP",
         "description": "Empresa manufacturera que controló licencias y versiones de software industrial (MES/SCADA) y ERP para mejorar estabilidad de planta y reducir incumplimientos.",
-        "isNational": false,
         "development": {
           "situation": "La planta tenía software productivo con dependencias críticas y proveedores diversos; las actualizaciones y licencias se manejaban de forma reactiva, con riesgo de paradas por incompatibilidades.",
           "problems": [
@@ -1000,38 +982,47 @@
     "caseStudies": [
       {
         "title": "Aseguradora de Salud: Implementación de BCM a nivel nacional",
-        "description": "Aseguradora de salud que opera a nivel nacional con hospitales y centros médicos propios y franquiciados, con 2,500 empleados y infraestructura informática para procesamiento de datos y comunicación entre centros.",
+        "description": "Aseguradora de salud con operación nacional que requiere garantizar la continuidad de servicios clínicos y administrativos ante incidentes que afecten la disponibilidad de datos, aplicaciones o comunicaciones entre sedes.",
         "development": {
-          "intro": "Contexto: La organización opera a nivel nacional con múltiples hospitales y centros médicos (propios y franquiciados), empleando a 2,500 personas. La infraestructura informática es crítica para el procesamiento de datos y la comunicación entre centros. Problemática: La organización necesita asegurar la continuidad del negocio ante problemas o incidentes que atenten contra la disponibilidad de datos o información, considerando la crítica de los servicios de salud, la dependencia de sistemas de información, la necesidad de comunicación continua entre centros y el impacto potencial en pacientes y operaciones. Implementación del BCM:",
-          "steps": [
-            "Planificación del BCM con alcance nacional",
-            "Análisis de impacto (BIA) identificando procesos críticos relacionados con atención médica, procesamiento de datos de pacientes y comunicación entre centros",
-            "Análisis de riesgos considerando fallos de sistemas, desastres naturales, interrupciones de red y ataques cibernéticos",
-            "Desarrollo de estrategia incluyendo centros de respaldo, replicación de datos en tiempo real, sistemas de comunicación alternativos y proveedores de servicios cloud",
-            "Desarrollo del BCP con procedimientos detallados para cada escenario",
-            "Concienciación y capacitación del personal médico y administrativo",
-            "Pruebas y ejercicios periódicos incluyendo simulacros de interrupción",
-            "Mantenimiento y actualización continua del plan"
+          "situation": "La organización opera a nivel nacional con hospitales y centros médicos (propios y franquiciados), alrededor de 2.500 empleados y una infraestructura informática crítica para procesar datos y coordinar la comunicación entre sedes. Cualquier interrupción tecnológica puede impactar atención al paciente y la operación.",
+          "problems": [
+            "Alta criticidad de los servicios de salud y baja tolerancia a indisponibilidad",
+            "Dependencia de sistemas de información para procesos clínicos y administrativos",
+            "Necesidad de comunicación continua entre centros para coordinar atención y operación",
+            "Riesgo de afectación directa a pacientes y continuidad de la prestación del servicio"
           ],
-          "outro": "Resultados: Disponibilidad garantizada de datos críticos de pacientes, mantenimiento de comunicación entre centros médicos incluso durante interrupciones, protección efectiva de información sensible, garantía de continuidad de servicios de salud críticos y minimización del impacto de interrupciones en operaciones."
+          "solution": {
+            "summary": "Implementación de un programa BCM (Business Continuity Management) con análisis de impacto, estrategias de resiliencia, planes de continuidad y pruebas periódicas para asegurar disponibilidad y recuperación.",
+            "modules": [
+              "Definición de alcance BCM nacional y gobierno (roles, responsables, comités)",
+              "BIA (Business Impact Analysis): procesos críticos, RTO/RPO y dependencias",
+              "Análisis de riesgos: fallas tecnológicas, ciberincidentes, desastres, interrupciones de red",
+              "Estrategia de continuidad: redundancia, respaldos, replicación, comunicaciones alternas y proveedores",
+              "BCP/DRP: procedimientos por escenario, escalamiento, comunicación y priorización de servicios",
+              "Protección de datos sensibles y controles de acceso para información de pacientes",
+              "Capacitación, simulacros y ejercicios (tabletop + pruebas técnicas) con mejora continua"
+            ]
+          },
+          "results": "Disponibilidad de datos críticos y servicios esenciales, mantenimiento de comunicación entre sedes durante interrupciones, protección reforzada de información de pacientes y minimización del impacto operativo ante incidentes."
         },
-        "lessons": "La implementación de un BCM es esencial en organizaciones del sector salud donde la disponibilidad de información puede afectar directamente la atención a pacientes. La correcta implementación del BCM permite asegurar la continuidad del negocio ante problemas o incidentes que atenten contra la disponibilidad de datos o información. La combinación de análisis de impacto, desarrollo de estrategias y pruebas periódicas es fundamental para el éxito."
+        "lessons": "En salud, la continuidad es un requisito operacional y de seguridad del paciente. Un BCM efectivo combina gobierno, BIA (RTO/RPO), resiliencia técnica y pruebas periódicas; sin ejercicios y mantenimiento, el plan no es confiable."
       },
       {
         "title": "Virtualización y Cloud Computing como Solución BCM",
-        "description": "Análisis de las ventajas e inconvenientes de arquitecturas cloud como solución para planes de continuidad de negocio, basado en entrevista con especialista de IBM.",
+        "description": "Análisis de cloud como habilitador de continuidad del negocio, destacando cómo la virtualización y los servicios gestionados mejoran resiliencia, recuperación y disponibilidad frente a interrupciones.",
+        "isNational": false,
         "development": {
-          "intro": "Contexto: A través de entrevista realizada por el Profesor Castillo a un especialista en virtualización y computación en la nube de IBM, se analizan las ventajas e inconvenientes de este tipo de arquitectura de recursos como servicio a clientes. Análisis: Las arquitecturas cloud ofrecen ventajas significativas para BCM:",
+          "intro": "A partir del análisis de un especialista en virtualización y computación en la nube, se sintetizan ventajas prácticas de la arquitectura cloud para soportar BCM:",
           "steps": [
-            "Redundancia geográfica automática que protege contra desastres locales",
-            "Escalabilidad rápida para adaptarse a cambios en demanda",
-            "Recuperación rápida ante desastres mediante replicación automática",
-            "Reducción de costos de infraestructura al eliminar necesidad de centros de respaldo propios",
-            "Disponibilidad mejorada mediante infraestructura distribuida"
+            "Redundancia geográfica automática: replica servicios entre regiones y reduce impacto de desastres locales",
+            "Escalabilidad rápida: ajusta capacidad ante picos de demanda sin compras de infraestructura",
+            "Recuperación ante desastres acelerada: habilita DR con infraestructura predefinida, respaldos y restauración automatizada",
+            "Optimización de costos: evita centros de respaldo propios y mejora el modelo CapEx→OpEx",
+            "Disponibilidad mejorada: servicios distribuidos, balanceo, monitoreo y alta tolerancia a fallos"
           ],
-          "outro": "Consideraciones: Este tipo de servicios basados en arquitecturas cloud son una de las soluciones en las que pueden basarse los planes de continuidad de negocio, especialmente para organizaciones que buscan reducir costos y mejorar resiliencia sin inversiones masivas en infraestructura propia."
+          "outro": "Consideración clave: cloud es un habilitador, no el plan por sí mismo. Para que sea BCM real, debe definirse BIA (RTO/RPO), arquitectura de resiliencia, controles de seguridad, pruebas periódicas y procedimientos operativos de recuperación."
         },
-        "lessons": "Los servicios basados en arquitecturas cloud representan una solución viable y eficiente para planes de continuidad de negocio, especialmente para organizaciones que buscan optimizar costos mientras mejoran su capacidad de recuperación. La virtualización y cloud computing permiten implementar estrategias de BCM más flexibles y escalables."
+        "lessons": "Cloud reduce barreras técnicas y acelera recuperación, pero BCM exige disciplina: diseño por resiliencia, controles (seguridad/costos), pruebas y runbooks. Sin gobernanza y ejercicios, la continuidad no está garantizada."
       }
     ]
   }
