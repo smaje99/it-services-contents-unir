@@ -873,23 +873,126 @@
   "topic8": {
     "caseStudies": [
       {
-        "title": "Tecnofor: Certificación ISO/IEC 19770-1:2008 en empresa de formación",
-        "description": "Empresa pequeña especializada en formación en tecnología, gobierno TI y gestión de proyectos que implementó un SGAS como caso piloto para certificación según UNE-ISO/IEC 19770-1:2008.",
+        "title": "Empresas de Tecnología: Control de licencias de desarrollo",
+        "description": "Empresa tecnológica que implementó SAM para controlar licencias de IDEs, repositorios, herramientas de CI/CD y suites de testing, reduciendo riesgos de auditoría y costos por sobredimensionamiento.",
+        "isNational": false,
         "development": {
-          "intro": "Contexto: Tecnofor es una pequeña empresa del sector de formación que necesitaba gestionar eficientemente sus activos de software. Implementación del SGAS:",
+          "intro": "La implementación incluyó:",
           "steps": [
-            "Definición de objetivos estratégicos (gestión de riesgos, control de costes, ventaja competitiva)",
-            "Creación de caso de negocio justificando la inversión",
-            "Planteamiento del proyecto de implantación",
-            "Definición de procesos según ISO/IEC 19770-1 (procesos de gestión organizativa, procesos centrales, interfaces)",
-            "Establecimiento de política de software",
-            "Configuración de base de datos de gestión de configuración (CMDB)",
-            "Selección e implementación de herramientas",
-            "Formación y certificación profesional del equipo"
+            "Inventario de herramientas y licencias (IDE, SAST/DAST, CI/CD, repositorios, gestión de proyectos)",
+            "Normalización de usuarios, roles y asignación por perfil (dev, QA, DevOps, PM)",
+            "Política de aprovisionamiento y baja (joiner/mover/leaver) con revisiones periódicas",
+            "Automatización de descubrimiento y reconciliación (uso real vs licencias adquiridas)",
+            "Gestión de contratos, renovaciones y alertas (fechas, métricas, true-up)",
+            "KPIs: licencias ociosas, costo por equipo, cumplimiento, ahorro por reasignación"
           ],
-          "outro": "Resultados: Recuperación de la inversión en el primer año, control efectivo de costes, aumento de la productividad, reducción significativa de riesgos asociados a la gestión de activos de software y obtención de la certificación ISO/IEC 19770-1:2008."
+          "outro": "Resultados: reducción de licencias ociosas, mejor previsión de renovaciones y menor riesgo de incumplimiento en auditorías."
         },
-        "lessons": "La correcta implantación de un SGAS puede salvaguardar riesgos relacionados con la falta de gestión eficiente de activos y colaborar directamente con la consecución de objetivos estratégicos mediante reducción de costes y aumento de productividad. La certificación aporta prestigio y credibilidad a la organización."
+        "lessons": "SAM aporta valor cuando se mide uso real y se gobierna el ciclo de vida (alta/cambio/baja). Sin automatización, el inventario se vuelve obsoleto rápido."
+      },
+      {
+        "title": "Instituciones Educativas: Gestión de software académico",
+        "description": "Institución educativa que gestionó licencias de software académico (laboratorios, suites de diseño, simuladores) para asegurar disponibilidad, cumplimiento y control de costos.",
+        "isNational": true,
+        "development": {
+          "situation": "Existían múltiples licencias y versiones instaladas en laboratorios sin control central; los docentes solicitaban herramientas de forma reactiva y el cumplimiento era difícil de demostrar.",
+          "problems": [
+            "Instalaciones heterogéneas y versiones inconsistentes por laboratorio",
+            "Licencias expiradas o subutilizadas por falta de seguimiento",
+            "Dificultad para asignar software por curso/semestre y evidenciar cumplimiento",
+            "Tiempo elevado de soporte por imágenes y configuraciones no estandarizadas"
+          ],
+          "solution": {
+            "summary": "Implementación de SAM con inventario, estandarización de imágenes, calendario académico y control de renovaciones.",
+            "modules": [
+              "Inventario central de software (por laboratorio/equipo) y contratos",
+              "Estandarización de imágenes y despliegue (paquetes por programa/curso)",
+              "Gestión de licencias por periodos académicos (altas/bajas por semestre)",
+              "Tablero de uso y capacidad (ocupación, demanda por asignatura)",
+              "Política de renovaciones, evidencias y auditoría interna"
+            ]
+          },
+          "results": "Mayor disponibilidad de software por curso, reducción de incidencias por configuraciones inconsistentes y mejor control de renovaciones y cumplimiento."
+        },
+        "lessons": "En educación, SAM debe alinearse al calendario académico. Estandarizar imágenes y paquetes por programa reduce soporte y evita incumplimientos."
+      },
+      {
+        "title": "Sector Salud: Control de software médico y administrativo",
+        "description": "Clínica que gestionó activos de software clínico (HCE, laboratorio, imágenes) y administrativo (ERP, facturación) para asegurar continuidad, cumplimiento y trazabilidad.",
+        "isNational": true,
+        "development": {
+          "intro": "La implementación incluyó:",
+          "steps": [
+            "Clasificación de software por criticidad (clínico vs administrativo) y dependencia operativa",
+            "Inventario de licencias, versiones, módulos y proveedores con fechas de soporte",
+            "Gestión de cambios y validación de actualizaciones (ventanas, pruebas, rollback)",
+            "Control de accesos por rol y reconciliación de usuarios vs licencias (principio de mínimo privilegio)",
+            "Gestión de contratos y SLAs con proveedores críticos",
+            "KPIs: cumplimiento de soporte, incidentes por versión, licencias activas vs asignadas"
+          ],
+          "outro": "Resultados: mejor control de versiones y licencias, reducción de riesgos de indisponibilidad por actualizaciones y mayor capacidad de auditoría."
+        },
+        "lessons": "En salud, SAM debe conectarse con continuidad y cambios. Controlar versiones, soporte del proveedor y accesos reduce riesgo clínico-operativo."
+      },
+      {
+        "title": "Manufactura: Gestión de software de producción y ERP",
+        "description": "Empresa manufacturera que controló licencias y versiones de software industrial (MES/SCADA) y ERP para mejorar estabilidad de planta y reducir incumplimientos.",
+        "isNational": false,
+        "development": {
+          "situation": "La planta tenía software productivo con dependencias críticas y proveedores diversos; las actualizaciones y licencias se manejaban de forma reactiva, con riesgo de paradas por incompatibilidades.",
+          "problems": [
+            "Dependencias OT/IT no documentadas y cambios sin pruebas adecuadas",
+            "Licenciamiento complejo por módulos, estaciones y conectores",
+            "Riesgo por fin de soporte de versiones críticas",
+            "Escasa trazabilidad de qué se instaló, dónde y bajo qué contrato"
+          ],
+          "solution": {
+            "summary": "SAM integrado con gestión de configuración y cambios para controlar versiones, licencias y soporte de software crítico de planta.",
+            "modules": [
+              "Inventario detallado (módulos, estaciones, conectores, versiones y proveedores)",
+              "Mapa de dependencias OT/IT y documentación de configuración",
+              "Política de cambios: pruebas, ventanas, control de versión y rollback",
+              "Gestión de contratos, soporte y roadmap de upgrades",
+              "Tablero de riesgo: fin de soporte, brechas de licenciamiento, criticidad"
+            ]
+          },
+          "results": "Mayor estabilidad operativa, menor riesgo por incompatibilidades, y mejor previsión de upgrades y renovaciones con evidencia de cumplimiento."
+        },
+        "lessons": "En manufactura, SAM debe vivir junto a configuración y cambios. El control de versiones y soporte es tan importante como el conteo de licencias."
+      }
+    ],
+    "sectorApplications": [
+      {
+        "sector": "Empresas de Tecnología",
+        "applications": [
+          "Control de licencias de IDEs, suites de testing y herramientas DevOps",
+          "Reconciliación de uso real vs licencias adquiridas",
+          "Automatización del ciclo de vida (alta/cambio/baja)"
+        ]
+      },
+      {
+        "sector": "Instituciones Educativas",
+        "applications": [
+          "Gestión de software académico por semestre/programa",
+          "Estandarización de imágenes y despliegue por laboratorio",
+          "Control de renovaciones y evidencias de cumplimiento"
+        ]
+      },
+      {
+        "sector": "Sector Salud",
+        "applications": [
+          "Control de software clínico (HCE/LIS/RIS) y administrativo",
+          "Gestión de versiones y soporte del proveedor",
+          "Integración con continuidad y gestión de cambios"
+        ]
+      },
+      {
+        "sector": "Manufactura",
+        "applications": [
+          "Gestión de licencias y versiones MES/SCADA/ERP",
+          "Mapa de dependencias OT/IT y control de cambios",
+          "Gestión de fin de soporte y upgrades planificados"
+        ]
       }
     ]
   },
