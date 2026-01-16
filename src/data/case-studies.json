@@ -280,20 +280,143 @@
   ],
   "topic3": [
     {
-      "title": "Bancolombia: Implementación de COBIT para auditoría y control",
-      "description": "El banco más grande de Colombia implementó COBIT para mejorar su gobierno de TI y cumplir con regulaciones financieras.",
+      "title": "Bancos: Implementación de ISO 27001 para seguridad",
+      "description": "Banco que fortaleció su Sistema de Gestión de Seguridad de la Información (SGSI) para reducir riesgo, mejorar controles y cumplir expectativas regulatorias y de auditoría.",
       "development": {
-        "intro": "Contexto: Bancolombia necesitaba fortalecer su gobierno de TI para cumplir con regulaciones del sector financiero.",
+        "intro": "La implementación incluyó:",
         "steps": [
-          "Evaluación del estado actual usando COBIT 2019",
-          "Identificación de los 5 dominios más críticos (EDM, APO, BAI, DSS, MEA)",
-          "Selección de 15 objetivos de control prioritarios",
-          "Desarrollo de políticas y procedimientos",
-          "Capacitación de equipos técnicos y gerenciales"
+          "Definición del alcance del SGSI (procesos críticos, canales digitales, terceros) y análisis de contexto",
+          "Inventario y clasificación de activos de información (datos, aplicaciones, infraestructura, proveedores)",
+          "Evaluación de riesgos y plan de tratamiento alineado a apetito de riesgo y continuidad",
+          "Selección e implementación de controles del Anexo A (accesos, criptografía, operaciones, proveedores, incidentes)",
+          "Gestión documental: políticas, procedimientos, SoA (Statement of Applicability) y evidencias",
+          "Capacitación y concienciación del personal (phishing, manejo de datos, roles y responsabilidades)",
+          "Auditorías internas, acciones correctivas y preparación para certificación"
         ],
-        "outro": "Resultados: Mejora del 40% en tiempos de auditoría, reducción del 25% en riesgos operacionales y certificación ISO 27001."
+        "outro": "Resultados: madurez de controles, mejora de trazabilidad y auditoría, reducción de incidentes y fortalecimiento del cumplimiento."
       },
-      "lessons": "La implementación de marcos de gobierno requiere compromiso de la alta dirección y recursos dedicados para la capacitación continua."
+      "lessons": "ISO 27001 es más gestión que tecnología: sin gobierno (políticas, evidencias, roles, auditoría) la seguridad se queda en controles aislados."
+    },
+    {
+      "title": "Empresas manufactureras: Certificación ISO/IEC 20000 para servicios",
+      "description": "Empresa manufacturera que profesionalizó su gestión de servicios TI para mejorar disponibilidad de sistemas de planta y atención a usuarios internos.",
+      "development": {
+        "situation": "Los servicios TI eran reactivos, con alta recurrencia de incidentes y sin acuerdos claros de niveles de servicio para aplicaciones críticas (ERP, MES, infraestructura de red).",
+        "problems": [
+          "Ausencia de SLAs y medición consistente del desempeño del servicio",
+          "Gestión informal de cambios que provocaba interrupciones",
+          "Baja trazabilidad de activos y configuraciones (sin CMDB confiable)",
+          "Comunicación deficiente entre TI, planta y áreas administrativas"
+        ],
+        "solution": {
+          "summary": "Implementación de un Sistema de Gestión del Servicio (SGS) alineado a ISO/IEC 20000-1, con procesos estandarizados y mejora continua.",
+          "modules": [
+            "Catálogo de servicios y SLAs/OLAs",
+            "Service Desk y gestión de incidencias/solicitudes",
+            "Gestión de cambios y liberaciones",
+            "Gestión de configuración (CMDB) y activos",
+            "Gestión de problemas y base de conocimiento",
+            "Reportes y revisión del servicio (KPIs y mejora continua)"
+          ]
+        },
+        "results": "Reducción de interrupciones por cambios, mejor trazabilidad de activos, mayor cumplimiento de SLAs y aumento de satisfacción de usuarios internos."
+      },
+      "lessons": "ISO 20000 consolida la operación: catálogo + SLAs + cambios + CMDB. Sin estos pilares, el servicio se vuelve impredecible."
+    },
+    {
+      "title": "Organizaciones públicas: Cumplimiento de normativas gubernamentales",
+      "description": "Entidad pública que alineó su gobierno TI para cumplir lineamientos, auditorías y controles de transparencia, seguridad y gestión documental.",
+      "development": {
+        "intro": "La iniciativa incluyó:",
+        "steps": [
+          "Diagnóstico de brechas frente a normativas, auditoría y lineamientos institucionales",
+          "Definición de roles y comités (gobierno, seguridad, arquitectura, cambios) y responsabilidades",
+          "Estandarización de políticas: seguridad, datos, continuidad, gestión documental y acceso a la información",
+          "Implementación de controles y evidencias para auditorías (trazabilidad, bitácoras, gestión de incidentes)",
+          "Plan de mejora con KPIs (cumplimiento, tiempos de respuesta, disponibilidad, riesgos) y reportes periódicos",
+          "Capacitación y gestión del cambio organizacional"
+        ],
+        "outro": "Resultados: mejor capacidad de auditoría, reducción de hallazgos recurrentes, procesos más trazables y mayor cumplimiento."
+      },
+      "lessons": "En el sector público, el éxito está en la evidencia y la trazabilidad: procesos medibles, roles claros y control documental consistente."
+    },
+    {
+      "title": "PYMEs: Adopción de marcos de referencia adaptados",
+      "description": "PYME que adoptó prácticas esenciales de gobierno/gestión TI sin sobrecargar recursos, priorizando riesgos, continuidad y control de cambios.",
+      "development": {
+        "situation": "La PYME creció rápido, pero TI operaba sin estándares: cambios sin control, accesos compartidos y poca visibilidad de costos y riesgos.",
+        "problems": [
+          "Cambios en producción sin evaluación ni ventana definida",
+          "Falta de control de accesos y roles (cuentas compartidas)",
+          "Backups y continuidad sin pruebas periódicas",
+          "Ausencia de métricas y priorización formal del trabajo"
+        ],
+        "solution": {
+          "summary": "Adopción incremental de un “mínimo viable” de gobierno TI basado en buenas prácticas (COBIT/ITIL/ISO) y control operativo.",
+          "modules": [
+            "Política de accesos (roles, MFA, revisiones periódicas)",
+            "Gestión de cambios básica (aprobación, registro, rollback)",
+            "Backups, pruebas de restauración y plan de continuidad simplificado",
+            "Catálogo mínimo de servicios + SLAs internos",
+            "Tablero de KPIs (incidentes, cambios fallidos, disponibilidad, lead time)"
+          ]
+        },
+        "results": "Menos incidentes por cambios, mejor control de accesos, mayor estabilidad operativa y capacidad de priorización con métricas."
+      },
+      "lessons": "En PYMEs, la adopción debe ser incremental y pragmática: pocos controles bien ejecutados dan más ROI que un marco completo mal implementado."
+    }
+  ],
+  "frameworks": [
+    {
+      "name": "COBIT",
+      "focus": "Control, auditoría y gobierno de TI orientado a objetivos.",
+      "typicalUse": ["Gobierno TI", "Controles", "Auditoría", "Gestión de riesgos"],
+      "keyArtifacts": [
+        "Objetivos de gobierno/gestión",
+        "Metas y métricas",
+        "Modelo de capacidades",
+        "Planes de mejora"
+      ]
+    },
+    {
+      "name": "ITIL",
+      "focus": "Gestión de servicios TI y operación orientada al valor.",
+      "typicalUse": [
+        "Service Desk",
+        "Incidentes/Problemas",
+        "Cambios",
+        "Mejora continua"
+      ],
+      "keyArtifacts": [
+        "Catálogo de servicios",
+        "SLAs",
+        "CMDB",
+        "Procedimientos operativos"
+      ]
+    },
+    {
+      "name": "ISO 38500",
+      "focus": "Principios para gobierno corporativo de TI.",
+      "typicalUse": [
+        "Dirección y control",
+        "Decisiones de inversión",
+        "Alineación negocio-TI"
+      ],
+      "keyArtifacts": [
+        "Principios y evaluación",
+        "Directrices de gobierno",
+        "Roles y rendición de cuentas"
+      ]
+    },
+    {
+      "name": "Val IT",
+      "focus": "Valor y gestión de inversiones TI.",
+      "typicalUse": ["Portafolio de inversiones", "Beneficios", "Caso de negocio"],
+      "keyArtifacts": [
+        "Business case",
+        "Gestión del portafolio",
+        "Realización de beneficios"
+      ]
     }
   ],
   "topic4": [
