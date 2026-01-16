@@ -1,425 +1,432 @@
 {
-  "topic1": [
-    {
-      "title": "Amazon: De librería online a ecosistema global",
-      "description": "Amazon comenzó como una librería online en 1994 y se transformó en el ecosistema global más grande del mundo.",
-      "development": {
-        "intro": "La transformación incluyó:",
-        "steps": [
-          "Expansión de productos más allá de libros",
-          "Desarrollo de AWS (Amazon Web Services)",
-          "Implementación de logística avanzada con centros de distribución",
-          "Creación de servicios digitales como Prime Video y Alexa",
-          "Adquisición estratégica de empresas como Whole Foods"
-        ],
-        "outro": "Esta transformación digital le permitió a Amazon generar ingresos de más de $470 mil millones en 2021."
-      },
-      "lessons": "La clave del éxito fue la visión a largo plazo, la inversión continua en tecnología y la capacidad de adaptarse a las necesidades cambiantes del mercado."
-    },
-    {
-      "title": "Netflix: De alquiler de DVDs a streaming global",
-      "description": "Netflix revolucionó la industria del entretenimiento transformándose de un servicio de alquiler de DVDs a la plataforma de streaming líder mundial.",
-      "development": {
-        "intro": "Los pasos clave en la transformación de Netflix incluyeron:",
-        "steps": [
-          "Transición del modelo físico al digital",
-          "Desarrollo de algoritmos de recomendación personalizados",
-          "Producción de contenido original (Netflix Originals)",
-          "Expansión global a más de 190 países",
-          "Inversión en tecnología de streaming de alta calidad"
-        ],
-        "outro": "Netflix pasó de tener 1 millón de suscriptores en 2002 a más de 220 millones en 2022."
-      },
-      "lessons": "La anticipación de tendencias tecnológicas y la inversión en contenido propio fueron factores clave para el éxito de la transformación."
-    },
-    {
-      "title": "Tesla: Automóviles eléctricos y autónomos",
-      "description": "Tesla transformó la industria automotriz al combinar vehículos eléctricos, software y una estrategia de datos para habilitar mejoras continuas, automatización avanzada y un ecosistema energético integrado.",
-      "development": {
-        "intro": "La transformación incluyó:",
-        "steps": [
-          "Modelo de producto definido por software: actualizaciones OTA (over-the-air) que mejoran rendimiento, seguridad y funcionalidades sin pasar por taller",
-          "Arquitectura tecnológica integrada: diseño propio de hardware (baterías, tren motriz, sensores) y software de control para optimizar eficiencia y costos",
-          "Plataforma de datos para conducción asistida: recolección y análisis de telemetría para entrenar y mejorar capacidades de Autopilot/FSD",
-          "Estrategia de infraestructura: despliegue de red de Superchargers y optimización de la experiencia de recarga como parte del producto",
-          "Ecosistema energético: integración con soluciones de almacenamiento y generación (Powerwall, Solar) para ampliar la propuesta de valor más allá del vehículo",
-          "Modelo comercial directo al consumidor: ventas online, menor dependencia de concesionarios y una relación digital continua con el cliente"
-        ],
-        "outro": "Esta estrategia permitió a Tesla diferenciarse por iteración rápida del producto, capacidad de escalar mejoras por software y creación de ventajas competitivas basadas en datos e infraestructura."
-      },
-      "lessons": "La transformación digital en productos físicos requiere integrar hardware, software, datos e infraestructura en una sola estrategia. Las organizaciones que tratan el producto como una plataforma (actualizable, medible y mejorable) pueden acelerar la innovación y construir barreras de entrada sostenibles."
-    },
-    {
-      "title": "Spotify: Música digital y personalizada",
-      "description": "Spotify evolucionó el consumo de música al combinar streaming, analítica de datos y personalización a escala, transformando la experiencia del usuario y el modelo de distribución musical.",
-      "development": {
-        "intro": "La transformación incluyó:",
-        "steps": [
-          "Cambio de propiedad a acceso: consolidación del modelo de streaming bajo suscripción y publicidad, reemplazando descargas y formatos físicos",
-          "Personalización basada en datos: algoritmos de recomendación que combinan comportamiento del usuario (escuchas, skips, guardados) con señales de contenido",
-          "Curación híbrida (humano + máquina): playlists editoriales y automatizadas (p. ej., Discover Weekly) para balancear descubrimiento y calidad percibida",
-          "Estrategia de producto con experimentación continua: pruebas A/B y optimización del engagement (retención, tiempo de escucha, conversión a premium)",
-          "Expansión de plataforma: incorporación de podcasts y contenido hablado para diversificar catálogo, aumentar tiempo de uso y reducir dependencia del licenciamiento musical",
-          "Ecosistema para creadores y partners: herramientas para artistas, analítica de audiencia y distribución que fortalecen relaciones y propuesta de valor"
-        ],
-        "outro": "Con esta estrategia, Spotify construyó una experiencia altamente personalizada y escalable, alineando datos, producto y negocio para mejorar retención y descubrimiento de contenido."
-      },
-      "lessons": "La ventaja competitiva en productos digitales suele venir de la personalización y de la mejora continua basada en datos. Combinar recomendación algorítmica, curación editorial y experimentación sistemática permite escalar valor para el usuario sin sacrificar calidad."
-    },
-    {
-      "title": "Rappi: Entrega de comida y productos",
-      "description": "Rappi impulsó la digitalización del comercio urbano en Colombia al integrar restaurantes, supermercados, farmacias y mensajería en una plataforma on-demand con logística de última milla.",
-      "isNational": true,
-      "development": {
-        "situation": "La demanda por entregas rápidas y convenientes crecía, pero el ecosistema estaba fragmentado entre múltiples comercios, canales de pedido poco integrados y baja visibilidad logística.",
-        "problems": [
-          "Experiencia de compra dispersa entre distintos comercios y canales",
-          "Tiempos de entrega variables por falta de coordinación logística",
-          "Dificultad para escalar operaciones en picos de demanda",
-          "Baja trazabilidad del pedido y limitada comunicación en tiempo real"
-        ],
-        "solution": {
-          "summary": "Plataforma on-demand que integra comercios, pagos y última milla con operación basada en datos.",
-          "modules": [
-            "Marketplace multi-categoría (restaurantes, supermercados, farmacias, etc.)",
-            "Asignación y despacho de repartidores con geolocalización",
-            "Pagos digitales y conciliación operativa",
-            "Seguimiento en tiempo real y comunicaciones dentro de la app",
-            "Estrategias de fidelización y suscripción (p. ej., envíos)",
-            "Analítica para optimización de tiempos, zonas y demanda"
-          ]
+  "topic1": {
+    "caseStudies": [
+      {
+        "title": "Amazon: De librería online a ecosistema global",
+        "description": "Amazon comenzó como una librería online en 1994 y se transformó en el ecosistema global más grande del mundo.",
+        "development": {
+          "intro": "La transformación incluyó:",
+          "steps": [
+            "Expansión de productos más allá de libros",
+            "Desarrollo de AWS (Amazon Web Services)",
+            "Implementación de logística avanzada con centros de distribución",
+            "Creación de servicios digitales como Prime Video y Alexa",
+            "Adquisición estratégica de empresas como Whole Foods"
+          ],
+          "outro": "Esta transformación digital le permitió a Amazon generar ingresos de más de $470 mil millones en 2021."
         },
-        "results": "Mejoró la conveniencia del usuario y permitió a comercios ampliar alcance con un canal digital; la operación basada en datos habilita optimizaciones continuas en tiempos y cobertura."
+        "lessons": "La clave del éxito fue la visión a largo plazo, la inversión continua en tecnología y la capacidad de adaptarse a las necesidades cambiantes del mercado."
       },
-      "lessons": "La transformación digital de servicios urbanos requiere orquestar tres capacidades: experiencia de usuario, operación logística y analítica. La ventaja sostenida viene de optimizar la red (oferta + demanda + reparto) con datos en tiempo real."
-    },
-    {
-      "title": "MercadoLibre: E-commerce en Latinoamérica",
-      "description": "MercadoLibre consolidó un ecosistema regional de comercio electrónico al combinar marketplace, pagos y logística, reduciendo fricción para compradores y vendedores en múltiples países.",
-      "isNational": true,
-      "development": {
-        "intro": "La transformación incluyó:",
-        "steps": [
-          "Construcción de un marketplace escalable para conectar oferta y demanda con confianza (reputación, protección al comprador)",
-          "Integración de pagos digitales (Mercado Pago) para reducir fricción y ampliar medios de pago",
-          "Desarrollo de capacidades logísticas (fulfillment y envíos) para mejorar tiempos y confiabilidad de entrega",
-          "Herramientas para vendedores: publicación masiva, publicidad, analítica, financiamiento y gestión de inventario",
-          "Optimización con datos: búsqueda, recomendación, pricing, detección de fraude y segmentación",
-          "Expansión por categorías y servicios complementarios para aumentar recurrencia"
-        ],
-        "outro": "El enfoque de ecosistema (comercio + pagos + logística) reduce fricciones estructurales del e-commerce y habilita escala regional con mejoras incrementales continuas."
-      },
-      "lessons": "En mercados complejos, el e-commerce no se gana solo con catálogo: se gana resolviendo pagos, confianza y logística. Integrar capacidades críticas en un ecosistema crea barreras de entrada y mejora la experiencia extremo a extremo."
-    },
-    {
-      "title": "Bancolombia: Banca digital",
-      "description": "Bancolombia avanzó en la digitalización de servicios financieros mediante canales móviles y procesos más automatizados, buscando mejorar experiencia, seguridad y eficiencia operativa.",
-      "isNational": true,
-      "development": {
-        "situation": "Los usuarios demandaban más operaciones digitales (24/7), mientras el banco debía mantener altos estándares de seguridad, cumplimiento y continuidad en servicios críticos.",
-        "problems": [
-          "Procesos presenciales o semipresenciales que generaban fricción y tiempos de espera",
-          "Incremento de riesgos (fraude, suplantación) al crecer el uso de canales digitales",
-          "Necesidad de mayor resiliencia y disponibilidad en canales móviles",
-          "Heterogeneidad de sistemas y procesos que dificultaba acelerar cambios"
-        ],
-        "solution": {
-          "summary": "Evolución de canales digitales y operación con foco en experiencia, seguridad y automatización.",
-          "modules": [
-            "Fortalecimiento de apps/canales digitales para transacciones y autogestión",
-            "Autenticación reforzada y monitoreo antifraude basado en señales de riesgo",
-            "Optimización de procesos (onboarding, transferencias, pagos, atención) con mayor autoservicio",
-            "Observabilidad y monitoreo para continuidad y tiempos de respuesta",
-            "Gestión de cambios y releases más controlados para reducir incidentes",
-            "Analítica para personalización, segmentación y mejora de journeys"
-          ]
+      {
+        "title": "Netflix: De alquiler de DVDs a streaming global",
+        "description": "Netflix revolucionó la industria del entretenimiento transformándose de un servicio de alquiler de DVDs a la plataforma de streaming líder mundial.",
+        "development": {
+          "intro": "Los pasos clave en la transformación de Netflix incluyeron:",
+          "steps": [
+            "Transición del modelo físico al digital",
+            "Desarrollo de algoritmos de recomendación personalizados",
+            "Producción de contenido original (Netflix Originals)",
+            "Expansión global a más de 190 países",
+            "Inversión en tecnología de streaming de alta calidad"
+          ],
+          "outro": "Netflix pasó de tener 1 millón de suscriptores en 2002 a más de 220 millones en 2022."
         },
-        "results": "Mayor adopción de canales digitales, reducción de fricción en operaciones frecuentes y mejoras en control de riesgo y estabilidad operativa mediante monitoreo y automatización."
+        "lessons": "La anticipación de tendencias tecnológicas y la inversión en contenido propio fueron factores clave para el éxito de la transformación."
       },
-      "lessons": "La banca digital exige equilibrio: experiencia simple para el usuario, controles robustos de seguridad y operación resiliente. El progreso real se logra estandarizando procesos, automatizando controles y midiendo continuamente desempeño y riesgo."
-    },
-    {
-      "title": "Éxito: Retail digital",
-      "description": "Éxito fortaleció su canal digital para ofrecer experiencias omnicanal (compra online con entrega o recogida), integrando operaciones de inventario, catálogo y última milla.",
-      "isNational": true,
-      "development": {
-        "intro": "La transformación incluyó:",
-        "steps": [
-          "Evolución del e-commerce con catálogo robusto, búsqueda y experiencia mobile-first",
-          "Integración de inventario y disponibilidad para reducir quiebres y mejorar promesa de entrega",
-          "Habilitación de modelos omnicanal (recogida en tienda, entrega programada, etc.)",
-          "Optimización logística: preparación de pedidos, rutas y coordinación con última milla",
-          "Mejoras en pagos y promociones para reducir fricción y aumentar conversión",
-          "Analítica para optimizar surtido, demanda, campañas y experiencia del cliente"
-        ],
-        "outro": "El foco omnicanal integra tiendas físicas y canal digital, incrementando conveniencia y mejorando la eficiencia al sincronizar inventario, operación y logística."
-      },
-      "lessons": "En retail, digitalizar no es solo “tener web”: es integrar inventario, operación y logística para cumplir la promesa. La ventaja competitiva se construye con omnicanalidad real y excelencia operativa respaldada por datos."
-    }
-  ],
-  "topic2": [
-    {
-      "title": "Botanas del Valle: Implementación de ERP",
-      "description": "PYME del sector alimentario que enfrentaba problemas en recolección, producción, distribución y cobros.",
-      "development": {
-        "situation": "La empresa tenía procesos manuales que generaban ineficiencias.",
-        "problems": [
-          "Falta de control en la recolección de materias primas",
-          "Producción sin planificación adecuada",
-          "Distribución desorganizada",
-          "Cobros tardíos"
-        ],
-        "solution": {
-          "summary": "ERP integrado que incluyó módulos de:",
-          "modules": [
-            "Gestión de proveedores y compras",
-            "Planificación de producción",
-            "Control de inventarios",
-            "Gestión de ventas y facturación",
-            "Reportes gerenciales"
-          ]
+      {
+        "title": "Tesla: Automóviles eléctricos y autónomos",
+        "description": "Tesla transformó la industria automotriz al combinar vehículos eléctricos, software y una estrategia de datos para habilitar mejoras continuas, automatización avanzada y un ecosistema energético integrado.",
+        "development": {
+          "intro": "La transformación incluyó:",
+          "steps": [
+            "Modelo de producto definido por software: actualizaciones OTA (over-the-air) que mejoran rendimiento, seguridad y funcionalidades sin pasar por taller",
+            "Arquitectura tecnológica integrada: diseño propio de hardware (baterías, tren motriz, sensores) y software de control para optimizar eficiencia y costos",
+            "Plataforma de datos para conducción asistida: recolección y análisis de telemetría para entrenar y mejorar capacidades de Autopilot/FSD",
+            "Estrategia de infraestructura: despliegue de red de Superchargers y optimización de la experiencia de recarga como parte del producto",
+            "Ecosistema energético: integración con soluciones de almacenamiento y generación (Powerwall, Solar) para ampliar la propuesta de valor más allá del vehículo",
+            "Modelo comercial directo al consumidor: ventas online, menor dependencia de concesionarios y una relación digital continua con el cliente"
+          ],
+          "outro": "Esta estrategia permitió a Tesla diferenciarse por iteración rápida del producto, capacidad de escalar mejoras por software y creación de ventajas competitivas basadas en datos e infraestructura."
         },
-        "results": "Incremento del 25% en la eficiencia operativa y reducción del 30% en tiempos de procesamiento."
+        "lessons": "La transformación digital en productos físicos requiere integrar hardware, software, datos e infraestructura en una sola estrategia. Las organizaciones que tratan el producto como una plataforma (actualizable, medible y mejorable) pueden acelerar la innovación y construir barreras de entrada sostenibles."
       },
-      "lessons": "La implementación exitosa requirió análisis detallado de procesos, capacitación del personal y gestión del cambio organizacional."
-    },
-    {
-      "title": "Implantación de ERP en PYME: Empresa manufacturera",
-      "description": "PYME manufacturera que necesitaba integrar compras, producción, inventario y finanzas para reducir reprocesos, mejorar trazabilidad y controlar costos operativos.",
-      "isNational": false,
-      "development": {
-        "situation": "La empresa operaba con hojas de cálculo y sistemas aislados. La información de inventario, órdenes de producción y costos no era consistente, lo que generaba demoras, errores y falta de visibilidad gerencial.",
-        "problems": [
-          "Inventario inexacto y quiebres frecuentes por falta de trazabilidad",
-          "Planeación de producción reactiva y sin capacidad de balancear cargas",
-          "Costeo de productos poco confiable y baja visibilidad de márgenes",
-          "Retrasos en compras y abastecimiento por ausencia de alertas y previsión",
-          "Cierres contables lentos por conciliaciones manuales"
-        ],
-        "solution": {
-          "summary": "Implantación de un ERP modular con estandarización de procesos y datos maestros para unificar la operación punta a punta.",
-          "modules": [
-            "Compras y gestión de proveedores (requisiciones, órdenes, recepción)",
-            "Inventarios y almacenes (entradas/salidas, ubicaciones, lotes/series)",
-            "Planificación y control de producción (BOM, rutas, MRP básico)",
-            "Costos y contabilidad (costeo estándar/real, centros de costo)",
-            "Ventas y facturación (pedidos, despacho, cuentas por cobrar)",
-            "Reportes gerenciales (KPIs de producción, inventario, OTIF)"
-          ]
+      {
+        "title": "Spotify: Música digital y personalizada",
+        "description": "Spotify evolucionó el consumo de música al combinar streaming, analítica de datos y personalización a escala, transformando la experiencia del usuario y el modelo de distribución musical.",
+        "development": {
+          "intro": "La transformación incluyó:",
+          "steps": [
+            "Cambio de propiedad a acceso: consolidación del modelo de streaming bajo suscripción y publicidad, reemplazando descargas y formatos físicos",
+            "Personalización basada en datos: algoritmos de recomendación que combinan comportamiento del usuario (escuchas, skips, guardados) con señales de contenido",
+            "Curación híbrida (humano + máquina): playlists editoriales y automatizadas (p. ej., Discover Weekly) para balancear descubrimiento y calidad percibida",
+            "Estrategia de producto con experimentación continua: pruebas A/B y optimización del engagement (retención, tiempo de escucha, conversión a premium)",
+            "Expansión de plataforma: incorporación de podcasts y contenido hablado para diversificar catálogo, aumentar tiempo de uso y reducir dependencia del licenciamiento musical",
+            "Ecosistema para creadores y partners: herramientas para artistas, analítica de audiencia y distribución que fortalecen relaciones y propuesta de valor"
+          ],
+          "outro": "Con esta estrategia, Spotify construyó una experiencia altamente personalizada y escalable, alineando datos, producto y negocio para mejorar retención y descubrimiento de contenido."
         },
-        "results": "Mejora en la precisión del inventario, reducción de reprocesos, mayor control de costos y tiempos de cierre contable, con trazabilidad operativa desde compras hasta despacho."
+        "lessons": "La ventaja competitiva en productos digitales suele venir de la personalización y de la mejora continua basada en datos. Combinar recomendación algorítmica, curación editorial y experimentación sistemática permite escalar valor para el usuario sin sacrificar calidad."
       },
-      "lessons": "Un ERP en PYME exige disciplina en datos maestros y procesos. El éxito depende más de la estandarización, capacitación y gobierno del cambio que del software en sí."
-    },
-    {
-      "title": "Migración a la nube: Empresa de servicios",
-      "description": "Empresa de servicios con aplicaciones on-premise que migró a la nube para mejorar disponibilidad, escalabilidad y tiempos de entrega, reduciendo costos de infraestructura y operación.",
-      "isNational": false,
-      "development": {
-        "intro": "La migración incluyó:",
-        "steps": [
-          "Evaluación del portafolio de aplicaciones (criticidad, dependencias, costos) y definición de estrategia (rehost, replatform, refactor)",
-          "Diseño de arquitectura objetivo (red, identidades, seguridad, observabilidad) y gobierno de la nube (FinOps, tagging, políticas)",
-          "Implementación de identidad y acceso (IAM), segmentación de red y controles de seguridad (WAF, cifrado, secretos)",
-          "Migración por oleadas: entornos no críticos primero, luego cargas core, con ventanas controladas y plan de rollback",
-          "Adopción de CI/CD e infraestructura como código para estandarizar despliegues y reducir errores",
-          "Configuración de monitoreo, alertas y trazabilidad (logs, métricas, APM) para operación 24/7",
-          "Optimización post-migración (costos, performance, autoescalado) y hardening continuo"
-        ],
-        "outro": "El resultado fue una plataforma más resiliente y escalable, con despliegues más frecuentes y mejor visibilidad operativa, apoyada por prácticas de seguridad y control de costos."
-      },
-      "lessons": "Migrar a la nube no es solo mover servidores: requiere gobierno (seguridad, costos, operación) y automatización (IaC/CI-CD). Las migraciones por oleadas con observabilidad reducen riesgo."
-    },
-    {
-      "title": "Implementación de CRM: Empresa de ventas",
-      "description": "Empresa comercial con fuerza de ventas distribuida que implementó un CRM para estandarizar el pipeline, mejorar seguimiento de oportunidades y aumentar la conversión.",
-      "isNational": false,
-      "development": {
-        "situation": "La gestión comercial dependía de agendas personales y hojas de cálculo. No había trazabilidad del embudo ni control de actividades, y la dirección carecía de métricas confiables para pronóstico y desempeño.",
-        "problems": [
-          "Pérdida de oportunidades por falta de seguimiento y recordatorios",
-          "Pipeline inconsistente y etapas definidas de manera subjetiva",
-          "Pronósticos de ventas imprecisos por datos incompletos",
-          "Duplicidad de contactos y baja calidad de datos",
-          "Baja colaboración entre ventas, marketing y servicio"
-        ],
-        "solution": {
-          "summary": "Implementación de un CRM con modelo de datos unificado, pipeline estándar, automatización de tareas y tableros de desempeño.",
-          "modules": [
-            "Gestión de leads y cuentas (deduplicación, enriquecimiento básico)",
-            "Pipeline de oportunidades (etapas, probabilidades, motivos de pérdida)",
-            "Actividades y seguimiento (tareas, recordatorios, cadencias)",
-            "Automatización y reglas (asignación de leads, SLA internos)",
-            "Dashboards (conversión por etapa, forecast, productividad)",
-            "Integración con correo y formularios/landing para captura de leads"
-          ]
+      {
+        "title": "Rappi: Entrega de comida y productos",
+        "description": "Rappi impulsó la digitalización del comercio urbano en Colombia al integrar restaurantes, supermercados, farmacias y mensajería en una plataforma on-demand con logística de última milla.",
+        "isNational": true,
+        "development": {
+          "situation": "La demanda por entregas rápidas y convenientes crecía, pero el ecosistema estaba fragmentado entre múltiples comercios, canales de pedido poco integrados y baja visibilidad logística.",
+          "problems": [
+            "Experiencia de compra dispersa entre distintos comercios y canales",
+            "Tiempos de entrega variables por falta de coordinación logística",
+            "Dificultad para escalar operaciones en picos de demanda",
+            "Baja trazabilidad del pedido y limitada comunicación en tiempo real"
+          ],
+          "solution": {
+            "summary": "Plataforma on-demand que integra comercios, pagos y última milla con operación basada en datos.",
+            "modules": [
+              "Marketplace multi-categoría (restaurantes, supermercados, farmacias, etc.)",
+              "Asignación y despacho de repartidores con geolocalización",
+              "Pagos digitales y conciliación operativa",
+              "Seguimiento en tiempo real y comunicaciones dentro de la app",
+              "Estrategias de fidelización y suscripción (p. ej., envíos)",
+              "Analítica para optimización de tiempos, zonas y demanda"
+            ]
+          },
+          "results": "Mejoró la conveniencia del usuario y permitió a comercios ampliar alcance con un canal digital; la operación basada en datos habilita optimizaciones continuas en tiempos y cobertura."
         },
-        "results": "Mayor visibilidad del pipeline, incremento en disciplina de seguimiento, mejora del pronóstico y reducción de pérdida de oportunidades por falta de contacto, con métricas homogéneas para la dirección."
+        "lessons": "La transformación digital de servicios urbanos requiere orquestar tres capacidades: experiencia de usuario, operación logística y analítica. La ventaja sostenida viene de optimizar la red (oferta + demanda + reparto) con datos en tiempo real."
       },
-      "lessons": "El CRM no arregla un proceso inexistente: primero define etapas, criterios y responsabilidades; luego automatiza. La calidad de datos y el hábito de uso diario determinan el ROI."
-    },
-    {
-      "title": "Sistema de gestión documental: Oficina de abogados",
-      "description": "Firma de abogados que digitalizó y centralizó expedientes para mejorar control documental, trazabilidad de versiones y tiempos de respuesta en casos y contratos.",
-      "isNational": false,
-      "development": {
-        "intro": "La implementación incluyó:",
-        "steps": [
-          "Levantamiento de tipologías documentales (expedientes, contratos, evidencias) y definición de taxonomía (cliente, caso, fecha, estado)",
-          "Diseño de permisos y confidencialidad por roles (socios, asociados, auxiliares) y criterios de acceso por caso",
-          "Implementación de repositorio central con control de versiones, check-in/check-out y búsqueda por metadatos",
-          "Flujos de revisión y aprobación (borrador → revisión → aprobado → archivado) con bitácora de cambios",
-          "Plantillas estandarizadas (contratos, memoriales) y nomenclatura para reducir inconsistencias",
-          "Políticas de retención y respaldo (backups, borrado seguro, auditoría) y capacitación del equipo",
-          "Digitalización progresiva de archivos físicos y estrategia de “cero papel” por etapas"
-        ],
-        "outro": "Se logró mayor trazabilidad, menos pérdidas de documentos, búsquedas más rápidas y control de acceso, mejorando tiempos de respuesta y reduciendo riesgo por versiones incorrectas o filtraciones."
-      },
-      "lessons": "En gestión documental, el diseño de taxonomía, permisos y flujos vale más que la herramienta. Sin gobierno de metadatos y control de versiones, la digitalización solo traslada el desorden."
-    }
-  ],
-  "topic3": [
-    {
-      "title": "Bancos: Implementación de ISO 27001 para seguridad",
-      "description": "Banco que fortaleció su Sistema de Gestión de Seguridad de la Información (SGSI) para reducir riesgo, mejorar controles y cumplir expectativas regulatorias y de auditoría.",
-      "development": {
-        "intro": "La implementación incluyó:",
-        "steps": [
-          "Definición del alcance del SGSI (procesos críticos, canales digitales, terceros) y análisis de contexto",
-          "Inventario y clasificación de activos de información (datos, aplicaciones, infraestructura, proveedores)",
-          "Evaluación de riesgos y plan de tratamiento alineado a apetito de riesgo y continuidad",
-          "Selección e implementación de controles del Anexo A (accesos, criptografía, operaciones, proveedores, incidentes)",
-          "Gestión documental: políticas, procedimientos, SoA (Statement of Applicability) y evidencias",
-          "Capacitación y concienciación del personal (phishing, manejo de datos, roles y responsabilidades)",
-          "Auditorías internas, acciones correctivas y preparación para certificación"
-        ],
-        "outro": "Resultados: madurez de controles, mejora de trazabilidad y auditoría, reducción de incidentes y fortalecimiento del cumplimiento."
-      },
-      "lessons": "ISO 27001 es más gestión que tecnología: sin gobierno (políticas, evidencias, roles, auditoría) la seguridad se queda en controles aislados."
-    },
-    {
-      "title": "Empresas manufactureras: Certificación ISO/IEC 20000 para servicios",
-      "description": "Empresa manufacturera que profesionalizó su gestión de servicios TI para mejorar disponibilidad de sistemas de planta y atención a usuarios internos.",
-      "development": {
-        "situation": "Los servicios TI eran reactivos, con alta recurrencia de incidentes y sin acuerdos claros de niveles de servicio para aplicaciones críticas (ERP, MES, infraestructura de red).",
-        "problems": [
-          "Ausencia de SLAs y medición consistente del desempeño del servicio",
-          "Gestión informal de cambios que provocaba interrupciones",
-          "Baja trazabilidad de activos y configuraciones (sin CMDB confiable)",
-          "Comunicación deficiente entre TI, planta y áreas administrativas"
-        ],
-        "solution": {
-          "summary": "Implementación de un Sistema de Gestión del Servicio (SGS) alineado a ISO/IEC 20000-1, con procesos estandarizados y mejora continua.",
-          "modules": [
-            "Catálogo de servicios y SLAs/OLAs",
-            "Service Desk y gestión de incidencias/solicitudes",
-            "Gestión de cambios y liberaciones",
-            "Gestión de configuración (CMDB) y activos",
-            "Gestión de problemas y base de conocimiento",
-            "Reportes y revisión del servicio (KPIs y mejora continua)"
-          ]
+      {
+        "title": "MercadoLibre: E-commerce en Latinoamérica",
+        "description": "MercadoLibre consolidó un ecosistema regional de comercio electrónico al combinar marketplace, pagos y logística, reduciendo fricción para compradores y vendedores en múltiples países.",
+        "isNational": true,
+        "development": {
+          "intro": "La transformación incluyó:",
+          "steps": [
+            "Construcción de un marketplace escalable para conectar oferta y demanda con confianza (reputación, protección al comprador)",
+            "Integración de pagos digitales (Mercado Pago) para reducir fricción y ampliar medios de pago",
+            "Desarrollo de capacidades logísticas (fulfillment y envíos) para mejorar tiempos y confiabilidad de entrega",
+            "Herramientas para vendedores: publicación masiva, publicidad, analítica, financiamiento y gestión de inventario",
+            "Optimización con datos: búsqueda, recomendación, pricing, detección de fraude y segmentación",
+            "Expansión por categorías y servicios complementarios para aumentar recurrencia"
+          ],
+          "outro": "El enfoque de ecosistema (comercio + pagos + logística) reduce fricciones estructurales del e-commerce y habilita escala regional con mejoras incrementales continuas."
         },
-        "results": "Reducción de interrupciones por cambios, mejor trazabilidad de activos, mayor cumplimiento de SLAs y aumento de satisfacción de usuarios internos."
+        "lessons": "En mercados complejos, el e-commerce no se gana solo con catálogo: se gana resolviendo pagos, confianza y logística. Integrar capacidades críticas en un ecosistema crea barreras de entrada y mejora la experiencia extremo a extremo."
       },
-      "lessons": "ISO 20000 consolida la operación: catálogo + SLAs + cambios + CMDB. Sin estos pilares, el servicio se vuelve impredecible."
-    },
-    {
-      "title": "Organizaciones públicas: Cumplimiento de normativas gubernamentales",
-      "description": "Entidad pública que alineó su gobierno TI para cumplir lineamientos, auditorías y controles de transparencia, seguridad y gestión documental.",
-      "development": {
-        "intro": "La iniciativa incluyó:",
-        "steps": [
-          "Diagnóstico de brechas frente a normativas, auditoría y lineamientos institucionales",
-          "Definición de roles y comités (gobierno, seguridad, arquitectura, cambios) y responsabilidades",
-          "Estandarización de políticas: seguridad, datos, continuidad, gestión documental y acceso a la información",
-          "Implementación de controles y evidencias para auditorías (trazabilidad, bitácoras, gestión de incidentes)",
-          "Plan de mejora con KPIs (cumplimiento, tiempos de respuesta, disponibilidad, riesgos) y reportes periódicos",
-          "Capacitación y gestión del cambio organizacional"
-        ],
-        "outro": "Resultados: mejor capacidad de auditoría, reducción de hallazgos recurrentes, procesos más trazables y mayor cumplimiento."
-      },
-      "lessons": "En el sector público, el éxito está en la evidencia y la trazabilidad: procesos medibles, roles claros y control documental consistente."
-    },
-    {
-      "title": "PYMEs: Adopción de marcos de referencia adaptados",
-      "description": "PYME que adoptó prácticas esenciales de gobierno/gestión TI sin sobrecargar recursos, priorizando riesgos, continuidad y control de cambios.",
-      "development": {
-        "situation": "La PYME creció rápido, pero TI operaba sin estándares: cambios sin control, accesos compartidos y poca visibilidad de costos y riesgos.",
-        "problems": [
-          "Cambios en producción sin evaluación ni ventana definida",
-          "Falta de control de accesos y roles (cuentas compartidas)",
-          "Backups y continuidad sin pruebas periódicas",
-          "Ausencia de métricas y priorización formal del trabajo"
-        ],
-        "solution": {
-          "summary": "Adopción incremental de un “mínimo viable” de gobierno TI basado en buenas prácticas (COBIT/ITIL/ISO) y control operativo.",
-          "modules": [
-            "Política de accesos (roles, MFA, revisiones periódicas)",
-            "Gestión de cambios básica (aprobación, registro, rollback)",
-            "Backups, pruebas de restauración y plan de continuidad simplificado",
-            "Catálogo mínimo de servicios + SLAs internos",
-            "Tablero de KPIs (incidentes, cambios fallidos, disponibilidad, lead time)"
-          ]
+      {
+        "title": "Bancolombia: Banca digital",
+        "description": "Bancolombia avanzó en la digitalización de servicios financieros mediante canales móviles y procesos más automatizados, buscando mejorar experiencia, seguridad y eficiencia operativa.",
+        "isNational": true,
+        "development": {
+          "situation": "Los usuarios demandaban más operaciones digitales (24/7), mientras el banco debía mantener altos estándares de seguridad, cumplimiento y continuidad en servicios críticos.",
+          "problems": [
+            "Procesos presenciales o semipresenciales que generaban fricción y tiempos de espera",
+            "Incremento de riesgos (fraude, suplantación) al crecer el uso de canales digitales",
+            "Necesidad de mayor resiliencia y disponibilidad en canales móviles",
+            "Heterogeneidad de sistemas y procesos que dificultaba acelerar cambios"
+          ],
+          "solution": {
+            "summary": "Evolución de canales digitales y operación con foco en experiencia, seguridad y automatización.",
+            "modules": [
+              "Fortalecimiento de apps/canales digitales para transacciones y autogestión",
+              "Autenticación reforzada y monitoreo antifraude basado en señales de riesgo",
+              "Optimización de procesos (onboarding, transferencias, pagos, atención) con mayor autoservicio",
+              "Observabilidad y monitoreo para continuidad y tiempos de respuesta",
+              "Gestión de cambios y releases más controlados para reducir incidentes",
+              "Analítica para personalización, segmentación y mejora de journeys"
+            ]
+          },
+          "results": "Mayor adopción de canales digitales, reducción de fricción en operaciones frecuentes y mejoras en control de riesgo y estabilidad operativa mediante monitoreo y automatización."
         },
-        "results": "Menos incidentes por cambios, mejor control de accesos, mayor estabilidad operativa y capacidad de priorización con métricas."
+        "lessons": "La banca digital exige equilibrio: experiencia simple para el usuario, controles robustos de seguridad y operación resiliente. El progreso real se logra estandarizando procesos, automatizando controles y midiendo continuamente desempeño y riesgo."
       },
-      "lessons": "En PYMEs, la adopción debe ser incremental y pragmática: pocos controles bien ejecutados dan más ROI que un marco completo mal implementado."
-    }
-  ],
-  "frameworks": [
-    {
-      "name": "COBIT",
-      "focus": "Control, auditoría y gobierno de TI orientado a objetivos.",
-      "typicalUse": ["Gobierno TI", "Controles", "Auditoría", "Gestión de riesgos"],
-      "keyArtifacts": [
-        "Objetivos de gobierno/gestión",
-        "Metas y métricas",
-        "Modelo de capacidades",
-        "Planes de mejora"
-      ]
-    },
-    {
-      "name": "ITIL",
-      "focus": "Gestión de servicios TI y operación orientada al valor.",
-      "typicalUse": [
-        "Service Desk",
-        "Incidentes/Problemas",
-        "Cambios",
-        "Mejora continua"
-      ],
-      "keyArtifacts": [
-        "Catálogo de servicios",
-        "SLAs",
-        "CMDB",
-        "Procedimientos operativos"
-      ]
-    },
-    {
-      "name": "ISO 38500",
-      "focus": "Principios para gobierno corporativo de TI.",
-      "typicalUse": [
-        "Dirección y control",
-        "Decisiones de inversión",
-        "Alineación negocio-TI"
-      ],
-      "keyArtifacts": [
-        "Principios y evaluación",
-        "Directrices de gobierno",
-        "Roles y rendición de cuentas"
-      ]
-    },
-    {
-      "name": "Val IT",
-      "focus": "Valor y gestión de inversiones TI.",
-      "typicalUse": ["Portafolio de inversiones", "Beneficios", "Caso de negocio"],
-      "keyArtifacts": [
-        "Business case",
-        "Gestión del portafolio",
-        "Realización de beneficios"
-      ]
-    }
-  ],
-  "topic4": [
+      {
+        "title": "Éxito: Retail digital",
+        "description": "Éxito fortaleció su canal digital para ofrecer experiencias omnicanal (compra online con entrega o recogida), integrando operaciones de inventario, catálogo y última milla.",
+        "isNational": true,
+        "development": {
+          "intro": "La transformación incluyó:",
+          "steps": [
+            "Evolución del e-commerce con catálogo robusto, búsqueda y experiencia mobile-first",
+            "Integración de inventario y disponibilidad para reducir quiebres y mejorar promesa de entrega",
+            "Habilitación de modelos omnicanal (recogida en tienda, entrega programada, etc.)",
+            "Optimización logística: preparación de pedidos, rutas y coordinación con última milla",
+            "Mejoras en pagos y promociones para reducir fricción y aumentar conversión",
+            "Analítica para optimizar surtido, demanda, campañas y experiencia del cliente"
+          ],
+          "outro": "El foco omnicanal integra tiendas físicas y canal digital, incrementando conveniencia y mejorando la eficiencia al sincronizar inventario, operación y logística."
+        },
+        "lessons": "En retail, digitalizar no es solo “tener web”: es integrar inventario, operación y logística para cumplir la promesa. La ventaja competitiva se construye con omnicanalidad real y excelencia operativa respaldada por datos."
+      }
+    ]
+  },
+  "topic2": {
+    "caseStudies": [
+      {
+        "title": "Botanas del Valle: Implementación de ERP",
+        "description": "PYME del sector alimentario que enfrentaba problemas en recolección, producción, distribución y cobros.",
+        "development": {
+          "situation": "La empresa tenía procesos manuales que generaban ineficiencias.",
+          "problems": [
+            "Falta de control en la recolección de materias primas",
+            "Producción sin planificación adecuada",
+            "Distribución desorganizada",
+            "Cobros tardíos"
+          ],
+          "solution": {
+            "summary": "ERP integrado que incluyó módulos de:",
+            "modules": [
+              "Gestión de proveedores y compras",
+              "Planificación de producción",
+              "Control de inventarios",
+              "Gestión de ventas y facturación",
+              "Reportes gerenciales"
+            ]
+          },
+          "results": "Incremento del 25% en la eficiencia operativa y reducción del 30% en tiempos de procesamiento."
+        },
+        "lessons": "La implementación exitosa requirió análisis detallado de procesos, capacitación del personal y gestión del cambio organizacional."
+      },
+      {
+        "title": "Implantación de ERP en PYME: Empresa manufacturera",
+        "description": "PYME manufacturera que necesitaba integrar compras, producción, inventario y finanzas para reducir reprocesos, mejorar trazabilidad y controlar costos operativos.",
+        "isNational": false,
+        "development": {
+          "situation": "La empresa operaba con hojas de cálculo y sistemas aislados. La información de inventario, órdenes de producción y costos no era consistente, lo que generaba demoras, errores y falta de visibilidad gerencial.",
+          "problems": [
+            "Inventario inexacto y quiebres frecuentes por falta de trazabilidad",
+            "Planeación de producción reactiva y sin capacidad de balancear cargas",
+            "Costeo de productos poco confiable y baja visibilidad de márgenes",
+            "Retrasos en compras y abastecimiento por ausencia de alertas y previsión",
+            "Cierres contables lentos por conciliaciones manuales"
+          ],
+          "solution": {
+            "summary": "Implantación de un ERP modular con estandarización de procesos y datos maestros para unificar la operación punta a punta.",
+            "modules": [
+              "Compras y gestión de proveedores (requisiciones, órdenes, recepción)",
+              "Inventarios y almacenes (entradas/salidas, ubicaciones, lotes/series)",
+              "Planificación y control de producción (BOM, rutas, MRP básico)",
+              "Costos y contabilidad (costeo estándar/real, centros de costo)",
+              "Ventas y facturación (pedidos, despacho, cuentas por cobrar)",
+              "Reportes gerenciales (KPIs de producción, inventario, OTIF)"
+            ]
+          },
+          "results": "Mejora en la precisión del inventario, reducción de reprocesos, mayor control de costos y tiempos de cierre contable, con trazabilidad operativa desde compras hasta despacho."
+        },
+        "lessons": "Un ERP en PYME exige disciplina en datos maestros y procesos. El éxito depende más de la estandarización, capacitación y gobierno del cambio que del software en sí."
+      },
+      {
+        "title": "Migración a la nube: Empresa de servicios",
+        "description": "Empresa de servicios con aplicaciones on-premise que migró a la nube para mejorar disponibilidad, escalabilidad y tiempos de entrega, reduciendo costos de infraestructura y operación.",
+        "isNational": false,
+        "development": {
+          "intro": "La migración incluyó:",
+          "steps": [
+            "Evaluación del portafolio de aplicaciones (criticidad, dependencias, costos) y definición de estrategia (rehost, replatform, refactor)",
+            "Diseño de arquitectura objetivo (red, identidades, seguridad, observabilidad) y gobierno de la nube (FinOps, tagging, políticas)",
+            "Implementación de identidad y acceso (IAM), segmentación de red y controles de seguridad (WAF, cifrado, secretos)",
+            "Migración por oleadas: entornos no críticos primero, luego cargas core, con ventanas controladas y plan de rollback",
+            "Adopción de CI/CD e infraestructura como código para estandarizar despliegues y reducir errores",
+            "Configuración de monitoreo, alertas y trazabilidad (logs, métricas, APM) para operación 24/7",
+            "Optimización post-migración (costos, performance, autoescalado) y hardening continuo"
+          ],
+          "outro": "El resultado fue una plataforma más resiliente y escalable, con despliegues más frecuentes y mejor visibilidad operativa, apoyada por prácticas de seguridad y control de costos."
+        },
+        "lessons": "Migrar a la nube no es solo mover servidores: requiere gobierno (seguridad, costos, operación) y automatización (IaC/CI-CD). Las migraciones por oleadas con observabilidad reducen riesgo."
+      },
+      {
+        "title": "Implementación de CRM: Empresa de ventas",
+        "description": "Empresa comercial con fuerza de ventas distribuida que implementó un CRM para estandarizar el pipeline, mejorar seguimiento de oportunidades y aumentar la conversión.",
+        "isNational": false,
+        "development": {
+          "situation": "La gestión comercial dependía de agendas personales y hojas de cálculo. No había trazabilidad del embudo ni control de actividades, y la dirección carecía de métricas confiables para pronóstico y desempeño.",
+          "problems": [
+            "Pérdida de oportunidades por falta de seguimiento y recordatorios",
+            "Pipeline inconsistente y etapas definidas de manera subjetiva",
+            "Pronósticos de ventas imprecisos por datos incompletos",
+            "Duplicidad de contactos y baja calidad de datos",
+            "Baja colaboración entre ventas, marketing y servicio"
+          ],
+          "solution": {
+            "summary": "Implementación de un CRM con modelo de datos unificado, pipeline estándar, automatización de tareas y tableros de desempeño.",
+            "modules": [
+              "Gestión de leads y cuentas (deduplicación, enriquecimiento básico)",
+              "Pipeline de oportunidades (etapas, probabilidades, motivos de pérdida)",
+              "Actividades y seguimiento (tareas, recordatorios, cadencias)",
+              "Automatización y reglas (asignación de leads, SLA internos)",
+              "Dashboards (conversión por etapa, forecast, productividad)",
+              "Integración con correo y formularios/landing para captura de leads"
+            ]
+          },
+          "results": "Mayor visibilidad del pipeline, incremento en disciplina de seguimiento, mejora del pronóstico y reducción de pérdida de oportunidades por falta de contacto, con métricas homogéneas para la dirección."
+        },
+        "lessons": "El CRM no arregla un proceso inexistente: primero define etapas, criterios y responsabilidades; luego automatiza. La calidad de datos y el hábito de uso diario determinan el ROI."
+      },
+      {
+        "title": "Sistema de gestión documental: Oficina de abogados",
+        "description": "Firma de abogados que digitalizó y centralizó expedientes para mejorar control documental, trazabilidad de versiones y tiempos de respuesta en casos y contratos.",
+        "isNational": false,
+        "development": {
+          "intro": "La implementación incluyó:",
+          "steps": [
+            "Levantamiento de tipologías documentales (expedientes, contratos, evidencias) y definición de taxonomía (cliente, caso, fecha, estado)",
+            "Diseño de permisos y confidencialidad por roles (socios, asociados, auxiliares) y criterios de acceso por caso",
+            "Implementación de repositorio central con control de versiones, check-in/check-out y búsqueda por metadatos",
+            "Flujos de revisión y aprobación (borrador → revisión → aprobado → archivado) con bitácora de cambios",
+            "Plantillas estandarizadas (contratos, memoriales) y nomenclatura para reducir inconsistencias",
+            "Políticas de retención y respaldo (backups, borrado seguro, auditoría) y capacitación del equipo",
+            "Digitalización progresiva de archivos físicos y estrategia de “cero papel” por etapas"
+          ],
+          "outro": "Se logró mayor trazabilidad, menos pérdidas de documentos, búsquedas más rápidas y control de acceso, mejorando tiempos de respuesta y reduciendo riesgo por versiones incorrectas o filtraciones."
+        },
+        "lessons": "En gestión documental, el diseño de taxonomía, permisos y flujos vale más que la herramienta. Sin gobierno de metadatos y control de versiones, la digitalización solo traslada el desorden."
+      }
+    ]
+  },
+  "topic3": {
+    "caseStudies": [
+      {
+        "title": "Bancos: Implementación de ISO 27001 para seguridad",
+        "description": "Banco que fortaleció su Sistema de Gestión de Seguridad de la Información (SGSI) para reducir riesgo, mejorar controles y cumplir expectativas regulatorias y de auditoría.",
+        "development": {
+          "intro": "La implementación incluyó:",
+          "steps": [
+            "Definición del alcance del SGSI (procesos críticos, canales digitales, terceros) y análisis de contexto",
+            "Inventario y clasificación de activos de información (datos, aplicaciones, infraestructura, proveedores)",
+            "Evaluación de riesgos y plan de tratamiento alineado a apetito de riesgo y continuidad",
+            "Selección e implementación de controles del Anexo A (accesos, criptografía, operaciones, proveedores, incidentes)",
+            "Gestión documental: políticas, procedimientos, SoA (Statement of Applicability) y evidencias",
+            "Capacitación y concienciación del personal (phishing, manejo de datos, roles y responsabilidades)",
+            "Auditorías internas, acciones correctivas y preparación para certificación"
+          ],
+          "outro": "Resultados: madurez de controles, mejora de trazabilidad y auditoría, reducción de incidentes y fortalecimiento del cumplimiento."
+        },
+        "lessons": "ISO 27001 es más gestión que tecnología: sin gobierno (políticas, evidencias, roles, auditoría) la seguridad se queda en controles aislados."
+      },
+      {
+        "title": "Empresas manufactureras: Certificación ISO/IEC 20000 para servicios",
+        "description": "Empresa manufacturera que profesionalizó su gestión de servicios TI para mejorar disponibilidad de sistemas de planta y atención a usuarios internos.",
+        "development": {
+          "situation": "Los servicios TI eran reactivos, con alta recurrencia de incidentes y sin acuerdos claros de niveles de servicio para aplicaciones críticas (ERP, MES, infraestructura de red).",
+          "problems": [
+            "Ausencia de SLAs y medición consistente del desempeño del servicio",
+            "Gestión informal de cambios que provocaba interrupciones",
+            "Baja trazabilidad de activos y configuraciones (sin CMDB confiable)",
+            "Comunicación deficiente entre TI, planta y áreas administrativas"
+          ],
+          "solution": {
+            "summary": "Implementación de un Sistema de Gestión del Servicio (SGS) alineado a ISO/IEC 20000-1, con procesos estandarizados y mejora continua.",
+            "modules": [
+              "Catálogo de servicios y SLAs/OLAs",
+              "Service Desk y gestión de incidencias/solicitudes",
+              "Gestión de cambios y liberaciones",
+              "Gestión de configuración (CMDB) y activos",
+              "Gestión de problemas y base de conocimiento",
+              "Reportes y revisión del servicio (KPIs y mejora continua)"
+            ]
+          },
+          "results": "Reducción de interrupciones por cambios, mejor trazabilidad de activos, mayor cumplimiento de SLAs y aumento de satisfacción de usuarios internos."
+        },
+        "lessons": "ISO 20000 consolida la operación: catálogo + SLAs + cambios + CMDB. Sin estos pilares, el servicio se vuelve impredecible."
+      },
+      {
+        "title": "Organizaciones públicas: Cumplimiento de normativas gubernamentales",
+        "description": "Entidad pública que alineó su gobierno TI para cumplir lineamientos, auditorías y controles de transparencia, seguridad y gestión documental.",
+        "development": {
+          "intro": "La iniciativa incluyó:",
+          "steps": [
+            "Diagnóstico de brechas frente a normativas, auditoría y lineamientos institucionales",
+            "Definición de roles y comités (gobierno, seguridad, arquitectura, cambios) y responsabilidades",
+            "Estandarización de políticas: seguridad, datos, continuidad, gestión documental y acceso a la información",
+            "Implementación de controles y evidencias para auditorías (trazabilidad, bitácoras, gestión de incidentes)",
+            "Plan de mejora con KPIs (cumplimiento, tiempos de respuesta, disponibilidad, riesgos) y reportes periódicos",
+            "Capacitación y gestión del cambio organizacional"
+          ],
+          "outro": "Resultados: mejor capacidad de auditoría, reducción de hallazgos recurrentes, procesos más trazables y mayor cumplimiento."
+        },
+        "lessons": "En el sector público, el éxito está en la evidencia y la trazabilidad: procesos medibles, roles claros y control documental consistente."
+      },
+      {
+        "title": "PYMEs: Adopción de marcos de referencia adaptados",
+        "description": "PYME que adoptó prácticas esenciales de gobierno/gestión TI sin sobrecargar recursos, priorizando riesgos, continuidad y control de cambios.",
+        "development": {
+          "situation": "La PYME creció rápido, pero TI operaba sin estándares: cambios sin control, accesos compartidos y poca visibilidad de costos y riesgos.",
+          "problems": [
+            "Cambios en producción sin evaluación ni ventana definida",
+            "Falta de control de accesos y roles (cuentas compartidas)",
+            "Backups y continuidad sin pruebas periódicas",
+            "Ausencia de métricas y priorización formal del trabajo"
+          ],
+          "solution": {
+            "summary": "Adopción incremental de un “mínimo viable” de gobierno TI basado en buenas prácticas (COBIT/ITIL/ISO) y control operativo.",
+            "modules": [
+              "Política de accesos (roles, MFA, revisiones periódicas)",
+              "Gestión de cambios básica (aprobación, registro, rollback)",
+              "Backups, pruebas de restauración y plan de continuidad simplificado",
+              "Catálogo mínimo de servicios + SLAs internos",
+              "Tablero de KPIs (incidentes, cambios fallidos, disponibilidad, lead time)"
+            ]
+          },
+          "results": "Menos incidentes por cambios, mejor control de accesos, mayor estabilidad operativa y capacidad de priorización con métricas."
+        },
+        "lessons": "En PYMEs, la adopción debe ser incremental y pragmática: pocos controles bien ejecutados dan más ROI que un marco completo mal implementado."
+      }
+    ],
+    "frameworks": [
+      {
+        "name": "COBIT",
+        "focus": "Control, auditoría y gobierno de TI orientado a objetivos.",
+        "typicalUse": ["Gobierno TI", "Controles", "Auditoría", "Gestión de riesgos"],
+        "keyArtifacts": [
+          "Objetivos de gobierno/gestión",
+          "Metas y métricas",
+          "Modelo de capacidades",
+          "Planes de mejora"
+        ]
+      },
+      {
+        "name": "ITIL",
+        "focus": "Gestión de servicios TI y operación orientada al valor.",
+        "typicalUse": [
+          "Service Desk",
+          "Incidentes/Problemas",
+          "Cambios",
+          "Mejora continua"
+        ],
+        "keyArtifacts": [
+          "Catálogo de servicios",
+          "SLAs",
+          "CMDB",
+          "Procedimientos operativos"
+        ]
+      },
+      {
+        "name": "ISO 38500",
+        "focus": "Principios para gobierno corporativo de TI.",
+        "typicalUse": [
+          "Dirección y control",
+          "Decisiones de inversión",
+          "Alineación negocio-TI"
+        ],
+        "keyArtifacts": [
+          "Principios y evaluación",
+          "Directrices de gobierno",
+          "Roles y rendición de cuentas"
+        ]
+      },
+      {
+        "name": "Val IT",
+        "focus": "Valor y gestión de inversiones TI.",
+        "typicalUse": ["Portafolio de inversiones", "Beneficios", "Caso de negocio"],
+        "keyArtifacts": [
+          "Business case",
+          "Gestión del portafolio",
+          "Realización de beneficios"
+        ]
+      }
+    ]
+  },
+  "topic4": {
+    "caseStudies": [
     {
       "title": "Empresa Manufacturera: Implementación de ISO 38500",
       "description": "Empresa manufacturera mediana que implementó ISO 38500 para mejorar su gobierno corporativo de TIC.",
@@ -434,187 +441,197 @@
       },
       "lessons": "La implementación exitosa requiere alineación con objetivos de negocio y participación activa de todas las áreas de la organización."
     }
-  ],
-  "topic5": [
-    {
-      "title": "Colegio Privado Bilingüe: Auditoría de Administración de Recursos Humanos con COBIT",
-      "description": "Colegio privado con orientación bilingüe (Español-Inglés) que brinda servicio de educación a niños de preescolar y primaria. Aplicación de COBIT para auditar el proceso de Administración de Recursos Humanos.",
-      "development": {
-        "intro": "Contexto: El colegio necesitaba mejorar el control y gestión de su proceso de Administración de Recursos Humanos. Aplicación de COBIT:",
-        "steps": [
-          "Selección del proceso PO7 (Administración de Recursos Humanos) del dominio Planificación y Organización",
-          "Evaluación de objetivos de control específicos del proceso",
-          "Identificación de áreas de mejora en la gestión de personal docente y administrativo",
-          "Implementación de controles recomendados por COBIT",
-          "Establecimiento de métricas de desempeño"
-        ],
-        "outro": "Resultados: Mejora del 30% en la eficiencia de procesos de RRHH, reducción del 20% en tiempos de contratación, mejor cumplimiento de normativas laborales y mayor satisfacción del personal."
+  ]},
+  "topic5": {
+    "caseStudies": [
+      {
+        "title": "Colegio Privado Bilingüe: Auditoría de Administración de Recursos Humanos con COBIT",
+        "description": "Colegio privado con orientación bilingüe (Español-Inglés) que brinda servicio de educación a niños de preescolar y primaria. Aplicación de COBIT para auditar el proceso de Administración de Recursos Humanos.",
+        "development": {
+          "intro": "Contexto: El colegio necesitaba mejorar el control y gestión de su proceso de Administración de Recursos Humanos. Aplicación de COBIT:",
+          "steps": [
+            "Selección del proceso PO7 (Administración de Recursos Humanos) del dominio Planificación y Organización",
+            "Evaluación de objetivos de control específicos del proceso",
+            "Identificación de áreas de mejora en la gestión de personal docente y administrativo",
+            "Implementación de controles recomendados por COBIT",
+            "Establecimiento de métricas de desempeño"
+          ],
+          "outro": "Resultados: Mejora del 30% en la eficiencia de procesos de RRHH, reducción del 20% en tiempos de contratación, mejor cumplimiento de normativas laborales y mayor satisfacción del personal."
+        },
+        "lessons": "COBIT proporciona un marco estructurado para auditar y mejorar procesos específicos de TI, incluso en organizaciones educativas. La aplicación sistemática de objetivos de control ayuda a identificar y corregir deficiencias en la gestión."
       },
-      "lessons": "COBIT proporciona un marco estructurado para auditar y mejorar procesos específicos de TI, incluso en organizaciones educativas. La aplicación sistemática de objetivos de control ayuda a identificar y corregir deficiencias en la gestión."
-    },
-    {
-      "title": "Empresa Financiera: Implementación de COBIT para Control de Seguridad",
-      "description": "Empresa del sector financiero que implementó COBIT para fortalecer el control de seguridad en la gestión de servicios de TI.",
-      "development": {
-        "intro": "Situación inicial: La empresa enfrentaba desafíos en el control de seguridad de sus sistemas de información. Implementación:",
-        "steps": [
-          "Aplicación de procesos del dominio Entrega y Soporte (ES5: Garantizar la seguridad de los sistemas)",
-          "Implementación de procesos del dominio Planificación y Organización (PO9: Evaluación de Riesgos)",
-          "Establecimiento de controles de seguridad basados en objetivos de control de COBIT",
-          "Capacitación del personal en procesos de seguridad",
-          "Auditorías regulares usando el dominio Supervisión y Evaluación"
-        ],
-        "outro": "Resultados: Reducción del 40% en incidentes de seguridad, mejora del 50% en tiempos de respuesta a incidentes, cumplimiento de regulaciones financieras y certificación ISO 27001."
+      {
+        "title": "Empresa Financiera: Implementación de COBIT para Control de Seguridad",
+        "description": "Empresa del sector financiero que implementó COBIT para fortalecer el control de seguridad en la gestión de servicios de TI.",
+        "development": {
+          "intro": "Situación inicial: La empresa enfrentaba desafíos en el control de seguridad de sus sistemas de información. Implementación:",
+          "steps": [
+            "Aplicación de procesos del dominio Entrega y Soporte (ES5: Garantizar la seguridad de los sistemas)",
+            "Implementación de procesos del dominio Planificación y Organización (PO9: Evaluación de Riesgos)",
+            "Establecimiento de controles de seguridad basados en objetivos de control de COBIT",
+            "Capacitación del personal en procesos de seguridad",
+            "Auditorías regulares usando el dominio Supervisión y Evaluación"
+          ],
+          "outro": "Resultados: Reducción del 40% en incidentes de seguridad, mejora del 50% en tiempos de respuesta a incidentes, cumplimiento de regulaciones financieras y certificación ISO 27001."
+        },
+        "lessons": "COBIT es especialmente efectivo para organizaciones que requieren cumplimiento estricto de normativas. La integración de múltiples dominios permite una gestión holística de la seguridad."
+      }
+    ]
+  },
+  "topic6": {
+    "caseStudies": [
+      {
+        "title": "Empresa de Servicios Financieros: Implementación de Service Desk con ITIL",
+        "description": "Empresa del sector financiero que implementó ITIL para mejorar la gestión de servicios de TI, enfocándose en la fase de Operación del Servicio.",
+        "development": {
+          "intro": "Situación inicial: La empresa tenía problemas en la gestión de incidencias y solicitudes de usuarios, con tiempos de respuesta elevados y falta de visibilidad. Implementación ITIL:",
+          "steps": [
+            "Establecimiento de Service Desk como punto único de contacto",
+            "Implementación del proceso de Gestión de Incidencias con clasificación y priorización",
+            "Implementación de Gestión de Problemas para identificar causas raíz",
+            "Establecimiento de SLA (Service Level Agreements) con objetivos medibles",
+            "Implementación de Gestión de Configuración (CMDB) para rastrear activos",
+            "Capacitación del personal en procesos ITIL"
+          ],
+          "outro": "Resultados: Reducción del 45% en tiempo medio de resolución de incidencias, mejora del 60% en satisfacción del usuario, reducción del 30% en incidentes recurrentes mediante gestión de problemas y cumplimiento del 95% de los SLA establecidos."
+        },
+        "lessons": "La implementación de ITIL en la fase de Operación del Servicio proporciona estructura y procesos claros que mejoran significativamente la calidad del servicio. El Service Desk funciona como punto central de coordinación y visibilidad."
       },
-      "lessons": "COBIT es especialmente efectivo para organizaciones que requieren cumplimiento estricto de normativas. La integración de múltiples dominios permite una gestión holística de la seguridad."
-    }
-  ],
-  "topic6": [
-    {
-      "title": "Empresa de Servicios Financieros: Implementación de Service Desk con ITIL",
-      "description": "Empresa del sector financiero que implementó ITIL para mejorar la gestión de servicios de TI, enfocándose en la fase de Operación del Servicio.",
-      "development": {
-        "intro": "Situación inicial: La empresa tenía problemas en la gestión de incidencias y solicitudes de usuarios, con tiempos de respuesta elevados y falta de visibilidad. Implementación ITIL:",
-        "steps": [
-          "Establecimiento de Service Desk como punto único de contacto",
-          "Implementación del proceso de Gestión de Incidencias con clasificación y priorización",
-          "Implementación de Gestión de Problemas para identificar causas raíz",
-          "Establecimiento de SLA (Service Level Agreements) con objetivos medibles",
-          "Implementación de Gestión de Configuración (CMDB) para rastrear activos",
-          "Capacitación del personal en procesos ITIL"
-        ],
-        "outro": "Resultados: Reducción del 45% en tiempo medio de resolución de incidencias, mejora del 60% en satisfacción del usuario, reducción del 30% en incidentes recurrentes mediante gestión de problemas y cumplimiento del 95% de los SLA establecidos."
+      {
+        "title": "Organización de Salud: Gestión de Cambios con ITIL",
+        "description": "Hospital que implementó el proceso de Gestión de Cambios de ITIL para controlar y coordinar cambios en sistemas críticos de información médica.",
+        "development": {
+          "intro": "Contexto: El hospital necesitaba gestionar cambios en sistemas críticos (historia clínica electrónica, sistemas de laboratorio) sin afectar la operación. Implementación ITIL:",
+          "steps": [
+            "Establecimiento del proceso de Gestión de Cambios siguiendo ITIL (Transición del Servicio)",
+            "Creación de Comité de Cambios (CAB) para evaluar cambios importantes",
+            "Implementación de clasificación de cambios (Normal, Estándar, Urgente, Emergencia)",
+            "Proceso de evaluación, aprobación y planificación de cambios",
+            "Validación y pruebas antes del despliegue",
+            "Gestión de retrocesión en caso de problemas"
+          ],
+          "outro": "Resultados: Reducción del 70% en cambios fallidos, cumplimiento del 100% en pruebas de cambios críticos, reducción del 50% en tiempo de implementación de cambios estándar y cero incidentes relacionados con cambios mal planificados."
+        },
+        "lessons": "La Gestión de Cambios de ITIL es fundamental en entornos críticos. Proporciona control, visibilidad y reducción de riesgos, especialmente cuando se trata de sistemas que afectan directamente la operación del negocio."
       },
-      "lessons": "La implementación de ITIL en la fase de Operación del Servicio proporciona estructura y procesos claros que mejoran significativamente la calidad del servicio. El Service Desk funciona como punto central de coordinación y visibilidad."
-    },
-    {
-      "title": "Organización de Salud: Gestión de Cambios con ITIL",
-      "description": "Hospital que implementó el proceso de Gestión de Cambios de ITIL para controlar y coordinar cambios en sistemas críticos de información médica.",
-      "development": {
-        "intro": "Contexto: El hospital necesitaba gestionar cambios en sistemas críticos (historia clínica electrónica, sistemas de laboratorio) sin afectar la operación. Implementación ITIL:",
-        "steps": [
-          "Establecimiento del proceso de Gestión de Cambios siguiendo ITIL (Transición del Servicio)",
-          "Creación de Comité de Cambios (CAB) para evaluar cambios importantes",
-          "Implementación de clasificación de cambios (Normal, Estándar, Urgente, Emergencia)",
-          "Proceso de evaluación, aprobación y planificación de cambios",
-          "Validación y pruebas antes del despliegue",
-          "Gestión de retrocesión en caso de problemas"
-        ],
-        "outro": "Resultados: Reducción del 70% en cambios fallidos, cumplimiento del 100% en pruebas de cambios críticos, reducción del 50% en tiempo de implementación de cambios estándar y cero incidentes relacionados con cambios mal planificados."
+      {
+        "title": "Empresa Manufacturera: Ciclo de Vida Completo del Servicio con ITIL",
+        "description": "Empresa manufacturera que implementó ITIL en todas las fases del ciclo de vida del servicio para gestionar un nuevo sistema ERP.",
+        "development": {
+          "intro": "Situación: La empresa necesitaba implementar un nuevo ERP y gestionarlo de manera estructurada. Aplicación del ciclo de vida ITIL:",
+          "steps": [
+            "Estrategia: Definición del portfolio de servicios, análisis de demanda y gestión financiera",
+            "Diseño: Creación del catálogo de servicios, definición de SLA, diseño de capacidad y disponibilidad, plan de continuidad",
+            "Transición: Gestión de cambios, configuración del CMDB, despliegue controlado, validación y pruebas",
+            "Operación: Service Desk, gestión de incidencias y problemas, gestión de eventos",
+            "Mejora: Proceso de mejora continua con medición de KPIs, generación de informes, plan de mejora del servicio (SIP)"
+          ],
+          "outro": "Resultados: Implementación exitosa del ERP en tiempo y presupuesto, cumplimiento del 98% de SLA durante los primeros 6 meses, reducción del 40% en costos operativos de TI, mejora continua documentada trimestralmente y satisfacción del cliente del 92%."
+        },
+        "lessons": "Aplicar ITIL en todas las fases del ciclo de vida del servicio proporciona una gestión integral y estructurada. La fase de Mejora asegura que los servicios evolucionen continuamente para satisfacer las necesidades cambiantes del negocio."
+      }
+    ]
+  },
+  "topic7": {
+    "caseStudies": [
+      {
+        "title": "Empresa de Servicios TI: Certificación ISO/IEC 20000-1",
+        "description": "Empresa proveedora de servicios de TI que implementó y certificó ISO/IEC 20000-1 para mejorar la gestión de sus servicios y obtener reconocimiento en el mercado.",
+        "development": {
+          "intro": "Situación inicial: La empresa tenía procesos de gestión de servicios desorganizados, con alta tasa de incidencias y baja satisfacción del cliente. Implementación ISO/IEC 20000-1:",
+          "steps": [
+            "Evaluación del estado actual según requisitos de ISO/IEC 20000-1",
+            "Establecimiento del Sistema de Gestión del Servicio (SGS) con los 5 grupos de procesos",
+            "Implementación de procesos de diseño y transición de servicios",
+            "Establecimiento de procesos de provisión del servicio (gestión de nivel de servicio, continuidad, capacidad, seguridad)",
+            "Implementación de procesos de control, resolución y relación",
+            "Capacitación del personal en la norma",
+            "Auditoría y certificación por organismo acreditado"
+          ],
+          "outro": "Resultados: Reducción del 50% en tiempo de resolución de incidencias, mejora del 70% en satisfacción del cliente, certificación ISO/IEC 20000-1 obtenida, incremento del 30% en nuevos contratos gracias al reconocimiento de la certificación y mejora continua documentada."
+        },
+        "lessons": "La certificación ISO/IEC 20000-1 proporciona un marco estructurado y certificable que mejora significativamente la calidad de los servicios TI. La implicación de la alta dirección es fundamental para el éxito de la implementación."
       },
-      "lessons": "La Gestión de Cambios de ITIL es fundamental en entornos críticos. Proporciona control, visibilidad y reducción de riesgos, especialmente cuando se trata de sistemas que afectan directamente la operación del negocio."
-    },
-    {
-      "title": "Empresa Manufacturera: Ciclo de Vida Completo del Servicio con ITIL",
-      "description": "Empresa manufacturera que implementó ITIL en todas las fases del ciclo de vida del servicio para gestionar un nuevo sistema ERP.",
-      "development": {
-        "intro": "Situación: La empresa necesitaba implementar un nuevo ERP y gestionarlo de manera estructurada. Aplicación del ciclo de vida ITIL:",
-        "steps": [
-          "Estrategia: Definición del portfolio de servicios, análisis de demanda y gestión financiera",
-          "Diseño: Creación del catálogo de servicios, definición de SLA, diseño de capacidad y disponibilidad, plan de continuidad",
-          "Transición: Gestión de cambios, configuración del CMDB, despliegue controlado, validación y pruebas",
-          "Operación: Service Desk, gestión de incidencias y problemas, gestión de eventos",
-          "Mejora: Proceso de mejora continua con medición de KPIs, generación de informes, plan de mejora del servicio (SIP)"
-        ],
-        "outro": "Resultados: Implementación exitosa del ERP en tiempo y presupuesto, cumplimiento del 98% de SLA durante los primeros 6 meses, reducción del 40% en costos operativos de TI, mejora continua documentada trimestralmente y satisfacción del cliente del 92%."
+      {
+        "title": "Organización Gubernamental: Implementación de SGS con ISO/IEC 20000",
+        "description": "Organización del sector público que implementó el Sistema de Gestión del Servicio basado en ISO/IEC 20000 para estandarizar la provisión de servicios TI a diferentes dependencias.",
+        "development": {
+          "intro": "Contexto: La organización necesitaba estandarizar la gestión de servicios TI para múltiples dependencias gubernamentales. Implementación ISO/IEC 20000:",
+          "steps": [
+            "Análisis de requisitos de servicio de cada dependencia",
+            "Diseño del SGS centralizado siguiendo ISO/IEC 20000-1",
+            "Implementación de procesos de diseño y transición para nuevos servicios",
+            "Establecimiento de procesos de provisión con SLA diferenciados por dependencia",
+            "Implementación de procesos de control y resolución centralizados",
+            "Generación de informes estandarizados para todas las dependencias",
+            "Adopción incremental según ISO/IEC 20000-5"
+          ],
+          "outro": "Resultados: Estandarización exitosa de servicios TI, reducción del 40% en costos operativos mediante centralización, mejora del 60% en tiempos de entrega de servicios, satisfacción del 85% de las dependencias y base sólida para futura certificación."
+        },
+        "lessons": "La adopción incremental de ISO/IEC 20000 permite implementar el SGS de manera gradual, especialmente útil en organizaciones grandes. La estandarización mejora la eficiencia y reduce costos operativos."
+      }
+    ]
+  },
+  "topic8": {
+    "caseStudies": [
+      {
+        "title": "Tecnofor: Certificación ISO/IEC 19770-1:2008 en empresa de formación",
+        "description": "Empresa pequeña especializada en formación en tecnología, gobierno TI y gestión de proyectos que implementó un SGAS como caso piloto para certificación según UNE-ISO/IEC 19770-1:2008.",
+        "development": {
+          "intro": "Contexto: Tecnofor es una pequeña empresa del sector de formación que necesitaba gestionar eficientemente sus activos de software. Implementación del SGAS:",
+          "steps": [
+            "Definición de objetivos estratégicos (gestión de riesgos, control de costes, ventaja competitiva)",
+            "Creación de caso de negocio justificando la inversión",
+            "Planteamiento del proyecto de implantación",
+            "Definición de procesos según ISO/IEC 19770-1 (procesos de gestión organizativa, procesos centrales, interfaces)",
+            "Establecimiento de política de software",
+            "Configuración de base de datos de gestión de configuración (CMDB)",
+            "Selección e implementación de herramientas",
+            "Formación y certificación profesional del equipo"
+          ],
+          "outro": "Resultados: Recuperación de la inversión en el primer año, control efectivo de costes, aumento de la productividad, reducción significativa de riesgos asociados a la gestión de activos de software y obtención de la certificación ISO/IEC 19770-1:2008."
+        },
+        "lessons": "La correcta implantación de un SGAS puede salvaguardar riesgos relacionados con la falta de gestión eficiente de activos y colaborar directamente con la consecución de objetivos estratégicos mediante reducción de costes y aumento de productividad. La certificación aporta prestigio y credibilidad a la organización."
+      }
+    ]
+  },
+  "topic9": {
+    "caseStudies": [
+      {
+        "title": "Aseguradora de Salud: Implementación de BCM a nivel nacional",
+        "description": "Aseguradora de salud que opera a nivel nacional con hospitales y centros médicos propios y franquiciados, con 2,500 empleados y infraestructura informática para procesamiento de datos y comunicación entre centros.",
+        "development": {
+          "intro": "Contexto: La organización opera a nivel nacional con múltiples hospitales y centros médicos (propios y franquiciados), empleando a 2,500 personas. La infraestructura informática es crítica para el procesamiento de datos y la comunicación entre centros. Problemática: La organización necesita asegurar la continuidad del negocio ante problemas o incidentes que atenten contra la disponibilidad de datos o información, considerando la crítica de los servicios de salud, la dependencia de sistemas de información, la necesidad de comunicación continua entre centros y el impacto potencial en pacientes y operaciones. Implementación del BCM:",
+          "steps": [
+            "Planificación del BCM con alcance nacional",
+            "Análisis de impacto (BIA) identificando procesos críticos relacionados con atención médica, procesamiento de datos de pacientes y comunicación entre centros",
+            "Análisis de riesgos considerando fallos de sistemas, desastres naturales, interrupciones de red y ataques cibernéticos",
+            "Desarrollo de estrategia incluyendo centros de respaldo, replicación de datos en tiempo real, sistemas de comunicación alternativos y proveedores de servicios cloud",
+            "Desarrollo del BCP con procedimientos detallados para cada escenario",
+            "Concienciación y capacitación del personal médico y administrativo",
+            "Pruebas y ejercicios periódicos incluyendo simulacros de interrupción",
+            "Mantenimiento y actualización continua del plan"
+          ],
+          "outro": "Resultados: Disponibilidad garantizada de datos críticos de pacientes, mantenimiento de comunicación entre centros médicos incluso durante interrupciones, protección efectiva de información sensible, garantía de continuidad de servicios de salud críticos y minimización del impacto de interrupciones en operaciones."
+        },
+        "lessons": "La implementación de un BCM es esencial en organizaciones del sector salud donde la disponibilidad de información puede afectar directamente la atención a pacientes. La correcta implementación del BCM permite asegurar la continuidad del negocio ante problemas o incidentes que atenten contra la disponibilidad de datos o información. La combinación de análisis de impacto, desarrollo de estrategias y pruebas periódicas es fundamental para el éxito."
       },
-      "lessons": "Aplicar ITIL en todas las fases del ciclo de vida del servicio proporciona una gestión integral y estructurada. La fase de Mejora asegura que los servicios evolucionen continuamente para satisfacer las necesidades cambiantes del negocio."
-    }
-  ],
-  "topic7": [
-    {
-      "title": "Empresa de Servicios TI: Certificación ISO/IEC 20000-1",
-      "description": "Empresa proveedora de servicios de TI que implementó y certificó ISO/IEC 20000-1 para mejorar la gestión de sus servicios y obtener reconocimiento en el mercado.",
-      "development": {
-        "intro": "Situación inicial: La empresa tenía procesos de gestión de servicios desorganizados, con alta tasa de incidencias y baja satisfacción del cliente. Implementación ISO/IEC 20000-1:",
-        "steps": [
-          "Evaluación del estado actual según requisitos de ISO/IEC 20000-1",
-          "Establecimiento del Sistema de Gestión del Servicio (SGS) con los 5 grupos de procesos",
-          "Implementación de procesos de diseño y transición de servicios",
-          "Establecimiento de procesos de provisión del servicio (gestión de nivel de servicio, continuidad, capacidad, seguridad)",
-          "Implementación de procesos de control, resolución y relación",
-          "Capacitación del personal en la norma",
-          "Auditoría y certificación por organismo acreditado"
-        ],
-        "outro": "Resultados: Reducción del 50% en tiempo de resolución de incidencias, mejora del 70% en satisfacción del cliente, certificación ISO/IEC 20000-1 obtenida, incremento del 30% en nuevos contratos gracias al reconocimiento de la certificación y mejora continua documentada."
-      },
-      "lessons": "La certificación ISO/IEC 20000-1 proporciona un marco estructurado y certificable que mejora significativamente la calidad de los servicios TI. La implicación de la alta dirección es fundamental para el éxito de la implementación."
-    },
-    {
-      "title": "Organización Gubernamental: Implementación de SGS con ISO/IEC 20000",
-      "description": "Organización del sector público que implementó el Sistema de Gestión del Servicio basado en ISO/IEC 20000 para estandarizar la provisión de servicios TI a diferentes dependencias.",
-      "development": {
-        "intro": "Contexto: La organización necesitaba estandarizar la gestión de servicios TI para múltiples dependencias gubernamentales. Implementación ISO/IEC 20000:",
-        "steps": [
-          "Análisis de requisitos de servicio de cada dependencia",
-          "Diseño del SGS centralizado siguiendo ISO/IEC 20000-1",
-          "Implementación de procesos de diseño y transición para nuevos servicios",
-          "Establecimiento de procesos de provisión con SLA diferenciados por dependencia",
-          "Implementación de procesos de control y resolución centralizados",
-          "Generación de informes estandarizados para todas las dependencias",
-          "Adopción incremental según ISO/IEC 20000-5"
-        ],
-        "outro": "Resultados: Estandarización exitosa de servicios TI, reducción del 40% en costos operativos mediante centralización, mejora del 60% en tiempos de entrega de servicios, satisfacción del 85% de las dependencias y base sólida para futura certificación."
-      },
-      "lessons": "La adopción incremental de ISO/IEC 20000 permite implementar el SGS de manera gradual, especialmente útil en organizaciones grandes. La estandarización mejora la eficiencia y reduce costos operativos."
-    }
-  ],
-  "topic8": [
-    {
-      "title": "Tecnofor: Certificación ISO/IEC 19770-1:2008 en empresa de formación",
-      "description": "Empresa pequeña especializada en formación en tecnología, gobierno TI y gestión de proyectos que implementó un SGAS como caso piloto para certificación según UNE-ISO/IEC 19770-1:2008.",
-      "development": {
-        "intro": "Contexto: Tecnofor es una pequeña empresa del sector de formación que necesitaba gestionar eficientemente sus activos de software. Implementación del SGAS:",
-        "steps": [
-          "Definición de objetivos estratégicos (gestión de riesgos, control de costes, ventaja competitiva)",
-          "Creación de caso de negocio justificando la inversión",
-          "Planteamiento del proyecto de implantación",
-          "Definición de procesos según ISO/IEC 19770-1 (procesos de gestión organizativa, procesos centrales, interfaces)",
-          "Establecimiento de política de software",
-          "Configuración de base de datos de gestión de configuración (CMDB)",
-          "Selección e implementación de herramientas",
-          "Formación y certificación profesional del equipo"
-        ],
-        "outro": "Resultados: Recuperación de la inversión en el primer año, control efectivo de costes, aumento de la productividad, reducción significativa de riesgos asociados a la gestión de activos de software y obtención de la certificación ISO/IEC 19770-1:2008."
-      },
-      "lessons": "La correcta implantación de un SGAS puede salvaguardar riesgos relacionados con la falta de gestión eficiente de activos y colaborar directamente con la consecución de objetivos estratégicos mediante reducción de costes y aumento de productividad. La certificación aporta prestigio y credibilidad a la organización."
-    }
-  ],
-  "topic9": [
-    {
-      "title": "Aseguradora de Salud: Implementación de BCM a nivel nacional",
-      "description": "Aseguradora de salud que opera a nivel nacional con hospitales y centros médicos propios y franquiciados, con 2,500 empleados y infraestructura informática para procesamiento de datos y comunicación entre centros.",
-      "development": {
-        "intro": "Contexto: La organización opera a nivel nacional con múltiples hospitales y centros médicos (propios y franquiciados), empleando a 2,500 personas. La infraestructura informática es crítica para el procesamiento de datos y la comunicación entre centros. Problemática: La organización necesita asegurar la continuidad del negocio ante problemas o incidentes que atenten contra la disponibilidad de datos o información, considerando la crítica de los servicios de salud, la dependencia de sistemas de información, la necesidad de comunicación continua entre centros y el impacto potencial en pacientes y operaciones. Implementación del BCM:",
-        "steps": [
-          "Planificación del BCM con alcance nacional",
-          "Análisis de impacto (BIA) identificando procesos críticos relacionados con atención médica, procesamiento de datos de pacientes y comunicación entre centros",
-          "Análisis de riesgos considerando fallos de sistemas, desastres naturales, interrupciones de red y ataques cibernéticos",
-          "Desarrollo de estrategia incluyendo centros de respaldo, replicación de datos en tiempo real, sistemas de comunicación alternativos y proveedores de servicios cloud",
-          "Desarrollo del BCP con procedimientos detallados para cada escenario",
-          "Concienciación y capacitación del personal médico y administrativo",
-          "Pruebas y ejercicios periódicos incluyendo simulacros de interrupción",
-          "Mantenimiento y actualización continua del plan"
-        ],
-        "outro": "Resultados: Disponibilidad garantizada de datos críticos de pacientes, mantenimiento de comunicación entre centros médicos incluso durante interrupciones, protección efectiva de información sensible, garantía de continuidad de servicios de salud críticos y minimización del impacto de interrupciones en operaciones."
-      },
-      "lessons": "La implementación de un BCM es esencial en organizaciones del sector salud donde la disponibilidad de información puede afectar directamente la atención a pacientes. La correcta implementación del BCM permite asegurar la continuidad del negocio ante problemas o incidentes que atenten contra la disponibilidad de datos o información. La combinación de análisis de impacto, desarrollo de estrategias y pruebas periódicas es fundamental para el éxito."
-    },
-    {
-      "title": "Virtualización y Cloud Computing como Solución BCM",
-      "description": "Análisis de las ventajas e inconvenientes de arquitecturas cloud como solución para planes de continuidad de negocio, basado en entrevista con especialista de IBM.",
-      "development": {
-        "intro": "Contexto: A través de entrevista realizada por el Profesor Castillo a un especialista en virtualización y computación en la nube de IBM, se analizan las ventajas e inconvenientes de este tipo de arquitectura de recursos como servicio a clientes. Análisis: Las arquitecturas cloud ofrecen ventajas significativas para BCM:",
-        "steps": [
-          "Redundancia geográfica automática que protege contra desastres locales",
-          "Escalabilidad rápida para adaptarse a cambios en demanda",
-          "Recuperación rápida ante desastres mediante replicación automática",
-          "Reducción de costos de infraestructura al eliminar necesidad de centros de respaldo propios",
-          "Disponibilidad mejorada mediante infraestructura distribuida"
-        ],
-        "outro": "Consideraciones: Este tipo de servicios basados en arquitecturas cloud son una de las soluciones en las que pueden basarse los planes de continuidad de negocio, especialmente para organizaciones que buscan reducir costos y mejorar resiliencia sin inversiones masivas en infraestructura propia."
-      },
-      "lessons": "Los servicios basados en arquitecturas cloud representan una solución viable y eficiente para planes de continuidad de negocio, especialmente para organizaciones que buscan optimizar costos mientras mejoran su capacidad de recuperación. La virtualización y cloud computing permiten implementar estrategias de BCM más flexibles y escalables."
-    }
-  ]
+      {
+        "title": "Virtualización y Cloud Computing como Solución BCM",
+        "description": "Análisis de las ventajas e inconvenientes de arquitecturas cloud como solución para planes de continuidad de negocio, basado en entrevista con especialista de IBM.",
+        "development": {
+          "intro": "Contexto: A través de entrevista realizada por el Profesor Castillo a un especialista en virtualización y computación en la nube de IBM, se analizan las ventajas e inconvenientes de este tipo de arquitectura de recursos como servicio a clientes. Análisis: Las arquitecturas cloud ofrecen ventajas significativas para BCM:",
+          "steps": [
+            "Redundancia geográfica automática que protege contra desastres locales",
+            "Escalabilidad rápida para adaptarse a cambios en demanda",
+            "Recuperación rápida ante desastres mediante replicación automática",
+            "Reducción de costos de infraestructura al eliminar necesidad de centros de respaldo propios",
+            "Disponibilidad mejorada mediante infraestructura distribuida"
+          ],
+          "outro": "Consideraciones: Este tipo de servicios basados en arquitecturas cloud son una de las soluciones en las que pueden basarse los planes de continuidad de negocio, especialmente para organizaciones que buscan reducir costos y mejorar resiliencia sin inversiones masivas en infraestructura propia."
+        },
+        "lessons": "Los servicios basados en arquitecturas cloud representan una solución viable y eficiente para planes de continuidad de negocio, especialmente para organizaciones que buscan optimizar costos mientras mejoran su capacidad de recuperación. La virtualización y cloud computing permiten implementar estrategias de BCM más flexibles y escalables."
+      }
+    ]
+  }
 }
