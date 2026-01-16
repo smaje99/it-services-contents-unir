@@ -60,10 +60,23 @@ export type DomainInAction = {
   examples: string[];
 };
 
+export type ApplicationByPhase = {
+  phase: 'Strategy' | 'Design' | 'Transition' | 'Operation' | 'Continual Improvement';
+  description: string;
+  deliverables: string[];
+};
+
+export type SectorApplication = {
+  sector: string;
+  applications: string[];
+};
+
 export interface TopicContent {
   caseStudies: CaseStudy[];
   frameworks?: FrameworkRef[];
   principles?: Principle[];
   benefits?: string[];
   domains?: DomainInAction[];
+  applicationsByPhase?: ApplicationByPhase[];
+  sectorApplications?: SectorApplication[];
 }

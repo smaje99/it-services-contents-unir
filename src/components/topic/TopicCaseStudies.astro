@@ -2,6 +2,7 @@
 import caseStudies from '@/data/case-studies.json';
 import type {
   CaseStudy,
+  CaseStudyTopic,
   DevelopmentWithSituation,
   DevelopmentWithSteps,
 } from '@/types/case-study';
@@ -11,7 +12,7 @@ import AccordionItem from '../ui/accordion/AccordionItem.astro';
 import TopicAccordionTrigger from './TopicAccordionTrigger.astro';
 
 interface Props {
-  topic: keyof typeof caseStudies;
+  topic: CaseStudyTopic;
   isNational?: boolean;
 }
 
