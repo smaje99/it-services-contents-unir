@@ -586,36 +586,107 @@
   "topic5": {
     "caseStudies": [
       {
-        "title": "Colegio Privado Bilingüe: Auditoría de Administración de Recursos Humanos con COBIT",
-        "description": "Colegio privado con orientación bilingüe (Español-Inglés) que brinda servicio de educación a niños de preescolar y primaria. Aplicación de COBIT para auditar el proceso de Administración de Recursos Humanos.",
+        "title": "Bancos: Control de seguridad y cumplimiento regulatorio (COBIT)",
+        "description": "Banco que aplicó COBIT para fortalecer control interno TI, reducir riesgos y mejorar auditoría y cumplimiento.",
+        "isNational": true,
         "development": {
-          "intro": "Contexto: El colegio necesitaba mejorar el control y gestión de su proceso de Administración de Recursos Humanos. Aplicación de COBIT:",
+          "intro": "La implementación incluyó:",
           "steps": [
-            "Selección del proceso PO7 (Administración de Recursos Humanos) del dominio Planificación y Organización",
-            "Evaluación de objetivos de control específicos del proceso",
-            "Identificación de áreas de mejora en la gestión de personal docente y administrativo",
-            "Implementación de controles recomendados por COBIT",
-            "Establecimiento de métricas de desempeño"
+            "Evaluación de madurez/capacidades y priorización por riesgo",
+            "Selección de objetivos y prácticas de gobierno/gestión más críticos",
+            "Definición de controles, evidencias y responsables por proceso",
+            "Integración con auditoría, seguridad y gestión de riesgos",
+            "KPIs/KRIs y seguimiento de hallazgos con plan de mejora"
           ],
-          "outro": "Resultados: Mejora del 30% en la eficiencia de procesos de RRHH, reducción del 20% en tiempos de contratación, mejor cumplimiento de normativas laborales y mayor satisfacción del personal."
+          "outro": "Resultados: mejor trazabilidad de control, reducción de hallazgos recurrentes y mejora en tiempos de auditoría."
         },
-        "lessons": "COBIT proporciona un marco estructurado para auditar y mejorar procesos específicos de TI, incluso en organizaciones educativas. La aplicación sistemática de objetivos de control ayuda a identificar y corregir deficiencias en la gestión."
+        "lessons": "COBIT es potente cuando se usa para priorizar: pocos objetivos críticos bien medidos superan implementar todo el marco."
       },
       {
-        "title": "Empresa Financiera: Implementación de COBIT para Control de Seguridad",
-        "description": "Empresa del sector financiero que implementó COBIT para fortalecer el control de seguridad en la gestión de servicios de TI.",
+        "title": "Empresas manufactureras: Gestión de proyectos de TI con COBIT",
+        "description": "Manufacturera que estandarizó gobierno de proyectos TI para mejorar entregas, control de cambios y alineación a necesidades de operación.",
+        "isNational": false,
         "development": {
-          "intro": "Situación inicial: La empresa enfrentaba desafíos en el control de seguridad de sus sistemas de información. Implementación:",
-          "steps": [
-            "Aplicación de procesos del dominio Entrega y Soporte (ES5: Garantizar la seguridad de los sistemas)",
-            "Implementación de procesos del dominio Planificación y Organización (PO9: Evaluación de Riesgos)",
-            "Establecimiento de controles de seguridad basados en objetivos de control de COBIT",
-            "Capacitación del personal en procesos de seguridad",
-            "Auditorías regulares usando el dominio Supervisión y Evaluación"
+          "situation": "Los proyectos TI se ejecutaban sin criterios uniformes, con cambios de alcance frecuentes y baja visibilidad del avance y riesgos.",
+          "problems": [
+            "Retrasos por falta de gobernanza de portafolio y priorización",
+            "Cambios sin control generando retrabajo",
+            "Riesgos no gestionados (proveedores, seguridad, continuidad)",
+            "Falta de métricas consistentes de desempeño"
           ],
-          "outro": "Resultados: Reducción del 40% en incidentes de seguridad, mejora del 50% en tiempos de respuesta a incidentes, cumplimiento de regulaciones financieras y certificación ISO 27001."
+          "solution": {
+            "summary": "Aplicación de prácticas COBIT para control de proyectos, cambios y valor, con métricas y responsables claros.",
+            "modules": [
+              "Gobierno del portafolio y priorización por valor/riesgo",
+              "Gestión de requisitos y control de cambios (aprobación, registro, rollback)",
+              "Gestión de proveedores y contratos con SLAs",
+              "Métricas del delivery (lead time, cumplimiento, defectos, cambios fallidos)",
+              "Revisión post-implementación y realización de beneficios"
+            ]
+          },
+          "results": "Mejor cumplimiento de cronogramas, reducción de retrabajo por cambios y mayor control de riesgos en entregas."
         },
-        "lessons": "COBIT es especialmente efectivo para organizaciones que requieren cumplimiento estricto de normativas. La integración de múltiples dominios permite una gestión holística de la seguridad."
+        "lessons": "COBIT aporta control y medición: el valor aparece cuando se vuelve rutina de gestión, no solo documentación."
+      },
+      {
+        "title": "Organizaciones públicas: Auditoría de procesos de TI con COBIT",
+        "description": "Entidad pública que usó COBIT para estructurar auditorías TI, controles y evidencias, reduciendo hallazgos repetitivos.",
+        "isNational": true,
+        "development": {
+          "intro": "La iniciativa incluyó:",
+          "steps": [
+            "Mapa de procesos TI y selección de procesos auditables prioritarios",
+            "Definición de criterios de control y evidencias por proceso",
+            "Ejecución de auditoría: hallazgos, severidad y plan de remediación",
+            "Seguimiento de acciones correctivas y verificación",
+            "Reporte a dirección y mejora continua"
+          ],
+          "outro": "Resultados: auditorías más consistentes, menor reincidencia de hallazgos y mejor trazabilidad documental."
+        },
+        "lessons": "En auditoría, COBIT estandariza el “qué evaluar” y el “cómo evidenciar”, reduciendo subjetividad y aumentando consistencia."
+      },
+      {
+        "title": "Colegios privados: Administración de Recursos Humanos (COBIT)",
+        "description": "Colegio privado que aplicó COBIT para auditar y mejorar el proceso de administración de RRHH con enfoque en control y métricas.",
+        "isNational": true,
+        "development": {
+          "intro": "La aplicación incluyó:",
+          "steps": [
+            "Selección del proceso y objetivos de control aplicables",
+            "Evaluación de brechas y riesgos del proceso",
+            "Definición de controles y responsables",
+            "Métricas de desempeño y seguimiento",
+            "Mejoras operativas y verificación"
+          ],
+          "outro": "Resultados: mejora de eficiencia del proceso, reducción de tiempos y mejor cumplimiento normativo."
+        },
+        "lessons": "COBIT también sirve fuera del sector financiero: estructura el control de procesos con métricas y evidencia."
+      }
+    ],
+    "domains": [
+      {
+        "domain": "PO",
+        "description": "Definición de plan estratégico de TI y alineación con el negocio.",
+        "examples": ["Roadmap TI", "Portafolio priorizado", "Gestión de riesgos"]
+      },
+      {
+        "domain": "AI",
+        "description": "Adquisición/implementación de soluciones y cambios controlados.",
+        "examples": [
+          "Evaluación de proveedores",
+          "Gestión de releases",
+          "Control de cambios"
+        ]
+      },
+      {
+        "domain": "ES",
+        "description": "Entrega/soporte y gestión de niveles de servicio.",
+        "examples": ["Service Desk", "SLAs", "Gestión de incidencias/problemas"]
+      },
+      {
+        "domain": "SE",
+        "description": "Supervisión y evaluación: auditoría, control y medición.",
+        "examples": ["Auditorías", "KPIs/KRIs", "Gestión de hallazgos"]
       }
     ]
   },
