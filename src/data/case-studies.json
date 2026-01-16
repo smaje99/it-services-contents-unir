@@ -427,21 +427,162 @@
   },
   "topic4": {
     "caseStudies": [
-    {
-      "title": "Empresa Manufacturera: Implementación de ISO 38500",
-      "description": "Empresa manufacturera mediana que implementó ISO 38500 para mejorar su gobierno corporativo de TIC.",
-      "development": {
-        "intro": "Situación inicial: La empresa tenía inversiones dispersas en TIC sin una estrategia clara.",
-        "steps": [
-          "Evaluación del estado actual del gobierno de TIC",
-          "Aplicación de los 6 principios de ISO 38500: Responsabilidad (matriz RACI), Estrategia (plan estratégico de TIC), Adquisición (proceso de evaluación de proveedores), Rendimiento (dashboard de KPIs), Conformidad (auditorías regulares), Factor Humano (programas de capacitación)",
-          "Establecimiento de procesos de evaluación, dirección y monitorización"
-        ],
-        "outro": "Resultados: Incremento del 20% en ROI de inversiones TIC, reducción del 35% en riesgos tecnológicos y mejora en la satisfacción de usuarios internos."
+      {
+        "title": "Bancos: Gobierno corporativo para cumplimiento regulatorio (ISO 38500)",
+        "description": "Banco que formalizó estructuras de decisión y monitoreo para inversiones TI, riesgo y continuidad, alineando TI con regulaciones y estrategia del negocio.",
+        "isNational": true,
+        "development": {
+          "intro": "La implementación incluyó:",
+          "steps": [
+            "Definición de responsabilidades de dirección (RACI) para decisiones TI críticas",
+            "Establecimiento de comités y cadencias de gobierno (priorización, riesgo, arquitectura, cambios)",
+            "Criterios de inversión y evaluación de beneficios (portafolio y business cases)",
+            "Dashboards ejecutivos de desempeño TI (disponibilidad, riesgo, costos, entregas)",
+            "Auditorías internas y trazabilidad de decisiones (actas, evidencias, controles)"
+          ],
+          "outro": "Resultados: decisiones más trazables, mejor alineación inversión-estrategia y reducción de riesgos operativos asociados a TI."
+        },
+        "lessons": "ISO 38500 funciona cuando la dirección adopta el gobierno como disciplina: decide, supervisa y exige evidencia."
       },
-      "lessons": "La implementación exitosa requiere alineación con objetivos de negocio y participación activa de todas las áreas de la organización."
-    }
-  ]},
+      {
+        "title": "Empresas manufactureras: Alineación de TIC con procesos de producción",
+        "description": "Manufacturera que alineó TI con operación de planta para reducir paradas, mejorar calidad de datos y priorizar automatización con retorno claro.",
+        "isNational": false,
+        "development": {
+          "situation": "TI ejecutaba iniciativas sin priorización por impacto en planta; los sistemas críticos tenían dependencias no documentadas y cambios poco controlados.",
+          "problems": [
+            "Paradas de producción por cambios no coordinados",
+            "Desalineación entre necesidades de planta y proyectos TI",
+            "KPIs de TI desconectados de KPIs de producción",
+            "Riesgos de continuidad no gestionados formalmente"
+          ],
+          "solution": {
+            "summary": "Aplicación de principios de ISO 38500 para gobernar inversiones y operación TI en función de la continuidad y eficiencia productiva.",
+            "modules": [
+              "RACI y propietarios de servicios críticos de planta",
+              "Plan estratégico TI alineado a objetivos de producción/calidad",
+              "Proceso de adquisición y evaluación de proveedores OT/IT",
+              "Tablero de KPIs orientado a OEE, disponibilidad y cambios fallidos",
+              "Auditorías de conformidad y continuidad (backups, DR, pruebas)",
+              "Capacitación cruzada planta–TI (factor humano)"
+            ]
+          },
+          "results": "Menos interrupciones por cambios, mejor priorización de inversiones y mayor trazabilidad de riesgos/decisiones."
+        },
+        "lessons": "El gobierno TI se valida en operación: si reduce interrupciones y mejora KPIs del negocio, está funcionando."
+      },
+      {
+        "title": "Organizaciones públicas: Transparencia y rendición de cuentas",
+        "description": "Entidad pública que fortaleció transparencia en compras TI, decisiones de priorización y seguimiento de proyectos, con evidencia para control y auditoría.",
+        "isNational": true,
+        "development": {
+          "intro": "La implementación incluyó:",
+          "steps": [
+            "Estructuración de gobierno (comités, actas, repositorio de decisiones y evidencias)",
+            "Matriz de responsabilidad para proyectos TIC y proveedores",
+            "Proceso de adquisición con criterios de evaluación, comparativos y trazabilidad",
+            "KPIs y reportes periódicos para dirección y entes de control",
+            "Auditorías de conformidad y gestión de hallazgos (plan de mejora)"
+          ],
+          "outro": "Resultados: mayor trazabilidad, reducción de reprocesos en compras TI y mejora en la rendición de cuentas."
+        },
+        "lessons": "En lo público, gobernar TI es gobernar evidencia: decisiones justificadas, medibles y auditables."
+      },
+      {
+        "title": "PYMEs: Adaptación de principios de gobierno a recursos limitados",
+        "description": "PYME que implementó un “gobierno ligero” para controlar riesgos, inversiones y operación sin burocracia.",
+        "isNational": true,
+        "development": {
+          "situation": "La empresa dependía de pocos sistemas clave, pero no existía control formal sobre proveedores, cambios, accesos y continuidad.",
+          "problems": [
+            "Falta de roles claros y decisiones reactivas",
+            "Dependencia alta de terceros sin SLAs ni métricas",
+            "Ausencia de controles mínimos de conformidad y continuidad"
+          ],
+          "solution": {
+            "summary": "Implementación de los 6 principios de ISO 38500 en versión mínima viable, priorizando control y rendimiento.",
+            "modules": [
+              "Responsabilidad: RACI simplificado por servicio crítico",
+              "Estrategia: plan trimestral TI alineado a metas del negocio",
+              "Adquisición: checklist y scoring para proveedores",
+              "Rendimiento: 6–8 KPIs operativos (incidentes, cambios, disponibilidad)",
+              "Conformidad: auditorías internas básicas y revisión de accesos",
+              "Factor humano: capacitación focalizada por rol"
+            ]
+          },
+          "results": "Mejor control de proveedores, menos incidentes por cambios y mayor claridad de prioridades con métricas simples."
+        },
+        "lessons": "La madurez no depende del tamaño: depende de constancia en pocos controles y disciplina de medición."
+      },
+      {
+        "title": "Empresas tecnológicas: Gestión de innovación y desarrollo",
+        "description": "Empresa tecnológica que gobernó su portafolio de productos y plataformas, controlando riesgo y enfocando inversión en valor medible.",
+        "isNational": false,
+        "development": {
+          "intro": "La implementación incluyó:",
+          "steps": [
+            "Gobierno del portafolio: criterios de inversión, stop/go y medición de beneficios",
+            "Rendimiento: KPIs de producto y plataforma (SLOs, lead time, defect rate, costos)",
+            "Conformidad: prácticas de seguridad, privacidad y auditoría en el SDLC",
+            "Factor humano: estándares de ingeniería, capacitación y definición de ownership"
+          ],
+          "outro": "Resultados: decisiones de inversión más consistentes, mayor confiabilidad de plataformas y mejor alineación innovación–riesgo."
+        },
+        "lessons": "En tecnología, el gobierno efectivo acelera: reduce retrabajo, clarifica ownership y prioriza inversión por valor."
+      }
+    ],
+    "principles": [
+      {
+        "name": "Responsibility",
+        "application": "Definir quién decide, quién ejecuta y quién rinde cuentas por servicios/proyectos TIC.",
+        "deliverableExamples": ["Matriz RACI", "Owner de servicio", "Actas de comité"]
+      },
+      {
+        "name": "Strategy",
+        "application": "Alinear TIC con objetivos de negocio y priorización basada en valor y riesgo.",
+        "deliverableExamples": [
+          "Plan estratégico TIC",
+          "Roadmap",
+          "Portafolio priorizado"
+        ]
+      },
+      {
+        "name": "Acquisition",
+        "application": "Controlar compras TI con evaluación objetiva y enfoque costo/beneficio.",
+        "deliverableExamples": ["Matriz de evaluación", "TCO", "Contratos y SLAs"]
+      },
+      {
+        "name": "Performance",
+        "application": "Medir desempeño TIC con KPIs ejecutivos y operativos.",
+        "deliverableExamples": [
+          "Dashboard KPIs",
+          "SLA/SLO report",
+          "Revisión del servicio"
+        ]
+      },
+      {
+        "name": "Conformance",
+        "application": "Cumplimiento normativo y auditorías con evidencias.",
+        "deliverableExamples": ["Auditorías", "SoA/controles", "Plan de hallazgos"]
+      },
+      {
+        "name": "Human Behaviour",
+        "application": "Capacitación, cultura y adopción para sostener el gobierno TI.",
+        "deliverableExamples": [
+          "Plan de formación",
+          "Concienciación",
+          "Gestión del cambio"
+        ]
+      }
+    ],
+    "benefits": [
+      "Reducción de riesgos operacionales y sistémicos",
+      "Mejora en la toma de decisiones estratégicas",
+      "Optimización de inversiones en TIC",
+      "Mayor transparencia y confianza de stakeholders",
+      "Alineación efectiva entre TIC y objetivos de negocio"
+    ]
+  },
   "topic5": {
     "caseStudies": [
       {
