@@ -693,54 +693,140 @@
   "topic6": {
     "caseStudies": [
       {
-        "title": "Empresa de Servicios Financieros: Implementación de Service Desk con ITIL",
-        "description": "Empresa del sector financiero que implementó ITIL para mejorar la gestión de servicios de TI, enfocándose en la fase de Operación del Servicio.",
+        "title": "Empresa Financiera: Implementación de Service Desk",
+        "description": "Entidad financiera que implementó ITIL para profesionalizar la atención a usuarios, reducir tiempos de resolución y mejorar la trazabilidad operativa mediante un Service Desk centralizado.",
+        "isNational": false,
         "development": {
-          "intro": "Situación inicial: La empresa tenía problemas en la gestión de incidencias y solicitudes de usuarios, con tiempos de respuesta elevados y falta de visibilidad. Implementación ITIL:",
+          "intro": "La implementación incluyó:",
           "steps": [
-            "Establecimiento de Service Desk como punto único de contacto",
-            "Implementación del proceso de Gestión de Incidencias con clasificación y priorización",
-            "Implementación de Gestión de Problemas para identificar causas raíz",
-            "Establecimiento de SLA (Service Level Agreements) con objetivos medibles",
-            "Implementación de Gestión de Configuración (CMDB) para rastrear activos",
-            "Capacitación del personal en procesos ITIL"
+            "Definición del catálogo de servicios y alcance del Service Desk (canales, horarios, responsabilidades)",
+            "Diseño del proceso de Gestión de Incidencias (clasificación, priorización, escalamiento, cierre)",
+            "Implementación de Gestión de Solicitudes (request fulfillment) y base de conocimiento",
+            "Definición de SLAs/OLAs y tableros de KPIs (MTTR, backlog, cumplimiento SLA)",
+            "Integración con Gestión de Configuración (CMDB) para correlacionar activos e incidentes",
+            "Capacitación del equipo y estandarización de guías operativas",
+            "Ciclo de mejora continua: revisión mensual, análisis de tendencias y acciones correctivas"
           ],
-          "outro": "Resultados: Reducción del 45% en tiempo medio de resolución de incidencias, mejora del 60% en satisfacción del usuario, reducción del 30% en incidentes recurrentes mediante gestión de problemas y cumplimiento del 95% de los SLA establecidos."
+          "outro": "Resultados: reducción de tiempos de resolución, mayor visibilidad del trabajo, mejor cumplimiento de SLAs y aumento de satisfacción del usuario."
         },
-        "lessons": "La implementación de ITIL en la fase de Operación del Servicio proporciona estructura y procesos claros que mejoran significativamente la calidad del servicio. El Service Desk funciona como punto central de coordinación y visibilidad."
+        "lessons": "El Service Desk funciona cuando hay catálogo claro, priorización consistente y medición disciplinada. Sin SLAs y conocimiento reutilizable, el soporte vuelve a ser reactivo."
       },
       {
-        "title": "Organización de Salud: Gestión de Cambios con ITIL",
-        "description": "Hospital que implementó el proceso de Gestión de Cambios de ITIL para controlar y coordinar cambios en sistemas críticos de información médica.",
+        "title": "Administración Pública: Gestión de Incidencias",
+        "description": "Entidad pública que estandarizó la Gestión de Incidencias para reducir interrupciones de servicios internos, mejorar trazabilidad y responder mejor a auditorías.",
+        "isNational": true,
         "development": {
-          "intro": "Contexto: El hospital necesitaba gestionar cambios en sistemas críticos (historia clínica electrónica, sistemas de laboratorio) sin afectar la operación. Implementación ITIL:",
-          "steps": [
-            "Establecimiento del proceso de Gestión de Cambios siguiendo ITIL (Transición del Servicio)",
-            "Creación de Comité de Cambios (CAB) para evaluar cambios importantes",
-            "Implementación de clasificación de cambios (Normal, Estándar, Urgente, Emergencia)",
-            "Proceso de evaluación, aprobación y planificación de cambios",
-            "Validación y pruebas antes del despliegue",
-            "Gestión de retrocesión en caso de problemas"
+          "situation": "La atención de fallas se hacía por múltiples canales informales, sin priorización ni registro consistente, dificultando la continuidad del servicio y la rendición de cuentas.",
+          "problems": [
+            "Falta de clasificación y priorización; todo se atendía “por orden de llegada”",
+            "Baja trazabilidad: no existía historial confiable de incidentes ni causas",
+            "Escalamientos improvisados y dependencia de personas clave",
+            "Reportes débiles para dirección y entes de control"
           ],
-          "outro": "Resultados: Reducción del 70% en cambios fallidos, cumplimiento del 100% en pruebas de cambios críticos, reducción del 50% en tiempo de implementación de cambios estándar y cero incidentes relacionados con cambios mal planificados."
+          "solution": {
+            "summary": "Implementación del proceso ITIL de Gestión de Incidencias con mesa de ayuda, registro único, SLAs internos y reportes periódicos.",
+            "modules": [
+              "Canal único y sistema de tickets (registro, categorización, prioridad)",
+              "Matriz de escalamiento (niveles L1/L2/L3) y grupos resolutores",
+              "SLAs internos por criticidad y servicios (tiempo de respuesta/resolución)",
+              "Base de conocimiento para soluciones recurrentes",
+              "Reportes ejecutivos: volumen, MTTR, reincidencias, cumplimiento SLA"
+            ]
+          },
+          "results": "Mejor control operativo, incremento de la trazabilidad, reducción de reincidencias por soluciones documentadas y capacidad de reportar con evidencia."
         },
-        "lessons": "La Gestión de Cambios de ITIL es fundamental en entornos críticos. Proporciona control, visibilidad y reducción de riesgos, especialmente cuando se trata de sistemas que afectan directamente la operación del negocio."
+        "lessons": "La gestión de incidencias en lo público requiere disciplina documental. ITIL aporta método para convertir “urgencias” en operación medible y auditable."
       },
       {
-        "title": "Empresa Manufacturera: Ciclo de Vida Completo del Servicio con ITIL",
-        "description": "Empresa manufacturera que implementó ITIL en todas las fases del ciclo de vida del servicio para gestionar un nuevo sistema ERP.",
+        "title": "Empresa Manufacturera: Gestión de Cambios",
+        "description": "Manufacturera que implementó Gestión de Cambios para reducir caídas de sistemas críticos (ERP/MES), controlar despliegues y minimizar impacto en producción.",
+        "isNational": false,
         "development": {
-          "intro": "Situación: La empresa necesitaba implementar un nuevo ERP y gestionarlo de manera estructurada. Aplicación del ciclo de vida ITIL:",
+          "intro": "La implementación incluyó:",
           "steps": [
-            "Estrategia: Definición del portfolio de servicios, análisis de demanda y gestión financiera",
-            "Diseño: Creación del catálogo de servicios, definición de SLA, diseño de capacidad y disponibilidad, plan de continuidad",
-            "Transición: Gestión de cambios, configuración del CMDB, despliegue controlado, validación y pruebas",
-            "Operación: Service Desk, gestión de incidencias y problemas, gestión de eventos",
-            "Mejora: Proceso de mejora continua con medición de KPIs, generación de informes, plan de mejora del servicio (SIP)"
+            "Definición de políticas de cambio (estándar, normal, urgente/emergencia) y criterios de riesgo",
+            "Creación del flujo de cambio: solicitud → evaluación → aprobación → planificación → pruebas → despliegue → revisión",
+            "Conformación de CAB (Change Advisory Board) para cambios de alto impacto",
+            "Ventanas de mantenimiento coordinadas con producción y plan de reversión obligatorio",
+            "Registro y trazabilidad de cambios vinculados a incidentes/problemas y elementos de configuración",
+            "KPIs: tasa de cambios fallidos, lead time, % cambios con rollback, impacto en disponibilidad"
           ],
-          "outro": "Resultados: Implementación exitosa del ERP en tiempo y presupuesto, cumplimiento del 98% de SLA durante los primeros 6 meses, reducción del 40% en costos operativos de TI, mejora continua documentada trimestralmente y satisfacción del cliente del 92%."
+          "outro": "Resultados: reducción de interrupciones por despliegues, mayor previsibilidad, mejor coordinación con planta y aumento de estabilidad del servicio."
         },
-        "lessons": "Aplicar ITIL en todas las fases del ciclo de vida del servicio proporciona una gestión integral y estructurada. La fase de Mejora asegura que los servicios evolucionen continuamente para satisfacer las necesidades cambiantes del negocio."
+        "lessons": "La Gestión de Cambios no es burocracia: es control de riesgo. Si no hay clasificación, pruebas y rollback, el costo real aparece en paradas y reprocesos."
+      },
+      {
+        "title": "Organización de Salud: Gestión de Disponibilidad",
+        "description": "Hospital que fortaleció Gestión de Disponibilidad para asegurar continuidad de sistemas clínicos (HCE, laboratorio, imágenes) y reducir impacto en la atención al paciente.",
+        "isNational": true,
+        "development": {
+          "situation": "Los sistemas críticos presentaban indisponibilidades intermitentes y mantenimientos no coordinados, generando demoras clínicas y riesgos operativos.",
+          "problems": [
+            "Falta de definición clara de servicios críticos y niveles de disponibilidad requeridos",
+            "Monitoreo insuficiente para anticipar fallas (observabilidad limitada)",
+            "Dependencias no documentadas entre aplicaciones, red y proveedores",
+            "Ausencia de pruebas periódicas de continuidad y planes de contingencia por servicio"
+          ],
+          "solution": {
+            "summary": "Implementación de Gestión de Disponibilidad ITIL con definición de servicios críticos, monitoreo, capacidad y planes de contingencia integrados.",
+            "modules": [
+              "Matriz de criticidad por servicio y objetivos de disponibilidad (SLA/SLO)",
+              "Monitoreo y alertas (métricas, logs, trazas) con umbrales por servicio",
+              "Gestión de capacidad y picos (dimensionamiento, escalamiento, mantenimiento planificado)",
+              "Análisis de causa raíz de indisponibilidades (vinculado a problemas)",
+              "Planes de contingencia por servicio (procedimientos, comunicación, pruebas)"
+            ]
+          },
+          "results": "Mejor estabilidad de servicios clínicos, reducción de indisponibilidades críticas y mayor capacidad de respuesta ante incidentes con procedimientos definidos."
+        },
+        "lessons": "En salud, disponibilidad es seguridad del paciente. ITIL aporta estructura para definir objetivos, medirlos y operar con resiliencia, no con improvisación."
+      }
+    ],
+    "applicationsByPhase": [
+      {
+        "phase": "Strategy",
+        "description": "Definir qué servicios se ofrecen y por qué aportan valor, con enfoque en demanda, costos y priorización.",
+        "deliverables": [
+          "Portfolio de servicios",
+          "Análisis de demanda",
+          "Modelo financiero del servicio"
+        ]
+      },
+      {
+        "phase": "Design",
+        "description": "Diseñar el servicio para que sea entregable y medible, con acuerdos y capacidades necesarias.",
+        "deliverables": [
+          "Catálogo de servicios",
+          "SLAs/OLAs",
+          "Diseño de capacidad y disponibilidad"
+        ]
+      },
+      {
+        "phase": "Transition",
+        "description": "Controlar cambios y despliegues, asegurando pruebas, aprobaciones y trazabilidad.",
+        "deliverables": [
+          "Gestión de cambios",
+          "Plan de despliegue",
+          "Validación y pruebas"
+        ]
+      },
+      {
+        "phase": "Operation",
+        "description": "Operar el servicio día a día con soporte y resolución estructurada.",
+        "deliverables": [
+          "Service Desk",
+          "Gestión de incidencias",
+          "Gestión de solicitudes"
+        ]
+      },
+      {
+        "phase": "Continual Improvement",
+        "description": "Medir, analizar y mejorar continuamente la calidad y el valor del servicio.",
+        "deliverables": [
+          "Plan de mejora del servicio (SIP)",
+          "KPIs y reportes",
+          "Revisiones periódicas"
+        ]
       }
     ]
   },
