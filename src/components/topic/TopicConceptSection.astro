@@ -6,16 +6,28 @@ import Separator from '../ui/Separator.astro';
 interface Props {
   title: string;
   icon?: string;
+  activity?: boolean;
+  estimatedDuration?: number;
 }
 
-const { title, icon } = Astro.props;
+const { title, icon, activity = false, estimatedDuration = 0 } = Astro.props;
 ---
 
 <section class='topic-concept-section'>
-  <section class='topic-concept-section__header'>
+  <section class='topic-concept-section__header' data-activity={activity}>
     <h3 data-heading='icon'>{icon && <Icon name={icon} />}{title}</h3>
-    <Separator class='topic-concept-section__separator' thickness={3.2} />
+    {
+      activity && estimatedDuration > 0 && (
+        <span data-activity-info data-heading='icon'>
+          <strong>
+            <Icon name='clock-hour-3' /> Duración estimada:
+          </strong>{' '}
+          {estimatedDuration} {estimatedDuration === 1 ? 'minuto' : 'minutos'}
+        </span>
+      )
+    }
   </section>
+  <Separator class='topic-concept-section__separator' thickness={3.2} />
   <section class='topic-concept-section__content'>
     <slot />
   </section>
@@ -28,9 +40,15 @@ const { title, icon } = Astro.props;
     border: 1px solid var(--gray-300);
     box-shadow: var(--shadow-sm);
     padding: 2.4rem;
+
+    .topic-concept-section__separator {
+      background-color: var(--brand-primary);
+    }
   }
 
   .topic-concept-section__header {
+    padding-inline: 8px;
+
     & h3 {
       color: var(--gray-900);
     }
@@ -39,8 +57,30 @@ const { title, icon } = Astro.props;
       color: var(--brand-primary);
     }
 
-    .topic-concept-section__separator {
-      background-color: var(--brand-primary);
+    &[data-activity='true'] {
+      display: flex;
+      flex-direction: column;
+      box-shadow: var(--shadow-lg);
+
+      background-color: var(--bg-activity);
+      border-top-left-radius: var(--radius-md);
+      border-top-right-radius: var(--radius-md);
+    }
+
+    & [data-activity-info] {
+      color: var(--gray-900);
+      margin-bottom: 8px;
+
+      & [data-icon] {
+        color: var(--gray-900);
+        width: 2cap;
+        height: 2cap;
+      }
+
+      & strong {
+        display: inherit;
+        gap: 0.4cap;
+      }
     }
   }
 
