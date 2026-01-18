@@ -178,18 +178,87 @@ import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
 
   <TopicConceptSection title="Casos Colombianos">
     <AccordionRoot type='single'>
-      <TopicCaseStudies topic='topic1' isNational={true} />
+      <TopicCaseStudies topic='topic1' isNational />
     </AccordionRoot>
   </TopicConceptSection>
 </TopicSectionGroup>
 
 <TopicSectionGroup title='Actividades de Refuerzo' icon='list-check'>
-  <TopicConceptSection title="Identificación de Oportunidades">
+  <TopicConceptSection
+    title="Identificación de Oportunidades"
+    activity
+    estimatedDuration={15}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      Detectar oportunidades reales de transformación digital en una empresa local,
+      priorizarlas por impacto/esfuerzo y proponer una solución tecnológica concreta
+      con beneficios medibles.
+    </TopicConceptCard>
 
+    <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
+      1. **Selecciona una empresa local real** que conozcas (tienda, restaurante, consultorio, ferretería, gimnasio, colegio, etc.).
+      2. **Describe en 3&#x2013;4 líneas cómo opera hoy** (ventas, atención al cliente, inventarios, pagos, agenda, entregas, etc.).
+      3. **Identifica 2 procesos** que hoy generen fricción o pérdida (tiempo, errores, costos, quejas).
+      4. Para cada proceso, responde:
+          * ¿Qué problema específico ocurre?
+          * ¿A quién afecta (cliente, empleados, proveedores)?
+          * ¿Cuál es el “costo” visible (tiempo, dinero, reprocesos)?
+      5. **Propón una solución tecnológica específica** (no “digitalizar” en general). Ejemplos:
+          * Sistema de turnos y agenda online
+          * Control de inventario con códigos de barra
+          * CRM simple para seguimiento de clientes
+          * Formularios + automatización de reportes
+          * Pasarela de pagos y facturación
+      6. **Define beneficios esperados (mínimo 3)** con métricas:
+          * “Reducir tiempo de atención en 30%”
+          * “Disminuir errores de inventario”
+          * “Aumentar conversiones”
+      7. **Prioriza** usando una matriz rápida:
+          * Impacto (Alto/Medio/Bajo)
+          * Esfuerzo (Alto/Medio/Bajo)
+          * Elige 1 iniciativa “ganancia rápida” (alto impacto / bajo esfuerzo).
+
+      **Entregable:** un párrafo con la empresa + 2 procesos + 1 solución priorizada + métricas.
+    </TopicConceptCard>
   </TopicConceptSection>
 
-  <TopicConceptSection title="Análisis de Cadena de Suministro">
+  <TopicConceptSection
+    title="Análisis de Cadena de Suministro"
+    activity
+    estimatedDuration={20}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      Comprender cómo una cadena de suministro conecta actores y procesos, identificar
+      puntos de riesgo/ineficiencia y proponer mejoras habilitadas por tecnología.
+    </TopicConceptCard>
 
+    <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
+      1. **Elige un producto de uso frecuente** (pan, café, arroz, cuaderno, medicamento, celular, etc.).
+      2. **Lista los actores de la cadena** (mínimo 5), por ejemplo:
+          * Proveedor de materia prima &#x21FE; productor &#x21FE; transportista &#x21FE; distribuidor &#x21FE; tienda &#x21FE; cliente
+      3. Para cada actor, describe:
+          * Qué hace (proceso)
+          * Qué información necesita (pedidos, inventario, calidad, pagos)
+          * Qué “entrada” recibe y qué “salida” entrega
+      4. **Identifica 3 riesgos o cuellos de botella**, por ejemplo:
+          * Falta de trazabilidad
+          * Demoras logísticas
+          * Variación de calidad
+          * Ruptura de stock
+          * Dependencia de un solo proveedor
+      5. Propón **2 mejoras tecnológicas concretas**, eligiendo entre:
+          * Trazabilidad (lotes/QR)
+          * Integración de inventario y pedidos
+          * Pronóstico de demanda (históricos + estacionalidad)
+          * Optimización de rutas
+          * Monitoreo de temperatura/cadena de frío (IoT)
+      6. **Evalúa el impacto** de cada mejora:
+          * ¿Qué mejora (tiempo, costo, calidad, disponibilidad)?
+          * ¿Quién se beneficia?
+          * ¿Qué indicador lo demostraría?
+
+      **Entregable:** diagrama simple (lista con flechas) + 3 riesgos + 2 mejoras con indicadores.
+    </TopicConceptCard>
   </TopicConceptSection>
 </TopicSectionGroup>
 
