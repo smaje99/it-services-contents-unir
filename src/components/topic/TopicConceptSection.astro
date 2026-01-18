@@ -28,7 +28,7 @@ const { title, icon, activity = false, estimatedDuration = 0 } = Astro.props;
     }
   </section>
   <Separator class='topic-concept-section__separator' thickness={3.2} />
-  <section class='topic-concept-section__content'>
+  <section class='topic-concept-section__content' data-activity={activity}>
     <slot />
   </section>
 </section>
@@ -47,7 +47,7 @@ const { title, icon, activity = false, estimatedDuration = 0 } = Astro.props;
   }
 
   .topic-concept-section__header {
-    padding-inline: 8px;
+    padding-inline: 24px;
 
     & h3 {
       color: var(--gray-900);
@@ -61,6 +61,7 @@ const { title, icon, activity = false, estimatedDuration = 0 } = Astro.props;
       display: flex;
       flex-direction: column;
       box-shadow: var(--shadow-lg);
+      border: 1px solid var(--gray-300);
 
       background-color: var(--bg-activity);
       border-top-left-radius: var(--radius-md);
@@ -85,5 +86,13 @@ const { title, icon, activity = false, estimatedDuration = 0 } = Astro.props;
   }
 
   .topic-concept-section__content {
+    padding: 28px 24px 12px 24px;
+
+    &[data-activity='true'] {
+      border: 1px solid var(--gray-300);
+      border-top: none;
+      border-bottom-left-radius: var(--radius-md);
+      border-bottom-right-radius: var(--radius-md);
+    }
   }
 </style>

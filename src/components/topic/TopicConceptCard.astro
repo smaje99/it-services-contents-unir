@@ -1,4 +1,6 @@
 ---
+import { Icon } from 'astro-icon/components';
+
 import CardContent from '../ui/card/CardContent.astro';
 import CardHeader from '../ui/card/CardHeader.astro';
 import CardRoot from '../ui/card/CardRoot.astro';
@@ -6,14 +8,16 @@ import CardTitle from '../ui/card/CardTitle.astro';
 
 interface Props {
   title: string;
+  status?: 'success' | 'info' | 'warning' | 'error';
+  icon?: string;
 }
 
-const { title } = Astro.props;
+const { title, status = 'success', icon } = Astro.props;
 ---
 
-<CardRoot class='topic-concept-card'>
+<CardRoot class='topic-concept-card' data-status={status}>
   <CardHeader>
-    <CardTitle>{title}</CardTitle>
+    <CardTitle data-heading='icon'>{icon && <Icon name={icon} />}{title}</CardTitle>
   </CardHeader>
   <CardContent class='topic-concept-card__content'>
     <slot />
@@ -22,10 +26,31 @@ const { title } = Astro.props;
 
 <style>
   .topic-concept-card {
+    --status-color: var(--brand-primary);
+
     background-color: var(--gray-200);
     border-color: var(--gray-300);
-    border-left: 6px solid var(--success);
+    border-left: 6px solid var(--status-color);
     border-radius: var(--radius-sm);
+    padding-inline: 16px;
+    margin-bottom: 16px;
+
+    &[data-status='info'] {
+      --status-color: var(--info);
+    }
+    &[data-status='success'] {
+      --status-color: var(--success);
+    }
+    &[data-status='warning'] {
+      --status-color: var(--warning);
+    }
+    &[data-status='error'] {
+      --status-color: var(--error);
+    }
+
+    & [data-icon] {
+      color: var(--status-color);
+    }
   }
 
   .topic-concept-card__content {
