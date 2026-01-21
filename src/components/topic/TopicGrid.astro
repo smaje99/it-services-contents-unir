@@ -1,4 +1,12 @@
-<section class='topics-grid'>
+---
+interface Props {
+  fit?: boolean;
+}
+
+const { fit = true } = Astro.props;
+---
+
+<section class='topics-grid' role='list' data-fit={fit}>
   <slot />
 </section>
 
@@ -8,5 +16,8 @@
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
+    &[data-fit='false'] {
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    }
   }
 </style>
