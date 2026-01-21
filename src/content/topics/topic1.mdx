@@ -15,6 +15,7 @@ import TopicCaseStudies from '@/components/topic/TopicCaseStudies.astro';
 import TopicConceptCard from '@/components/topic/TopicConceptCard.astro';
 import TopicConceptSection from '@/components/topic/TopicConceptSection.astro';
 import TopicGrid from '@/components/topic/TopicGrid.astro';
+import TopicResourceSection from '@/components/topic/TopicResourceSection.astro';
 import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
 
 <TopicSectionGroup title='Conceptos Clave' icon='bulb'>
@@ -262,16 +263,4 @@ import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
   </TopicConceptSection>
 </TopicSectionGroup>
 
-<TopicSectionGroup title='Recursos Adicionales' icon='link'>
-  <TopicConceptSection title="Videos Recomendados">
-
-  </TopicConceptSection>
-
-  <TopicConceptSection title="Artículos de Interés">
-
-  </TopicConceptSection>
-
-  <TopicConceptSection title="Herramientas de Interés">
-
-  </TopicConceptSection>
-</TopicSectionGroup>
+<TopicResourceSection topic='topic1' />
