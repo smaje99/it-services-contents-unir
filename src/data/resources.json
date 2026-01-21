@@ -1,0 +1,69 @@
+{
+  "topic1": {
+    "groups": [
+      {
+        "title": "Vídeos Recomendados",
+        "items": [
+          {
+            "label": "¿Qué es la Transformación Digital? (YouTube)",
+            "url": "https://www.youtube.com/results?search_query=transformación+digital+qué+es"
+          },
+          {
+            "label": "Casos de Éxito en Transformación Digital (YouTube)",
+            "url": "https://www.youtube.com/results?search_query=casos+éxito+transformación+digital"
+          },
+          {
+            "label": "ERP vs CRM: Diferencias (YouTube)",
+            "url": "https://www.youtube.com/results?search_query=ERP+vs+CRM+diferencias"
+          },
+          {
+            "label": "¿Qué es la Transformación Digital? (YouTube)",
+            "url": "https://www.youtube.com/watch?v=VdC22Mngwuo"
+          },
+          {
+            "label": "Genios de la transformación digital: casos de éxito (Forbes Colombia, YouTube)",
+            "url": "https://www.youtube.com/live/KkcjlmFYRg8"
+          }
+        ]
+      },
+      {
+        "title": "Artículos de Interés",
+        "items": [
+          {
+            "label": "MinTIC Colombia - Transformación Digital",
+            "url": "https://www.mintic.gov.co/"
+          },
+          {
+            "label": "BBVA - Transformación Digital",
+            "url": "https://www.bbva.com/es/sostenibilidad/transformacion-digital/"
+          },
+          {
+            "label": "McKinsey - Tendencias en Tecnología",
+            "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights"
+          },
+          {
+            "label": "What is digital transformation? (McKinsey Explainers)",
+            "url": "https://www.mckinsey.com/featured-insights/mckinsey-explainers/what-is-digital-transformation"
+          },
+          {
+            "label": "MinTIC publica el Marco de Transformación Digital para el Estado",
+            "url": "https://gobiernodigital.mintic.gov.co/692/w3-article-149178.html"
+          }
+        ]
+      },
+      {
+        "title": "Herramientas Online",
+        "items": [
+          {
+            "label": "Calculadora de ROI (Investopedia)",
+            "url": "https://www.investopedia.com/calculator/roi.aspx"
+          },
+          {
+            "label": "Calculadora de ROI Avanzada",
+            "url": "https://www.calculator.net/roi-calculator.html"
+          }
+        ]
+      }
+    ]
+  }
+}
