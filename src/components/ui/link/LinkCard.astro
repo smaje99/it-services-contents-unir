@@ -1,0 +1,66 @@
+---
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  href: string;
+  label: string;
+  external?: boolean; // default true
+  class?: string;
+  [key: string]: unknown;
+}
+
+const { href, label, external = true, class: className = '', ...rest } = Astro.props;
+
+const rel = external ? 'noopener noreferrer' : undefined;
+const target = external ? '_blank' : undefined;
+---
+
+<a class:list={['link-card', className]} href={href} target={target} rel={rel}, {...rest}>
+  <Icon name='external-link' aria-hidden='true' />
+
+  <span class='link-card__label'>{label}</span>
+</a>
+
+<style>
+  .link-card {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4cap;
+    padding: 1.2rem 1rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+    background: var(--gray-300);
+    text-decoration: none;
+    color: inherit;
+    transition:
+      transform 120ms ease,
+      border-color 120ms ease,
+      background 120ms ease;
+    min-height: 3.2rem;
+
+    &:hover {
+      border-color: color-mix(in oklab, var(--brand-primary) 45%, var(--border-color));
+      background: color-mix(in oklab, var(--brand-primary) 6%, var(--gray-300));
+      transform: translateY(-1px);
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--ring);
+      outline-offset: 2px;
+    }
+  }
+
+  [data-icon='external-link'] {
+    width: 2cap;
+    height: 2cap;
+    display: block;
+    flex-shrink: 0;
+    stroke-width: 2;
+    color: var(--brand-primary);
+  }
+
+  .link-card__label {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+</style>
