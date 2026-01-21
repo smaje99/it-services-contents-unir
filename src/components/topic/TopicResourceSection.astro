@@ -1,0 +1,30 @@
+---
+import resources from '@/data/resources.json';
+
+import type { ResourceTopic, TopicResources } from '@/types/resource';
+import TopicConceptSection from './TopicConceptSection.astro';
+import TopicSectionGroup from './TopicSectionGroup.astro';
+import LinkCard from '../ui/link/LinkCard.astro';
+import TopicGrid from './TopicGrid.astro';
+
+interface Props {
+  topic: ResourceTopic;
+}
+
+const { topic } = Astro.props;
+const topicResources = resources[topic] as TopicResources;
+---
+
+<TopicSectionGroup title='Recursos Adicionales' icon='link'>
+  {
+    topicResources.groups.map(({ title, items }) => (
+      <TopicConceptSection title={title}>
+        <TopicGrid fit={false}>
+          {items.map(({ label, url }) => (
+            <LinkCard label={label} href={url} />
+          ))}
+        </TopicGrid>
+      </TopicConceptSection>
+    ))
+  }
+</TopicSectionGroup>
