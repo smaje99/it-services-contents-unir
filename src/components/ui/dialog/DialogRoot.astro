@@ -1,0 +1,117 @@
+---
+interface Props {
+  id: string; // obligatorio para enlazar triggers/close
+  open?: boolean; // opcional: abrir al cargar
+  class?: string;
+  [key: string]: unknown; // props adicionales
+}
+
+const { id, open = false, class: className = '', ...rest } = Astro.props;
+---
+
+<dialog id={id} class:list={['dialog', className]} {...rest}>
+  <div class='dialog__panel' role='document'>
+    <slot />
+  </div>
+</dialog>
+
+<script is:inline>
+  (() => {
+    const dialog = document.getElementById({JSON.stringify(id)});
+    if (!(dialog instanceof HTMLDialogElement)) return;
+
+    // Open on load if requested
+    const shouldOpen = {JSON.stringify(open)};
+    if (shouldOpen && !dialog.open) dialog.showModal();
+
+    // Close on backdrop click (click outside panel)
+    dialog.addEventListener('click', (e) => {
+      const target = e.target;
+      if (!(target instanceof HTMLElement)) return;
+
+      // If click is on <dialog> backdrop area (not inside panel), close.
+      if (target === dialog) dialog.close();
+    });
+
+    // Prevent default "cancel" to ensure consistent close behavior
+    dialog.addEventListener('cancel', (e) => {
+      // Esc triggers cancel; we close to unify behavior.
+      e.preventDefault();
+      dialog.close();
+    });
+  })();
+</script>
+
+<style>
+  .dialog {
+    border: none;
+    padding: 0;
+    background: transparent;
+
+    max-width: min(680px, calc(100vw - 2rem));
+    width: 100%;
+
+    display: none;
+    opacity: 0;
+    transition-property: opacity, display;
+    transition-duration: 180ms;
+    transition-timing-function: ease;
+    transition-behavior: allow-discrete;
+  }
+
+  .dialog[open] {
+    display: block;
+    opacity: 1;
+  }
+
+  /* Estado inicial para la transición de entrada */
+  @starting-style {
+    .dialog[open] {
+      opacity: 0;
+    }
+  }
+
+  .dialog::backdrop {
+    background: rgb(0 0 0 / 0);
+    transition: background 180ms ease;
+  }
+
+  .dialog[open]::backdrop {
+    background: rgb(0 0 0 / 0.45);
+  }
+
+  @starting-style {
+    .dialog[open]::backdrop {
+      background: rgb(0 0 0 / 0);
+    }
+  }
+
+  .dialog__panel {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    box-shadow: 0 20px 60px rgb(0 0 0 / 0.25);
+
+    transform: translateY(8px);
+    transition: transform 180ms ease;
+  }
+
+  .dialog[open] .dialog__panel {
+    transform: translateY(0);
+  }
+
+  @starting-style {
+    .dialog[open] .dialog__panel {
+      transform: translateY(8px);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .dialog,
+    .dialog::backdrop,
+    .dialog__panel {
+      transition: none;
+    }
+  }
+</style>

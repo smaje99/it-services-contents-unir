@@ -1,0 +1,52 @@
+---
+interface Props {
+  dialogId: string;
+  asChild?: boolean; // si quieres envolver un button/link existente
+  class?: string;
+  [key: string]: unknown; // props adicionales
+}
+
+const { dialogId, asChild = false, class: className = '', ...rest } = Astro.props;
+---
+
+{asChild ? (
+  <span class:list={['dialog-trigger', className]} data-dialog-trigger={dialogId} {...rest}>
+    <slot />
+  </span>
+) : (
+  <button
+    type="button"
+    class:list={['dialog-trigger', className]}
+    data-dialog-trigger={dialogId}
+    {...rest}
+  >
+    <slot />
+  </button>
+)}
+
+<script is:inline>
+  (() => {
+    const root = document.currentScript?.previousElementSibling;
+    if (!(root instanceof HTMLElement)) return;
+
+    const dialogId = root.getAttribute('data-dialog-trigger');
+    if (!dialogId) return;
+
+    root.addEventListener('click', (e) => {
+      // Allow normal anchor navigation if user uses <a> inside asChild
+      // but if the click is intended to open, prevent default only for # anchors
+      const dialog = document.getElementById(dialogId);
+      if (!(dialog instanceof HTMLDialogElement)) return;
+
+      if (!dialog.open) dialog.showModal();
+    });
+  })();
+</script>
+
+<style>
+  .dialog-trigger {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+</style>

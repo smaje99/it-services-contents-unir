@@ -1,0 +1,19 @@
+---
+interface Props {
+  class?: string;
+  [key: string]: unknown; // props adicionales
+}
+const { class: className = '', ...rest } = Astro.props;
+---
+
+<h3 class:list={['dialog-title', className]} {...rest}>
+  <slot />
+</h3>
+
+<style>
+  .dialog-title {
+    margin: 0;
+    font-size: 1.9rem;
+    line-height: 1.2;
+  }
+</style>

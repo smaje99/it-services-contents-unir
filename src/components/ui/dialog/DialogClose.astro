@@ -1,0 +1,64 @@
+---
+interface Props {
+  dialogId: string;
+  class?: string;
+  label?: string; // aria-label por defecto
+  asChild?: boolean;
+  [key: string]: unknown; // props adicionales
+}
+
+const {
+  dialogId,
+  class: className = '',
+  label = 'Cerrar',
+  asChild = false,
+  ...rest,
+} = Astro.props;
+---
+
+{
+  asChild ? (
+    <span
+      class:list={['dialog-close', className]}
+      data-dialog-close={dialogId}
+      aria-label={label}
+      {...rest}
+    >
+      <slot />
+    </span>
+  ) : (
+    <button
+      type='button'
+      class:list={['dialog-close', className]}
+      data-dialog-close={dialogId}
+      aria-label={label}
+      {...rest}
+    >
+      <slot />
+    </button>
+  )
+}
+
+<script is:inline>
+  (() => {
+    const root = document.currentScript?.previousElementSibling;
+    if (!(root instanceof HTMLElement)) return;
+
+    const dialogId = root.getAttribute('data-dialog-close');
+    if (!dialogId) return;
+
+    root.addEventListener('click', () => {
+      const dialog = document.getElementById(dialogId);
+      if (!(dialog instanceof HTMLDialogElement)) return;
+      if (dialog.open) dialog.close();
+    });
+  })();
+</script>
+
+<style>
+  .dialog-close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
