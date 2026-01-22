@@ -1,0 +1,139 @@
+---
+import { Icon } from 'astro-icon/components';
+
+type Variant = 'default' | 'secondary' | 'outline' | 'success' | 'warning' | 'danger';
+type Size = 'sm' | 'md';
+type IconPosition = 'left' | 'right';
+
+interface Props {
+  variant?: Variant;
+  size?: Size;
+  icon?: string;
+  iconPosition?: IconPosition;
+  class?: string;
+  [key: string]: unknown;
+}
+
+const {
+  variant = 'default',
+  size = 'md',
+  icon,
+  iconPosition = 'left',
+  class: className = '',
+  ...rest
+} = Astro.props as Props;
+
+const hasIcon = typeof icon === 'string' && icon.trim().length > 0;
+---
+
+<span
+  class:list={['badge', className]}
+  data-variant={variant}
+  data-size={size}
+  data-icon-position={iconPosition}
+  data-has-icon={hasIcon ? 'true' : 'false'}
+  {...rest}
+>
+  {hasIcon && iconPosition === 'left' ? <Icon name={icon} aria-hidden='true' /> : null}
+
+  <span class='badge__label'>
+    <slot />
+  </span>
+
+  {hasIcon && iconPosition === 'right' ? <Icon name={icon} aria-hidden='true' /> : null}
+</span>
+
+<style>
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+    user-select: none;
+    color: var(--text);
+  }
+
+  /* Layout: cuando hay icono */
+  .badge[data-has-icon='true'] {
+    gap: 0.45rem;
+  }
+
+  /* Sizes */
+  .badge[data-size='sm'] {
+    padding: 0.35rem 0.6rem;
+    font-size: 1.2rem;
+  }
+
+  .badge[data-size='md'] {
+    padding: 0.45rem 0.75rem;
+    font-size: 1.3rem;
+  }
+
+  /* Ajuste fino cuando hay icono */
+  .badge[data-has-icon='true'][data-size='sm'] {
+    padding-inline: 0.55rem;
+  }
+
+  .badge[data-has-icon='true'][data-size='md'] {
+    padding-inline: 0.7rem;
+  }
+
+  /* ✅ Estilo del icono por atributo */
+  [data-icon] {
+    width: 1.05em;
+    height: 1.05em;
+    stroke-width: 2;
+    flex-shrink: 0;
+  }
+
+  /* Variants */
+  .badge[data-variant='default'] {
+    background: color-mix(in oklab, var(--primary) 14%, var(--card-bg));
+    border-color: color-mix(in oklab, var(--primary) 35%, var(--border-color));
+  }
+
+  .badge[data-variant='secondary'] {
+    background: color-mix(in oklab, var(--border-color) 55%, var(--card-bg));
+    border-color: var(--border-color);
+  }
+
+  .badge[data-variant='outline'] {
+    background: transparent;
+    border-color: var(--border-color);
+  }
+
+  .badge[data-variant='success'] {
+    background: color-mix(in oklab, var(--success) 16%, var(--card-bg));
+    border-color: color-mix(in oklab, var(--success) 40%, var(--border-color));
+  }
+
+  .badge[data-variant='warning'] {
+    background: color-mix(in oklab, var(--warning) 18%, var(--card-bg));
+    border-color: color-mix(in oklab, var(--warning) 45%, var(--border-color));
+  }
+
+  .badge[data-variant='danger'] {
+    background: color-mix(in oklab, var(--danger) 14%, var(--card-bg));
+    border-color: color-mix(in oklab, var(--danger) 40%, var(--border-color));
+  }
+
+  /* Color del icono por variante (opcional) */
+  .badge[data-variant='default'] [data-icon] :global(svg) {
+    color: var(--primary);
+  }
+
+  .badge[data-variant='success'] [data-icon] :global(svg) {
+    color: var(--success);
+  }
+
+  .badge[data-variant='warning'] [data-icon] :global(svg) {
+    color: var(--warning);
+  }
+
+  .badge[data-variant='danger'] [data-icon] :global(svg) {
+    color: var(--danger);
+  }
+</style>
