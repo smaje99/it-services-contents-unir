@@ -1,0 +1,78 @@
+[
+  {
+    "title": "Conceptos Clave",
+    "description": "Los conceptos más relevantes de cada tema del curso",
+    "icon": "bulb",
+    "iconBg": "#16A34A",
+    "triggerId": "concepts-key",
+    "badges": [
+      {
+        "variant": "secondary",
+        "icon": "book-2",
+        "label": "9 Temas"
+      },
+      {
+        "variant": "success",
+        "icon": "circle-check",
+        "label": "Completado"
+      }
+    ]
+  },
+  {
+    "title": "Casos de Estudio",
+    "description": "Casos de estudio detallados con descripción y desarrollo",
+    "icon": "flask-2",
+    "iconBg": "#FACC15",
+    "triggerId": "case-studies",
+    "badges": [
+      {
+        "variant": "secondary",
+        "icon": "notes",
+        "label": "6 Casos"
+      },
+      {
+        "variant": "secondary",
+        "icon": "circle-check",
+        "label": "Disponible"
+      }
+    ]
+  },
+  {
+    "title": "Autoevaluación",
+    "description": "Tests de preguntas para evaluar el conocimiento",
+    "icon": "clipboard-check",
+    "iconBg": "#4F46E5",
+    "triggerId": "self-assessment",
+    "badges": [
+      {
+        "variant": "secondary",
+        "icon": "help",
+        "label": "20 Preguntas"
+      },
+      {
+        "variant": "secondary",
+        "icon": "player-play",
+        "label": "Interactivo"
+      }
+    ]
+  },
+  {
+    "title": "n8n - Automatización",
+    "description": "Conceptos y guía completa para entender n8n y automatización de flujos",
+    "icon": "git-merge",
+    "iconBg": "#F87171",
+    "triggerId": "n8n-automation",
+    "badges": [
+      {
+        "variant": "secondary",
+        "icon": "books",
+        "label": "Guía Completa"
+      },
+      {
+        "variant": "secondary",
+        "icon": "tool",
+        "label": "Práctico"
+      }
+    ]
+  }
+]
