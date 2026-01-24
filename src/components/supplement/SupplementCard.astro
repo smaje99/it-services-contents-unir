@@ -1,0 +1,41 @@
+---
+import type { Supplement } from '@/types/supplement';
+import CardHeader from '../ui/card/CardHeader.astro';
+import CardTitle from '../ui/card/CardTitle.astro';
+import { Icon } from 'astro-icon/components';
+import CardContent from '../ui/card/CardContent.astro';
+import CardFooter from '../ui/card/CardFooter.astro';
+import DialogTrigger from '../ui/dialog/DialogTrigger.astro';
+import CardRoot from '../ui/card/CardRoot.astro';
+import Badge from '../ui/Badge.astro';
+
+interface Props extends Supplement {}
+
+const { title, description, icon, iconBg, triggerId, badges } = Astro.props;
+---
+
+<CardRoot class='supplement-card' data-trigger-id={triggerId}>
+  <CardHeader>
+    <CardTitle data-heading='icon'>
+      <Icon name={icon} style={`background-color: ${iconBg}`} />
+      {title}
+    </CardTitle>
+  </CardHeader>
+  <CardContent>
+    <p>{description}</p>
+    {
+      badges && badges.length > 0 && (
+        <div class='badges'>
+          {badges.map(({ icon, label, variant }) => (
+            <Badge icon={icon} variant={variant} size='sm'>
+              {label}
+            </Badge>
+          ))}
+        </div>
+      )
+    }
+  </CardContent>
+  <CardFooter>
+    <DialogTrigger dialogId={triggerId}>Ver contenido →</DialogTrigger>
+  </CardFooter>
+</CardRoot>

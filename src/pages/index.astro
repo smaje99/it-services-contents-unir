@@ -1,8 +1,13 @@
 ---
+import { getCollection } from 'astro:content';
 import { Icon } from 'astro-icon/components';
 
-import CourseInfo from '@/components/CourseInfo.astro';
+import CourseGrid from '@/components/course/CourseGrid.astro';
+import CourseInfo from '@/components/course/CourseInfo.astro';
+import SupplementCard from '@/components/supplement/SupplementCard.astro';
 import HomeLayout from '@/layouts/HomeLayout.astro';
+
+const supplements = await getCollection('supplements');
 ---
 
 <!-- Below is your "component template." It's just HTML, but with
@@ -24,6 +29,10 @@ import HomeLayout from '@/layouts/HomeLayout.astro';
     clases presenciales, organizado en <strong>3 secciones principales</strong> que
     facilitan el aprendizaje y la evaluación.
   </p>
+
+  <CourseGrid>
+    {supplements.map(({ data }) => <SupplementCard {...data} />)}
+  </CourseGrid>
 
   <CourseInfo
     courseName='Servicios de Tecnología de la Información'
