@@ -1,14 +1,10 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
 
-const topics = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    order: z.number(),
-    icon: z.string(),
-    color: z.string(),
-    publishAt: z.string().transform((value) => new Date(value)),
-  }),
+import { topicSchema } from '@/types/topic';
+
+const topicsCollection = defineCollection({
+  type: 'content',
+  schema: topicSchema,
 });
 
-export const collections = { topics };
+export const collections = { topicsCollection };
