@@ -21,7 +21,7 @@ const {
   iconPosition = 'left',
   class: className = '',
   ...rest
-} = Astro.props as Props;
+} = Astro.props;
 
 const hasIcon = typeof icon === 'string' && icon.trim().length > 0;
 ---

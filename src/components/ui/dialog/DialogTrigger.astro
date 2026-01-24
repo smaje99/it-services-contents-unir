@@ -9,20 +9,26 @@ interface Props {
 const { dialogId, asChild = false, class: className = '', ...rest } = Astro.props;
 ---
 
-{asChild ? (
-  <span class:list={['dialog-trigger', className]} data-dialog-trigger={dialogId} {...rest}>
-    <slot />
-  </span>
-) : (
-  <button
-    type="button"
-    class:list={['dialog-trigger', className]}
-    data-dialog-trigger={dialogId}
-    {...rest}
-  >
-    <slot />
-  </button>
-)}
+{
+  asChild ? (
+    <span
+      class:list={['dialog-trigger', className]}
+      data-dialog-trigger={dialogId}
+      {...rest}
+    >
+      <slot />
+    </span>
+  ) : (
+    <button
+      type='button'
+      class:list={['dialog-trigger', className]}
+      data-dialog-trigger={dialogId}
+      {...rest}
+    >
+      <slot />
+    </button>
+  )
+}
 
 <script is:inline>
   (() => {
