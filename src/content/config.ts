@@ -13,4 +13,7 @@ const supplementCollection = defineCollection({
   schema: supplementSchema,
 });
 
-export const collections = { topicsCollection, supplementCollection };
+export const collections = {
+  topics: topicsCollection,
+  supplements: supplementCollection,
+};
