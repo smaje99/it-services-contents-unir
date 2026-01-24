@@ -7,7 +7,9 @@ import CourseInfo from '@/components/course/CourseInfo.astro';
 import SupplementCard from '@/components/supplement/SupplementCard.astro';
 import HomeLayout from '@/layouts/HomeLayout.astro';
 
-const supplements = await getCollection('supplements');
+const supplements = (await getCollection('supplements')).sort(
+  (a, b) => a.data.order - b.data.order,
+);
 ---
 
 <!-- Below is your "component template." It's just HTML, but with
