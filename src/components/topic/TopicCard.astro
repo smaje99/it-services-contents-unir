@@ -51,7 +51,6 @@ const topicUrl = `/temas/${slug}`;
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
-    cursor: pointer;
 
     &[data-status='completed'] {
       border: 2px solid var(--success);
@@ -81,7 +80,8 @@ const topicUrl = `/temas/${slug}`;
     display: block;
     flex-shrink: 0;
     stroke-width: 2;
-    color: var(--gray-100);
+    color: var(--gray-400);
+    mix-blend-mode: difference; /* Ensure visibility on various backgrounds */
   }
 
   .topic-status {
