@@ -4,16 +4,14 @@ interface Props {
   [key: string]: unknown;
 }
 
-const { class: userClass, ...rest } = Astro.props;
+const { class: className, ...rest } = Astro.props;
 ---
 
-<section class:list={['card-content', userClass]} {...rest}>
+<section class:list={['card-content', className]} {...rest}>
   <slot />
 </section>
 
 <style>
   .card-content {
-    font-size: 1.6rem;
-    line-height: 1.6;
   }
 </style>

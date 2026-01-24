@@ -8,6 +8,7 @@ import CardFooter from '../ui/card/CardFooter.astro';
 import DialogTrigger from '../ui/dialog/DialogTrigger.astro';
 import CardRoot from '../ui/card/CardRoot.astro';
 import Badge from '../ui/Badge.astro';
+import CardDescription from '../ui/card/CardDescription.astro';
 
 interface Props extends Supplement {}
 
@@ -16,13 +17,13 @@ const { title, description, icon, iconBg, triggerId, badges } = Astro.props;
 
 <CardRoot class='supplement-card' data-trigger-id={triggerId}>
   <CardHeader>
-    <CardTitle data-heading='icon'>
-      <Icon name={icon} style={`background-color: ${iconBg}`} />
-      {title}
-    </CardTitle>
+    <div class='supplement-icon' style={`--icon-bg-color: ${iconBg}`}>
+      <Icon name={icon} />
+    </div>
+    <CardTitle>{title}</CardTitle>
   </CardHeader>
-  <CardContent>
-    <p>{description}</p>
+  <CardContent class='supplement-content'>
+    <CardDescription>{description}</CardDescription>
     {
       badges && badges.length > 0 && (
         <div class='badges'>
@@ -39,3 +40,46 @@ const { title, description, icon, iconBg, triggerId, badges } = Astro.props;
     <DialogTrigger dialogId={triggerId}>Ver contenido →</DialogTrigger>
   </CardFooter>
 </CardRoot>
+
+<style>
+  .supplement-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 2rem;
+  }
+
+  .supplement-icon {
+    width: 42px;
+    height: 42px;
+    font-size: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-right: 0.4cap;
+    background-color: var(--icon-bg-color);
+
+    & > [data-icon] {
+      width: 1.5cap;
+      height: 1.5cap;
+      display: block;
+      flex-shrink: 0;
+      stroke-width: 2;
+      color: var(--gray-600);
+      mix-blend-mode: difference; /* Ensure visibility on various backgrounds */
+    }
+  }
+
+  .supplement-content {
+    flex-grow: 1;
+  }
+
+  .badges {
+    margin-top: 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+</style>

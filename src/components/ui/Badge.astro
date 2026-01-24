@@ -34,13 +34,9 @@ const hasIcon = typeof icon === 'string' && icon.trim().length > 0;
   data-has-icon={hasIcon ? 'true' : 'false'}
   {...rest}
 >
-  {hasIcon && iconPosition === 'left' ? <Icon name={icon} aria-hidden='true' /> : null}
+  {hasIcon && <Icon name={icon} aria-hidden='true' />}
 
-  <span class='badge__label'>
-    <slot />
-  </span>
-
-  {hasIcon && iconPosition === 'right' ? <Icon name={icon} aria-hidden='true' /> : null}
+  <slot />
 </span>
 
 <style>
@@ -53,50 +49,56 @@ const hasIcon = typeof icon === 'string' && icon.trim().length > 0;
     line-height: 1;
     white-space: nowrap;
     user-select: none;
-    color: var(--text);
-  }
+    color: var(--text-muted);
 
-  /* Layout: cuando hay icono */
-  .badge[data-has-icon='true'] {
-    gap: 0.45rem;
-  }
+    /* Layout: cuando hay icono */
+    &[data-has-icon='true'] {
+      gap: 0.4cap;
+    }
 
-  /* Sizes */
-  .badge[data-size='sm'] {
-    padding: 0.35rem 0.6rem;
-    font-size: 1.2rem;
-  }
+    /* Sizes */
+    &[data-size='sm'] {
+      padding: 0.35rem 0.6rem;
+      font-size: 1.2rem;
+    }
 
-  .badge[data-size='md'] {
-    padding: 0.45rem 0.75rem;
-    font-size: 1.3rem;
-  }
+    &[data-size='md'] {
+      padding: 0.45rem 0.75rem;
+      font-size: 1.3rem;
+    }
 
-  /* Ajuste fino cuando hay icono */
-  .badge[data-has-icon='true'][data-size='sm'] {
-    padding-inline: 0.55rem;
-  }
+    /* Ajuste fino cuando hay icono */
+    &[data-has-icon='true'] {
+      & > [data-icon] {
+        width: 1.5cap;
+        height: 1.5cap;
+        display: block;
+        flex-shrink: 0;
+        stroke-width: 2;
+      }
 
-  .badge[data-has-icon='true'][data-size='md'] {
-    padding-inline: 0.7rem;
-  }
+      &[data-size='sm'] {
+        padding-inline: 0.55rem;
+      }
 
-  /* ✅ Estilo del icono por atributo */
-  [data-icon] {
-    width: 1.05em;
-    height: 1.05em;
-    stroke-width: 2;
-    flex-shrink: 0;
+      &[data-size='md'] {
+        padding-inline: 0.7rem;
+      }
+
+      &[data-icon-position='right'] {
+        flex-direction: row-reverse;
+      }
+    }
   }
 
   /* Variants */
   .badge[data-variant='default'] {
-    background: color-mix(in oklab, var(--primary) 14%, var(--card-bg));
-    border-color: color-mix(in oklab, var(--primary) 35%, var(--border-color));
+    background: color-mix(in oklab, var(--info) 14%, var(--gray-200));
+    border-color: color-mix(in oklab, var(--info) 35%, var(--border-color));
   }
 
   .badge[data-variant='secondary'] {
-    background: color-mix(in oklab, var(--border-color) 55%, var(--card-bg));
+    background: color-mix(in oklab, var(--border-color) 55%, var(--gray-200));
     border-color: var(--border-color);
   }
 
@@ -106,34 +108,34 @@ const hasIcon = typeof icon === 'string' && icon.trim().length > 0;
   }
 
   .badge[data-variant='success'] {
-    background: color-mix(in oklab, var(--success) 16%, var(--card-bg));
+    background: color-mix(in oklab, var(--success) 16%, var(--gray-200));
     border-color: color-mix(in oklab, var(--success) 40%, var(--border-color));
   }
 
   .badge[data-variant='warning'] {
-    background: color-mix(in oklab, var(--warning) 18%, var(--card-bg));
+    background: color-mix(in oklab, var(--warning) 18%, var(--gray-200));
     border-color: color-mix(in oklab, var(--warning) 45%, var(--border-color));
   }
 
   .badge[data-variant='danger'] {
-    background: color-mix(in oklab, var(--danger) 14%, var(--card-bg));
-    border-color: color-mix(in oklab, var(--danger) 40%, var(--border-color));
+    background: color-mix(in oklab, var(--error) 14%, var(--gray-200));
+    border-color: color-mix(in oklab, var(--error) 40%, var(--border-color));
   }
 
   /* Color del icono por variante (opcional) */
-  .badge[data-variant='default'] [data-icon] :global(svg) {
-    color: var(--primary);
+  .badge[data-variant='default'] [data-icon] {
+    color: var(--info);
   }
 
-  .badge[data-variant='success'] [data-icon] :global(svg) {
+  .badge[data-variant='success'] [data-icon] {
     color: var(--success);
   }
 
-  .badge[data-variant='warning'] [data-icon] :global(svg) {
+  .badge[data-variant='warning'] [data-icon] {
     color: var(--warning);
   }
 
-  .badge[data-variant='danger'] [data-icon] :global(svg) {
-    color: var(--danger);
+  .badge[data-variant='danger'] [data-icon] {
+    color: var(--error);
   }
 </style>
