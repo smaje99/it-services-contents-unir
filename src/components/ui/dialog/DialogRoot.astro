@@ -70,6 +70,12 @@ const { id, open = false, class: className = '', ...rest } = Astro.props;
     overflow: hidden;
 
     animation: zoom-in 180ms ease-out both;
+
+    background-color: var(--bg-soft, #fff);
+    padding: 1.6rem;
+    padding-top: 4rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
   }
 
   .dialog__close {
