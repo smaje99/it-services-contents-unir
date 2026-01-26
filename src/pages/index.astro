@@ -11,6 +11,12 @@ import HomeLayout from '@/layouts/HomeLayout.astro';
 const supplements = (await getCollection('supplements')).sort(
   (a, b) => a.data.order - b.data.order,
 );
+const renderedSupplements = await Promise.all(
+  supplements.map(async (entry) => {
+    const { Content } = await entry.render();
+    return { data: entry.data, Content };
+  }),
+);
 ---
 
 <!-- Below is your "component template." It's just HTML, but with
@@ -44,7 +50,19 @@ const supplements = (await getCollection('supplements')).sort(
     durationInWeeks={9}
   />
 
-  {supplements.map(({ data }) => <SupplementModal {...data} />)}
+  {
+    renderedSupplements.map(({ data, Content }) => (
+      <SupplementModal
+        title={data.title}
+        description={data.description}
+        icon={data.icon}
+        iconBg={data.iconBg}
+        triggerId={data.triggerId}
+      >
+        <Content />
+      </SupplementModal>
+    ))
+  }
 </HomeLayout>
 
 <style>
