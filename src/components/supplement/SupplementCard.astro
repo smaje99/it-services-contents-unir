@@ -1,16 +1,18 @@
 ---
-import type { Supplement } from '@/types/supplement';
-import CardHeader from '../ui/card/CardHeader.astro';
-import CardTitle from '../ui/card/CardTitle.astro';
 import { Icon } from 'astro-icon/components';
-import CardContent from '../ui/card/CardContent.astro';
-import CardFooter from '../ui/card/CardFooter.astro';
-import DialogTrigger from '../ui/dialog/DialogTrigger.astro';
-import CardRoot from '../ui/card/CardRoot.astro';
-import Badge from '../ui/Badge.astro';
-import CardDescription from '../ui/card/CardDescription.astro';
 
-interface Props extends Supplement {}
+import type { Supplement } from '@/types/supplement';
+
+import Badge from '../ui/Badge.astro';
+import CardContent from '../ui/card/CardContent.astro';
+import CardDescription from '../ui/card/CardDescription.astro';
+import CardFooter from '../ui/card/CardFooter.astro';
+import CardHeader from '../ui/card/CardHeader.astro';
+import CardRoot from '../ui/card/CardRoot.astro';
+import CardTitle from '../ui/card/CardTitle.astro';
+import DialogTrigger from '../ui/dialog/DialogTrigger.astro';
+
+type Props = Supplement;
 
 const { title, description, icon, iconBg, triggerId, badges } = Astro.props;
 ---
@@ -62,12 +64,12 @@ const { title, description, icon, iconBg, triggerId, badges } = Astro.props;
     background-color: var(--icon-bg-color);
 
     & > [data-icon] {
-      width: 1.5cap;
-      height: 1.5cap;
+      width: 2cap;
+      height: 2cap;
       display: block;
       flex-shrink: 0;
       stroke-width: 2;
-      color: var(--gray-600);
+      color: var(--gray-500);
       mix-blend-mode: difference; /* Ensure visibility on various backgrounds */
     }
   }

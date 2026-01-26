@@ -14,6 +14,9 @@ const { dialogId, asChild = false, class: className = '', ...rest } = Astro.prop
     <span
       class:list={['dialog-trigger', className]}
       data-dialog-trigger={dialogId}
+      data-trigger-el='span'
+      role='button'
+      tabindex='0'
       {...rest}
     >
       <slot />
@@ -23,6 +26,7 @@ const { dialogId, asChild = false, class: className = '', ...rest } = Astro.prop
       type='button'
       class:list={['dialog-trigger', className]}
       data-dialog-trigger={dialogId}
+      data-trigger-el='button'
       {...rest}
     >
       <slot />
@@ -38,21 +42,97 @@ const { dialogId, asChild = false, class: className = '', ...rest } = Astro.prop
     const dialogId = root.getAttribute('data-dialog-trigger');
     if (!dialogId) return;
 
-    root.addEventListener('click', (e) => {
-      // Allow normal anchor navigation if user uses <a> inside asChild
-      // but if the click is intended to open, prevent default only for # anchors
+    const open = () => {
       const dialog = document.getElementById(dialogId);
       if (!(dialog instanceof HTMLDialogElement)) return;
-
       if (!dialog.open) dialog.showModal();
-    });
+    };
+
+    root.addEventListener('click', open);
+
+    // Keyboard support when root is a span (role=button)
+    if (root.tagName === 'SPAN') {
+      root.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          open();
+        }
+      });
+    }
   })();
 </script>
 
 <style>
   .dialog-trigger {
+    /* tokens locales del botón */
+    --dt-bg: var(--bg-elevated);
+    --dt-fg: var(--text-primary);
+    --dt-border: var(--border-color);
+    --dt-hover-bg: color-mix(in oklab, var(--brand-primary) 6%, var(--bg-elevated));
+    --dt-hover-border: color-mix(in oklab, var(--brand-primary) 35%, var(--border-color));
+    --dt-active-bg: color-mix(in oklab, var(--brand-primary) 10%, var(--bg-elevated));
+
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
+    justify-content: center;
+    gap: 0.6rem;
+
+    padding: 0.55rem 0.9rem;
+    border-radius: 0.75rem;
+    border: 1px solid var(--dt-border);
+    background: var(--dt-bg);
+    color: var(--dt-fg);
+
+    font: inherit;
+    font-size: 1.5rem;
+    line-height: 1;
+    text-decoration: none;
+
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+    user-select: none;
+
+    transition:
+      background 140ms ease,
+      border-color 140ms ease,
+      transform 90ms ease,
+      box-shadow 140ms ease;
+  }
+
+  /* Reset específico para el button nativo */
+  button.dialog-trigger {
+    appearance: none;
+    -webkit-appearance: none;
+  }
+
+  /* Span como “botón” */
+  span.dialog-trigger {
+    /* ya tiene cursor y user-select, esto refuerza */
+    outline: none;
+  }
+
+  /* Hover / Active */
+  .dialog-trigger:hover {
+    background: var(--dt-hover-bg);
+    border-color: var(--dt-hover-border);
+    box-shadow: var(--shadow-md);
+  }
+
+  .dialog-trigger:active {
+    transform: translateY(1px);
+    background: var(--dt-active-bg);
+  }
+
+  /* Focus ring accesible */
+  .dialog-trigger:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+
+  /* Si dentro del trigger metes un <a> o <span>, que herede bien */
+  .dialog-trigger :global(a),
+  .dialog-trigger :global(span) {
+    color: inherit;
+    text-decoration: inherit;
   }
 </style>
