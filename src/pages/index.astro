@@ -5,6 +5,7 @@ import { Icon } from 'astro-icon/components';
 import CourseGrid from '@/components/course/CourseGrid.astro';
 import CourseInfo from '@/components/course/CourseInfo.astro';
 import SupplementCard from '@/components/supplement/SupplementCard.astro';
+import SupplementModal from '@/components/supplement/SupplementModal.astro';
 import HomeLayout from '@/layouts/HomeLayout.astro';
 
 const supplements = (await getCollection('supplements')).sort(
@@ -42,6 +43,8 @@ const supplements = (await getCollection('supplements')).sort(
     modality='Proyecto de aula complementario'
     durationInWeeks={9}
   />
+
+  {supplements.map(({ data }) => <SupplementModal {...data} />)}
 </HomeLayout>
 
 <style>

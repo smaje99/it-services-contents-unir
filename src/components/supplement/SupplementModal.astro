@@ -1,0 +1,61 @@
+---
+import { Icon } from 'astro-icon/components';
+
+import DialogRoot from '@/components/ui/dialog/DialogRoot.astro';
+import DialogContent from '@/components/ui/dialog/DialogContent.astro';
+import DialogHeader from '@/components/ui/dialog/DialogHeader.astro';
+import DialogTitle from '@/components/ui/dialog/DialogTitle.astro';
+
+interface Props {
+  open?: boolean;
+  title: string;
+  description: string;
+  icon: string;
+  iconBg: string;
+  triggerId: string;
+}
+
+const {
+  open = false,
+  title,
+  description,
+  icon,
+  iconBg = 'var(--primary)',
+  triggerId,
+} = Astro.props;
+---
+
+<DialogRoot id={triggerId} open={open} class='supplement-modal'>
+  <DialogHeader class='supplement-modal__heading' style={`--icon-bg-color: ${iconBg}`}>
+    <DialogTitle data-heading='icon'>
+      {icon && <Icon name={icon} aria-hidden='true' />}
+      {title}
+    </DialogTitle>
+    <p>{description}</p>
+  </DialogHeader>
+  <DialogContent>
+    <slot />
+  </DialogContent>
+</DialogRoot>
+
+<style>
+  .supplement-modal__heading {
+    margin-bottom: 2rem;
+    padding: 2.8rem;
+    border-radius: var(--radius-lg);
+    background-image: linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--icon-bg-color) 90%, black),
+      color-mix(in srgb, var(--icon-bg-color) 75%, white)
+    );
+
+    :is(h3, p) {
+      color: white;
+      text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    }
+
+    :is(p) {
+      text-wrap: wrap;
+    }
+  }
+</style>
