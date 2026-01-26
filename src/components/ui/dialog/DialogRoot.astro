@@ -64,8 +64,8 @@ const { id, open = false, class: className = '', ...rest } = Astro.props;
     position: relative;
     margin-inline: auto;
 
-    height: 80%;
-    width: 80%;
+    height: 90vh;
+    width: 80vw;
 
     overflow: hidden;
 
@@ -98,11 +98,12 @@ const { id, open = false, class: className = '', ...rest } = Astro.props;
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
-  }
 
-  .dialog__close-btn:hover {
-    border-color: color-mix(in oklab, var(--brand-primary) 35%, var(--border-color));
-    background: color-mix(in oklab, var(--destructive) 90%, var(--bg-elevated));
+    &:hover {
+      color: var(--text-destructive);
+      border-color: color-mix(in oklab, var(--brand-primary) 35%, var(--border-color));
+      background: color-mix(in oklab, var(--destructive) 90%, var(--bg-elevated));
+    }
   }
 
   @keyframes zoom-in {

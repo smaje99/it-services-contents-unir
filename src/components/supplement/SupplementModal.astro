@@ -1,10 +1,12 @@
 ---
 import { Icon } from 'astro-icon/components';
 
-import DialogRoot from '@/components/ui/dialog/DialogRoot.astro';
 import DialogContent from '@/components/ui/dialog/DialogContent.astro';
 import DialogHeader from '@/components/ui/dialog/DialogHeader.astro';
+import DialogRoot from '@/components/ui/dialog/DialogRoot.astro';
 import DialogTitle from '@/components/ui/dialog/DialogTitle.astro';
+
+import DialogDescription from '../ui/dialog/DialogDescription.astro';
 
 interface Props {
   open?: boolean;
@@ -31,7 +33,7 @@ const {
       {icon && <Icon name={icon} aria-hidden='true' />}
       {title}
     </DialogTitle>
-    <p>{description}</p>
+    <DialogDescription>{description}</DialogDescription>
   </DialogHeader>
   <DialogContent>
     <slot />
@@ -49,7 +51,7 @@ const {
       color-mix(in srgb, var(--icon-bg-color) 75%, white)
     );
 
-    :is(h3, p) {
+    :is(h2, p) {
       color: white;
       text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     }
