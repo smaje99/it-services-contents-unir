@@ -14,4 +14,139 @@ badges:
     icon: 'circle-check-filled'
 ---
 
-En este suplemento, exploraremos los conceptos clave relacionados con los servicios de tecnologías de la información. Estos conceptos son fundamentales para comprender cómo se diseñan, implementan y gestionan los servicios de TI en las organizaciones modernas.
+import KeyPointsList from '@/components/lists/KeyPointsList.astro';
+import TopicConceptSection from '@/components/topic/TopicConceptSection.astro';
+
+<TopicConceptSection title='Tema 1: La Transformación Digital'>
+  <KeyPointsList>
+    * **I+D+i**: Investigación, Desarrollo e innovación
+    * **SCM**: *Supply Chain Management* (Gestión de cadena de suministro)
+    * **CRM**: *Customer Relationship Management* (Gestión de relaciones con clientes)
+    * **ERP**: *Enterprise Resource Planning* (Planificación de recursos empresariales)
+    * **Logística inversa**: Proceso de planificación, implementación y control del flujo eficiente de materias primas, inventario en proceso, productos terminados e información relacionada desde el punto de consumo hasta el punto de origen.
+  </KeyPointsList>
+</TopicConceptSection>
+
+<TopicConceptSection title='Tema 2: Caso de Estudio'>
+  <KeyPointsList>
+    * **EVS**: Estudio de Viabilidad de Sistemas
+    * **ROI**: *Return on Investment* (Retorno de inversión)
+    * **VAN**: Valor Actual Neto
+    * **TIR**: Tasa Interna de Retorno
+    * **Val IT**: Metodología de evaluación (Estrategia, Arquitectura, Valor, Entrega)
+    * **Análisis de Riesgos**: Probabilidad, Impacto, Mitigación
+  </KeyPointsList>
+</TopicConceptSection>
+
+<TopicConceptSection title='Tema 3: El Gobierno y la Gestión de las TIC'>
+  <KeyPointsList>
+    * **Gobierno de las TI**: Alineamiento estratégico con la organización
+    * Diferencias entre Gobierno (**estratégico**) y Gestión (**táctico**) de las TSI
+    * **Marcos de referencia**: *COBIT 2019, ITIL 4, Val IT*
+    * **Normativas ISO**: *ISO 38500, ISO 20000, ISO 27001*
+    * **Certificaciones AENOR**: *UNE 71599* para gobierno corporativo
+  </KeyPointsList>
+</TopicConceptSection>
+
+<TopicConceptSection title='Tema 4: El Gobierno Corporativo de las TIC'>
+  <KeyPointsList>
+    * ***ISO/IEC 38500:2008***: Norma internacional para el buen gobierno corporativo
+    * **Los 6 Principios**: Responsabilidad, Estrategia, Adquisición, Rendimiento, Conformidad, Factor Humano
+    * **Funciones de Gobierno**: Evaluación, Dirección, Monitorización
+    * **Beneficios económicos**: 20% superior según estudios del MIT (Peter Weill)
+    * Distinción entre **gobierno** y **gestión** de las TIC
+  </KeyPointsList>
+</TopicConceptSection>
+
+<TopicConceptSection title='Tema 5: COBIT'>
+  <KeyPointsList>
+    * **COBIT**: *Control Objectives for Information and Related Technology* (Objetivos de Control para la Información y Tecnologías Relacionadas)
+    * **ISACA**: *Information Systems Audit and Control Association* (Asociación de Auditoría y Control de Sistemas de Información)
+    * **34 procesos**: Cubren todos los aspectos del gobierno y gestión de TI
+    * **210 objetivos de control**: Específicos y detallados
+    * **4 dominios**: Planificación y Organización (PO), Adquisición e Implementación (AI), Entrega y Soporte (ES), Supervisión y Evaluación (SE)
+    * **COBIT 2019**: Última edición aceptada internacionalmente (2019), con enfoque en principios, políticas y marcos de trabajo
+  </KeyPointsList>
+</TopicConceptSection>
+
+<TopicConceptSection title='Tema 6: ITIL'>
+  <KeyPointsList>
+    * **ITIL**: *Information Technology Infrastructure Library* (Biblioteca de Infraestructura de Tecnologías de la Información)
+    * **Iniciativa nacida en 1989**: Marco de buenas prácticas para la gestión de servicios de TI
+    * **Paradigma orientado a servicios**: Se centra en la demanda del cliente de TI, no en procesos internos
+    * **Ciclo de Vida del Servicio**: Estrategia, Diseño, Transición, Operación, Mejora
+    * **Service Desk**: Punto único de contacto entre usuarios y TI. Tipos: Local, Centralizado, Virtual, Follow the Sun
+    * **SLA (*Service Level Agreement*)**: Acuerdo formal con el cliente sobre niveles de servicio esperados
+    * **OLA (*Operational Level Agreement*)**: Acuerdo interno entre departamentos de TI
+    * **UC (*Underpinning Contract*)**: Contrato con proveedores externos para cumplir SLA
+    * ***Incident vs Problem vs Change***: Incidente (restaurar servicio), Problema (causa raíz), Cambio (modificación planificada)
+    * **CMDB (*Configuration Management Database*)**: Base de datos de elementos de configuración (CIs) y sus relaciones
+    * **Service Catalog vs Service Portfolio**: Catálogo (servicios activos), Portfolio (todos los servicios en todos los estados)
+    * **CAB (*Change Advisory Board*)**: Comité que evalúa y aprueba cambios importantes
+    * **Tipos de Cambios**: Normal, Estándar, Urgente, Emergencia
+    * ***Service Owner***: Responsable de un servicio a lo largo de su ciclo de vida
+    * ***Process Owner***: Responsable del diseño, implementación y mejora de un proceso
+    * ***RACI Matrix***: Herramienta para definir roles (*Responsible, Accountable, Consulted, Informed*)
+    * **KPIs y Métricas**: Disponibilidad, MTBF, MTTR, cumplimiento de SLA, tiempos de ciclo
+    * ***Continual Improvement Model***: Modelo de 7 pasos para mejora continua de servicios
+    * ***Service Value System (ITIL 4)***: Sistema operativo con *Guiding Principles, Governance, Service Value Chain, Practices*
+    * **Beneficios**: Mejora de calidad, comunicación con usuarios, flexibilidad, satisfacción del cliente, rendimiento y seguridad
+  </KeyPointsList>
+</TopicConceptSection>
+
+<TopicConceptSection title='Tema 7: Sistema de Gestión de Servicios'>
+  <KeyPointsList>
+    * **ISO/IEC 20000-1:2005**: Norma internacional para gestión de servicios TI, traducida por *AENOR* como *UNE-ISO/IEC 20000-1:2007*
+    * **Sistema de Gestión del Servicio (SGS)**: Agrupa actividades para configuración de servicios útiles que satisfagan necesidades de negocio
+    * **Estructura de la serie ISO/IEC 20000**: *ISO/IEC 20000-1* (Especificaciones), *20000-2* (Código de buenas prácticas), *TR 20000-3* (Alcance), *TR 20000-4* (Modelo de referencia), *TR 20000-8* (Modelo de valoración), *20000-5* (Adopción incremental)
+    * **Procesos del SGS**: Diseño y transición de servicios, Provisión del servicio, Control, Resolución, Relación
+    * **Principios básicos**: Servicio, Cliente, Comunicación interna, Procesos internos
+    * **Diseño y transición de servicios**: Garantiza que servicios se creen y entreguen con funcionalidad, costes y plazos acordados
+    * **Procesos de provisión del servicio**: Gestión del nivel de servicio, Generación de informes, Continuidad y disponibilidad, Presupuesto y contabilidad, Gestión de capacidad, Gestión de seguridad de la información
+    * **Grupos de procesos**: Control, Entrega, Resolución, Relación
+    * **Beneficios**: Resolución rápida de incidentes, mejora de problemas ocultos, conocimiento preciso de configuración, cambios seguros, comprensión de necesidades del cliente, control de costes, mejora en provisión de servicios, garantía de funcionamiento crítico
+    * **Certificación**: La norma permite certificación directa o adopción incremental mediante niveles establecidos por *ISO/IEC 20000-5*
+  </KeyPointsList>
+</TopicConceptSection>
+
+<TopicConceptSection title='Tema 8: Gestión de Activos de Software'>
+  <KeyPointsList>
+    * **SGAS**: Sistema de Gestión de Activos de Software - mecanismo de gestión de riesgos para el control del software
+    * **SAM**: *Software Asset Management* - gestión y procesos de activos de software (diferente de SGAS que incluye el sistema completo)
+    * **ISO/IEC 19770-1:2008**: Norma para gestión de activos de software - Parte 1: Procesos (publicación española *UNE-ISO/IEC 19770-1:2008*)
+    * **ISO/IEC 19770-2:2009**: Norma para gestión de activos de software - Parte 2: Etiqueta de identificación de software
+    * **27 procesos SAM**: Agrupados en tres niveles - Procesos de gestión organizativa, Procesos centrales, Interfaces de los procesos principales
+    * **Origen histórico**: Data de 2004, basado en publicaciones de 2003 del libro *Software Asset Management de ITIL*
+    * **Gestión de configuración**: Los SGAS se incluyen procedimentalmente dentro del proceso de gestión de configuración del software
+    * **Etiquetado XML**: La parte 2 de la norma propone etiquetado del software mediante etiquetas XML para facilitar identificación
+    * **Cinco grupos de objetivos (Parte 2)**: Proveedores de plataformas, Proveedores de software, Proveedores de etiquetas, Proveedores de software de descubrimiento, Usuarios finales
+    * **Justificación**: Control de riesgos, mejora en utilización de activos, mayor eficiencia y aprovechamiento en términos de tiempo y coste
+    * **Implantación**: Requiere impulso de la gerencia, definición de objetivos (gestión de riesgos, control de costes, ventaja competitiva), creación de caso de negocio, definición de procesos, política de software, CMDB, herramientas y formación
+  </KeyPointsList>
+</TopicConceptSection>
+
+<TopicConceptSection title='Tema 9: Gestión de la Continuidad del Negocio'>
+  <KeyPointsList>
+    * **Disponibilidad**: Clave fundamental para asegurar la continuidad del negocio - disponibilidad de datos en tiempo y forma
+    * **Triada CID de Seguridad**: Confidencialidad, Integridad y Disponibilidad - características esenciales a preservar ante eventos no deseados
+    * **UNE 71599-2:2010**: Norma específica para gestión de la continuidad del negocio - implementación, gestión y mejora continua
+    * **BCM (Business Continuity Management)**: Sistema de gestión de la continuidad del negocio - proceso holístico que identifica amenazas y proporciona marco de resistencia
+    * **BCP (Business Continuity Plan)**: Plan de continuidad del negocio - materialización del BCM mediante directrices, normas y procedimientos
+    * **Diferencia BCM vs BCP**: BCM es el sistema de gestión, BCP es el plan específico que materializa esa gestión
+    * **Plan de recuperación de desastres**: Capacidad de mantener normalidad de operaciones a pesar de eventos no deseados que dificultan disponibilidad
+    * **Componentes del BCM**: Plan de recuperación de desastres, integración con otras iniciativas, plan de validación con pruebas y ejercicios
+    * **Proceso holístico**: BCM abarca más allá de TIC, incluye procesos de negocio sin intervención de TIC
+    * **Problemas que afectan continuidad**: Cualquier evento interno o externo, provocado o natural, que interrumpe procesos de negocio
+    * **Pasos de implementación BCM**: Planificación, Análisis de impacto (BIA), Análisis de riesgos, Desarrollo de estrategia, Desarrollo del plan (BCP), Concienciación y capacitación, Pruebas y ejercicios, Mantenimiento y actualización
+    * **Análisis de impacto (BIA)**: Incluye obtención de información, determinación de criticidad, MTPD (Plazo máximo tolerable de interrupción), RTO (Objetivo de tiempo de recuperación), RPO (Objetivo de punto de recuperación)
+    * **MTPD**: Plazo máximo tolerable de interrupción - tiempo máximo que un proceso puede estar inactivo sin causar daño crítico
+    * **RTO**: Objetivo de tiempo de recuperación - tiempo máximo aceptable para restaurar un proceso tras una interrupción
+    * **RPO**: Objetivo de punto de recuperación - punto máximo en el tiempo al que se puede recuperar la información sin pérdida crítica
+    * **Normativas que preservan disponibilidad**: *ISO 27001, ISO 20000-1, ITIL, COBIT, UNE 71599-2:2010*
+    * **Desafíos de implementación**: Falta de compromiso gerencial, falta de conocimientos, falta de recursos, o combinación de factores
+    * **Factores críticos de éxito**: Compromiso ejecutivo, asignación de recursos, formación adecuada, enfoque gradual, comunicación efectiva
+    * **Virtualización y Cloud Computing**: Soluciones basadas en arquitecturas cloud como parte de planes de continuidad de negocio
+    * **Plan de vuelta a la normalidad**: Planificación cuidadosa de la reanudación de operaciones para no suponer riesgo adicional
+    * **Serie UNE 71599**: *UNE 71599-1:2010* (Código de práctica), *UNE 71599-2:2010* (Especificaciones), *UNE-ISO 31000:2010* (Gestión del riesgo)
+  </KeyPointsList>
+</TopicConceptSection>
