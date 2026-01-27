@@ -1,0 +1,240 @@
+---
+title: "Caso de Estudio"
+description: "Metodologías de análisis, evaluación económica"
+order: 2
+icon: "chart-line"
+color: "#ffc107"
+publishAt: "2025-10-14 20:00:00"
+---
+
+import AccordionRoot from '@/components/ui/accordion/AccordionRoot.astro';
+import TopicCaseStudies from '@/components/topic/TopicCaseStudies.astro';
+import TopicConceptCard from '@/components/topic/TopicConceptCard.astro';
+import TopicConceptSection from '@/components/topic/TopicConceptSection.astro';
+import TopicGrid from '@/components/topic/TopicGrid.astro';
+import TopicResourceSection from '@/components/topic/TopicResourceSection.astro';
+import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
+
+<TopicSectionGroup title='Conceptos Clave' icon='bulb'>
+  <TopicConceptSection title='EVS: Estudio de Viabilidad de Sistemas' icon='clipboard-check'>
+    **Definición:** Metodología estructurada para evaluar la factibilidad técnica, económica y operativa de proyectos de sistemas de información.
+
+    <TopicGrid>
+      <TopicConceptCard title="Fases del EVS">
+        * **EVS 1 - Establecimiento del Alcance:** Definición del problema y objetivos del proyecto.
+        * **EVS 2 - Estudio de la Situación Actual:** Análisis de procesos existentes y problemas.
+        * **EVS 3 - Definición de Requisitos:** Identificación de necesidades y especificaciones funcionales y no funcionales.
+        * **EVS 4 - Descripción de Alternativas:** Evaluación de diferentes soluciones tecnológicas y enfoques.
+        * **EVS 5 - Valoración de Alternativas:** Análisis de costos, beneficios y riesgos asociados a cada alternativa.
+      </TopicConceptCard>
+      <TopicConceptCard title="Beneficios del EVS">
+        * Reducción de riesgos en la toma de decisiones
+        * Optimización de la inversión tecnológica
+        * Mejora en la planificación del proyecto
+        * Justificación objetiva de decisiones
+        * Identificación temprana de problemas
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='ROI: Return on Investment' icon='chart-line'>
+    **Definición:** Métrica financiera que mide la rentabilidad de una inversión comparando el beneficio obtenido con el costo de la inversión.
+
+    <TopicGrid>
+      <TopicConceptCard title="Fórmula del ROI">
+        **ROI = (Beneficio Neto / Costo de Inversión) &#x00d7; 100**
+
+        Donde:
+        * **Beneficio Neto:** Ingresos generados por la inversión menos los costos asociados.
+
+          **Ingresos generados - Costos operativos**
+        * **Costo de Inversión:** Total de gastos incurridos para realizar la inversión
+
+          **Costo inicial + Costos adicionales**
+      </TopicConceptCard>
+      <TopicConceptCard title="Interpretación del ROI">
+        * **ROI > 0**: Inversión rentable
+        * **ROI = 0**: Punto de equilibrio
+        * **ROI < 0**: Inversión no rentable
+        * **ROI > 20%**: Excelente retorno
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='VAN: Valor Actual Neto' icon='calculator'>
+    **Definición:** Método de evaluación de inversiones que calcula el valor presente de los flujos de caja futuros menos la inversión inicial.
+
+    <TopicGrid>
+      <TopicConceptCard title="Fórmula del VAN">
+        $\text{VAN} = \sum_{t=1}^{n}\dfrac{CF_t}{(1+r)^t}-I_0$
+
+        Donde:
+        * $CF_t$: Flujo de caja neto en el período t
+        * $r$: Tasa de descuento
+        * $n$: Número total de períodos
+        * $I_0$: Inversión inicial
+      </TopicConceptCard>
+      <TopicConceptCard title="Criterios de Decisión del VAN">
+        * **VAN > 0**: Inversión rentable (proyecto aceptable)
+        * **VAN = 0**: Punto de equilibrio (proyecto indiferente)
+        * **VAN < 0**: Inversión no rentable (proyecto rechazable)
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='TIR: Tasa Interna de Retorno' icon='percentage'>
+    **Definición:** Tasa de descuento que hace que el VAN de un proyecto sea igual a cero, representando la rentabilidad esperada de la inversión.
+
+    <TopicGrid>
+      <TopicConceptCard title="Cálculo de la TIR">
+        Se calcula encontrando la tasa ($r$) que satisface:
+
+        ```math
+        0=\sum_{t=1}^{n}\frac{CF_t}{(1+\mathrm{TIR})^{t}}-I_0
+        ```
+
+        Se resuelve mediante métodos iterativos o herramientas financieras.
+      </TopicConceptCard>
+      <TopicConceptCard title="Criterios de Evaluación de la TIR">
+        * **TIR > Costo de Capital**: Proyecto aceptable
+        * **TIR = Costo de Capital**: Proyecto indiferente
+        * **TIR < Costo de Capital**: Proyecto rechazable
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Val IT: Metodología de Evaluación' icon='scale'>
+    **Definición:** Marco de trabajo para evaluar y gestionar el valor de las inversiones en tecnología de la información.
+
+    <TopicGrid>
+      <TopicConceptCard title="Dimensiones de Val IT">
+        * **Estrategia**: Alineación con objetivos empresariales
+        * **Arquitectura**: Compatibilidad con infraestructura existente
+        * **Valor**: Beneficios tangibles e intangibles
+        * **Entrega**: Capacidad de implementación exitosa
+      </TopicConceptCard>
+      <TopicConceptCard title="Beneficios de Val IT">
+        * Evaluación integral de proyectos TI
+        * Mejora en la toma de decisiones
+        * Reducción de riesgos de inversión
+        * Optimización del portafolio de proyectos
+        * Alineación estratégica de TI
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Análisis de Riesgos' icon='timeline-event-exclamation'>
+    **Definición:** Proceso sistemático de identificación, evaluación y gestión de riesgos que pueden afectar el éxito de un proyecto de TI.
+
+    <TopicGrid>
+      <TopicConceptCard title="Componentes del Análisis">
+        * **Probabilidad**: Qué tan probable es que ocurra el riesgo
+        * **Impacto**: Magnitud del efecto si el riesgo se materializa
+        * **Mitigación**: Estrategias para reducir o eliminar el riesgo
+        * **Contingencia**: Planes alternativos si el riesgo ocurre
+      </TopicConceptCard>
+      <TopicConceptCard title="Matriz de Riesgos">
+        * **Riesgo Alto**: Alta probabilidad + Alto impacto
+        * **Riesgo Medio**: Probabilidad o impacto moderado
+        * **Riesgo Bajo**: Baja probabilidad + Bajo impacto
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='Ejemplos Prácticos' icon='flask'>
+  <TopicConceptSection>
+    <AccordionRoot type='single'>
+      <TopicCaseStudies topic='topic2' />
+    </AccordionRoot>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='Actividades de Refuerzo' icon='list-check'>
+  <TopicConceptSection
+    title="Análisis de Situación Actual"
+    activity
+    estimatedDuration={20}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      Aplicar una metodología simple para diagnosticar un caso real y detectar oportunidades de mejora mediante tecnología.
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
+      1. **Selecciona un contexto**: elige una empresa/área (ej: farmacia, restaurante, IPS, tienda, oficina).
+      2. **Describe el proceso actual**: escribe el flujo en 5–7 pasos (de inicio a fin).
+      3. **Identifica 3 fricciones**: clasifícalas en **tiempo**, **costo**, **calidad** o **riesgo**.
+      4. **Propón 1 solución digital**: indica **herramienta** (ERP/CRM/formularios/automatización/RPA) y qué cambia en el proceso.
+      5. **Define 2 métricas**: ej: tiempo de respuesta, errores/mes, costo operativo, satisfacción.
+
+      **Entregable:**
+      * Proceso actual (lista de pasos)
+      * 3 fricciones con categoría
+      * 1 solución + 2 métricas de éxito
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection
+    title="Identificación de Riesgos"
+    activity
+    estimatedDuration={25}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      Practicar análisis de riesgos en un proyecto de TI usando probabilidad/impacto y acciones de mitigación.
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
+      1. **Define el proyecto**: “Implementar CRM”, “Migrar a nube”, “Crear portal web”, etc.
+      2. **Lista 6 riesgos** (no 5): incluye al menos 1 por cada categoría:
+        * Técnico
+        * Operativo
+        * Seguridad / privacidad
+        * Financiero
+        * Legal / cumplimiento
+        * Adopción / cambio organizacional
+      3. **Evalúa P&#x00d7;I**: asigna Probabilidad (1&#x2013;5) e Impacto (1&#x2013;5) y calcula el puntaje.
+      4. **Mitigación**: define 1 acción concreta por riesgo (preventiva) y, si aplica, 1 contingencia.
+      5. **Prioriza**: selecciona Top 2 riesgos y explica por qué.
+
+      **Entregable:**
+      Una tabla (aunque sea en texto) como:
+      * Riesgo | Categoría | P | I | P&#x00d7;I | Mitigación | Contingencia
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection
+    title="Cálculo Básico de ROI"
+    activity
+    estimatedDuration={30}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      Estimar el ROI y el Payback de una iniciativa de transformación digital usando supuestos claros.
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
+      1. **Define el caso**: proyecto concreto (ej: software de inventarios, CRM, automatización).
+      2. Costos iniciales: licencia/implementación/capacitación/equipos ($I_0$).
+      3. Costos recurrentes: mensual/anual (soporte, suscripción).
+      4. Beneficios anuales: al menos 2 fuentes:
+        * Ahorro de tiempo (horas &#x00d7; costo hora)
+        * Reducción de errores/mermas
+        * Incremento de ventas (con supuestos)
+      5. Calcula:
+        * ROI = (Beneficio neto anual / Inversión inicial) &#x00d7; 100
+        * Payback = Inversión inicial / Beneficio neto anual
+
+      **Entregable:**
+      * $I_0$ (inversión inicial)
+      * Costos anuales
+      * Beneficios anuales
+      * ROI (%) y Payback (años/meses)
+      * 1 supuesto crítico (el que más impacta el resultado)
+    </TopicConceptCard>
+  </TopicConceptSection>
+  <TopicConceptSection title="Extras opcionales (si quieres subir nivel sin alargar)">
+    * **En Riesgos**: añade “Dueño del riesgo” (responsable).
+    * **En ROI**: añade escenario **Conservador/Base/Optimista** con ±20% beneficios.
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicResourceSection topic='topic2' />

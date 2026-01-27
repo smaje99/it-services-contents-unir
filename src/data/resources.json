@@ -65,5 +65,85 @@
         ]
       }
     ]
+  },
+  "topic2": {
+    "groups": [
+      {
+        "title": "Vídeos Recomendados",
+        "items": [
+          {
+            "label": "Estudio de factibilidad de los proyectos (YouTube)",
+            "url": "https://www.youtube.com/watch?v=fALs-790Cb0"
+          },
+          {
+            "label": "How to Calculate Return On Investment (ROI) - Investopedia (YouTube)",
+            "url": "https://www.youtube.com/watch?v=eoAR8ZyAyoc"
+          },
+          {
+            "label": "ISO 31000 | Risk Management Principles (YouTube)",
+            "url": "https://www.youtube.com/live/qsCqffPnf7s"
+          }
+        ]
+      },
+      {
+        "title": "Artículos de Interés",
+        "items": [
+          {
+            "label": "Plantillas gratuitas de registro de riesgos (Smartsheet)",
+            "url": "https://es.smartsheet.com/risk-register-templates"
+          },
+          {
+            "label": "Feasibility Study Template (ProjectManager)",
+            "url": "https://www.projectmanager.com/templates/feasibility-study-template"
+          },
+          {
+            "label": "Return on Investment (ROI) - Britannica Money",
+            "url": "https://www.britannica.com/money/return-on-investment"
+          },
+          {
+            "label": "ISO 31000:2018 - Gestión del riesgo (ISO)",
+            "url": "https://www.iso.org/es/contents/data/standard/06/56/65694.html"
+          }
+        ]
+      },
+      {
+        "title": "Herramientas Online",
+        "items": [
+          {
+            "label": "ROI Calculator (Calculator.net)",
+            "url": "https://www.calculator.net/roi-calculator.html"
+          },
+          {
+            "label": "Plantillas de Risk Management Plan + matriz de riesgos (Smartsheet)",
+            "url": "https://www.smartsheet.com/free-risk-management-plan-templates"
+          },
+          {
+            "label": "Risk Heat Map Templates (Smartsheet)",
+            "url": "https://www.smartsheet.com/content/risk-heat-map-templates"
+          }
+        ]
+      },
+      {
+        "title": "Libros Recomendados",
+        "items": [
+          {
+            "label": "PMBOK Guide (Project Management Institute)",
+            "url": "https://www.pmi.org/es-es/standards/pmbok"
+          },
+          {
+            "label": "ITIL Foundation, ITIL 4 Edition (AXELOS) - Google Books",
+            "url": "https://books.google.com/books/about/ITIL_Foundation_ITIL_4_Edition.html?id=qW6-xwEACAAJ"
+          },
+          {
+            "label": "ISO 31000:2018 - Risk management — Guidelines (ISO)",
+            "url": "https://www.iso.org/iso-31000-risk-management.html"
+          },
+          {
+            "label": "COBIT (ISACA) - recursos y publicaciones",
+            "url": "https://www.isaca.org/resources/cobit"
+          }
+        ]
+      }
+    ]
   }
 }
