@@ -4,7 +4,7 @@ import { Icon } from 'astro-icon/components';
 import Separator from '../ui/Separator.astro';
 
 interface Props {
-  title: string;
+  title?: string;
   icon?: string;
   activity?: boolean;
   estimatedDuration?: number;
@@ -14,20 +14,25 @@ const { title, icon, activity = false, estimatedDuration = 0 } = Astro.props;
 ---
 
 <section class='topic-concept-section'>
-  <section class='topic-concept-section__header' data-activity={activity}>
-    <h3 data-heading='icon'>{icon && <Icon name={icon} />}{title}</h3>
-    {
-      activity && estimatedDuration > 0 && (
-        <span data-activity-info data-heading='icon'>
-          <strong>
-            <Icon name='clock-hour-3' /> Duración estimada:
-          </strong>{' '}
-          {estimatedDuration} {estimatedDuration === 1 ? 'minuto' : 'minutos'}
-        </span>
-      )
-    }
-  </section>
-  <Separator class='topic-concept-section__separator' thickness={3.2} />
+  {
+    title && (
+      <section class='topic-concept-section__header' data-activity={activity}>
+        <h3 data-heading='icon'>
+          {icon && <Icon name={icon} />}
+          {title}
+        </h3>
+        {activity && estimatedDuration > 0 && (
+          <span data-activity-info data-heading='icon'>
+            <strong>
+              <Icon name='clock-hour-3' /> Duración estimada:
+            </strong>{' '}
+            {estimatedDuration} {estimatedDuration === 1 ? 'minuto' : 'minutos'}
+          </span>
+        )}
+      </section>
+    )
+  }
+  {title && <Separator class='topic-concept-section__separator' thickness={3.2} />}
   <section class='topic-concept-section__content' data-activity={activity}>
     <slot />
   </section>
