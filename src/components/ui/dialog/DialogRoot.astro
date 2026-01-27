@@ -18,33 +18,6 @@ const { id, open = false, class: className = '', ...rest } = Astro.props;
   </div>
 </dialog>
 
-<script is:inline>
-  (() => {
-    const dialog = document.getElementById({JSON.stringify(id)});
-    if (!(dialog instanceof HTMLDialogElement)) return;
-
-    // Open on load if requested
-    const shouldOpen = {JSON.stringify(open)};
-    if (shouldOpen && !dialog.open) dialog.showModal();
-
-    // Close on backdrop click (click outside panel)
-    dialog.addEventListener('click', (e) => {
-      const target = e.target;
-      if (!(target instanceof HTMLElement)) return;
-
-      // If click is on <dialog> backdrop area (not inside panel), close.
-      if (target === dialog) dialog.close();
-    });
-
-    // Prevent default "cancel" to ensure consistent close behavior
-    dialog.addEventListener('cancel', (e) => {
-      // Esc triggers cancel; we close to unify behavior.
-      e.preventDefault();
-      dialog.close();
-    });
-  })();
-</script>
-
 <style>
   .dialog {
     margin: auto;
