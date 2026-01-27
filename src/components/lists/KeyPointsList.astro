@@ -1,0 +1,25 @@
+<div class='key-points-list'>
+  <slot />
+</div>
+
+<style>
+  @counter-style check-list {
+    system: cyclic;
+    symbols: '✔';
+    suffix: ' ';
+  }
+
+  .key-points-list {
+    ul {
+      list-style-type: check-list;
+    }
+
+    li::marker {
+      color: var(--success);
+    }
+
+    strong {
+      color: var(--info);
+    }
+  }
+</style>
