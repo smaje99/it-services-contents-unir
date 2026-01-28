@@ -1,0 +1,63 @@
+---
+import { Icon } from 'astro-icon/components';
+import LinkButton from '../ui/link/LinkButton.astro';
+---
+
+<nav class='auto-assessment-menu'>
+  <LinkButton href='/temas/topic1?auto-assessment=1' size='lg' class='auto-assessment-link'>
+    <Icon name='location-check' />
+    Tema 1: La Digitalización Digital
+  </LinkButton>
+  <LinkButton href='/temas/topic2?auto-assessment=1' size='lg' class='auto-assessment-link'>
+    <Icon name='location-check' />
+    Tema 2: Caso de Estudio
+  </LinkButton>
+  <LinkButton href='/temas/topic3?auto-assessment=1' size='lg' class='auto-assessment-link'>
+    <Icon name='location-check' />
+    Tema 3: El Gobierno y la Gestión de los Servicios de TIC
+  </LinkButton>
+  <LinkButton href='/temas/topic4?auto-assessment=1' size='lg' class='auto-assessment-link'>
+    <Icon name='location-check' />
+    Tema 4: El Gobierno Corporativo de las TIC
+  </LinkButton>
+  <LinkButton href='/temas/topic5?auto-assessment=1' size='lg' class='auto-assessment-link'>
+    <Icon name='location-check' />
+    Tema 5: COBIT
+  </LinkButton>
+  <LinkButton href='/temas/topic6?auto-assessment=1' size='lg' class='auto-assessment-link'>
+    <Icon name='location-check' />
+    Tema 6: ITIL
+  </LinkButton>
+  <LinkButton href='/temas/topic7?auto-assessment=1' size='lg' class='auto-assessment-link'>
+    <Icon name='location-check' />
+    Tema 7: Sistema de Gestión de Servicios
+  </LinkButton>
+  <LinkButton href='/temas/topic8?auto-assessment=1' size='lg' class='auto-assessment-link'>
+    <Icon name='location-check' />
+    Tema 8: Gestión de Activos de Software
+  </LinkButton>
+  <LinkButton href='/temas/topic9?auto-assessment=1' size='lg' class='auto-assessment-link'>
+    <Icon name='location-check' />
+    Tema 9: Gestión de la Continuidad del Negocio
+  </LinkButton>
+</nav>
+
+<style>
+  .auto-assessment-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.2rem;
+  }
+
+  .auto-assessment-link {
+    justify-content: flex-start;
+  }
+
+  [data-icon] {
+    width: 2cap;
+    height: 2cap;
+    display: block;
+    flex-shrink: 0;
+    stroke-width: 2;
+  }
+</style>

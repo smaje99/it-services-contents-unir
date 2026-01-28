@@ -79,8 +79,7 @@ const safeRel = target === '_blank' ? (rel ? rel : 'noopener noreferrer') : rel;
     }
 
     &[data-size='lg'] {
-      height: 4.4rem;
-      padding: 0 2rem;
+      padding: 2rem 2rem;
     }
 
     &[data-size='icon'] {
@@ -92,8 +91,9 @@ const safeRel = target === '_blank' ? (rel ? rel : 'noopener noreferrer') : rel;
     /* Variants */
     &[data-variant='default'] {
       background: var(--brand-primary);
-      color: var(--text-primary);
+      color: var(--text-destructive);
       border: 1px solid transparent;
+      font-weight: 700;
 
       &:hover {
         opacity: 0.95;
