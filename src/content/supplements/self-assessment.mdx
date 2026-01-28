@@ -14,8 +14,19 @@ badges:
     icon: 'player-play-filled'
 ---
 
+import AutoAssessmentItem from '@/components/auto-assessment/AutoAssessmentItem.astro';
 import AutoAssessmentMenu from '@/components/auto-assessment/AutoAssessmentMenu.astro';
 
 ### Seleccione una temática para comenzar la autoevaluación:
 
-<AutoAssessmentMenu />
+<AutoAssessmentMenu>
+  <AutoAssessmentItem href='/temas/topic1?auto-assessment=1'>Tema 1: La Transformación Digital</AutoAssessmentItem>
+  <AutoAssessmentItem href='/temas/topic2?auto-assessment=1'>Tema 2: Caso de Estudio</AutoAssessmentItem>
+  <AutoAssessmentItem href='/temas/topic3?auto-assessment=1'>Tema 3: El Gobierno y la Gestión de las TIC</AutoAssessmentItem>
+  <AutoAssessmentItem href='/temas/topic4?auto-assessment=1'>Tema 4: El Gobierno Corporativo de las TIC</AutoAssessmentItem>
+  <AutoAssessmentItem href='/temas/topic5?auto-assessment=1'>Tema 5: COBIT</AutoAssessmentItem>
+  <AutoAssessmentItem href='/temas/topic6?auto-assessment=1'>Tema 6: ITIL</AutoAssessmentItem>
+  <AutoAssessmentItem href='/temas/topic7?auto-assessment=1'>Tema 7: Servicios de Gestión de Servicios</AutoAssessmentItem>
+  <AutoAssessmentItem href='/temas/topic8?auto-assessment=1'>Tema 8: Gestión de Activos de Software</AutoAssessmentItem>
+  <AutoAssessmentItem href='/temas/topic9?auto-assessment=1'>Tema 9: Gestión de la Continuidad del Negocio</AutoAssessmentItem>
+</AutoAssessmentMenu>

@@ -1,0 +1,29 @@
+---
+import { Icon } from 'astro-icon/components';
+import LinkButton from '../ui/link/LinkButton.astro';
+
+interface Props {
+  href: string;
+}
+
+const { href } = Astro.props;
+---
+
+<LinkButton href={href} size='lg' class='auto-assessment-link'>
+  <Icon name='location-check' />
+  <slot />
+</LinkButton>
+
+<style>
+  .auto-assessment-link {
+    justify-content: flex-start;
+  }
+
+  [data-icon] {
+    width: 2cap;
+    height: 2cap;
+    display: block;
+    flex-shrink: 0;
+    stroke-width: 2;
+  }
+</style>
