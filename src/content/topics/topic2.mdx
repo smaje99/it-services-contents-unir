@@ -8,6 +8,7 @@ publishAt: "2025-10-14 20:00:00"
 ---
 
 import AccordionRoot from '@/components/ui/accordion/AccordionRoot.astro';
+import AutoAssessmentItem from '@/components/auto-assessment/AutoAssessmentItem.astro';
 import TopicCaseStudies from '@/components/topic/TopicCaseStudies.astro';
 import TopicConceptCard from '@/components/topic/TopicConceptCard.astro';
 import TopicConceptSection from '@/components/topic/TopicConceptSection.astro';
@@ -162,7 +163,7 @@ import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
 
     <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
       1. **Selecciona un contexto**: elige una empresa/área (ej: farmacia, restaurante, IPS, tienda, oficina).
-      2. **Describe el proceso actual**: escribe el flujo en 5–7 pasos (de inicio a fin).
+      2. **Describe el proceso actual**: escribe el flujo en 5&#x2013;7 pasos (de inicio a fin).
       3. **Identifica 3 fricciones**: clasifícalas en **tiempo**, **costo**, **calidad** o **riesgo**.
       4. **Propón 1 solución digital**: indica **herramienta** (ERP/CRM/formularios/automatización/RPA) y qué cambia en el proceso.
       5. **Define 2 métricas**: ej: tiempo de respuesta, errores/mes, costo operativo, satisfacción.
@@ -231,9 +232,16 @@ import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
       * 1 supuesto crítico (el que más impacta el resultado)
     </TopicConceptCard>
   </TopicConceptSection>
+
   <TopicConceptSection title="Extras opcionales (si quieres subir nivel sin alargar)">
     * **En Riesgos**: añade “Dueño del riesgo” (responsable).
     * **En ROI**: añade escenario **Conservador/Base/Optimista** con ±20% beneficios.
+  </TopicConceptSection>
+
+  <TopicConceptSection title="Autoevaluación" icon="checklist">
+    Comprueba tu comprensión en este tema contestando el cuestionario de autoevaluación con preguntas de selección múltiple.
+
+    <AutoAssessmentItem href='/temas/topic2?auto-assessment=1'>Presentar autoevaluación</AutoAssessmentItem>
   </TopicConceptSection>
 </TopicSectionGroup>
 

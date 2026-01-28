@@ -8,6 +8,7 @@ publishAt: '2025-10-14 20:00:00'
 ---
 
 import AccordionContent from '@/components/ui/accordion/AccordionContent.astro';
+import AutoAssessmentItem from '@/components/auto-assessment/AutoAssessmentItem.astro';
 import AccordionItem from '@/components/ui/accordion/AccordionItem.astro';
 import AccordionRoot from '@/components/ui/accordion/AccordionRoot.astro';
 import TopicAccordionTrigger from '@/components/topic/TopicAccordionTrigger.astro';
@@ -260,6 +261,12 @@ import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
 
       **Entregable:** diagrama simple (lista con flechas) + 3 riesgos + 2 mejoras con indicadores.
     </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title="Autoevaluación" icon="checklist">
+    Comprueba tu comprensión en este tema contestando el cuestionario de autoevaluación con preguntas de selección múltiple.
+
+    <AutoAssessmentItem href='/temas/topic1?auto-assessment=1'>Presentar autoevaluación</AutoAssessmentItem>
   </TopicConceptSection>
 </TopicSectionGroup>
 

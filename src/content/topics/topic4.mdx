@@ -8,6 +8,7 @@ publishAt: "2025-10-27 18:00:00"
 ---
 
 import AccordionRoot from '@/components/ui/accordion/AccordionRoot.astro';
+import AutoAssessmentItem from '@/components/auto-assessment/AutoAssessmentItem.astro';
 import TopicBenefits from '@/components/topic/TopicBenefits.astro';
 import TopicCaseStudies from '@/components/topic/TopicCaseStudies.astro';
 import TopicConceptCard from '@/components/topic/TopicConceptCard.astro';
@@ -317,6 +318,12 @@ import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
       **Entregable**:
       * Matriz de madurez (dimensión, puntaje, evidencia) + plan de mejora (3 acciones)
     </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title="Autoevaluación" icon="checklist">
+    Comprueba tu comprensión en este tema contestando el cuestionario de autoevaluación con preguntas de selección múltiple.
+
+    <AutoAssessmentItem href='/temas/topic2?auto-assessment=1'>Presentar autoevaluación</AutoAssessmentItem>
   </TopicConceptSection>
 </TopicSectionGroup>
 

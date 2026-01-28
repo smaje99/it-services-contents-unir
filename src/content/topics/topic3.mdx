@@ -8,6 +8,7 @@ publishAt: "2025-10-20 18:00:00"
 ---
 
 import AccordionRoot from '@/components/ui/accordion/AccordionRoot.astro';
+import AutoAssessmentItem from '@/components/auto-assessment/AutoAssessmentItem.astro';
 import TopicCaseStudies from '@/components/topic/TopicCaseStudies.astro';
 import TopicConceptCard from '@/components/topic/TopicConceptCard.astro';
 import TopicConceptSection from '@/components/topic/TopicConceptSection.astro';
@@ -428,6 +429,12 @@ import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
       **Entregable**:
       * 3 objetivos COBIT + acciones + evidencias + plan 30-60-90
     </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title="Autoevaluación" icon="checklist">
+    Comprueba tu comprensión en este tema contestando el cuestionario de autoevaluación con preguntas de selección múltiple.
+
+    <AutoAssessmentItem href='/temas/topic3?auto-assessment=1'>Presentar autoevaluación</AutoAssessmentItem>
   </TopicConceptSection>
 </TopicSectionGroup>
 
