@@ -1,0 +1,49 @@
+---
+import caseStudies from '@/data/case-studies.json';
+import type {
+  CaseStudyTopic,
+  TopicContent,
+} from '@/types/case-study';
+
+import AccordionContent from '../ui/accordion/AccordionContent.astro';
+import AccordionItem from '../ui/accordion/AccordionItem.astro';
+import TopicAccordionTrigger from './TopicAccordionTrigger.astro';
+
+interface Props {
+  topic: CaseStudyTopic;
+}
+
+const { topic } = Astro.props;
+const content = caseStudies[topic] as TopicContent;
+const frameworks = content.frameworks;
+---
+
+{
+  frameworks.length === 0 ? (
+    <p>No hay marcos de trabajo disponibles para este tema.</p>
+  ) : (
+    frameworks.map(({ name, focus, typicalUse, keyArtifacts, icon }) => (
+      <AccordionItem>
+        <TopicAccordionTrigger title={name} icon={icon} />
+
+        <AccordionContent>
+          <p><strong>Enfoque: </strong> {focus}</p>
+
+          <h5>Usos típicos:</h5>
+          <ul>
+            {typicalUse.map((use) => (
+              <li>{use}</li>
+            ))}
+          </ul>
+
+          <h5>Artefactos clave:</h5>
+          <ul>
+            {keyArtifacts.map((artifact) => (
+              <li>{artifact}</li>
+            ))}
+          </ul>
+        </AccordionContent>
+      </AccordionItem>
+    ))
+  )
+}
