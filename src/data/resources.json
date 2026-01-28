@@ -216,5 +216,94 @@
         ]
       }
     ]
+  },
+  "topic4": {
+    "groups": [
+      {
+        "title": "Vídeos Recomendados",
+        "items": [
+          {
+            "label": "NIST Cybersecurity Framework 2.0 for Small Business (recursos + webinar)",
+            "url": "https://www.nist.gov/itl/smallbusinesscyber/nist-cybersecurity-framework-0"
+          },
+          {
+            "label": "CSF 2.0 Quick Start Guides (perfiles, tiers, ERM, small business, etc.)",
+            "url": "https://www.nist.gov/cyberframework/quick-start-guides"
+          },
+          {
+            "label": "ISO 38500 explicación general (recomendaciones para implementación)",
+            "url": "https://www.youtube.com/watch?v=Igfcuu2Ltc4"
+          },
+          {
+            "label": "COSO - ISO 38500. Gobierno de TI (UPM / ITSMF)",
+            "url": "https://www.youtube.com/watch?v=37zvCvb31cw"
+          }
+        ]
+      },
+      {
+        "title": "Artículos de Interés",
+        "items": [
+          {
+            "label": "A Matrixed Approach to Designing IT Governance (Weill & Ross, MIT Sloan)",
+            "url": "https://sloanreview.mit.edu/article/a-matrixed-approach-to-designing-it-governance/"
+          },
+          {
+            "label": "NIST CSF 2.0 Small Business Quick-Start Guide (SP 1300)",
+            "url": "https://www.nist.gov/publications/nist-cybersecurity-framework-20-small-business-quick-start-guide"
+          },
+          {
+            "label": "IT Governance on One Page (MIT CISR) — Weill & Ross",
+            "url": "https://cisr.mit.edu/publication/MIT_CISRwp349_ITGovOnOnePage"
+          },
+          {
+            "label": "Cascading ISO/IEC 38500 based Balanced Score Cards to improve board accountability (open access)",
+            "url": "https://www.sciencedirect.com/science/article/pii/S1877050918316922"
+          }
+        ]
+      },
+      {
+        "title": "Herramientas Online",
+        "items": [
+          {
+            "label": "Plantillas IT Risk Assessment / Risk Register / Risk Matrix (Smartsheet)",
+            "url": "https://www.smartsheet.com/content/it-risk-templates"
+          },
+          {
+            "label": "Plantillas RACI (incluye ITIL RACI para incident/change/service) (Smartsheet)",
+            "url": "https://www.smartsheet.com/content/raci-templates"
+          },
+          {
+            "label": "Risk Register Template (Excel) (ProjectManager)",
+            "url": "https://www.projectmanager.com/templates/risk-tracking-template"
+          }
+        ]
+      },
+      {
+        "title": "Estándares Oficiales",
+        "items": [
+          {
+            "label": "ISO 31000:2018 — Risk management — Guidelines",
+            "url": "https://www.iso.org/iso-31000-risk-management.html"
+          },
+          {
+            "label": "ISO/IEC 38505-1:2017 — Governance of data (aplica ISO/IEC 38500 a datos)",
+            "url": "https://www.iso.org/standard/56639.html"
+          }
+        ]
+      },
+      {
+        "title": "Libros Recomendados",
+        "items": [
+          {
+            "label": "IT Governance: How Top Performers Manage IT Decision Rights (Weill & Ross, 2004)",
+            "url": "https://www.perlego.com/book/836982/it-governance-how-top-performers-manage-it-decision-rights-for-superior-results-pdf"
+          },
+          {
+            "label": "IT Governance: Implementing Frameworks and Standards for the Corporate Governance of IT (Calder & Moir, 2009)",
+            "url": "https://www.jstor.org/stable/j.ctt5hh78j"
+          }
+        ]
+      }
+    ]
   }
 }

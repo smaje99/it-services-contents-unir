@@ -7,6 +7,317 @@ color: "#6f42c1"
 publishAt: "2025-10-27 18:00:00"
 ---
 
-## Introducción
-Contenido migrado desde tema1.html…
+import AccordionRoot from '@/components/ui/accordion/AccordionRoot.astro';
+import TopicBenefits from '@/components/topic/TopicBenefits.astro';
+import TopicCaseStudies from '@/components/topic/TopicCaseStudies.astro';
+import TopicConceptCard from '@/components/topic/TopicConceptCard.astro';
+import TopicConceptSection from '@/components/topic/TopicConceptSection.astro';
+import TopicGrid from '@/components/topic/TopicGrid.astro';
+import TopicPrinciples from '@/components/topic/TopicPrinciples.astro';
+import TopicResourceSection from '@/components/topic/TopicResourceSection.astro';
+import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
 
+<TopicSectionGroup title='Conceptos Clave' icon='bulb'>
+  <TopicConceptSection title='Gobierno Corporativo' icon='building'>
+    **Definición:** Mejores prácticas para garantizar confiabilidad, exactitud y transparencia en la gestión organizacional, personificado en accionistas, consejo de administración y gerencia.
+
+    <TopicGrid>
+      <TopicConceptCard title="Características Fundamentales">
+        * **Confiabilidad**: Información financiera clara y fidedigna
+        * **Exactitud**: Precisión en la gestión de datos y procesos
+        * **Transparencia**: Visibilidad completa para stakeholders
+        * **Ética**: Gestión responsable y transparente
+        * **Responsabilidad:** Roles y responsabilidades definidos
+        * **Estructura:** Procesos y políticas formales
+        * **Medición:** Indicadores clave de desempeño (KPIs)
+      </TopicConceptCard>
+      <TopicConceptCard title="Beneficios Organizacionales">
+        * Valor añadido al crecimiento económico sostenible
+        * Solidez y credibilidad organizacional
+        * Confianza de organismos gubernamentales
+        * Mejores prácticas de gestión mecanizadas
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Gobierno Corporativo' icon='certificate'>
+    **Definición:** Norma internacional para el buen gobierno corporativo de las TIC, publicada en junio de 2008, basada en una norma australiana precursora.
+    Establece un marco de principios para que las organizaciones aseguren el uso efectivo, eficiente y aceptable de las TIC en apoyo a sus objetivos.
+
+    <TopicGrid>
+      <TopicConceptCard title="Objetivos de la Norma">
+        * **Confianza**: Aplicación estricta da confianza a directivos, consultores e ingenieros
+        * **Orientación**: Proporciona guía a gestores de TIC en su organización
+        * **Evaluación**: Sirve de referencia para evaluación objetiva del gobierno
+        * **Marco**: Proporciona principios para dirigir, monitorizar y evaluar TIC
+      </TopicConceptCard>
+      <TopicConceptCard title="Distinción Importante">
+        * **Gobierno**: Dirigido al órgano rector (estratégico)
+        * **Gestión**: Ejecutado por gestores de la organización (táctico)
+        * **Aplicabilidad**: Igualmente aplicable en PYMEs con funciones solapadas
+        * **Armonización**: Se armoniza con regulaciones de privacidad y buenas prácticas
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Los 6 Principios de ISO 38500' icon='scale'>
+    **Importancia**: La norma se basa en seis principios fundamentales para el buen gobierno corporativo de las TIC.
+
+    <TopicGrid>
+      <TopicConceptCard title="Principio de Responsabilidad">
+        **Definición**: Asignación clara de roles y responsabilidades en el gobierno de las TIC.
+
+        **Aplicación**: Matriz RACI, definición de roles, rendición de cuentas.
+      </TopicConceptCard>
+      <TopicConceptCard title="Principio de Estrategia">
+        **Definición**: Alineación de las TIC con los objetivos estratégicos de la organización.
+
+        **Aplicación**: Plan estratégico de TIC, alineación con objetivos de negocio.
+      </TopicConceptCard>
+      <TopicConceptCard title="Principio de Adquisición">
+        **Definición**: Decisiones informadas sobre inversiones y adquisiciones de TIC.
+
+        **Aplicación**: Proceso de evaluación, selección de proveedores, análisis de costos.
+      </TopicConceptCard>
+      <TopicConceptCard title="Principio de Rendimiento">
+        **Definición**: Medición y evaluación del desempeño de las TIC.
+
+        **Aplicación**: Dashboard de KPIs, métricas de desempeño, evaluación continua.
+      </TopicConceptCard>
+      <TopicConceptCard title="Principio de Conformidad">
+        **Definición**: Cumplimiento de normativas, regulaciones y estándares
+
+        **Aplicación**: Auditorías de cumplimiento, gestión de riesgos normativos.
+      </TopicConceptCard>
+      <TopicConceptCard title="Principio de Factor Humano">
+        **Definición**: Gestión de competencias y recursos humanos en TIC.
+
+        **Aplicación**: Programas de capacitación, desarrollo de competencias, gestión del talento.
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Funciones de Gobierno' icon='settings-cog'>
+    **Definición**: Para llevar a cabo la gobernanza de las TIC, la dirección realizará tres funciones principales.
+
+    <TopicGrid>
+      <TopicConceptCard title="Evaluación">
+        * **Análisis**: Uso actual y futuro de las TIC en la organización
+        * **Valoración**: Impacto y beneficios de las inversiones en TIC
+        * **Revisión**: Estado actual del gobierno de las TIC
+        * **Identificación**: Oportunidades de mejora y optimización
+      </TopicConceptCard>
+      <TopicConceptCard title="Dirección">
+        * **Políticas**: Establecimiento de políticas para el gobierno de las TIC
+        * **Estrategias**: Definición de estrategias alineadas con objetivos
+        * **Decisiones**: Toma de decisiones informadas sobre TIC
+        * **Liderazgo**: Dirección estratégica del uso de las TIC
+      </TopicConceptCard>
+      <TopicConceptCard title="Monitorización">
+        * **Seguimiento**: Monitoreo continuo del cumplimiento
+        * **Efectividad**: Evaluación de la efectividad del gobierno
+        * **Control**: Supervisión de la implementación de políticas
+        * **Reporte**: Informes regulares sobre el estado del gobierno
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Beneficios Económicos' icon='chart-line'>
+    **Investigación del MIT**: Peter Weill del Massachusetts Institute of Technology asegura que una buena gobernanza de las TIC reporta beneficios económicos directos de un 20% superior a organizaciones con gobernanza poco efectiva.
+
+    <TopicGrid>
+      <TopicConceptCard title="Beneficios Cuantificables">
+        * **ROI mejorado**: 20% superior en retorno de inversión
+        * **Reducción de costos**: Optimización de recursos y procesos
+        * **Eficiencia operativa**: Mejora en la productividad
+        * **Gestión de riesgos**: Reducción de riesgos operacionales
+      </TopicConceptCard>
+      <TopicConceptCard title="Beneficios Cualitativos">
+        * **Transparencia**: Mayor confianza de stakeholders
+        * **Alineación**: Sincronización TIC-objetivos de negocio
+        * **Innovación**: Mejor gestión de la innovación tecnológica
+        * **Competitividad**: Ventaja competitiva sostenible
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='Ejemplos Prácticos' icon='flask'>
+  <TopicConceptSection title="Casos de Implementación ISO 38500">
+    <AccordionRoot type='single'>
+      <TopicCaseStudies topic='topic4' />
+    </AccordionRoot>
+  </TopicConceptSection>
+
+  <TopicConceptSection title="Aplicación de los 6 Principios de ISO 38500">
+    <AccordionRoot type='single'>
+      <TopicPrinciples topic='topic4' />
+    </AccordionRoot>
+  </TopicConceptSection>
+
+  <TopicConceptSection title="Aplicación de los 6 Principios de ISO 38500">
+    <AccordionRoot type='single'>
+      <TopicBenefits topic='topic4' />
+    </AccordionRoot>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='Actividades de Refuerzo' icon='list-check'>
+  <TopicConceptSection
+    title="Análisis de Marcos de Referencia"
+    activity
+    estimatedDuration={30}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      Seleccionar un marco (COBIT/ITIL/ISO 38500) y justificar su uso según el contexto del caso.
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
+      1. Define el **contexto** (tipo de organización + problema TI).
+      2. Escoge **1 marco principal** y **1 complementario**.
+      3. Explica el “fit” con 3 criterios:
+          * Alcance (gobierno/gestión/servicios)
+          * Nivel de madurez actual
+          * Riesgos/regulación
+      4. Lista 3 prácticas/procesos del marco que aplicarías.
+
+      **Entregable**:
+      * Marco principal + complementario + justificación
+      * 3 prácticas/procesos seleccionados y por qué
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection
+    title="Análisis de Principios ISO 38500"
+    activity
+    estimatedDuration={30}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      Aplicar los 6 principios de ISO/IEC 38500 a un escenario real y traducirlos a acciones.
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
+      1. Selecciona un contexto: tipo de organización + situación (ej: “banco migrando a cloud”, “universidad con sistemas dispersos”).
+      2. Lista los 6 principios (Responsabilidad, Estrategia, Adquisición, Rendimiento, Conformidad, Factor Humano).
+      3. Para cada principio, completa:
+          * “Qué significa en este caso” (1 frase)
+          * “Riesgo si no se cumple” (1 frase)
+          * “Acción/decisión concreta” (1 bullet)
+      4. Define 2 beneficios esperados y 1 trade-off.
+
+      **Entregable**:
+      * Principio | Interpretación | Riesgo | Acción concreta | Beneficio esperado
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection
+    title="Diseño de Estructura de Gobierno"
+    activity
+    estimatedDuration={35}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      Diseñar una estructura E-D-M (Evaluar&#x2013;Dirigir&#x2013;Monitorear) con roles, comités y artefactos.
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
+      1. Define 4 roles clave: Sponsor (negocio), CIO/Dir TI, Seguridad/Privacidad, Auditoría/Control interno.
+      2. Diseña 2 comités:
+          * Comité de Gobierno TI (dirección/decisiones)
+          * Comité Operativo TI (seguimiento/ejecución)
+      3. Crea una mini **RACI** para 4 decisiones:
+          * Priorización de inversiones TI
+          * Aceptación de riesgo (risk appetite)
+          * Aprobación de arquitectura/tecnología
+          * Revisión de desempeño (KPIs)
+      4. Define 4 artefactos mínimos: política, roadmap, dashboard, registro de riesgos.
+
+      **Entregable**:
+      * Diagrama (bullets) de comités + RACI + lista de artefactos
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection
+    title="Caso de Estudio: Implementación ISO 38500"
+    activity
+    estimatedDuration={40}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      Construir un plan de implementación por fases basado en ISO/IEC 38500.
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
+      1. Elige una organización y describe el problema en 3 líneas.
+      2. Define alcance: procesos/sistemas incluidos y excluidos.
+      3. Plan por fases:
+          * **Fase 1 (0&#x2013;30 días)**: diagnóstico + quick wins
+          * **Fase 2 (31&#x2013;90 días)**: políticas + comités + métricas
+          * **Fase 3 (91&#x2013;180 días)**: consolidación + auditoría interna + mejora
+
+          Para cada fase: 2 actividades + 1 entregable.
+      4. Define 3 KPIs y 2 evidencias.
+
+      **Entregable**:
+      * Roadmap 0&#x2013;30 / 31&#x2013;90 / 91&#x2013;180 con entregables + KPIs + evidencias
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection
+    title="Análisis de Riesgos en Gobierno TIC"
+    activity
+    estimatedDuration={25}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      Identificar riesgos de gobierno TI y definir tratamiento alineado a ISO 38500.
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
+      1. Lista 6 riesgos, al menos 1 por categoría:
+          * Estratégico (inversiones sin valor)
+          * Cumplimiento (normativa/datos)
+          * Operacional (continuidad/servicio)
+          * Proveedores (lock-in/SLAs)
+          * Seguridad (incidentes)
+          * Factor humano (resistencia/capacidades)
+      2. Puntúa P(1&#x2013;5) e I(1&#x2013;5), calcula P&#x00d7;I.
+      3. Para Top 2 define:
+          * Tratamiento (Mitigar/Transferir/Aceptar/Evitar)
+          * Control/decisión de gobierno que lo reduce
+          * Evidencia (qué documento o registro lo demuestra)
+
+      **Entregable**:
+      * Riesgo | Categoría | P | I | P&#x00d7;I | Tratamiento | Evidencia
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection
+    title="Evaluación de Madurez del Gobierno"
+    activity
+    estimatedDuration={45}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      Evaluar la madurez del gobierno de TI y proponer un plan de mejora continuo.
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
+      1. Define 5 dimensiones:
+          * Principios ISO 38500 (6)
+          * Roles y comités
+          * Métricas (KPIs)
+          * Gestión de riesgos
+          * Conformidad/auditoría
+      2. Escala simple 1&#x2013;5: 1=ad hoc, 3=definido, 5=optimizado.
+      3. Califica cada dimensión con evidencia: 1 evidencia por dimensión.
+      4. Identifica 3 brechas: “hoy vs objetivo (3 o 4)”.
+      5. Plan de mejora:
+          * Acción
+          * Responsable
+          * Plazo
+          * KPI de seguimiento
+
+      **Entregable**:
+      * Matriz de madurez (dimensión, puntaje, evidencia) + plan de mejora (3 acciones)
+    </TopicConceptCard>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicResourceSection topic='topic4' />

@@ -434,6 +434,7 @@
       {
         "title": "Bancos: Gobierno corporativo para cumplimiento regulatorio (ISO 38500)",
         "description": "Banco que formalizó estructuras de decisión y monitoreo para inversiones TI, riesgo y continuidad, alineando TI con regulaciones y estrategia del negocio.",
+        "icon": "building-bank",
         "development": {
           "intro": "La implementación incluyó:",
           "steps": [
@@ -450,6 +451,7 @@
       {
         "title": "Empresas manufactureras: Alineación de TIC con procesos de producción",
         "description": "Manufacturera que alineó TI con operación de planta para reducir paradas, mejorar calidad de datos y priorizar automatización con retorno claro.",
+        "icon": "building-factory-2",
         "development": {
           "situation": "TI ejecutaba iniciativas sin priorización por impacto en planta; los sistemas críticos tenían dependencias no documentadas y cambios poco controlados.",
           "problems": [
@@ -476,6 +478,7 @@
       {
         "title": "Organizaciones públicas: Transparencia y rendición de cuentas",
         "description": "Entidad pública que fortaleció transparencia en compras TI, decisiones de priorización y seguimiento de proyectos, con evidencia para control y auditoría.",
+        "icon": "building-bank",
         "development": {
           "intro": "La implementación incluyó:",
           "steps": [
@@ -492,6 +495,7 @@
       {
         "title": "PYMEs: Adaptación de principios de gobierno a recursos limitados",
         "description": "PYME que implementó un “gobierno ligero” para controlar riesgos, inversiones y operación sin burocracia.",
+        "icon": "building-store",
         "development": {
           "situation": "La empresa dependía de pocos sistemas clave, pero no existía control formal sobre proveedores, cambios, accesos y continuidad.",
           "problems": [
@@ -517,6 +521,7 @@
       {
         "title": "Empresas tecnológicas: Gestión de innovación y desarrollo",
         "description": "Empresa tecnológica que gobernó su portafolio de productos y plataformas, controlando riesgo y enfocando inversión en valor medible.",
+        "icon": "device-laptop",
         "development": {
           "intro": "La implementación incluyó:",
           "steps": [
@@ -532,12 +537,14 @@
     ],
     "principles": [
       {
-        "name": "Responsibility",
+        "name": "Responsabilidad",
+        "icon": "user-check",
         "application": "Definir quién decide, quién ejecuta y quién rinde cuentas por servicios/proyectos TIC.",
         "deliverableExamples": ["Matriz RACI", "Owner de servicio", "Actas de comité"]
       },
       {
-        "name": "Strategy",
+        "name": "Estrategia",
+        "icon": "target-arrow",
         "application": "Alinear TIC con objetivos de negocio y priorización basada en valor y riesgo.",
         "deliverableExamples": [
           "Plan estratégico TIC",
@@ -546,12 +553,14 @@
         ]
       },
       {
-        "name": "Acquisition",
+        "name": "Adquisición",
+        "icon": "shopping-cart-filled",
         "application": "Controlar compras TI con evaluación objetiva y enfoque costo/beneficio.",
         "deliverableExamples": ["Matriz de evaluación", "TCO", "Contratos y SLAs"]
       },
       {
-        "name": "Performance",
+        "name": "Rendimiento",
+        "icon": "chart-histogram",
         "application": "Medir desempeño TIC con KPIs ejecutivos y operativos.",
         "deliverableExamples": [
           "Dashboard KPIs",
@@ -560,12 +569,14 @@
         ]
       },
       {
-        "name": "Conformance",
+        "name": "Conformidad",
+        "icon": "shield-check",
         "application": "Cumplimiento normativo y auditorías con evidencias.",
         "deliverableExamples": ["Auditorías", "SoA/controles", "Plan de hallazgos"]
       },
       {
-        "name": "Human Behaviour",
+        "name": "Factor Humano",
+        "icon": "users-group",
         "application": "Capacitación, cultura y adopción para sostener el gobierno TI.",
         "deliverableExamples": [
           "Plan de formación",
@@ -575,11 +586,26 @@
       }
     ],
     "benefits": [
-      "Reducción de riesgos operacionales y sistémicos",
-      "Mejora en la toma de decisiones estratégicas",
-      "Optimización de inversiones en TIC",
-      "Mayor transparencia y confianza de stakeholders",
-      "Alineación efectiva entre TIC y objetivos de negocio"
+      {
+        "benefit": "Reducción de riesgos operacionales y sistémicos",
+        "icon": "alert-triangle-filled"
+      },
+      {
+        "benefit": "Mejora en la toma de decisiones estratégicas",
+        "icon": "bulb"
+      },
+      {
+        "benefit": "Optimización de inversiones en TIC",
+        "icon": "cash-banknote-move"
+      },
+      {
+        "benefit": "Mayor transparencia y confianza de stakeholders",
+        "icon": "user-up"
+      },
+      {
+        "benefit": "Alineación efectiva entre TIC y objetivos de negocio",
+        "icon": "refresh"
+      }
     ]
   },
   "topic5": {
