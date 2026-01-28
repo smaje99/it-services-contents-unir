@@ -45,13 +45,8 @@ export type FrameworkRef = {
 };
 
 export type Principle = {
-  name:
-    | 'Responsibility'
-    | 'Strategy'
-    | 'Acquisition'
-    | 'Performance'
-    | 'Conformance'
-    | 'Human Behaviour';
+  name: string;
+  icon?: string;
   application: string;
   deliverableExamples: string[];
 };
@@ -73,11 +68,16 @@ export type SectorApplication = {
   applications: string[];
 };
 
+export type Benefits = {
+  benefit: string;
+  icon?: string;
+};
+
 export interface TopicContent {
   caseStudies: CaseStudy[];
   frameworks?: FrameworkRef[];
   principles?: Principle[];
-  benefits?: string[];
+  benefits?: Benefits[];
   domains?: DomainInAction[];
   applicationsByPhase?: ApplicationByPhase[];
   sectorApplications?: SectorApplication[];
