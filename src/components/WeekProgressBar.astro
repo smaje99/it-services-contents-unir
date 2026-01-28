@@ -1,10 +1,8 @@
 ---
-interface Props {
-  week: number;
-  maxWeeks: number;
-}
+import { getAdvancedWeekNumber } from '@/services/advanced-week';
 
-const { week = 0, maxWeeks = 9 } = Astro.props;
+const [week, maxWeeks] = getAdvancedWeekNumber();
+
 const percentage = maxWeeks > 0 ? Math.round((week / maxWeeks) * 100) : 0;
 ---
 

@@ -1,0 +1,38 @@
+[
+  {
+    "numberWeek": 1,
+    "startDateAt": "2025-10-13"
+  },
+  {
+    "numberWeek": 2,
+    "startDateAt": "2025-10-20"
+  },
+  {
+    "numberWeek": 3,
+    "startDateAt": "2025-10-27"
+  },
+  {
+    "numberWeek": 4,
+    "startDateAt": "2025-11-03"
+  },
+  {
+    "numberWeek": 5,
+    "startDateAt": "2025-11-10"
+  },
+  {
+    "numberWeek": 6,
+    "startDateAt": "2025-11-17"
+  },
+  {
+    "numberWeek": 7,
+    "startDateAt": "2025-11-24"
+  },
+  {
+    "numberWeek": 8,
+    "startDateAt": "2025-12-01"
+  },
+  {
+    "numberWeek": 9,
+    "startDateAt": "2025-12-08"
+  }
+]

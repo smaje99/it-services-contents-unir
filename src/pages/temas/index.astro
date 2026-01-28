@@ -12,9 +12,11 @@ const topics = (await getCollection('topics')).sort(
 );
 ---
 
-<HomeLayout title='Temas' description='Temas del curso' week={9} maxWeeks={9}>
+<HomeLayout
+  title='Temas de Servicios de Tecnología de la Información - Proyecto de Aula'
+  description='Temas del curso de Servicios de Tecnología de la Información'
+>
   <h3 data-heading='icon'><Icon name='list' />Temas del Curso</h3>
-  <!-- Aquí inyectamos topics desde content collections -->
   <TopicGrid>
     {
       topics.map((topic) => (
