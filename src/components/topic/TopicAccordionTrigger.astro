@@ -1,5 +1,6 @@
 ---
 import { Icon } from 'astro-icon/components';
+
 import AccordionTrigger from '../ui/accordion/AccordionTrigger.astro';
 
 interface Props {
@@ -19,7 +20,7 @@ const { title, icon = 'star-filled' } = Astro.props;
 
 <style>
   [data-icon] {
-    color: var(--brand-primary)
+    color: var(--brand-primary);
   }
 
   [data-icon='star-filled'] {

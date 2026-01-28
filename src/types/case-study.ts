@@ -31,12 +31,14 @@ export interface CaseStudy {
   title: string;
   description: string;
   isNational?: boolean;
+  icon?: string;
   development: Development;
   lessons: string;
 }
 
 export type FrameworkRef = {
   name: 'COBIT' | 'ITIL' | 'ISO 38500' | 'Val IT' | 'ISO 27001' | 'ISO/IEC 20000';
+  icon?: string;
   focus: string;
   typicalUse: string[];
   keyArtifacts: string[];

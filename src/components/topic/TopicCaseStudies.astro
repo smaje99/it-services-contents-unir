@@ -28,9 +28,9 @@ const cases = allCases.filter(
   cases.length === 0 ? (
     <p>No hay estudios de caso disponibles para este tema.</p>
   ) : (
-    cases.map(({ title, description, development, lessons }) => (
+    cases.map(({ title, description, development, lessons, icon }) => (
       <AccordionItem>
-        <TopicAccordionTrigger title={title} />
+        <TopicAccordionTrigger title={title} icon={icon} />
 
         <AccordionContent>
           <p>{description}</p>
