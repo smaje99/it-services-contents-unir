@@ -145,5 +145,76 @@
         ]
       }
     ]
+  },
+  "topic3": {
+    "groups": [
+      {
+        "title": "Vídeos Recomendados",
+        "items": [
+          {
+            "label": "NIST — CSF 2.0 Webinar (Implementing CSF 2.0: Why, What, and How)",
+            "url": "https://www.nist.gov/video/csf-20-webinar-series-implementing-csf-20-why-what-and-how"
+          },
+          {
+            "label": "NIST — CSF 2.0 Webinar (Deep-Dive: Govern Function)",
+            "url": "https://www.nist.gov/news-events/events/2025/05/csf-20-webinar-series-deep-dive-csf-20-govern-function-improve"
+          },
+          {
+            "label": "COBIT + ITIL (cómo se complementan)",
+            "url": "https://www.youtube.com/watch?v=crvMqsdGE1g"
+          },
+          {
+            "label": "COBIT vs ITIL® | Is ITIL® better than COBIT? | ITIL® Training | Invensis Learning",
+            "url": "https://youtu.be/KS6pu76W2yM?si=jczEFyGm8bQsycO8"
+          }
+        ]
+      },
+      {
+        "title": "Normativas / guías técnicas",
+        "items": [
+          {
+            "label": "NIST — Cybersecurity Framework (CSF) 2.0 (publicación oficial)",
+            "url": "https://www.nist.gov/publications/nist-cybersecurity-framework-csf-20"
+          },
+          {
+            "label": "NIST — IR 8286 Rev. 1 (Integrating Cybersecurity & Enterprise Risk Management)",
+            "url": "https://csrc.nist.gov/pubs/ir/8286/r1/final"
+          },
+          {
+            "label": "NIST — SP 800-37 Rev. 2 (Risk Management Framework, RMF)",
+            "url": "https://csrc.nist.gov/pubs/sp/800/37/r2/final"
+          },
+          {
+            "label": "ISO/IEC 27002:2022 (controles de seguridad — complemento directo de 27001)",
+            "url": "https://www.iso.org/standard/75652.html"
+          },
+          {
+            "label": "ISO/IEC 27005:2022 (gestión de riesgos de seguridad — complemento de 27001/31000)",
+            "url": "https://www.iso.org/standard/80585.html"
+          },
+          {
+            "label": "ISO 31000:2018 (gestión de riesgos — base transversal para gobierno)",
+            "url": "https://www.iso.org/iso-31000-risk-management.html"
+          }
+        ]
+      },
+      {
+        "title": "Organizaciones / hubs oficiales útiles",
+        "items": [
+          {
+            "label": "NIST — Cybersecurity Framework (hub + guías + mapeos)",
+            "url": "https://www.nist.gov/cyberframework"
+          },
+          {
+            "label": "NIST CSRC — Publications (catálogo oficial de SP/IR para gobierno y seguridad)",
+            "url": "https://csrc.nist.gov/publications"
+          },
+          {
+            "label": "The Open Group — TOGAF (oficial)",
+            "url": "https://www.opengroup.org/togaf"
+          }
+        ]
+      }
+    ]
   }
 }
