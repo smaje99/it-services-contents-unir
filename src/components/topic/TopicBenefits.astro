@@ -1,0 +1,63 @@
+---
+import { Icon } from 'astro-icon/components';
+
+import caseStudies from '@/data/case-studies.json';
+import type { CaseStudyTopic, TopicContent } from '@/types/case-study';
+
+import CardContent from '../ui/card/CardContent.astro';
+import CardHeader from '../ui/card/CardHeader.astro';
+import CardRoot from '../ui/card/CardRoot.astro';
+import CardTitle from '../ui/card/CardTitle.astro';
+import TopicGrid from './TopicGrid.astro';
+
+interface Props {
+  topic: CaseStudyTopic;
+}
+
+const { topic } = Astro.props;
+const content = caseStudies[topic] as TopicContent;
+const benefits = content.benefits;
+---
+
+{
+  benefits.length === 0 ? (
+    <p>No hay beneficios disponibles para este tema.</p>
+  ) : (
+    <TopicGrid>
+      {benefits.map(({ benefit, icon }) => (
+        <CardRoot class='topic-benefit-card'>
+          <CardContent class='topic-benefit-content'>
+            {icon && <Icon name={icon} />}
+            {benefit}
+          </CardContent>
+        </CardRoot>
+      ))}
+    </TopicGrid>
+  )
+}
+
+<style>
+  .topic-benefit-card {
+    background-color: var(--gray-200);
+    border-color: var(--gray-300);
+    border-left: 6px solid var(--info);
+    border-radius: var(--radius-sm);
+  }
+
+  .topic-benefit-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    & > [data-icon] {
+      width: 2cap;
+      height: 2cap;
+      display: block;
+      flex-shrink: 0;
+      stroke-width: 2;
+      color: var(--info);
+    }
+  }
+</style>

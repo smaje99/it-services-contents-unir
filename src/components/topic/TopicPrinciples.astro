@@ -1,0 +1,42 @@
+---
+import caseStudies from '@/data/case-studies.json';
+import type {
+  CaseStudyTopic,
+  TopicContent,
+} from '@/types/case-study';
+
+import AccordionContent from '../ui/accordion/AccordionContent.astro';
+import AccordionItem from '../ui/accordion/AccordionItem.astro';
+import TopicAccordionTrigger from './TopicAccordionTrigger.astro';
+
+interface Props {
+  topic: CaseStudyTopic;
+}
+
+const { topic } = Astro.props;
+const content = caseStudies[topic] as TopicContent;
+const principles = content.principles;
+---
+
+{
+  principles.length === 0 ? (
+    <p>No hay principios disponibles para este tema.</p>
+  ) : (
+    principles.map(({ name, application, deliverableExamples, icon }) => (
+      <AccordionItem>
+        <TopicAccordionTrigger title={name} icon={icon} />
+
+        <AccordionContent>
+          <p><strong>Aplicación: </strong> {application}</p>
+
+          <h5>Ejemplos de entregables:</h5>
+          <ul>
+            {deliverableExamples.map((example) => (
+              <li>{example}</li>
+            ))}
+          </ul>
+        </AccordionContent>
+      </AccordionItem>
+    ))
+  )
+}
