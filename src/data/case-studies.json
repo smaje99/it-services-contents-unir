@@ -283,6 +283,7 @@
       {
         "title": "Bancos: Implementación de ISO 27001 para seguridad",
         "description": "Banco que fortaleció su Sistema de Gestión de Seguridad de la Información (SGSI) para reducir riesgo, mejorar controles y cumplir expectativas regulatorias y de auditoría.",
+        "icon": "building-bank",
         "development": {
           "intro": "La implementación incluyó:",
           "steps": [
@@ -301,6 +302,7 @@
       {
         "title": "Empresas manufactureras: Certificación ISO/IEC 20000 para servicios",
         "description": "Empresa manufacturera que profesionalizó su gestión de servicios TI para mejorar disponibilidad de sistemas de planta y atención a usuarios internos.",
+        "icon": "building-factory-2",
         "development": {
           "situation": "Los servicios TI eran reactivos, con alta recurrencia de incidentes y sin acuerdos claros de niveles de servicio para aplicaciones críticas (ERP, MES, infraestructura de red).",
           "problems": [
@@ -327,6 +329,7 @@
       {
         "title": "Organizaciones públicas: Cumplimiento de normativas gubernamentales",
         "description": "Entidad pública que alineó su gobierno TI para cumplir lineamientos, auditorías y controles de transparencia, seguridad y gestión documental.",
+        "icon": "building-bank",
         "development": {
           "intro": "La iniciativa incluyó:",
           "steps": [
@@ -344,6 +347,7 @@
       {
         "title": "PYMEs: Adopción de marcos de referencia adaptados",
         "description": "PYME que adoptó prácticas esenciales de gobierno/gestión TI sin sobrecargar recursos, priorizando riesgos, continuidad y control de cambios.",
+        "icon": "building-store",
         "development": {
           "situation": "La PYME creció rápido, pero TI operaba sin estándares: cambios sin control, accesos compartidos y poca visibilidad de costos y riesgos.",
           "problems": [
@@ -370,6 +374,7 @@
     "frameworks": [
       {
         "name": "COBIT",
+        "icon": "shield-filled",
         "focus": "Control, auditoría y gobierno de TI orientado a objetivos.",
         "typicalUse": ["Gobierno TI", "Controles", "Auditoría", "Gestión de riesgos"],
         "keyArtifacts": [
@@ -381,6 +386,7 @@
       },
       {
         "name": "ITIL",
+        "icon": "book-2",
         "focus": "Gestión de servicios TI y operación orientada al valor.",
         "typicalUse": [
           "Service Desk",
@@ -397,6 +403,7 @@
       },
       {
         "name": "ISO 38500",
+        "icon": "certificate",
         "focus": "Principios para gobierno corporativo de TI.",
         "typicalUse": [
           "Dirección y control",
@@ -411,6 +418,7 @@
       },
       {
         "name": "Val IT",
+        "icon": "file-dollar",
         "focus": "Valor y gestión de inversiones TI.",
         "typicalUse": ["Portafolio de inversiones", "Beneficios", "Caso de negocio"],
         "keyArtifacts": [
