@@ -1,7 +1,7 @@
 /** @type {import("prettier").Config} */
 export default {
   useTabs: false,
-  printWidth: 90,
+  printWidth: 100,
   singleQuote: true,
   jsxSingleQuote: true,
   plugins: ['prettier-plugin-astro'],

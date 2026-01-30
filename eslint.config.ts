@@ -107,7 +107,7 @@ export default defineConfig([
       'simple-import-sort/imports': 'error',
       'simple-import-sort/exports': 'error',
 
-      'max-len': ['error', 90],
+      'max-len': ['error', 100],
       quotes: [2, 'single', { avoidEscape: true }],
       indent: ['warn', 2, { SwitchCase: 1 }],
 
