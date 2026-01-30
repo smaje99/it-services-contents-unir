@@ -9,13 +9,13 @@ interface Props {
 const { href } = Astro.props;
 ---
 
-<LinkButton href={href} size='lg' class='auto-assessment-link'>
+<LinkButton href={href} size='lg' class='self-assessment-link'>
   <Icon name='location-check' />
   <slot />
 </LinkButton>
 
 <style>
-  .auto-assessment-link {
+  .self-assessment-link {
     justify-content: flex-start;
   }
 
