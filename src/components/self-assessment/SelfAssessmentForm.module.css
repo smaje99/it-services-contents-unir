@@ -1,0 +1,87 @@
+.sa__card {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+}
+
+.sa__prompt {
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.sa__qindex {
+  display: block;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.sa__options {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.sa__option {
+  display: grid;
+  grid-template-columns: 1.2rem 1fr;
+  gap: 0.75rem;
+  align-items: start;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.sa__error {
+  margin-top: 0.6rem;
+  color: var(--danger, #dc2626);
+  font-size: 1.3rem;
+}
+
+.sa__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.sa__btn {
+  border: 1px solid var(--border-color);
+  background: transparent;
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.9rem;
+  cursor: pointer;
+}
+
+.sa__btn--primary {
+  background: var(--brand-primary);
+  border-color: transparent;
+  color: #fff;
+}
+
+.sa__review {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.sa__review-item {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+}
+
+.sa__review-item[data-state='ok'] {
+  border-left: 4px solid var(--success);
+}
+
+.sa__review-item[data-state='bad'] {
+  border-left: 4px solid var(--error);
+}
+
+.sa__explain {
+  margin-top: 0.6rem;
+  padding: 0.75rem;
+  border-left: 3px solid var(--brand-primary);
+  background: rgb(37 99 235 / 0.06);
+  border-radius: var(--radius-sm);
+}

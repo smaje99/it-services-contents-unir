@@ -2,7 +2,11 @@
 import type { GetStaticPaths } from 'astro';
 import { type CollectionEntry, getCollection } from 'astro:content';
 
+import SelfAssessmentModal from '@/components/self-assessment/SelfAssessmentModal.astro';
+import selfAssessments from '@/data/self-assessments.json';
 import TopicLayout from '@/layouts/TopicLayout.astro';
+import type { SelfAssessmentsByTopic } from '@/types/self-assessment';
+import type { TopicId } from '@/types/topic';
 
 type TopicEntry = CollectionEntry<'topics'>;
 interface Props {
@@ -22,6 +26,11 @@ const { topic } = Astro.props;
 const { title, description, icon, color, order } = topic.data;
 
 const { Content } = await topic.render();
+
+const { slug } = Astro.params;
+const assessments: SelfAssessmentsByTopic = selfAssessments;
+const assessment = assessments[slug as TopicId];
+const dialogId = `self-assessment-${slug}`;
 ---
 
 <TopicLayout
@@ -32,4 +41,6 @@ const { Content } = await topic.render();
   order={order}
 >
   <Content />
+
+  {assessment && <SelfAssessmentModal dialogId={dialogId} assessment={assessment} />}
 </TopicLayout>

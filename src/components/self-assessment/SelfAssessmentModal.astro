@@ -1,0 +1,29 @@
+---
+import type { SelfAssessment } from '@/types/self-assessment';
+
+import DialogContent from '../ui/dialog/DialogContent.astro';
+import DialogDescription from '../ui/dialog/DialogDescription.astro';
+import DialogHeader from '../ui/dialog/DialogHeader.astro';
+import DialogRoot from '../ui/dialog/DialogRoot.astro';
+import DialogTitle from '../ui/dialog/DialogTitle.astro';
+import { SelfAssessmentForm } from './SelfAssessmentForm';
+
+interface Props {
+  dialogId: string;
+  assessment: SelfAssessment;
+}
+
+const { dialogId, assessment } = Astro.props;
+---
+
+<DialogRoot id={dialogId}>
+  <DialogHeader>
+    <DialogTitle>{assessment.title}</DialogTitle>
+    <DialogDescription>
+      Evalúa tus conocimientos sobre {assessment.title}
+    </DialogDescription>
+  </DialogHeader>
+  <DialogContent>
+    <SelfAssessmentForm client:load dialogId={dialogId} assessment={assessment} />
+  </DialogContent>
+</DialogRoot>
