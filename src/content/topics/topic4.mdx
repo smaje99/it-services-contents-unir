@@ -8,7 +8,7 @@ publishAt: "2025-10-27 18:00:00"
 ---
 
 import AccordionRoot from '@/components/ui/accordion/AccordionRoot.astro';
-import AutoAssessmentItem from '@/components/auto-assessment/AutoAssessmentItem.astro';
+import SelfAssessmentItem from '@/components/self-assessment/SelfAssessmentItem.astro';
 import TopicBenefits from '@/components/topic/TopicBenefits.astro';
 import TopicCaseStudies from '@/components/topic/TopicCaseStudies.astro';
 import TopicConceptCard from '@/components/topic/TopicConceptCard.astro';
@@ -323,7 +323,7 @@ import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
   <TopicConceptSection title="Autoevaluación" icon="checklist">
     Comprueba tu comprensión en este tema contestando el cuestionario de autoevaluación con preguntas de selección múltiple.
 
-    <AutoAssessmentItem href='/temas/topic4?self-assessment=1'>Presentar autoevaluación</AutoAssessmentItem>
+    <SelfAssessmentItem topic="topic4">Presentar autoevaluación</SelfAssessmentItem>
   </TopicConceptSection>
 </TopicSectionGroup>
 

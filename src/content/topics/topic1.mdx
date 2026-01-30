@@ -7,10 +7,8 @@ color: '#28a745'
 publishAt: '2025-10-14 20:00:00'
 ---
 
-import AccordionContent from '@/components/ui/accordion/AccordionContent.astro';
-import AutoAssessmentItem from '@/components/auto-assessment/AutoAssessmentItem.astro';
-import AccordionItem from '@/components/ui/accordion/AccordionItem.astro';
 import AccordionRoot from '@/components/ui/accordion/AccordionRoot.astro';
+import SelfAssessmentItem from '@/components/self-assessment/SelfAssessmentItem.astro';
 import TopicAccordionTrigger from '@/components/topic/TopicAccordionTrigger.astro';
 import TopicCaseStudies from '@/components/topic/TopicCaseStudies.astro';
 import TopicConceptCard from '@/components/topic/TopicConceptCard.astro';
@@ -266,7 +264,7 @@ import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
   <TopicConceptSection title="Autoevaluación" icon="checklist">
     Comprueba tu comprensión en este tema contestando el cuestionario de autoevaluación con preguntas de selección múltiple.
 
-    <AutoAssessmentItem href='/temas/topic1?self-assessment=1'>Presentar autoevaluación</AutoAssessmentItem>
+    <SelfAssessmentItem topic="topic1">Presentar autoevaluación</SelfAssessmentItem>
   </TopicConceptSection>
 </TopicSectionGroup>
 
