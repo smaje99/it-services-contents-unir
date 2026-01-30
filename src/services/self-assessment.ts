@@ -1,4 +1,4 @@
-import { z } from 'astro:content';
+import { z } from 'zod';
 
 import type { SelfAssessment } from '@/types/self-assessment';
 
@@ -31,7 +31,7 @@ export function buildSelfAssessmentSchema(assessment: SelfAssessment) {
         const a = val.answers[i];
         if (Number.isNaN(a)) {
           ctx.addIssue({
-            code: z.ZodIssueCode.custom,
+            code: 'custom',
             path: ['answers', i],
             message: 'Selecciona una opción.',
           });
@@ -39,7 +39,7 @@ export function buildSelfAssessmentSchema(assessment: SelfAssessment) {
         }
         if (a < 0 || a >= q.options.length) {
           ctx.addIssue({
-            code: z.ZodIssueCode.custom,
+            code: 'custom',
             path: ['answers', i],
             message: 'Opción inválida.',
           });
