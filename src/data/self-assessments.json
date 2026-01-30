@@ -1,6 +1,6 @@
 {
   "topic1": {
-    "title": "Autoevaluación — La Transformación Digital",
+    "title": "Autoevaluación — Tema 1: La Transformación Digital",
     "questions": [
       {
         "id": "topic1-question-1",
@@ -24,6 +24,810 @@
           "Return of Innovation"
         ],
         "answerIndex": 0
+      },
+      {
+        "id": "topic1-question-3",
+        "prompt": "¿Qué significa I+D+i?",
+        "options": [
+          "Investigación, Desarrollo e innovación",
+          "Información, Datos e inteligencia",
+          "Integración, Desarrollo e innovación",
+          "Investigación, Datos e innovación"
+        ],
+        "answerIndex": 0,
+        "explanation": "I+D+i se refiere a Investigación, Desarrollo e innovación, representando el proceso completo de generación de conocimiento y su aplicación práctica."
+      },
+      {
+        "id": "topic1-question-4",
+        "prompt": "¿Cuál es la diferencia principal entre ERP y CRM?",
+        "options": [
+          "ERP gestiona recursos internos, CRM gestiona relaciones con clientes",
+          "ERP es para grandes empresas, CRM para pequeñas",
+          "ERP es más caro que CRM",
+          "No hay diferencia, son lo mismo"
+        ],
+        "answerIndex": 0,
+        "explanation": "ERP (Enterprise Resource Planning) gestiona los recursos y procesos internos de la empresa, mientras que CRM (Customer Relationship Management) se enfoca en las relaciones con clientes."
+      },
+      {
+        "id": "topic1-question-5",
+        "prompt": "¿Qué es la logística inversa?",
+        "options": [
+          "Gestión del flujo de productos desde el punto de consumo hasta el origen",
+          "Logística que funciona en sentido contrario",
+          "Sistema de devoluciones únicamente",
+          "Gestión de inventarios al revés"
+        ],
+        "answerIndex": 0,
+        "explanation": "La logística inversa gestiona el flujo de productos desde el punto de consumo hasta el origen para recuperar valor o disponer adecuadamente."
+      },
+      {
+        "id": "topic1-question-6",
+        "prompt": "¿Cuál es el objetivo principal de la transformación digital?",
+        "options": [
+          "Mejorar la eficiencia operativa y crear nuevas oportunidades de negocio",
+          "Reducir costos únicamente",
+          "Implementar tecnología por moda",
+          "Reemplazar completamente a los empleados"
+        ],
+        "answerIndex": 0,
+        "explanation": "La transformación digital busca optimizar procesos y generar nuevas oportunidades mediante el uso estratégico de la tecnología."
+      },
+      {
+        "id": "topic1-question-7",
+        "prompt": "¿Qué caracteriza a las tecnologías emergentes?",
+        "options": [
+          "Son nuevas tecnologías con potencial de impacto significativo",
+          "Son tecnologías obsoletas",
+          "Son tecnologías muy costosas",
+          "Son tecnologías solo para grandes empresas"
+        ],
+        "answerIndex": 0,
+        "explanation": "Las tecnologías emergentes están en desarrollo o en adopción temprana y pueden generar impacto significativo en una industria o en la sociedad."
+      }
+    ]
+  },
+  "topic2": {
+    "title": "Autoevaluación — Tema 2: Caso de Estudio",
+    "questions": [
+      {
+        "id": "topic2-question-1",
+        "prompt": "¿Qué significa EVS?",
+        "options": [
+          "Estudio de Viabilidad de Sistemas",
+          "Evaluación de Valor de Sistemas",
+          "Estudio de Ventas de Sistemas",
+          "Evaluación de Versión de Sistemas"
+        ],
+        "answerIndex": 0,
+        "explanation": "EVS significa Estudio de Viabilidad de Sistemas, una metodología para evaluar la factibilidad técnica, económica y operativa de proyectos de sistemas de información."
+      },
+      {
+        "id": "topic2-question-2",
+        "prompt": "¿Cuál es la fórmula del ROI?",
+        "options": [
+          "ROI = (Beneficio Neto / Costo de Inversión) × 100",
+          "ROI = Costo de Inversión / Beneficio Neto",
+          "ROI = Beneficio Neto × Costo de Inversión",
+          "ROI = Beneficio Neto - Costo de Inversión"
+        ],
+        "answerIndex": 0,
+        "explanation": "ROI = (Beneficio Neto / Costo de Inversión) × 100. Mide el retorno respecto a lo invertido."
+      },
+      {
+        "id": "topic2-question-3",
+        "prompt": "¿Qué significa TIR?",
+        "options": [
+          "Tasa Interna de Retorno",
+          "Tiempo Interno de Retorno",
+          "Tasa de Inversión de Retorno",
+          "Tiempo de Inversión de Retorno"
+        ],
+        "answerIndex": 0,
+        "explanation": "La TIR es la tasa que hace que el VAN del proyecto sea igual a cero. Se interpreta como rentabilidad esperada."
+      },
+      {
+        "id": "topic2-question-4",
+        "prompt": "¿Cuál es el objetivo principal del EVS?",
+        "options": [
+          "Evaluar la viabilidad técnica, económica y operativa de un proyecto",
+          "Calcular únicamente el costo del proyecto",
+          "Seleccionar el mejor proveedor",
+          "Implementar el sistema directamente"
+        ],
+        "answerIndex": 0,
+        "explanation": "El EVS evalúa la factibilidad del proyecto antes de implementarlo."
+      },
+      {
+        "id": "topic2-question-5",
+        "prompt": "¿Qué incluye el análisis de riesgos en un proyecto?",
+        "options": [
+          "Identificación, evaluación y planificación de mitigación de riesgos",
+          "Solo la identificación de riesgos",
+          "Únicamente el cálculo de probabilidades",
+          "Solo la evaluación del impacto"
+        ],
+        "answerIndex": 0,
+        "explanation": "Incluye identificar riesgos, valorar probabilidad e impacto, y definir acciones de mitigación."
+      }
+    ]
+  },
+  "topic3": {
+    "title": "Autoevaluación — Tema 3: El Gobierno y la Gestión de las TIC",
+    "questions": [
+      {
+        "id": "topic3-question-1",
+        "prompt": "¿Cuál es la diferencia principal entre Gobierno y Gestión de las TIC?",
+        "options": [
+          "Gobierno es estratégico, Gestión es táctico",
+          "Gobierno es táctico, Gestión es estratégico",
+          "No hay diferencia",
+          "Gobierno es más importante que Gestión"
+        ],
+        "answerIndex": 0,
+        "explanation": "El gobierno se centra en dirección estratégica y decisiones de alto nivel; la gestión se enfoca en ejecución y operación."
+      },
+      {
+        "id": "topic3-question-2",
+        "prompt": "¿Cuántos dominios tiene COBIT 2019?",
+        "options": ["5 dominios", "4 dominios", "6 dominios", "3 dominios"],
+        "answerIndex": 0,
+        "explanation": "COBIT 2019 tiene 5 dominios: EDM, APO, BAI, DSS y MEA."
+      },
+      {
+        "id": "topic3-question-3",
+        "prompt": "¿Cuántas prácticas tiene ITIL 4?",
+        "options": ["34 prácticas", "26 prácticas", "40 prácticas", "30 prácticas"],
+        "answerIndex": 0,
+        "explanation": "ITIL 4 incluye 34 prácticas."
+      },
+      {
+        "id": "topic3-question-4",
+        "prompt": "¿Qué es Val IT?",
+        "options": [
+          "Marco para gestionar el valor de las inversiones en TI",
+          "Sistema de gestión de inventarios",
+          "Herramienta de desarrollo de software",
+          "Metodología de testing"
+        ],
+        "answerIndex": 0,
+        "explanation": "Val IT (ISACA) ayuda a gestionar y maximizar el valor de las inversiones en TI."
+      },
+      {
+        "id": "topic3-question-5",
+        "prompt": "¿Cuál es la diferencia entre Balanced Scorecard y otros marcos de medición?",
+        "options": [
+          "Considera múltiples perspectivas: financiera, cliente, procesos internos y aprendizaje",
+          "Solo mide indicadores financieros",
+          "Se enfoca únicamente en procesos internos",
+          "Mide solo la satisfacción del cliente"
+        ],
+        "answerIndex": 0,
+        "explanation": "El BSC equilibra cuatro perspectivas: financiera, cliente, procesos internos y aprendizaje/crecimiento."
+      }
+    ]
+  },
+  "topic4": {
+    "title": "Autoevaluación — Tema 4: El Gobierno Corporativo de las TIC",
+    "questions": [
+      {
+        "id": "topic4-question-1",
+        "prompt": "¿De qué año data la norma ISO/IEC 38500?",
+        "options": ["2008", "2006", "2009", "2007"],
+        "answerIndex": 0,
+        "explanation": "ISO/IEC 38500 se publicó en 2008 (basada en una norma australiana precursora)."
+      },
+      {
+        "id": "topic4-question-2",
+        "prompt": "¿Cuántos principios tiene la norma ISO 38500?",
+        "options": ["6 principios", "5 principios", "7 principios", "4 principios"],
+        "answerIndex": 0,
+        "explanation": "ISO 38500 define 6 principios: Responsabilidad, Estrategia, Adquisición, Rendimiento, Conformidad y Factor Humano."
+      },
+      {
+        "id": "topic4-question-3",
+        "prompt": "Según Peter Weill del MIT, ¿qué beneficio económico reporta una buena gobernanza de las TIC?",
+        "options": ["20% superior", "25% superior", "15% superior", "30% superior"],
+        "answerIndex": 0,
+        "explanation": "Se atribuye a Peter Weill la idea de que una buena gobernanza puede aportar beneficios económicos superiores (en este caso, 20%)."
+      },
+      {
+        "id": "topic4-question-4",
+        "prompt": "¿Cuáles son las tres funciones principales del gobierno de las TIC según ISO 38500?",
+        "options": [
+          "Evaluación, Dirección y Monitorización",
+          "Planificación, Ejecución y Control",
+          "Análisis, Diseño e Implementación",
+          "Estrategia, Táctica y Operación"
+        ],
+        "answerIndex": 0,
+        "explanation": "ISO 38500 plantea Evaluar, Dirigir y Monitorizar como funciones clave del gobierno de TIC."
+      },
+      {
+        "id": "topic4-question-5",
+        "prompt": "¿Qué principio de ISO 38500 se refiere a la alineación de las TIC con los objetivos estratégicos?",
+        "options": [
+          "Principio de Estrategia",
+          "Principio de Responsabilidad",
+          "Principio de Rendimiento",
+          "Principio de Conformidad"
+        ],
+        "answerIndex": 0,
+        "explanation": "El principio de Estrategia busca asegurar que las TIC estén alineadas con la estrategia del negocio."
+      }
+    ]
+  },
+  "topic5": {
+    "title": "Autoevaluación — Tema 5: COBIT",
+    "questions": [
+      {
+        "id": "topic5-question-1",
+        "prompt": "¿Qué organización promovió las guías de buenas prácticas COBIT?",
+        "options": [
+          "La norma UNE 35800",
+          "The ISATA Organization",
+          "The Control Objectives for Information and related Technology",
+          "The Information Systems Audit and Control Association"
+        ],
+        "answerIndex": 3,
+        "explanation": "COBIT fue impulsado por ISACA (Information Systems Audit and Control Association)."
+      },
+      {
+        "id": "topic5-question-2",
+        "prompt": "¿En qué año se publicó la primera edición de COBIT?",
+        "options": [
+          "1996",
+          "1998",
+          "1999",
+          "Ninguna de las anteriores es correcta ya que COBIT no es una norma"
+        ],
+        "answerIndex": 0,
+        "explanation": "La primera edición de COBIT se publicó en 1996."
+      },
+      {
+        "id": "topic5-question-3",
+        "prompt": "¿Cuántos procesos tiene COBIT?",
+        "options": ["34 procesos", "30 procesos", "40 procesos", "28 procesos"],
+        "answerIndex": 0,
+        "explanation": "En el planteamiento clásico se habla de 34 procesos (modelo de 4 dominios)."
+      },
+      {
+        "id": "topic5-question-4",
+        "prompt": "¿A qué dominio pertenece la definición del plan estratégico?",
+        "options": [
+          "Adquisición e implementación",
+          "Entrega y soporte",
+          "Supervisión y evaluación",
+          "Planificación y organización"
+        ],
+        "answerIndex": 3,
+        "explanation": "La definición del plan estratégico pertenece a Planificación y Organización (PO)."
+      },
+      {
+        "id": "topic5-question-5",
+        "prompt": "¿A qué dominio pertenece la identificación de soluciones automatizadas?",
+        "options": [
+          "Adquisición e implementación",
+          "Entrega y soporte",
+          "Supervisión y evaluación",
+          "Planificación y organización"
+        ],
+        "answerIndex": 0,
+        "explanation": "La identificación de soluciones automatizadas pertenece a Adquisición e Implementación (AI)."
+      },
+      {
+        "id": "topic5-question-6",
+        "prompt": "¿A qué dominio pertenece la formación y entrenamiento de usuarios?",
+        "options": [
+          "Adquisición e implementación",
+          "Entrega y soporte",
+          "Supervisión y evaluación",
+          "Planificación y organización"
+        ],
+        "answerIndex": 1,
+        "explanation": "La formación y entrenamiento de usuarios pertenece a Entrega y Soporte (ES)."
+      },
+      {
+        "id": "topic5-question-7",
+        "prompt": "¿A qué dominio pertenece la evaluación del control interno?",
+        "options": [
+          "Adquisición e implementación",
+          "Entrega y soporte",
+          "Supervisión y evaluación",
+          "Planificación y organización"
+        ],
+        "answerIndex": 2,
+        "explanation": "La evaluación del control interno pertenece a Supervisión y Evaluación (SE)."
+      },
+      {
+        "id": "topic5-question-8",
+        "prompt": "¿Qué versión de COBIT integra Val IT, Risk IT, ITIL e ISO?",
+        "options": ["COBIT 4.1", "COBIT 5", "COBIT 4.0", "COBIT 3.0"],
+        "answerIndex": 1,
+        "explanation": "COBIT 5 integra y armoniza múltiples marcos (Val IT, Risk IT, ITIL y normas ISO)."
+      },
+      {
+        "id": "topic5-question-9",
+        "prompt": "¿Cuál es la misión de las recomendaciones COBIT?",
+        "options": [
+          "Investigar, desarrollar y promover los objetivos de control de las tecnologías",
+          "Investigar, relacionar y aplicar los objetivos de control de las tecnologías",
+          "Promulgar, analizar y validar los objetivos de control de las tecnologías",
+          "La A y la C son correctas"
+        ],
+        "answerIndex": 0,
+        "explanation": "COBIT busca investigar, desarrollar, publicar y promover objetivos de control para facilitar su uso."
+      },
+      {
+        "id": "topic5-question-10",
+        "prompt": "¿Cuál es el matiz diferenciador de COBIT con respecto a otros marcos?",
+        "options": [
+          "Su aplicación estricta en buen gobierno corporativo y control de seguridad",
+          "Su enfoque exclusivo en gestión de servicios",
+          "Su aplicación únicamente en grandes empresas",
+          "Su enfoque exclusivamente técnico"
+        ],
+        "answerIndex": 0,
+        "explanation": "COBIT enfatiza gobierno, control y auditoría, con fuerte foco en seguridad y cumplimiento."
+      }
+    ]
+  },
+  "topic6": {
+    "title": "Autoevaluación — Tema 6: ITIL",
+    "questions": [
+      {
+        "id": "topic6-question-1",
+        "prompt": "La orientación a procesos y la orientación a servicios son:",
+        "options": [
+          "Paradigmas radicalmente opuestos",
+          "Recomendaciones para la programación del software",
+          "Paradigmas que se complementan",
+          "Ninguna de las respuestas anteriores es correcta"
+        ],
+        "answerIndex": 2,
+        "explanation": "Se complementan: procesos ayudan a ejecutar; servicios se enfocan en valor y demanda del cliente."
+      },
+      {
+        "id": "topic6-question-2",
+        "prompt": "Bajo el esquema de servicios de TI nos centramos en:",
+        "options": [
+          "La correcta aplicación de la norma ISO 38500",
+          "La consecución del buen gobierno corporativo",
+          "El análisis de los requisitos del sistema de información",
+          "La posible demanda del cliente"
+        ],
+        "answerIndex": 3,
+        "explanation": "El enfoque de servicios se centra en la demanda y valor para el cliente."
+      },
+      {
+        "id": "topic6-question-3",
+        "prompt": "ITIL alcanzó el rango de norma al ser consolidada por la ISO 38500:",
+        "options": [
+          "Esta afirmación es correcta",
+          "Esta afirmación es parcialmente correcta, pues sólo se da para la fase de Estrategia",
+          "Esta afirmación es parcialmente correcta, pues sólo se da para la fase de Operación",
+          "Esta afirmación es incorrecta"
+        ],
+        "answerIndex": 3,
+        "explanation": "ITIL es un marco de buenas prácticas, no una norma ISO."
+      },
+      {
+        "id": "topic6-question-4",
+        "prompt": "La iniciativa ITIL nació en:",
+        "options": ["1998", "1989", "1999", "1997"],
+        "answerIndex": 1,
+        "explanation": "ITIL inició en 1989 como iniciativa del gobierno británico."
+      },
+      {
+        "id": "topic6-question-5",
+        "prompt": "Entre los beneficios que aporta el desarrollo de una arquitectura orientada a servicios, no se encuentra:",
+        "options": [
+          "La mejora de la calidad",
+          "El enriquecimiento de la comunicación con los usuarios",
+          "La falta de flexibilidad a los cambios",
+          "La mejora en la satisfacción de los clientes"
+        ],
+        "answerIndex": 2,
+        "explanation": "Una arquitectura orientada a servicios incrementa la flexibilidad, no la reduce."
+      },
+      {
+        "id": "topic6-question-6",
+        "prompt": "El proceso de Gestión de Eventos pertenece a la fase de:",
+        "options": ["Estrategia", "Diseño", "Transición", "Operación"],
+        "answerIndex": 3,
+        "explanation": "Gestión de Eventos pertenece a Operación del Servicio."
+      },
+      {
+        "id": "topic6-question-7",
+        "prompt": "El proceso de Validación y pruebas pertenece a la fase de:",
+        "options": ["Estrategia", "Diseño", "Transición", "Operación"],
+        "answerIndex": 2,
+        "explanation": "Validación y pruebas se ubica en Transición del Servicio."
+      },
+      {
+        "id": "topic6-question-8",
+        "prompt": "El proceso de Seguridad de la información pertenece a la fase de:",
+        "options": ["Estrategia", "Diseño", "Transición", "Operación"],
+        "answerIndex": 1,
+        "explanation": "Gestión de la Seguridad de la Información se trabaja en Diseño del Servicio."
+      },
+      {
+        "id": "topic6-question-9",
+        "prompt": "El proceso de Gestión de proveedores pertenece a la fase de:",
+        "options": ["Estrategia", "Diseño", "Transición", "Operación"],
+        "answerIndex": 1,
+        "explanation": "Gestión de Proveedores pertenece a Diseño del Servicio."
+      },
+      {
+        "id": "topic6-question-10",
+        "prompt": "El proceso de Gestión Financiera pertenece a la fase de:",
+        "options": ["Estrategia", "Diseño", "Transición", "Operación"],
+        "answerIndex": 0,
+        "explanation": "Gestión Financiera pertenece a Estrategia del Servicio."
+      },
+      {
+        "id": "topic6-question-11",
+        "prompt": "¿Cuál es el objetivo principal de la fase de Mejora del Servicio?",
+        "options": [
+          "Ofrecer mejores servicios adaptados a las cambiantes necesidades de los clientes",
+          "Gestionar la infraestructura tecnológica necesaria",
+          "Diseñar nuevos servicios para el catálogo",
+          "Coordinar el proceso de transición de servicios"
+        ],
+        "answerIndex": 0,
+        "explanation": "Mejora Continua busca adaptar y optimizar servicios según necesidades cambiantes."
+      },
+      {
+        "id": "topic6-question-12",
+        "prompt": "¿Cuántos pasos tiene el Proceso de Mejora según ITIL?",
+        "options": ["5 pasos", "6 pasos", "7 pasos", "8 pasos"],
+        "answerIndex": 2,
+        "explanation": "El proceso de mejora continua se describe comúnmente en 7 pasos."
+      }
+    ]
+  },
+  "topic7": {
+    "title": "Autoevaluación — Tema 7: Sistema de Gestión de Servicios",
+    "questions": [
+      {
+        "id": "topic7-question-1",
+        "prompt": "Si los servicios de TI que presta la organización son inestables, lentos o inexistentes:",
+        "options": [
+          "La aplicación de la norma mejora su rendimiento sustancialmente.",
+          "Es el resultado de la falta de implicación de la alta dirección.",
+          "Es debido a una falta de aplicación del principio de innovación continua.",
+          "No sirve de nada el modelo de gestión que se implante."
+        ],
+        "answerIndex": 3,
+        "explanation": "Si TI no entrega servicios útiles, el modelo no corrige por sí solo la ausencia de servicio base."
+      },
+      {
+        "id": "topic7-question-2",
+        "prompt": "La norma ISO/IEC 20000-1:2005:",
+        "options": [
+          "Proporciona un catálogo de buenas prácticas en la gestión de servicios TI.",
+          "Regula la calidad del desarrollo de software.",
+          "Regula el control de la calidad de los servicio de TI.",
+          "Regula el sistema de gestión de servicios de TI."
+        ],
+        "answerIndex": 3,
+        "explanation": "ISO/IEC 20000-1 define requisitos para un sistema de gestión de servicios de TI."
+      },
+      {
+        "id": "topic7-question-3",
+        "prompt": "Podemos decir que:",
+        "options": [
+          "La serie de normas ISO/IEC 20000 ha refrendado a nivel internacional el catálogo de buenas prácticas COBIT.",
+          "El catálogo de buenas prácticas ITIL ha refrendado la serie de normas ISO/IEC 20000.",
+          "La serie de normas ISO/IEC 20000 ha refrendado a nivel internacional el catálogo de buenas prácticas ITIL.",
+          "La norma ISO/IEC 20000-1:2007 aporta un valor añadido a la de la edición 2005."
+        ],
+        "answerIndex": 2,
+        "explanation": "ISO/IEC 20000 se alinea fuertemente con prácticas ITIL y las consolida como requisitos de gestión."
+      },
+      {
+        "id": "topic7-question-4",
+        "prompt": "Esta norma facilita la resolución y gestión de problemáticas como:",
+        "options": [
+          "Resolución rápida de incidentes en el servicio.",
+          "Realización de cambios de forma segura y eficiente.",
+          "Mejora en la provisión de nuevos servicios.",
+          "Todas las anteriores son correctas."
+        ],
+        "answerIndex": 3,
+        "explanation": "ISO/IEC 20000 impacta incidentes, cambios, provisión y mejora del servicio, entre otros."
+      },
+      {
+        "id": "topic7-question-5",
+        "prompt": "Entre los principios que rigen la norma no se encuentra:",
+        "options": [
+          "El cliente.",
+          "El servicio.",
+          "La reducción de costes.",
+          "La comunicación interna."
+        ],
+        "answerIndex": 2,
+        "explanation": "La reducción de costes no es un principio rector (aunque puede ser un efecto)."
+      },
+      {
+        "id": "topic7-question-6",
+        "prompt": "Con la idea de evaluar la implantación de la familia de normas 20000 se crearon:",
+        "options": [
+          "La ISO/IEC TR 20000-2 y 20000-3.",
+          "La ISO/IEC TR 20000-3 y 20000-4.",
+          "La ISO/IEC TR 20000-6 y 20000-8.",
+          "La ISO/IEC TR 20000-4 y 20000-8."
+        ],
+        "answerIndex": 3,
+        "explanation": "Se citan como apoyo el modelo de referencia de procesos (TR 20000-4) y el modelo de valoración (TR 20000-8)."
+      },
+      {
+        "id": "topic7-question-7",
+        "prompt": "La adopción incremental por niveles de la norma viene regulada en:",
+        "options": [
+          "La ISO/IEC 20000-2.",
+          "La ISO/IEC 20000-3.",
+          "La ISO/IEC 20000-4.",
+          "La ISO/IEC 20000-5."
+        ],
+        "answerIndex": 3,
+        "explanation": "ISO/IEC 20000-5 trata guías de implementación y enfoque incremental."
+      },
+      {
+        "id": "topic7-question-8",
+        "prompt": "Entre los procesos en los que se agrupan las actividades de la norma, no se encuentra:",
+        "options": [
+          "La provisión de servicio.",
+          "El control.",
+          "La configuración del servicio.",
+          "La resolución."
+        ],
+        "answerIndex": 2,
+        "explanation": "Los grupos suelen ser: diseño/transición, provisión, control, resolución y relación."
+      },
+      {
+        "id": "topic7-question-9",
+        "prompt": "El proceso de generación de informes del servicio se encuentra entre los procesos de:",
+        "options": ["Provisión del servicio.", "Control.", "Resolución.", "Relación."],
+        "answerIndex": 0,
+        "explanation": "Informes del servicio suele estar asociado a procesos de provisión del servicio."
+      },
+      {
+        "id": "topic7-question-10",
+        "prompt": "El diseño y transición de servicios nuevos o modificados tiene como misión:",
+        "options": [
+          "El mantenimiento del nivel de servicio dentro de un óptimo.",
+          "La detección inmediata de errores.",
+          "El mantenerse alineado con la creación y evolución de servicios de negocio.",
+          "La comunicación interna."
+        ],
+        "answerIndex": 2,
+        "explanation": "Busca alinear servicios TI con necesidades del negocio y asegurar entregas con calidad/costo/plazo."
+      }
+    ]
+  },
+  "topic8": {
+    "title": "Autoevaluación — Tema 8: Gestión de Activos de Software",
+    "questions": [
+      {
+        "id": "topic8-question-1",
+        "prompt": "¿Cuál es la pieza fundamental para la configuración de servicios de TI?",
+        "options": [
+          "Los procesos de negocio",
+          "El hardware",
+          "Las comunicaciones",
+          "El software"
+        ],
+        "answerIndex": 3,
+        "explanation": "El software configura y habilita gran parte de los servicios TI, y su gestión reduce riesgos."
+      },
+      {
+        "id": "topic8-question-2",
+        "prompt": "La correcta gestión del software redundará en beneficio de la organización.",
+        "options": [
+          "Esta afirmación es correcta",
+          "Esta afirmación es correcta sólo en el ámbito de las empresas de desarrollo software",
+          "Esta afirmación es incorrecta",
+          "Todas las anteriores son falsas"
+        ],
+        "answerIndex": 0,
+        "explanation": "Una buena gestión de software mejora eficiencia, control y cumplimiento."
+      },
+      {
+        "id": "topic8-question-3",
+        "prompt": "SGAS y SAM describen la misma realidad:",
+        "options": [
+          "Esta afirmación es correcta",
+          "Esta afirmación es correcta sólo en el ámbito de las empresas de desarrollo software",
+          "Esta afirmación es incorrecta",
+          "Todas las anteriores son falsas"
+        ],
+        "answerIndex": 2,
+        "explanation": "SGAS (sistema + procesos) tiene mayor alcance que SAM (gestión/procesos)."
+      },
+      {
+        "id": "topic8-question-4",
+        "prompt": "De manera procedimental los SGAS se incluyen dentro del proceso de:",
+        "options": [
+          "Planificación y gestión de negocio",
+          "Prevención de riesgos",
+          "Gestión de configuración",
+          "Calidad del software"
+        ],
+        "answerIndex": 2,
+        "explanation": "Se asocian a la gestión de configuración por el control de activos y componentes."
+      },
+      {
+        "id": "topic8-question-5",
+        "prompt": "El origen de los sistemas de gestión de activos de software data del año:",
+        "options": ["2003", "2008", "2004", "2006"],
+        "answerIndex": 2,
+        "explanation": "Se suele ubicar su origen en torno a 2004 con impulso de prácticas SAM."
+      },
+      {
+        "id": "topic8-question-6",
+        "prompt": "¿Con cuál de las directivas o normas no están relacionados los SGAS?",
+        "options": ["ISO 20000", "ITIL", "COBIT", "Ninguna de las anteriores"],
+        "answerIndex": 3,
+        "explanation": "Se relacionan con ITIL, ISO 20000 y pueden mapearse con COBIT. Por tanto, ninguna queda fuera."
+      },
+      {
+        "id": "topic8-question-7",
+        "prompt": "¿Cuántas publicaciones componen la norma 19770?",
+        "options": ["27", "24", "22", "Todas las anteriores son falsas"],
+        "answerIndex": 3,
+        "explanation": "19770 se compone de partes/publicaciones (p.ej. 19770-1 y 19770-2 en la formulación clásica)."
+      },
+      {
+        "id": "topic8-question-8",
+        "prompt": "La parte 2 de la norma 19770 describe:",
+        "options": [
+          "Los procesos principales",
+          "La gestión de activos",
+          "El procedimiento de etiquetado",
+          "Los procedimientos de implantación"
+        ],
+        "answerIndex": 2,
+        "explanation": "La parte 2 se asocia a identificación/etiquetado (p.ej. tags para identificar software)."
+      },
+      {
+        "id": "topic8-question-9",
+        "prompt": "Los procesos SAM, principalmente engloban:",
+        "options": [
+          "Procesos de gestión organizativa",
+          "Procesos centrales",
+          "Interfaces de los procesos principales",
+          "Todas las anteriores"
+        ],
+        "answerIndex": 3,
+        "explanation": "Se agrupan en gestión organizativa, procesos centrales e interfaces."
+      },
+      {
+        "id": "topic8-question-10",
+        "prompt": "A la hora de definir los objetivos de implantación de un SGAS se deberá:",
+        "options": [
+          "Hacer un análisis y gestión de riesgos",
+          "Valorar los costes",
+          "Analizar su valor añadido y su ventaja competitiva",
+          "Todas las anteriores"
+        ],
+        "answerIndex": 3,
+        "explanation": "Objetivos típicos: reducir riesgos, controlar costes, y aportar valor/ventaja competitiva."
+      }
+    ]
+  },
+  "topic9": {
+    "title": "Autoevaluación — Tema 9: Gestión de la Continuidad del Negocio",
+    "questions": [
+      {
+        "id": "topic9-question-1",
+        "prompt": "Una de las claves fundamentales para asegurar la continuidad del negocio es:",
+        "options": [
+          "La confidencialidad",
+          "La integridad",
+          "La disponibilidad",
+          "La gestión del riesgo"
+        ],
+        "answerIndex": 2,
+        "explanation": "En continuidad, la disponibilidad de datos y servicios en tiempo y forma es crítica."
+      },
+      {
+        "id": "topic9-question-2",
+        "prompt": "¿Cuál de las siguientes normas hace especial hincapié en la necesidad de preservar los activos de información?",
+        "options": [
+          "La ISO 27001",
+          "La ISO 20000-1",
+          "Los procesos de control COBIT",
+          "Todas las anteriores"
+        ],
+        "answerIndex": 3,
+        "explanation": "La preservación de activos de información aparece en normas y marcos como ISO 27001, ISO 20000-1, ITIL y COBIT."
+      },
+      {
+        "id": "topic9-question-3",
+        "prompt": "La norma UNE 71599 data del año:",
+        "options": ["2008", "2009", "2010", "2011"],
+        "answerIndex": 2,
+        "explanation": "Se referencia como UNE 71599-2:2010 en el enfoque presentado."
+      },
+      {
+        "id": "topic9-question-4",
+        "prompt": "La diferencia entre el BCM y el BCP es que:",
+        "options": [
+          "El primero trata el sistema de gestión y el segundo el plan",
+          "El primero trata el plan y el segundo el sistema de gestión",
+          "El primero trata del concepto y el segundo de su repercusión",
+          "La A y la C son correctas"
+        ],
+        "answerIndex": 0,
+        "explanation": "BCM es el sistema de gestión de continuidad; BCP es el plan que materializa ese sistema."
+      },
+      {
+        "id": "topic9-question-5",
+        "prompt": "Cuál de las siguientes respuestas no está incluida en la gestión de la continuidad del negocio:",
+        "options": [
+          "El plan",
+          "La integración del plan con otras iniciativas",
+          "El plan de verificación",
+          "El plan de validación"
+        ],
+        "answerIndex": 2,
+        "explanation": "En el enfoque descrito se menciona validación mediante pruebas y ejercicios, no un 'plan de verificación' como tal."
+      },
+      {
+        "id": "topic9-question-6",
+        "prompt": "La recuperación de desastres consiste en mantener… a pesar de la ocurrencia de eventos no deseados:",
+        "options": [
+          "El rendimiento de la organización…",
+          "La confianza de los usuarios de servicios de TI…",
+          "La normalidad de las operaciones…",
+          "La gestión del riesgo…"
+        ],
+        "answerIndex": 2,
+        "explanation": "DR busca sostener la continuidad operativa (normalidad de operaciones) pese a eventos disruptivos."
+      },
+      {
+        "id": "topic9-question-7",
+        "prompt": "¿Cuál de los siguientes adjetivos identifica mejor al proceso de gestión de la continuidad del negocio?",
+        "options": ["Genérico", "Sistémico", "Robusto", "Holístico"],
+        "answerIndex": 3,
+        "explanation": "Se describe como un proceso holístico: identifica amenazas y define un marco de resiliencia."
+      },
+      {
+        "id": "topic9-question-8",
+        "prompt": "Podríamos decir que la norma UNE 71599:",
+        "options": [
+          "Permite la certificación de las organizaciones",
+          "Se ha convertido en un estándar",
+          "Abarca más allá de la gestión y uso de las TIC",
+          "Todas las anteriores"
+        ],
+        "answerIndex": 3,
+        "explanation": "En el planteamiento dado, UNE 71599 se presenta como estándar con alcance más amplio que TIC."
+      },
+      {
+        "id": "topic9-question-9",
+        "prompt": "El análisis de impacto:",
+        "options": [
+          "Forma parte del proceso de implementación de un BCM",
+          "Forma parte del proceso de implementación de un BCP",
+          "Forma parte del proceso de implementación del desarrollo de la estrategia",
+          "La A y la B son correctas"
+        ],
+        "answerIndex": 0,
+        "explanation": "El BIA (Business Impact Analysis) se ubica dentro del proceso de implementación del BCM."
+      },
+      {
+        "id": "topic9-question-10",
+        "prompt": "Un desastre natural no suele estar considerado como problema dentro del BCM",
+        "options": [
+          "Esta afirmación es cierta en el caso de que exista una póliza de seguro con cobertura para este tipo de siniestro",
+          "Esta afirmación es cierta en todos los casos",
+          "Esta afirmación es falsa en todos los casos",
+          "Esta afirmación es falsa en el caso de que exista una póliza de seguro con cobertura para este tipo de siniestro"
+        ],
+        "answerIndex": 2,
+        "explanation": "En BCM, cualquier evento (interno/externo, provocado/natural) que interrumpa procesos puede considerarse amenaza; desastres naturales se contemplan siempre."
       }
     ]
   }
