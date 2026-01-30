@@ -34,7 +34,6 @@ export function SelfAssessmentForm({ dialogId, assessment }: Props) {
     handleSubmit,
     formState: { errors },
     reset,
-    watch,
   } = useForm<SelfAssessmentFormValues>({
     resolver: zodResolver(schema),
     defaultValues,
@@ -88,9 +87,6 @@ export function SelfAssessmentForm({ dialogId, assessment }: Props) {
     setResult(null);
     reset(defaultValues);
   };
-
-  /** Watch for changes in answers */
-  const answers = watch('answers');
 
   // Si ya hay resultado, no permitir cambios en las respuestas
   if (result) {
