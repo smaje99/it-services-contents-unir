@@ -1,0 +1,30 @@
+{
+  "topic1": {
+    "title": "Autoevaluación — La Transformación Digital",
+    "questions": [
+      {
+        "id": "topic1-question-1",
+        "prompt": "¿Cuál es el objetivo principal de una transformación digital?",
+        "options": [
+          "Comprar tecnología nueva",
+          "Mejorar procesos, productos o modelos de negocio con apoyo tecnológico",
+          "Migrar todo a la nube",
+          "Reducir personal"
+        ],
+        "answerIndex": 1,
+        "explanation": "No es solo tecnología: implica cambio en procesos, cultura y modelo de negocio."
+      },
+      {
+        "id": "topic1-question-2",
+        "prompt": "ROI significa:",
+        "options": [
+          "Return on Investment",
+          "Rate of IT",
+          "Risk of Investment",
+          "Return of Innovation"
+        ],
+        "answerIndex": 0
+      }
+    ]
+  }
+}
