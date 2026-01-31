@@ -1,15 +1,6 @@
 import { z } from 'astro:content';
 
-export type TopicId =
-  | 'topic1'
-  | 'topic2'
-  | 'topic3'
-  | 'topic4'
-  | 'topic5'
-  | 'topic6'
-  | 'topic7'
-  | 'topic8'
-  | 'topic9';
+export type TopicId = `topic${number}`;
 
 export const topicSchema = z.object({
   title: z.string(),

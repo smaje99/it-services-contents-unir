@@ -41,7 +41,7 @@ export default defineConfig([
 
   // Import-X
   {
-    plugins: { 'import-x': importX },
+    plugins: { 'import-x': importX as unknown },
     extends: ['import-x/flat/recommended'],
     rules: {
       // Ejemplo de regla personalizada para import-x (a ajustar según necesidades)

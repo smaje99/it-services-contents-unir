@@ -28,18 +28,12 @@ const { title, description, icon, color, order } = topic.data;
 const { Content } = await topic.render();
 
 const { slug } = Astro.params;
-const assessments: SelfAssessmentsByTopic = selfAssessments;
+const assessments = selfAssessments as SelfAssessmentsByTopic;
 const assessment = assessments[slug as TopicId];
 const dialogId = `self-assessment-${slug}`;
 ---
 
-<TopicLayout
-  title={title}
-  description={description}
-  icon={icon}
-  color={color}
-  order={order}
->
+<TopicLayout title={title} description={description} icon={icon} color={color} order={order}>
   <Content />
 
   {assessment && <SelfAssessmentModal dialogId={dialogId} assessment={assessment} />}

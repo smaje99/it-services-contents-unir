@@ -40,9 +40,7 @@ export function SelfAssessmentForm({ dialogId, assessment }: Props) {
     mode: 'onSubmit',
   });
 
-  const [result, setResult] = useState<ReturnType<typeof scoreSelfAssessment> | null>(
-    null,
-  );
+  const [result, setResult] = useState<ReturnType<typeof scoreSelfAssessment> | null>(null);
 
   // Auto-open by query param
   useEffect(() => {
@@ -105,17 +103,12 @@ export function SelfAssessmentForm({ dialogId, assessment }: Props) {
             const ok = result.details[i]?.isCorrect;
 
             return (
-              <div
-                key={q.id}
-                className={styles['sa__review-item']}
-                data-state={ok ? 'ok' : 'bad'}
-              >
+              <div key={q.id} className={styles['sa__review-item']} data-state={ok ? 'ok' : 'bad'}>
                 <p className={styles['sa__review-q']}>
                   <strong>{i + 1}.</strong> {q.prompt}
                 </p>
                 <p className={styles['sa__review-a']}>
-                  Tu respuesta:{' '}
-                  <strong>{Number.isFinite(chosen) ? q.options[chosen] : '—'}</strong>
+                  Tu respuesta: <strong>{Number.isFinite(chosen) ? q.options[chosen] : '—'}</strong>
                 </p>
                 {!ok ? (
                   <p className={styles['sa__review-a']}>
@@ -164,11 +157,7 @@ export function SelfAssessmentForm({ dialogId, assessment }: Props) {
           <div className={styles['sa__options']}>
             {q.options.map((opt, oIdx) => (
               <label key={oIdx} className={styles['sa__option']}>
-                <input
-                  type='radio'
-                  value={oIdx}
-                  {...register(`answers.${qIdx}` as const)}
-                />
+                <input type='radio' value={oIdx} {...register(`answers.${qIdx}` as const)} />
                 <span>{opt}</span>
               </label>
             ))}
@@ -191,10 +180,7 @@ export function SelfAssessmentForm({ dialogId, assessment }: Props) {
         <button type='button' className={styles['sa__btn']} onClick={closeDialog}>
           Cancelar
         </button>
-        <button
-          type='submit'
-          className={`${styles['sa__btn']} ${styles['sa__btn--primary']}`}
-        >
+        <button type='submit' className={`${styles['sa__btn']} ${styles['sa__btn--primary']}`}>
           Finalizar
         </button>
       </footer>
