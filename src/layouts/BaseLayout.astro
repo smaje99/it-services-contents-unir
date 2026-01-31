@@ -9,16 +9,24 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+
+const siteURL = Astro.site || 'http://localhost:4321';
+const canonicalURL = new URL(Astro.url.pathname, siteURL);
 ---
 
 <!doctype html>
 <html lang='es'>
   <head>
     <meta charset='UTF-8' />
-    <meta name='description' content={description} />
-    <meta name='viewport' content='width=device-width' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <meta name='generator' content={Astro.generator} />
+
     <title>{title}</title>
+    <meta name='title' content={title} />
+    <meta name='description' content={description} />
+    <link rel='canonical' href={canonicalURL} />
+
+    <link rel='sitemap' href='/sitemap-index.xml' />
   </head>
   <body>
     <div class='container'>
