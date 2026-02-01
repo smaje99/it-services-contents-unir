@@ -42,7 +42,7 @@ importers:
         specifier: 0.10.0
         version: 0.10.0(astro@5.16.16(@types/node@24.10.1)(jiti@2.6.1)(rollup@4.53.3)(typescript@5.9.3)(yaml@2.8.2))
       canvaskit-wasm:
-        specifier: ^0.40.0
+        specifier: 0.40.0
         version: 0.40.0
       katex:
         specifier: 0.16.28
