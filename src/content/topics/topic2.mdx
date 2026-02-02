@@ -8,13 +8,13 @@ publishAt: "2025-10-14 20:00:00"
 ---
 
 import AccordionRoot from '@/components/ui/accordion/AccordionRoot.astro';
-import SelfAssessmentItem from '@/components/self-assessment/SelfAssessmentItem.astro';
 import TopicCaseStudies from '@/components/topic/TopicCaseStudies.astro';
 import TopicConceptCard from '@/components/topic/TopicConceptCard.astro';
 import TopicConceptSection from '@/components/topic/TopicConceptSection.astro';
 import TopicGrid from '@/components/topic/TopicGrid.astro';
 import TopicResourceSection from '@/components/topic/TopicResourceSection.astro';
 import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
+import TopicSelfAssessmentTrigger from '@/components/topic/TopicSelfAssessmentTrigger.astro';
 
 <TopicSectionGroup title='Conceptos Clave' icon='bulb'>
   <TopicConceptSection title='EVS: Estudio de Viabilidad de Sistemas' icon='clipboard-check'>
@@ -241,7 +241,7 @@ import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
   <TopicConceptSection title="Autoevaluación" icon="checklist">
     Comprueba tu comprensión en este tema contestando el cuestionario de autoevaluación con preguntas de selección múltiple.
 
-    <SelfAssessmentItem topic="topic2">Presentar autoevaluación</SelfAssessmentItem>
+    <TopicSelfAssessmentTrigger topic="topic2">Presentar autoevaluación</TopicSelfAssessmentTrigger>
   </TopicConceptSection>
 </TopicSectionGroup>
 

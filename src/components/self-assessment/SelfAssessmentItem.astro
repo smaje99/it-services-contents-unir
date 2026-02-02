@@ -12,11 +12,7 @@ interface Props {
 const { topic } = Astro.props;
 ---
 
-<LinkButton
-  href={`/temas/${topic}?self-assessment=1`}
-  size='lg'
-  class='self-assessment-link'
->
+<LinkButton href={`/temas/${topic}?self-assessment=1`} size='lg' class='self-assessment-link'>
   <Icon name='location-check' />
   <slot />
 </LinkButton>

@@ -1,0 +1,41 @@
+---
+import type { TopicId } from '@/types/topic';
+import DialogTrigger from '../ui/dialog/DialogTrigger.astro';
+import { Icon } from 'astro-icon/components';
+
+interface Props {
+  topic: TopicId;
+}
+
+const { topic } = Astro.props;
+---
+
+<DialogTrigger dialogId={`self-assessment-${topic}`} class='topic-self-assessment-trigger'>
+  <Icon name='location-check' />
+  <slot />
+</DialogTrigger>
+
+<style>
+  .topic-self-assessment-trigger {
+    justify-content: flex-start;
+
+    padding: 2rem 2rem;
+
+    background: var(--brand-primary);
+    color: var(--text-destructive);
+    border: 1px solid transparent;
+    font-weight: 700;
+
+    &:hover {
+      background-color: color-mix(in oklab, var(--brand-primary) 90%, var(--text-primary));
+    }
+
+    & > [data-icon] {
+      width: 2cap;
+      height: 2cap;
+      display: block;
+      flex-shrink: 0;
+      stroke-width: 2;
+    }
+  }
+</style>
