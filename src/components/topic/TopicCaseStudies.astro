@@ -19,9 +19,7 @@ interface Props {
 const { topic, isNational = false } = Astro.props;
 const content = caseStudies[topic] as TopicContent;
 const allCases = content.caseStudies;
-const cases = allCases.filter(
-  (caseStudy) => (caseStudy.isNational ?? false) === isNational,
-);
+const cases = allCases.filter((caseStudy) => (caseStudy.isNational ?? false) === isNational);
 ---
 
 {
@@ -65,15 +63,12 @@ const cases = allCases.filter(
                 {(development as DevelopmentWithSituation).solution.summary}
               </p>
               <ol>
-                {(development as DevelopmentWithSituation).solution.modules.map(
-                  (module) => (
-                    <li>{module}</li>
-                  ),
-                )}
+                {(development as DevelopmentWithSituation).solution.modules.map((module) => (
+                  <li>{module}</li>
+                ))}
               </ol>
               <p>
-                <strong>Resultados:</strong>{' '}
-                {(development as DevelopmentWithSituation).results}
+                <strong>Resultados:</strong> {(development as DevelopmentWithSituation).results}
               </p>
             </>
           ) : (
