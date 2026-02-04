@@ -101,5 +101,26 @@ const { title, icon, activity = false, estimatedDuration = 0 } = Astro.props;
 
       padding-top: 28px;
     }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      overflow-x: auto;
+
+      & th,
+      & td {
+        border-block: 1px solid var(--gray-300);
+        padding: 12px;
+        text-align: left;
+        font-size: 1.4rem;
+      }
+
+      & th {
+        background-color: var(--brand-primary);
+        color: var(--text-destructive);
+        vertical-align: bottom;
+      }
+    }
   }
 </style>
