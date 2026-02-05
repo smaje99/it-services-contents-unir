@@ -305,5 +305,122 @@
         ]
       }
     ]
+  },
+  "topic5": {
+    "groups": [
+      {
+        "title": "Vídeos Recomendados",
+        "items": [
+          {
+            "label": "Introducción a COBIT 2019 (ISACA)",
+            "url": "https://www.isaca.org/isaca-digital-videos/cobit/introducing-cobit-2019"
+          },
+          {
+            "label": "Qué trae COBIT 2019: Design Guide (ISACA)",
+            "url": "https://www.isaca.org/isaca-digital-videos/cobit/whats-new-in-cobit-2019-design-guide"
+          },
+          {
+            "label": "Webinar - Novedades de COBIT 2019: Compartiendo lecciones aprendidas (YouTube)",
+            "url": "https://youtu.be/fdmlCKkbBZA?si=hO7rtihk7jyyAGuX"
+          },
+          {
+            "label": "Webinar - COBIT 2019 - Como Marco para el Gobierno TI (YouTube)",
+            "url": "https://www.youtube.com/watch?v=QyvLIqgZWXI"
+          },
+          {
+            "label": "TALLER - Elaboración de matrices de riesgos de TI utilizando COBIT 2019 (YouTube)",
+            "url": "https://www.youtube.com/watch?v=7uGm82K8_To"
+          },
+          {
+            "label": "COBIT 2019 Fundamentos Sistema de Gobierno y Componentes (YouTube)",
+            "url": "https://www.youtube.com/watch?v=_ml3R90wd84"
+          },
+          {
+            "label": "ISACA — Introducing COBIT 2019 (A Sneak Peek)",
+            "url": "https://www.youtube.com/watch?v=KJLAJSZbfIM"
+          },
+          {
+            "label": "COBIT 2019 Explained (Overview práctico)",
+            "url": "https://www.youtube.com/watch?v=plvTPyCEkwM"
+          }
+        ]
+      },
+      {
+        "title": "Artículos de Interés",
+        "items": [
+          {
+            "label": "Auditoría informática: COBIT e ITIL como marcos para alinear TI y negocio (Revista Espacios)",
+            "url": "https://www.revistaespacios.com/a18v39n03/18390329.html"
+          },
+          {
+            "label": "Integración de COBIT e ITIL para la mejora en la gestión de servicios TIC: una revisión sistemática (Artículo académico)",
+            "url": "https://revista.ister.edu.ec/ojs/index.php/ISTER/article/view/340"
+          },
+          {
+            "label": "COBIT Guide: Principles, Enablers & IT Governance Explained (AuditBoard)",
+            "url": "https://auditboard.com/blog/cobit"
+          },
+          {
+            "label": "COBIT 2019 (IAIA)",
+            "url": "https://iaia.org.ar/wp-content/uploads/2019/07/COBIT2019-IAIA.pdf"
+          },
+          {
+            "label": "Propuesta de método basado en COBIT 2019, para la evaluación de procesos tecnológicos en la municipalidad de Carrillo",
+            "url": "https://www.scielo.sa.cr/scielo.php?script=sci_arttext&pid=S2215-24582023000100277"
+          }
+        ]
+      },
+      {
+        "title": "Herramientas Online",
+        "items": [
+          {
+            "label": "Hub oficial de recursos COBIT (descargas, guías y materiales) (ISACA)",
+            "url": "https://www.isaca.org/resources/cobit"
+          },
+          {
+            "label": "COBIT 2019 Publications (descarga oficial) (ISACA)",
+            "url": "https://www.isaca.org/cobit"
+          },
+          {
+            "label": "NIST Cybersecurity Framework (CSF) 2.0 (marco complementario)",
+            "url": "https://www.nist.gov/cyberframework"
+          }
+        ]
+      },
+      {
+        "title": "Estándares Oficiales",
+        "items": [
+          {
+            "label": "COBIT 2019 (sitio oficial de referencia y publicaciones) (ISACA)",
+            "url": "https://www.isaca.org/cobit"
+          },
+          {
+            "label": "ISO/IEC 27001:2022 (Seguridad de la información) (ISO)",
+            "url": "https://www.iso.org/standard/82875.html"
+          },
+          {
+            "label": "ISO/IEC 20000-1:2018 (Gestión de servicios TI) (ISO)",
+            "url": "https://www.iso.org/standard/70636.html"
+          },
+          {
+            "label": "ISO/IEC 38500:2024 (Gobernanza de TI) (Standard Norge)",
+            "url": "https://online.standard.no/nb/isoiec-38500-2024-2"
+          }
+        ]
+      },
+      {
+        "title": "Libros Recomendados",
+        "items": [
+          {
+            "label": "Weill & Ross — IT Governance: How Top Performers Manage IT Decision Rights (MIT Press)",
+            "url": "https://mitpress.mit.edu/9781591392538/it-governance/"
+          },
+          {
+            "label": "COBIT 2019: Overview y publicaciones base (ISACA)",
+            "url": "https://www.isaca.org/resources/cobit"
+          }
+        ]
+      }
+    ]
   }
 }

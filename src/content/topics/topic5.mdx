@@ -7,6 +7,437 @@ color: "#fd7e14"
 publishAt: "2025-11-04 20:00:00"
 ---
 
-## Introducción
-Contenido migrado desde tema1.html…
+import AccordionContent from '@/components/ui/accordion/AccordionContent.astro';
+import AccordionItem from '@/components/ui/accordion/AccordionItem.astro';
+import AccordionRoot from '@/components/ui/accordion/AccordionRoot.astro';
+import Badge from '@/components/ui/Badge.astro';
+import TopicAccordionTrigger from '@/components/topic/TopicAccordionTrigger.astro';
+import TopicCaseStudies from '@/components/topic/TopicCaseStudies.astro';
+import TopicConceptCard from '@/components/topic/TopicConceptCard.astro';
+import TopicConceptSection from '@/components/topic/TopicConceptSection.astro';
+import TopicGrid from '@/components/topic/TopicGrid.astro';
+import TopicResourceSection from '@/components/topic/TopicResourceSection.astro';
+import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
+import TopicSelfAssessmentTrigger from '@/components/topic/TopicSelfAssessmentTrigger.astro';
 
+<TopicSectionGroup title='Conceptos Clave' icon='bulb'>
+  <TopicConceptSection title='COBIT: Control Objectives for Information and Related Technology' icon='shield-filled'>
+    **Definición:** Marco de trabajo para el gobierno y gestión de las tecnologías de la información desarrollado por *ISACA (Information Systems Audit and Control Association)*.
+
+    <TopicGrid>
+      <TopicConceptCard title="Origen y Evolución">
+        * **1996**: Primera edición como iniciativa de ISACA
+        * **1998**: Segunda edición
+        * **2000**: Tercera edición (online 2003)
+        * **2005**: Cuarta edición
+        * **2007**: Versión 4.1
+        * **2012**: COBIT 5
+        * **2018**: COBIT 2019 (actualización más reciente)
+      </TopicConceptCard>
+      <TopicConceptCard title="Estructura de COBIT">
+        * **34 procesos**: Cubren todos los aspectos del gobierno y gestión de TI
+        * **210 objetivos de control**: Específicos y detallados
+        * **4 dominios**: Organización lógica de procesos
+        * **Integración**: Val IT, Risk IT, ITIL, normas ISO
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Misión de COBIT' icon='target-arrow'>
+    **Definición:** Investigar, desarrollar, publicar y promover un conjunto actualizado de objetivos de control de las tecnologías de la información para facilitar su uso a gerentes, usuarios y auditores.
+
+    <TopicGrid>
+      <TopicConceptCard title="Beneficiarios">
+        * **Gerencia**: Promoción de inversión en TI y control de rendimiento
+        * **Usuarios finales**: Confianza en seguridad y control de productos
+        * **Auditores**: Guía para decisiones y recomendaciones sobre control de proyectos
+      </TopicConceptCard>
+      <TopicConceptCard title="Características Diferenciadoras">
+        * Aplicación estricta en buen gobierno corporativo
+        * Control de seguridad en gestión de servicios de TI
+        * Análisis de información para procesos de negocio
+        * Gestión holística de recursos de TI
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Los 4 Dominios de COBIT' icon='sitemap-filled'>
+    **Estructura**: COBIT organiza sus 34 procesos en 4 dominios principales que cubren el ciclo completo de gobierno y gestión de TI.
+
+    <TopicGrid>
+      <TopicConceptCard title="1. Planificación y Organización (PO)">
+        **Objetivo**: Desarrollar cómo la tecnología de la información colabora en la consecución de objetivos generales de la organización.
+
+        **Procesos**: 10 procesos (PO1-PO10)
+
+        **Enfoque**: Análisis holístico desde diferentes perspectivas, definición de esquema organizacional e infraestructuras tecnológicas.
+      </TopicConceptCard>
+      <TopicConceptCard title="2. Adquisición e Implementación (AI)">
+        **Objetivo**: Identificar, desarrollar o adquirir e implementar las soluciones de TI necesarias.
+
+        **Procesos**: 6 procesos (AI1-AI6)
+
+        **Enfoque**: Identificación, desarrollo, adquisición e implementación de soluciones TI.
+      </TopicConceptCard>
+      <TopicConceptCard title="3. Entrega y Soporte (ES)">
+        **Objetivo**: Analizar servicios requeridos por la organización y establecer procesos de soporte necesarios.
+
+        **Procesos**: 13 procesos (ES1-ES13)
+
+        **Enfoque**: Formación, seguridad, aseguramiento de continuidad de negocio, provisión de servicios.
+      </TopicConceptCard>
+      <TopicConceptCard title="4. Supervisión y Evaluación (SE)">
+        **Objetivo**: Evaluar regularmente los procesos de la organización para verificar calidad, integridad y confidencialidad.
+
+        **Procesos**: 4 procesos (SE1-SE4)
+
+        **Enfoque**: Seguimiento de consecución de objetivos y garantía del buen estado evolutivo de la organización.
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Dominio: Planificación y Organización (PO)' icon='list-numbers'>
+    **Descripción**: Desarrolla la forma en que la tecnología de la información colabora en la consecución de objetivos generales de la organización.
+
+    <TopicGrid>
+      <TopicConceptCard title="Procesos del Dominio PO">
+        * **PO1**: Definición del Plan Estratégico
+        * **PO2**: Definición de la Arquitectura de Información
+        * **PO3**: Determinación de la Dirección Tecnológica
+        * **PO4**: Definición de la Organización y Relaciones de TI
+        * **PO5**: Manejo de la Inversión
+        * **PO6**: Comunicación de Objetivos de Dirección y aspiraciones de la gerencia
+        * **PO7**: Administración de Recursos Humanos
+        * **PO8**: Cumplimiento de requerimientos externos
+        * **PO9**: Evaluación de Riesgos
+        * **PO10**: Administración de Proyectos
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Dominio: Adquisición e Implementación (AI)' icon='tools'>
+    **Descripción**: Identificación, desarrollo o adquisición e implementación de las soluciones de TI necesarias para satisfacer las necesidades de la organización.
+
+    <TopicGrid>
+      <TopicConceptCard title="Procesos del Dominio AI">
+        * **AI1**: Identificación de Soluciones Automatizadas
+        * **AI2**: Adquisición y mantenimiento del software aplicativo
+        * **AI3**: Adquisición y mantenimiento de la infraestructura tecnológica
+        * **AI4**: Desarrollo y mantenimiento de procedimientos
+        * **AI5**: Instalación y aceptación de los sistemas
+        * **AI6**: Administración de los cambios
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Dominio: Entrega y Soporte (ES)' icon='user-up'>
+    **Descripción**: Análisis de servicios requeridos por la organización y establecimiento de procesos de soporte necesarios.
+
+    <TopicGrid>
+      <TopicConceptCard title="Procesos del Dominio ES">
+        * **ES1**: Definición de niveles de servicio
+        * **ES2**: Administración de servicios prestados por terceros
+        * **ES3**: Administración de desempeño de capacidad
+        * **ES4**: Aseguramiento continuo del servicio
+        * **ES5**: Garantizar la seguridad de los sistemas
+        * **ES6**: Formación y entrenamiento de usuarios
+        * **ES7**: Identificación y asignación de costos
+        * **ES8**: Apoyo y asistencia a clientes de TI
+        * **ES9**: Administración de la configuración
+        * **ES10**: Administración de problemas
+        * **ES11**: Administración de datos
+        * **ES12**: Administración de las instalaciones
+        * **ES13**: Administración de la operación
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Dominio: Supervisión y Evaluación (SE)' icon='chart-histogram'>
+    **Descripción**: Evaluación regular de los procesos de la organización para verificar su calidad, integridad y confidencialidad.
+
+    <TopicGrid>
+      <TopicConceptCard title="Procesos del Dominio ES">
+        * **SE1**: Supervisión del proceso
+        * **SE2**: Evaluación del control interno
+        * **SE3**: Obtención del aseguramiento independiente
+        * **SE4**: Proveer auditoría independiente
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Aplicación de la Guía COBIT' icon='circle-check-filled'>
+    **Descripción**: A través del proceso de auditoría que promueve ISACA se realiza la comprobación en cualquier organización de la consecución de objetivos dentro del buen gobierno corporativo.
+
+    <TopicGrid>
+      <TopicConceptCard title="Casos de Aplicación">
+        * **Auditoría de procesos**: Análisis de procesos específicos como Administración de Recursos Humanos
+        * **Evaluación de gobierno corporativo**: Verificación de cumplimiento de objetivos
+        * **Mejora continua**: Identificación de áreas de mejora en gestión de TI
+      </TopicConceptCard>
+      <TopicConceptCard title="Ejemplo de Aplicación">
+        **Caso**: Auditoría de aplicación de la guía COBIT para analizar el proceso de Administración de Recursos Humanos en un colegio privado bilingüe (Español-Inglés) que brinda servicio de educación a niños de preescolar y primaria.
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='Ejemplos Prácticos' icon='flask'>
+  <TopicConceptSection title="Casos de Implementación COBIT">
+    <AccordionRoot type='single'>
+      <TopicCaseStudies topic='topic5' />
+    </AccordionRoot>
+  </TopicConceptSection>
+
+  <TopicConceptSection title="Dominios en Acción">
+    <AccordionRoot type='single'>
+      <AccordionItem>
+        <TopicAccordionTrigger title="Dominio: Planificación y Organización (PO)" />
+        <AccordionContent>
+          **Descripción**: Definición de plan estratégico de TI y alineación con el negocio.
+
+          **Ejemplo**: Una empresa de desarrollo de software utiliza el dominio PO para definir su plan estratégico de TI, asegurando que sus proyectos tecnológicos estén alineados con los objetivos comerciales a largo plazo.
+
+          **Más ejemplos**:
+          * Roadmap IT
+          * Portafolio priorizado de proyectos TI
+          * Gestión de riesgos TI
+          * Políticas de seguridad de la información
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem>
+        <TopicAccordionTrigger title="Dominio: Adquisición e Implementación (AI)" />
+        <AccordionContent>
+          **Descripción**: Adquisición e implementación de soluciones tecnológicas que satisfagan las necesidades organizacionales.
+
+          **Ejemplo**: Una institución financiera implementa el dominio AI para adquirir y desplegar un nuevo sistema de gestión de riesgos, garantizando que el software cumpla con los requisitos regulatorios y de seguridad.
+
+          **Más ejemplos**:
+          * Evaluación de proveedores tecnológicos
+          * Desarrollo de software a medida
+          * Gestión de cambios en sistemas TI
+          * Integración de nuevas tecnologías
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem>
+        <TopicAccordionTrigger title="Dominio: Entrega y Soporte (ES)" />
+        <AccordionContent>
+          **Descripción**: Establecimiento de niveles de servicio y soporte técnico para usuarios finales.
+
+          **Ejemplo**: Una empresa de telecomunicaciones aplica el dominio ES para establecer niveles de servicio claros y proporcionar soporte técnico eficiente a sus clientes, mejorando la satisfacción del usuario final.
+
+          **Más ejemplos**:
+          * Service Desk
+          * SLAs de TI
+          * Gestión de incidentes/problemas
+          * Formación continua a usuarios
+          * Gestión de la capacidad y rendimiento
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem>
+        <TopicAccordionTrigger title="Dominio: Supervisión y Evaluación (SE)" />
+        <AccordionContent>
+          **Descripción**: Evaluación regular de los procesos de la organización para verificar su calidad, integridad y confidencialidad.
+
+          **Ejemplo**: Una organización gubernamental utiliza el dominio SE para auditar regularmente sus procesos de TI, asegurando la transparencia y el cumplimiento de las políticas internas y externas.
+
+          **Más ejemplos**:
+          * Auditorías internas de TI
+          * Evaluación de controles de seguridad
+          * Revisión de cumplimiento normativo
+          * Informes de desempeño de TI
+          * KPIs/KRIs de TI
+          * Gestión de hallazgos de auditoría
+        </AccordionContent>
+      </AccordionItem>
+    </AccordionRoot>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='Actividades de Refuerzo' icon='list-check'>
+  <TopicConceptSection
+    title="Aplicación de COBIT 2019 en una empresa de logística y distribución"
+    activity
+    estimatedDuration={45}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      Aplicar **COBIT 2019** para **diagnosticar** problemas de gobierno y gestión de TI en un caso realista, **seleccionar objetivos** (governance & management objectives) relevantes y **proponer acciones paso a paso** para mitigar riesgos (especialmente en la implementación de un ERP).
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Caso de uso" status='error' icon='building'>
+      **Empresa**: Logística Rápida S.A. <br />
+      **Sector**: Transporte y distribución de productos perecederos <br />
+      **Tamaño**: Mediana (≈120 empleados) <br />
+      **Ubicación**: Colombia (operación en 3 ciudades principales)
+
+      **Situación actual**:
+      * Implementaron un **ERP** en los últimos 2 años.
+      * Los sistemas de TI siguen **dispersos** y **poco integrados**.
+      * Hay **demoras en entregas** y baja visibilidad de **inventarios/rutas**.
+      * Persisten procesos manuales y errores operativos.
+      * Dificultades para cumplir tiempos de entrega y reportes.
+      * Incidentes y preocupaciones de **seguridad de la información**.
+      * Necesitan mejorar la toma de decisiones basada en datos.
+
+      **Objetivos del negocio** (lo que quieren lograr):
+      * Consolidar un **ERP integrado** para optimizar operación.
+      * **Mejorar seguridad** de los sistemas de información.
+      * Optimizar logística y distribución (menos reprocesos).
+      * Reducir costos operativos (meta: **15%**).
+      * Mejorar satisfacción del cliente (entregas más rápidas/precisas).
+      * Establecer un gobierno y gestión de TI claros.
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Entregables" status='info' icon='file-description'>
+      Al final, entrega **un documento corto** (1&#x2013;2 páginas o una hoja) con:
+      1. **Diagnóstico**: 5&#x2013;7 hallazgos del caso (problemas y causas).
+      2. **Selección COBIT 2019**: 6&#x2013;8 objetivos COBIT 2019 priorizados y justificados.
+      3. **Análisis de riesgo (APO12)**: un mini “registro de riesgos” + tratamiento.
+      4. **Seguimiento**: 3 métricas (KPIs/KRIs) y cómo las monitorearías.
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Paso 1 — Diagnóstico del escenario" status='success' icon='list-numbers'>
+      **¿Qué haces?**
+
+      Redacta **5&#x2013;7 hallazgos** en formato “problema → impacto → posible causa”.
+
+      **Ejemplo de 1 hallazgo (modelo)**
+      * *Problema*: sistemas no integrados → *Impacto*: demoras y datos duplicados → *Causa probable*: arquitectura/integración no definida y cambios no controlados.
+
+      *Resultado*
+      * Una lista de hallazgos que luego usarás para elegir COBIT 2019.
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Paso 2 — Selección de objetivos COBIT 2019" status='success' icon='list-numbers'>
+      En COBIT 2019 ya no hablamos de PO/AI/DS/ME como “procesos”, sino de **objetivos de gobierno (EDM)** y **objetivos de gestión (APO, BAI, DSS, MEA)**.
+
+      **2.1 Atajo de mapeo (para ubicarte rápido)**:
+      * Antes **PO** → ahora **APO** (*Align, Plan, Organize*)
+      *  Antes **AI** → ahora **BAI** (*Build, Acquire, Implement*)
+      * Antes **ES** → ahora **DSS** (*Deliver, Service, Support*)
+      * Antes **ME** → ahora **MEA** (*Monitor, Evaluate, Assess*)
+      * Y además: **EDM** (*Evaluate, Direct, Monitor*) para gobierno general que supervisa y dirige.
+
+      **2.2 Selecciona 6&#x2013;8 objetivos (recomendados para este caso)**
+      Escoge de esta lista (puedes ajustar, pero justifica):
+
+      **Gobierno (EDM)**
+      * **EDM03 — Ensure Risk Optimization** (que el riesgo esté controlado al nivel aceptable)
+      * **EDM02 — Ensure Benefits Delivery** (que el ERP realmente entregue beneficios)
+      * **EDM04 — Ensure Resource Optimization** (recursos: personas, presupuesto, tecnología)
+
+      **Gestión (APO, BAI, DSS, MEA)**
+      * **APO12 — Manage Risk** (gestión integral de riesgos de TI)
+      * **APO13 — Manage Security** (seguridad de la información)
+      * **APO03 — Manage Enterprise Architecture** (arquitectura/integración para “un solo dato”)
+      * **BAI01 — Manage Programs** (programa de implementación ERP y entregables)
+      * **BAI06 — Manage Changes** (control de cambios, evitar caos en producción)
+      * **DSS02 — Manage Service Requests and Incidents** (mesa de ayuda e incidentes)
+      * **DSS04 — Manage Continuity** (continuidad/recuperación ante fallas)
+      * **MEA01 — Monitor Performance and Conformance** (monitorear desempeño y cumplimiento)
+
+      > **Regla práctica**:
+      > * Si tu hallazgo es “integración y datos” → APO03/BAI.
+      > * Si tu hallazgo es “seguridad” → APO13/DSS05/EDM03.
+      > * Si tu hallazgo es “demoras y soporte” → DSS02/MEA01.
+      > * Si tu hallazgo es “implementación ERP” → BAI01/BAI06.
+
+      **2.3 LLena esta tabla (tu selección + justificación)**
+
+      | Objetivo COBIT 2019 | ¿Qué problema del caso ataca? | ¿Qué resultado esperas? | Dueño sugerido |
+      |---------------------|------------------------------|------------------------|----------------|
+      | APO12 Manage Risk | Incidentes, riesgos del ERP | Registro de riesgos + tratamiento | Líder de TI / Riesgos |
+      | APO13 Manage Security | Incidentes de seguridad | Controles y monitoreo de seguridad | Seguridad TI |
+      | BAI01 Manage Programs | Implementación ERP | Plan y control del programa | PM/PMO |
+      | DSS02 Manage Service Requests and Incidents | Caídas/incidentes | SLAs, tiempos de respuesta | Mesa de servicio |
+      | MEA01 Monitor Performance and Conformance | Poca visibilidad | KPIs operativos y de TI | TI + Operaciones |
+
+      > Completa 1&#x2013;3 filas más según tu selección
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Paso 3 — Análisis guiado de riesgos con APO12" status="success" icon="list-numbers">
+      Aquí actualizas lo que antes era “PO9 Gestión de Riesgos” a **APO12 Manage Risk** (COBIT 2019).
+
+      **3.1 Construye tu mini “registro de riesgos”**
+
+      Usa estas categorías (conservando el espíritu del caso):
+      * Seguridad (ciberataques, accesos indebidos)
+      * Operacional (interrupciones, degradación del servicio)
+      * Integración (interfaces rotas, datos inconsistentes)
+      * Datos (pérdida/corrupción en migración)
+      * Personas (resistencia al cambio, capacitación insuficiente)
+      * Cumplimiento (requisitos internos/externos)
+      * Financiero (sobrecostos, retrasos)
+
+      **Tabla de registro de riesgos (plantilla)**
+
+      | Riesgo | Categoría | Probabilidad | Impacto | Nivel de Riesgo (P&nbsp;x&nbsp;I) | Tratamiento Propuesto | Objetivo COBIT que lo soporta |
+      |--------|-----------|--------------|---------|-------------------------|-----------------------|----------------------------|
+      | Ataques cibernéticos | Seguridad | <Badge variant='danger'>Alta</Badge> | <Badge variant='danger'>Alta</Badge> | <Badge variant='danger'>ALTO</Badge> | MFA, hardening, monitoreo, backups | APO13, EDM03 |
+      | Fallas durante despliegue ERP | Operacional | <Badge variant='warning'>Media</Badge> | <Badge variant='danger'>Alta</Badge> | <Badge variant='warning'>MEDIO</Badge> | plan de despliegue + rollback + pruebas | BAI01, BAI06, DSS04 |
+      | Pérdida de datos en migración | Datos | <Badge variant='warning'>Baja/Media</Badge> | <Badge variant='danger'>Alta</Badge> | <Badge variant='warning'>MEDIO</Badge> | pruebas de migración, validación, respaldos | BAI07, DSS04 |
+      | Resistencia al cambio | Personas | <Badge variant='danger'>Alta</Badge> | <Badge variant='warning'>Media</Badge> | <Badge variant='warning'>MEDIO</Badge> | plan de adopción + capacitación | BAI05/BAI07 (si lo usas) |
+      | Sobrecostos del proyecto | Financiero | <Badge variant='warning'>Media</Badge> | <Badge variant='warning'>Media</Badge> | <Badge variant='warning'>MEDIO/BAJO</Badge> | control de alcance, hitos, compras | BAI01, EDM04 |
+
+      > Puedes usar una escala simple: **Baja** (1), **Media** (2), **Alta** (3) y luego multiplicar para obtener el nivel de riesgo. O simplemente usar etiquetas como en la tabla. Esto para Probabilidad, Impacto y Nivel de Riesgo.
+
+      **3.2 Define acciones (controles) por riesgo ALTO/MEDIO**
+
+      Para cada riesgo de nivel ALTO o MEDIO, escribe 2&#x2013;3 acciones concretas:
+
+      **Ejemplo (Ataques cibernéticos &#x2013; ALTO)**
+      * Activar MFA y políticas de contraseñas robustas (APO13).
+      * Centralizar logs y alertas (monitoreo) + revisión semanal (MEA01).
+      * Simulacros de incidente (DSS02/DSS04).
+
+      **3.3 Plan de continuidad (solo 3 escenarios)**
+
+      Describe qué harías si ocurre:
+      1. Incidente de seguridad grave
+      2. ERP crítico caído en operación
+      3. Falla o corrupción de datos
+
+      **Formato (muy simple)**
+      * Activación &#x21FE; Contención &#x21FE; Recuperación &#x21FE; Lecciones aprendidas (MEA01/MEA02)
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Paso 4 — Métricas y seguimientos" status="success" icon="list-numbers">
+      Elige 3 métricas (KPIs/KRIs) que indiquen si tu plan funciona.
+
+      **Ejemplos útiles para el caso**
+      * **% de incidentes de seguridad** por mes (KRI)
+      * **Tiempo promedio de resolución (MTTR)** de incidentes del ERP (KPI)
+      * **% de entregas a tiempo** (KPI del negocio ligado a TI)
+      * **% de cambios fallidos** en producción (KRI)
+      * **Disponibilidad del ERP** (KPI)
+      Indica:
+      * Periodicidad (semanal/mensual)
+      * Responsable (TI/Operaciones)
+      * Umbral (qué es “malo” y dispara acción)
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Cierre - Conclusión" status="info" icon="circle-check-filled">
+      Escribe 5&#x2013;6 líneas respondiendo:
+      * ¿Cuál es el riesgo principal del caso y por qué?
+      * ¿Qué objetivo COBIT 2019 consideras más crítico?
+      * ¿Qué cambiarías primero en 30 días?
+
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Checklist rápido (para autoevaluación)" status="warning" icon="checklist">
+      * [ ] Identifiqué 5&#x2013;7 hallazgos claros (problema &#x21FE; impacto &#x21FE; causa).
+      * [ ] Seleccioné 6&#x2013;8 objetivos COBIT 2019 con justificación.
+      * [ ] Hice registro de riesgos con nivel y tratamiento (APO12).
+      * [ ] Incluí continuidad (3 escenarios) y 3 métricas de seguimiento.
+    </TopicConceptCard>
+
+    > ¡Felicidades! Has aplicado COBIT 2019 para mejorar el gobierno y gestión de TI en un caso realista. 🚀
+  </TopicConceptSection>
+
+  <TopicConceptSection title="Autoevaluación" icon="checklist">
+    Comprueba tu comprensión en este tema contestando el cuestionario de autoevaluación con preguntas de selección múltiple.
+
+    <TopicSelfAssessmentTrigger topic="topic5">Presentar autoevaluación</TopicSelfAssessmentTrigger>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicResourceSection topic='topic5' />
