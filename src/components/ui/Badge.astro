@@ -49,7 +49,7 @@ const hasIcon = typeof icon === 'string' && icon.trim().length > 0;
     line-height: 1;
     white-space: nowrap;
     user-select: none;
-    color: var(--text-muted);
+    color: var(--text-secondary);
 
     /* Layout: cuando hay icono */
     &[data-has-icon='true'] {
@@ -113,13 +113,13 @@ const hasIcon = typeof icon === 'string' && icon.trim().length > 0;
   }
 
   .badge[data-variant='warning'] {
-    background: color-mix(in oklab, var(--warning) 18%, var(--gray-200));
-    border-color: color-mix(in oklab, var(--warning) 45%, var(--border-color));
+    background-color: color-mix(in oklab, var(--warning) 50%, var(--gray-200));
+    border-color: color-mix(in oklab, var(--warning) 70%, var(--gray-500));
   }
 
   .badge[data-variant='danger'] {
-    background: color-mix(in oklab, var(--error) 14%, var(--gray-200));
-    border-color: color-mix(in oklab, var(--error) 40%, var(--border-color));
+    background-color: color-mix(in oklab, var(--error) 20%, var(--gray-200));
+    border-color: color-mix(in oklab, var(--error) 80%, var(--border-color));
   }
 
   /* Color del icono por variante (opcional) */

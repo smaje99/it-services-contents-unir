@@ -49,7 +49,7 @@ const { title, status = 'success', icon } = Astro.props;
     }
 
     & [data-icon] {
-      color: var(--status-color);
+      color: color-mix(in oklab, var(--status-color) 60%, var(--gray-400));
     }
   }
 
