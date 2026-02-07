@@ -422,5 +422,155 @@
         ]
       }
     ]
+  },
+  "topic6": {
+    "groups": [
+      {
+        "title": "Vídeos Recomendados",
+        "items": [
+          {
+            "label": "ITIL 4 KEY Concepts of Service Management | ITIL In Focus | Episode 1 (YouTube)",
+            "url": "https://www.youtube.com/watch?v=BeJ5EATdY3w"
+          },
+          {
+            "label": "The Four Dimensions of Service Management EXPLAINED | ITIL In Focus | Episode 2 (YouTube)",
+            "url": "https://www.youtube.com/watch?v=zKpZESUVPSk"
+          },
+          {
+            "label": "ITIL® 4 Foundation - Introduction to ITIL 4 - (02/41) (serie) (YouTube)",
+            "url": "https://www.youtube.com/watch?v=Or9RN8Uhs-U"
+          },
+          {
+            "label": "BPMN Tutorial - Diagrams.net BPMN Example (YouTube)",
+            "url": "https://www.youtube.com/watch?v=_MzTijsoSe8"
+          },
+          {
+            "label": "ITIL 4 - Service Value Chain (YouTube)",
+            "url": "https://www.youtube.com/watch?v=NbAOXQat6HQ"
+          },
+          {
+            "label": "Applying ITIL4 To Everyday Situations",
+            "url": "https://www.youtube.com/watch?v=vazTQb2XC70"
+          },
+          {
+            "label": "ITIL - ¿Qué es? (Introducción a ITIL e ITSM)",
+            "url": "https://www.youtube.com/watch?v=c3QfSmKo4QA"
+          }
+        ]
+      },
+      {
+        "title": "Artículos de Interés",
+        "items": [
+          {
+            "label": "What is ITIL (IT Infrastructure Library)?",
+            "url": "https://www.servicenow.com/products/itsm/what-is-itil.html"
+          },
+          {
+            "label": "Modernizing ITSM with ITIL 4: Service value system (visión general)",
+            "url": "https://www.servicenow.com/blogs/2023/itil-4-service-value-system.html"
+          },
+          {
+            "label": "Cómo funciona la gestión de incidentes en Jira Service Management (guía paso a paso)",
+            "url": "https://www.atlassian.com/software/jira/service-management/product-guide/getting-started/incident-management"
+          },
+          {
+            "label": "Incident Management: Processes, Best Practices & Tools",
+            "url": "https://www.atlassian.com/incident-management"
+          },
+          {
+            "label": "Problem Management in ITIL: Process & Implementation Guide",
+            "url": "https://www.atlassian.com/itsm/problem-management"
+          },
+          {
+            "label": "¿Cuál es el proceso ITIL de gestión de problemas? (lista de pasos)",
+            "url": "https://support.atlassian.com/jira-service-management-cloud/docs/what-is-the-itil-problem-management-process/"
+          }
+        ]
+      },
+      {
+        "title": "Herramientas ITSM (Service Desk / Mesa de ayuda)",
+        "items": [
+          {
+            "label": "Jira Service Management (ITSM)",
+            "url": "https://www.atlassian.com/software/jira/service-management"
+          },
+          {
+            "label": "Freshservice (ITSM / ESM)",
+            "url": "https://www.freshworks.com/freshservice/"
+          },
+          {
+            "label": "GLPI (Helpdesk + Activos) - Community / Open Source",
+            "url": "https://glpi-project.org/es/"
+          },
+          {
+            "label": "iTop (ITSM + CMDB) - Community",
+            "url": "https://combodo.com/"
+          },
+          {
+            "label": "Zammad (Helpdesk/Ticketing) - Open Source",
+            "url": "https://zammad.org/"
+          },
+          {
+            "label": "Request Tracker (RT) - Open Source Ticketing",
+            "url": "https://requesttracker.com/request-tracker/"
+          }
+        ]
+      },
+      {
+        "title": "Herramientas de mapeo (Value Streams / Procesos)",
+        "items": [
+          {
+            "label": "Value Stream Mapping Template",
+            "url": "https://miro.com/templates/simple-value-stream-map/"
+          },
+          {
+            "label": "Value stream map (template)",
+            "url": "https://lucid.co/templates/value-stream-map"
+          },
+          {
+            "label": "Camunda Modeler (BPMN/DMN) - Descarga",
+            "url": "https://camunda.com/download/modeler/"
+          },
+          {
+            "label": "bpmn.io (editor/visor BPMN en web)",
+            "url": "https://bpmn.io/"
+          },
+          {
+            "label": "OpenBPM Studio (plugin para IntelliJ) - BPMN/DMN en IDE",
+            "url": "https://openbpm.io/studio"
+          }
+        ]
+      },
+      {
+        "title": "Libros Recomendados (ITIL 4)",
+        "items": [
+          {
+            "label": "ITIL® Foundation, ITIL 4 Edition",
+            "url": "https://github.com/sethuaung/ITIL_V4_Materials"
+          },
+          {
+            "label": "ITIL® 4: Drive Stakeholder Value",
+            "url": "https://books.google.com/books/about/ITIL_4.html?id=MnKs0AEACAAJ"
+          },
+          {
+            "label": "ITIL 4 Create, Deliver and Support (Print) (ficha)",
+            "url": "https://www.bol.com/nl/nl/p/itil-4-create-deliver-and-support/9300000157575815/"
+          }
+        ]
+      },
+      {
+        "title": "Certificación y material de referencia",
+        "items": [
+          {
+            "label": "ITIL® 4 Foundation (página oficial del examen)",
+            "url": "https://www.peoplecert.org/products/ITIL-4/itil-4-foundation-21-06-english"
+          },
+          {
+            "label": "ITIL® 4 PoV (whitepaper / PDF)",
+            "url": "https://www.servicenow.com/community/s/cgfwn76974/attachments/cgfwn76974/it-service-management-kb/1380/1/ServiceNow-Whitepaper-ITIL4_PoV-102519.pdf"
+          }
+        ]
+      }
+    ]
   }
 }

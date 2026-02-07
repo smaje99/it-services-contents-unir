@@ -7,6 +7,841 @@ color: "#dc3545"
 publishAt: "2025-11-10 18:00:00"
 ---
 
-## Introducción
-Contenido migrado desde tema1.html…
+import AccordionContent from '@/components/ui/accordion/AccordionContent.astro';
+import AccordionItem from '@/components/ui/accordion/AccordionItem.astro';
+import AccordionRoot from '@/components/ui/accordion/AccordionRoot.astro';
+import TopicAccordionTrigger from '@/components/topic/TopicAccordionTrigger.astro';
+import TopicCaseStudies from '@/components/topic/TopicCaseStudies.astro';
+import TopicConceptCard from '@/components/topic/TopicConceptCard.astro';
+import TopicConceptSection from '@/components/topic/TopicConceptSection.astro';
+import TopicGrid from '@/components/topic/TopicGrid.astro';
+import TopicResourceSection from '@/components/topic/TopicResourceSection.astro';
+import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
+import TopicSelfAssessmentTrigger from '@/components/topic/TopicSelfAssessmentTrigger.astro';
 
+<TopicSectionGroup title='Conceptos Clave' icon='bulb'>
+  <TopicConceptSection title='¿Qué es ITIL?' icon='book-2'>
+    **Definición:** ITIL (*Information Technology Infrastructure Library*) es el principal marco de buenas prácticas para la gestión de servicios de TI. Esta iniciativa nació en 1989 con la publicación de un libro sobre el *Service Desk* y otro sobre la gestión del nivel de servicio, y ha evolucionado a lo largo de los años extendiéndose a la mayoría de las organizaciones.
+
+    <TopicGrid>
+      <TopicConceptCard title="Paradigma Orientado a Servicios">
+        La orientación del desarrollo y aplicación de las TIC orientada a servicios se basa en un paradigma diferente al de procesos. El paradigma orientado a servicios no se centra en la ejecución de procesos sino en la **demanda del cliente de TI**.
+
+        **Diferencias clave**:
+        * **Proceso**: Se centra en la consecución de objetivos mediante procesos internos concatenados
+        * **Servicio**: Se centra en la posible demanda del cliente
+      </TopicConceptCard>
+      <TopicConceptCard title="Beneficios de ITIL">
+        * Mejora la calidad en la prestación del servicio TIC
+        * Enriquece la comunicación con los usuarios al usar el mismo lenguaje
+        * Aumenta la flexibilidad ante cambios del mercado
+        * Mejora la satisfacción de los clientes
+        * Mejora el rendimiento, disponibilidad y seguridad de los servicios TIC
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Ciclo de Vida del Servicio TI' icon='heart-rate-monitor'>
+    **Importancia**: ITIL está organizado en torno al concepto de **Ciclo de Vida del Servicio**, que proporciona una visión completa de cómo gestionar servicios de TI desde su concepción hasta su retirada.
+
+    > **Nota rápida**: en ITIL 4 ya no se trabaja con “procesos del ciclo de vida” (ITIL v3), sino con **prácticas**, **flujos de valor**, el **Sistema de Valor del Servicio (SVS)** y la **Cadena de Valor del Servicio (SVC)**.
+
+    <TopicGrid>
+      <TopicConceptCard title="6.3. Estrategia del Servicio">
+        **Objetivo**: Convertir la Gestión del Servicio en un activo estratégico.
+
+        **Procesos principales**:
+        * **Gestión Financiera**: Garantizar servicios con costes controlados y relación calidad-precio
+        * **Gestión del Portfolio de Servicios**: Inversión en servicios que ofrezcan máximo valor al cliente
+        * **Gestión de la Demanda**: Armonización de la oferta con las demandas del mercado
+      </TopicConceptCard>
+      <TopicConceptCard title="6.4. Diseño del Servicio">
+        **Misión**: Diseñar nuevos servicios o modificar los existentes para su incorporación al catálogo de servicios y su paso al entorno de producción.
+
+        **Procesos principales**:
+        * **Gestión del Catálogo de Servicios**: Definir y mantener el catálogo de servicios
+        * **Gestión de Niveles de Servicio (SLA)**: Asegurar que los servicios cumplen los niveles acordados
+        * **Gestión de la Capacidad**: Asegurar que la infraestructura TI puede soportar la demanda actual y futura
+        * **Gestión de la Disponibilidad**: Asegurar la disponibilidad de los servicios TI según lo acordado
+        * **Gestión de la Continuidad de los Servicios TI**: Minimizar el impacto de desastres en los servicios TI
+        * **Gestión de la Seguridad de la Información**: Proteger la información y los servicios TI contra amenazas y vulnerabilidades
+        * **Gestión de Proveedores**: Gestionar las relaciones con proveedores para asegurar la calidad y continuidad de los servicios
+      </TopicConceptCard>
+      <TopicConceptCard title="6.5. Transición del Servicio">
+        **Misión**: Integrar los productos y servicios definidos en la fase de Diseño al entorno de producción.
+
+        **Procesos principales**:
+        * **Planificación y soporte a la Transición**: Planificar y coordinar los recursos para la transición de servicios
+        * **Gestión de Cambios**: Controlar los cambios en la infraestructura TI minimizando riesgos
+        * **Gestión de la Configuración y Activos del Servicio (CMDB)**: Mantener información precisa sobre la infraestructura TI y sus relaciones
+        * **Gestión de Entregas y Despliegues**: Planificar y controlar la entrega de nuevos servicios o cambios
+        * **Validación y pruebas**: Asegurar que los servicios cumplen los requisitos antes de su puesta en producción
+        * **Evaluación**: Evaluar los cambios para asegurar que cumplen los objetivos y no afectan negativamente a los servicios existentes
+        * **Gestión del Conocimiento**: Facilitar el acceso a la información y el conocimiento necesarios para la gestión de servicios
+      </TopicConceptCard>
+      <TopicConceptCard title="6.6. Operación del Servicio">
+        **Equilibrio esencial**: Estabilidad vs. Capacidad de respuesta. La Operación del Servicio busca mantener un equilibrio entre la estabilidad de los servicios TI y la capacidad de respuesta a las necesidades cambiantes del negocio.
+
+        **Procesos principales**:
+        * **Gestión de Eventos**: Monitorizar eventos para detectar y responder a incidentes
+        * **Gestión de Incidentes**: Restaurar la operación normal del servicio lo antes posible tras una interrupción
+        * **Gestión de Problemas**: Identificar y eliminar las causas raíz de los incidentes
+        * **Gestión de Accesos**: Controlar el acceso a los servicios TI para proteger la información
+        * **Cumplimiento de Solicitudes**: Gestionar las solicitudes de servicio de los usuarios
+        * **Petición de Servicios TI**: Gestionar las peticiones de servicios estándar de los usuarios
+      </TopicConceptCard>
+      <TopicConceptCard title="6.7. Mejora Continua del Servicio">
+        **Objetivo**: Ofrecer mejores servicios adaptados a las cambiantes necesidades de los clientes mediante procesos internos optimizados.
+
+        **Dimensiones de medición**:
+        * **Conformidad**: Los procesos se adecuan a modelos y protocolos
+        * **Calidad**: Se cumplen objetivos preestablecidos
+        * **Rendimiento**: Procesos eficientes y rentables
+        * **Valor**: Servicios que se diferencian de la competencia
+
+        **Procesos principales**:
+        * **Identificación de la Mejora**: Detectar oportunidades de mejora en los servicios y procesos
+        * **Implementación de la Mejora**: Planificar y ejecutar las mejoras identificadas
+        * **Medición y Reporte**: Evaluar el impacto de las mejoras implementadas y reportar los resultados
+        * Proceso de Mejora (7 pasos - Plan de Mejora del Servicio SIP)
+        * Informes de Servicios TI
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Gestión de Servicios TI' icon='users-group'>
+    **Definición:** La gestión del servicio se dirige a proporcionar datos para la toma de decisiones desde una perspectiva de procesos y proporcionar una implementación profesional con responsabilidades bien definidas.
+
+    <TopicGrid>
+      <TopicConceptCard title="Prerrequisitos para la Gestión de Servicios TI">
+        * Disposición incondicional de la dirección y personal TIC
+        * Focalización en el cliente y en el servicio
+        * Arquitecturas basadas en servicios para mejora de procesos de negocio
+      </TopicConceptCard>
+      <TopicConceptCard title="Características Clave">
+        * Proporciona datos para toma de decisiones
+        * Implementación profesional
+        * Responsabilidades bien definidas
+        * Orientación al cliente y al servicio
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Services Desk' icon='headset'>
+    **Definición:** El Service Desk es el punto único de contacto entre los usuarios y el departamento de TI. Proporciona un canal centralizado para recibir, gestionar y resolver solicitudes de servicio e incidencias.
+
+    **Importancia:** Un Service Desk eficiente mejora la satisfacción del usuario, reduce el tiempo de resolución de problemas y optimiza la gestión de servicios TI.
+
+    <TopicGrid>
+      <TopicConceptCard title="Funciones Principales">
+        * **Punto único de contacto**: Centraliza todas las comunicaciones con usuarios
+        * **Registro de incidencias**: Captura y registra todas las incidencias
+        * **Gestión de solicitudes**: Administra peticiones de servicio
+        * **Comunicación**: Mantiene informados a los usuarios sobre el estado
+        * **Escalación**: Deriva casos complejos a equipos especializados
+      </TopicConceptCard>
+      <TopicConceptCard title="Tipos de Service Desk">
+        * **Local**: Presencial en cada ubicación, contacto directo
+        * **Centralizado**: Un solo punto para toda la organización
+        * **Virtual**: Distribuido geográficamente pero unificado técnicamente
+        * **Follow the Sun**: Soporte 24/7 pasando casos entre zonas horarias
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Acuerdos y Contratos de Servicio' icon='contract'>
+    **Importancia:** Los acuerdos y contratos definen formalmente los niveles de servicio esperados y compromisos entre las partes involucradas en la prestación de servicios
+
+    <TopicGrid>
+      <TopicConceptCard title="SLA (Service Level Agreement)">
+        **Definición**: Acuerdo formal entre el proveedor de servicios y el cliente que documenta los servicios requeridos y los niveles de servicio esperados.
+
+        **Componentes**:
+        * Descripción de servicios
+        * Métricas de disponibilidad
+        * Tiempos de respuesta y resolución
+        * Procedimientos de reporte
+        * Consecuencias de incumplimiento
+      </TopicConceptCard>
+      <TopicConceptCard title="OLA (Operational Level Agreement)">
+        **Definición**: Acuerdo interno entre departamentos o equipos de TI que define cómo se prestarán los servicios de soporte para cumplir con los SLA.
+
+        **Propósito**: Asegurar que los equipos internos trabajen coordinadamente para cumplir los compromisos con el cliente.
+      </TopicConceptCard>
+      <TopicConceptCard title="UC (Underpinning Contract)">
+        **Definición**: Contrato legal con un proveedor externo que especifica los servicios que debe proporcionar para apoyar la entrega de servicios al cliente.
+
+        **Importancia**: Asegura que los proveedores externos cumplan con los niveles necesarios para satisfacer los SLA.
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Diferencias Fundamentales: Incident, Problem y Change' icon='scale'>
+    **Importancia:** Comprender las diferencias entre estos conceptos es fundamental para aplicar correctamente los procesos ITIL.
+
+    <TopicGrid>
+      <TopicConceptCard title="Incident (Incidencia)">
+        **Definición**: Interrupción no planificada de un servicio o reducción en su calidad.
+
+        **Características**:
+        * **Enfoque**: Restaurar el servicio lo más rápido posible
+        * **Prioridad**: Inmediata
+        * **Ejemplo**: Usuario no puede acceder al correo electrónico
+        * **Proceso**: Gestión de Incidencias
+      </TopicConceptCard>
+      <TopicConceptCard title="Problem (Problema)">
+        **Definición**: Causa raíz de una o más incidencias. Puede no estar identificada al momento de la incidencia.
+
+        **Características**:
+        * **Enfoque**: Identificar y eliminar la causa raíz
+        * **Prioridad**: Investigación y solución permanente
+        * **Ejemplo**: Error en el código que causa caídas recurrentes
+        * **Proceso**: Gestión de Problemas
+      </TopicConceptCard>
+      <TopicConceptCard title="Change (Cambio)">
+        **Definición**: Adición, modificación o eliminación de algo que podría tener un efecto en los servicios de TI.
+
+        **Características**:
+        * **Enfoque**: Controlar cambios para minimizar riesgos
+        * **Prioridad**: Planificación y aprobación antes de implementar
+        * **Ejemplo**: Actualizar un sistema operativo
+        * **Proceso**: Gestión de Cambios
+      </TopicConceptCard>
+      <TopicConceptCard title="Request Fulfillment vs. Incident Management">
+        ***Request Fulfillment* (Petición de Servicio)**: Solicitud del usuario para acceso a información, servicios o cambios estándar pre-autorizados (ej: nueva cuenta de correo, acceso a aplicación).
+
+        ***Incident Management***: Gestiona interrupciones o degradaciones del servicio. Requiere restauración inmediata.
+
+        **Diferencia clave**: Las peticiones son solicitudes normales, las incidencias son fallos que requieren corrección.
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='CMDB (Configuration Management Database)' icon='database'>
+    **Definición**: Base de datos que contiene información sobre todos los elementos de configuración (CIs) y las relaciones entre ellos.
+
+    <TopicGrid>
+      <TopicConceptCard title="Elementos de Configuración (CIs)">
+        **Definición**: Cualquier componente o elemento que necesita ser gestionado para entregar un servicio de TI.
+
+        **Ejemplos**:
+        * **Hardware**: Servidores, switches, routers
+        * **Software**: Aplicaciones, sistemas operativos, bases de datos
+        * **Documentación**: Manuales, procedimientos
+        * **Personas**: Roles y responsabilidades
+        * **Servicios**: Servicios de TI gestionados
+      </TopicConceptCard>
+      <TopicConceptCard title="Relaciones entre CIs">
+        **Importancia**: Las relaciones permiten entender el impacto de cambios e incidencias.
+
+        **Tipos de relaciones**:
+        * Depende de / Depende por
+        * Conectado a / Conectado desde
+        * Usado por / Usa
+        * Implementa / Implementado por
+      </TopicConceptCard>
+      <TopicConceptCard title="Beneficios de la CMDB">
+        * Visibilidad completa de la infraestructura
+        * Análisis de impacto de cambios
+        * Rastreo de relaciones entre componentes
+        * Mejora en la gestión de incidencias y problemas
+        * Cumplimiento de normativas y auditorías
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Service Catalog vs. Service Portfolio' icon='layout-board-split-filled'>
+    **Importancia**: Comprender la diferencia entre **Catálogo y Portfolio** es esencial para la gestión estratégica de servicios.
+
+    <TopicGrid>
+      <TopicConceptCard title="Service Catalog (Catálogo de Servicios)">
+        **Definición**: Lista de servicios disponibles para clientes y usuarios, con información sobre cómo acceder y utilizar cada servicio..
+
+        **Características**:
+        * Servicios activos y disponibles
+        * Visible para clientes y usuarios
+        * Información de servicios operacionales
+        * Incluye descripciones, precios, SLA
+        * Herramienta de comunicación con clientes
+      </TopicConceptCard>
+      <TopicConceptCard title="Service Portfolio (Portafolio de Servicios)">
+        **Definición**: Conjunto completo de servicios gestionados por el proveedor de servicios, incluyendo todos los estados del ciclo de vida.
+
+        **Estados del ciclo de vida**:
+        * *Pipeline*: Servicios en desarrollo o planificación
+        * *Service Catalog*: Servicios activos y disponibles
+        * *Retired*: Servicios retirados o descontinuados
+
+        **Uso**: Herramienta de gestión estratégica para toma de decisiones de inversión.
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Gestión de Cambios' icon='replace-filled'>
+    **Definición**: Proceso que controla el **ciclo de vida** de todos los cambios, permitiendo beneficios con un riesgo mínimo para los **servicios de TI**.
+
+    <TopicGrid>
+      <TopicConceptCard title="CAB (Change Advisory Board)">
+        **Definición**: Grupo de personas que proporciona asesoramiento experto para evaluar cambios importantes y tomar decisiones sobre su aprobación.
+
+        **Composición**:
+        * *Change Manager* (preside)
+        * Representantes de equipos técnicos
+        * Representantes de usuarios
+        * Expertos en áreas específicas según el cambio
+      </TopicConceptCard>
+      <TopicConceptCard title="Tipos de Cambios">
+        * **Normal**: Requiere evaluación, aprobación y planificación. Proceso estándar completo.
+        * **Estándar**: Cambios pre-aprobados, de bajo riesgo, que siguen un procedimiento predefinido.
+        * **Urgente**: Requiere implementación rápida (ej: parche de seguridad crítico). Proceso acelerado.
+        * **Emergencia**: Cambios críticos que deben implementarse inmediatamente. Post-implementación se documenta.
+      </TopicConceptCard>
+      <TopicConceptCard title="Flujo del Proceso de Cambio">
+        1. **Registro**: Captura de la solicitud de cambio (RFC)
+        2. **Evaluación**: Análisis de impacto, riesgo y recursos
+        3. **Decisión**: Aprobación o rechazo por Change Manager o CAB
+        4. **Planificación**: Desarrollo del plan de implementación
+        5. **Implementación**: Ejecución del cambio
+        6. **Revisión**: Evaluación post-implementación
+        7. **Cierre**: Documentación y cierre del registro
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Roles y Responsabilidades' icon='user-cog'>
+    **Importancia**: ITIL define roles claros para asegurar que cada aspecto de la **gestión de servicios** tenga responsables definidos.
+
+    <TopicGrid>
+      <TopicConceptCard title="Service Owner">
+        **Responsabilidad**: Asegurar que un servicio específico cumpla con los requisitos del negocio y los niveles de servicio acordados.
+
+        **Funciones**:
+        * Representar el servicio ante el cliente
+        * Gestionar el servicio desde perspectiva de negocio
+        * Asegurar que el servicio cumple con los SLA
+        * Participar en el diseño y mejora del servicio
+        * Coordinar con otros roles y equipos
+      </TopicConceptCard>
+      <TopicConceptCard title="Process Owner">
+        **Responsabilidad**: Asegurar que un proceso específico se diseña, implementa y mejora continuamente para cumplir con los objetivos del negocio.
+
+        **Funciones**:
+        * Definir la estrategia del proceso
+        * Definir y documentar el proceso
+        * Asegurar la capacitación del personal en el proceso
+        * Monitorear el desempeño del proceso
+        * Identificar oportunidades de mejora
+        * Coordinar con otros procesos y roles
+      </TopicConceptCard>
+      <TopicConceptCard title="RACI Matrix">
+        **Definición**: Herramienta que define roles y responsabilidades en procesos o actividades específicas.
+
+        **Componentes**:
+        * **R (*Responsible*)**: Quien ejecuta la tarea
+        * **A (*Accountable*)**: Quien tiene la última responsabilidad y la autoridad
+        * **C (*Consulted*)**: Quien proporciona información o asesoramiento
+        * **I (*Informed*)**: Quien debe ser informado del progreso o resultados
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='KPIs y Métricas' icon='chart-bar'>
+    **Importancia**: Medir el desempeño de los servicios y procesos es esencial para la mejora continua y la toma de decisiones informadas.
+
+    <TopicGrid>
+      <TopicConceptCard title="Tipos de KPIs">
+        * **KPIs de Servicio**: Miden la calidad y eficiencia de los servicios entregados.
+        * **KPIs de Proceso**: Miden la eficiencia y efectividad de los procesos de gestión de servicios.
+        * **KPIs de Negocio**: Miden el impacto de los servicios TI en los objetivos del negocio.
+        * **KPIs de Cliente**: Miden la satisfacción y experiencia del cliente con los servicios TI.
+        * **KPIs de Soporte**: Miden la eficiencia del soporte técnico y la resolución de incidencias.
+        * **KPIs de Operación**: Miden la estabilidad y disponibilidad de la infraestructura TI.
+        * **KPIs de Mejora Continua**: Miden el progreso en iniciativas de mejora de servicios y procesos.
+        * **KPIs Financieros**: Miden el coste y retorno de inversión de los servicios TI.
+        * **KPIs de Cumplimiento**: Miden la adherencia a normativas y estándares.
+        * **KPIs de Seguridad**: Miden la efectividad de las medidas de seguridad implementadas.
+      </TopicConceptCard>
+      <TopicConceptCard title="Métricas de Servicio">
+        Las métricas de servicio son medidas específicas que proporcionan datos cuantitativos sobre el desempeño de los servicios TI.
+
+        **Ejemplos**:
+        * **Disponibilidad**: Porcentaje de tiempo que el servicio está disponible
+        * **Tiempo de respuesta**: Tiempo desde la detección hasta el inicio de la resolución
+        * **Tiempo de resolución**: Tiempo total para resolver una incidencia
+        * **MTBF (*Mean Time Between Failures*)**: Tiempo promedio entre fallos
+        * **MTTR (*Mean Time To Repair*)**: Tiempo promedio para reparar
+      </TopicConceptCard>
+      <TopicConceptCard title="Métricas de Proceso">
+        Las métricas de proceso miden la eficiencia y efectividad de los procesos de gestión de servicios.
+
+        **Ejemplos**:
+        * **Tiempo de ciclo**: Tiempo total del proceso
+        * **Cumplimiento de SLA**: Porcentaje de SLA cumplidos
+        * **Volumen**: Número de incidencias, cambios, problemas gestionados
+        * **Backlog**: Número de elementos pendientes
+        * **Tasa de escalación**: Porcentaje de casos escalados
+      </TopicConceptCard>
+      <TopicConceptCard title="Balanced Scorecard en TI">
+        **Definición**: Herramienta de gestión estratégica que traduce la visión y estrategia en un conjunto coherente de indicadores de desempeño.
+
+        **Perspectivas**:
+        * **Financiera**: Costos, retorno de inversión (ROI), presupuestos
+        * **Clientes**: Satisfacción del cliente, retención, adquisición, lealtad, percepción de valor
+        * **Procesos Internos**: Eficiencia operativa, calidad del servicio, cumplimiento de SLA
+        * **Aprendizaje y Crecimiento**: Capacitación del personal, innovación, cultura de mejora continua
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Continual Improvement Model' icon='rotate-dot'>
+    **Definición**: El **Modelo de Mejora Continua** es un enfoque estructurado para identificar, analizar y mejorar los servicios y procesos de TI de manera constante.
+
+    <TopicGrid>
+      <TopicConceptCard title="7 Pasos del Modelo de Mejora">
+        1. **¿Qué debemos mejorar?**: Identificar oportunidades de mejora
+        2. **¿Qué podemos mejorar?**: Priorizar oportunidades basadas en valor
+        3. **¿Cómo mejoramos?**: Diseñar la solución
+        4. **¿Cómo medimos?**: Definir métricas y KPIs
+        5. **¿Hemos mejorado?**: Evaluar resultados
+        6. **¿Cómo mantenemos?**: Asegurar que las mejoras se mantienen
+        7. **¿Cómo lo hacemos mejor?**: Aprender y optimizar
+      </TopicConceptCard>
+      <TopicConceptCard title="Plan de Mejora del Servicio (SIP)">
+        **Definición**: Documento formal que detalla las iniciativas de mejora continua, incluyendo objetivos, responsables, plazos y métricas; para asegurar la mejora efectiva de los servicios TI durante un período determinado.
+
+        **Componentes**:
+        * Objetivos de mejora
+        * Iniciativas específicas
+        * Actividades planificadas
+        * Responsables asignados
+        * Plazos e hitos
+        * Métricas y metas para evaluar el éxito
+        * Recursos requeridos
+        * Cronograma de implementación
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Service Value System (ITIL 4)' icon='cloud-network'>
+    **Definición**: El **Sistema de Valor del Servicio (SVS)** de ITIL 4 describe cómo todos los componentes y actividades de una organización trabajan juntos para facilitar la creación de valor a través de servicios de TI.
+
+    **Importancia**: Proporciona un marco integral que asegura que la organización pueda adaptarse a los cambios y entregar valor de manera efectiva.
+
+    <TopicGrid>
+      <TopicConceptCard title="Guiding Principles (Principios Rectores)">
+        **Los7 Principios Rectores de ITIL 4**:
+        1. ***Focus on value* (Enfocarse en el valor)**: Todo lo que la organización hace debe aportar valor a los clientes y partes interesadas.
+        2. ***Start where you are* (Comenzar donde estás)**: Evaluar la situación actual antes de hacer cambios y aprovechar los recursos existentes.
+        3. ***Progress iteratively with feedback* (Progresar de manera iterativa con retroalimentación)**: Realizar mejoras en pequeños pasos y ajustar según la retroalimentación recibida.
+        4. ***Collaborate and promote visibility* (Colaborar y promover la visibilidad)**: Fomentar la colaboración entre equipos y asegurar que la información relevante esté disponible para todos.
+        5. ***Think and work holistically* (Pensar y trabajar de manera holística)**: Considerar todos los aspectos de la organización y cómo interactúan para entregar valor dentro de la completa cadena de valor en el sistema.
+        6. ***Keep it simple and practical* (Mantenerlo simple y práctico)**: Evitar la complejidad innecesaria y centrarse en soluciones prácticas que funcionen.
+        7. ***Optimize and automate* (Optimizar y automatizar)**: Mejorar continuamente los procesos y utilizar la automatización cuando sea apropiado para aumentar la eficiencia.
+      </TopicConceptCard>
+      <TopicConceptCard title="Governance (Gobernanza)">
+        La gobernanza en ITIL 4 asegura que las políticas, directrices y estructuras de toma de decisiones estén alineadas con los objetivos estratégicos de la organización.
+
+        **Componentes clave**:
+        * **Estructuras de gobernanza**: Definen roles y responsabilidades
+        * **Políticas y directrices**: Establecen normas para la gestión de servicios
+        * **Monitoreo y evaluación**: Aseguran el cumplimiento y efectividad
+        * **Toma de decisiones informada**: Basada en datos y análisis
+        * **Mejora continua**: Asegura que la gobernanza evolucione con las necesidades del negocio
+        * **Alineación estratégica**: Garantiza que las actividades de TI apoyen los objetivos del negocio
+        * **Roles y responsabilidades**: Clarifica quién toma decisiones y cómo se gestionan los riesgos
+        * **Cumplimiento normativo**: Asegura que las operaciones de TI cumplan con leyes y regulaciones aplicables
+        * **Métricas y reportes**: Proporciona información sobre el desempeño de la gobernanza
+        * **Cultura organizacional**: Fomenta una cultura de responsabilidad y transparencia
+      </TopicConceptCard>
+      <TopicConceptCard title="Service Value Chain (Cadena de Valor del Servicio)">
+        **Definición**: La **Cadena de Valor del Servicio** es el conjunto de actividades interrelacionadas que una organización realiza para crear valor a través de servicios de TI.
+
+        **Actividades clave**:
+        * ***Plan* (Planificar)**: Definir la estrategia y objetivos
+        * ***Improve* (Mejorar)**: Identificar y ejecutar mejoras continuas
+        * ***Engage* (Involucrar)**: Interactuar con clientes y partes interesadas
+        * ***Design & Transition* (Diseñar y Transicionar)**: Crear y desplegar servicios
+        * ***Obtain/Build* (Obtener/Construir)**: Adquirir o desarrollar los componentes necesarios
+        * ***Deliver & Support* (Entregar y Soportar)**: Proporcionar y mantener los servicios
+      </TopicConceptCard>
+      <TopicConceptCard title="Practices (Prácticas)">
+        **Definición**: Las **Prácticas** en ITIL 4 son conjuntos de recursos organizacionales diseñados para realizar trabajos o lograr un objetivo específico en la gestión de servicios.
+
+        **Categorías de prácticas**:
+
+        ITIL 4 define 34 prácticas divididas en tres categorías principales:
+
+        * ***General Management Practices* (Prácticas generales de gestión)**: Posee 14 prácticas. Entre ellas Gestión de la estrategia, portafolio, arquitectura, riesgo, conocimiento, etc.
+        * ***Service Management Practices* (Prácticas de gestión de servicios)**: Posee 17 prácticas. Entre ellas Gestión de niveles de servicio, catálogo, disponibilidad, capacidad, continuidad, seguridad, proveedores, etc.
+        * ***Technical Management Practices* (Prácticas técnicas de gestión)**: Posee 3 prácticas. Entre ellas Gestión de despliegue, infraestructura y plataforma, desarrollo de software, etc.
+
+        **Ejemplos de prácticas clave**:
+        * **Gestión de Incidentes**: Restaurar el servicio lo antes posible tras una interrupción
+        * **Gestión de Problemas**: Identificar y eliminar las causas raíz de los incidentes
+        * **Gestión de Cambios**: Controlar el ciclo de vida de todos los cambios para minimizar interrupciones
+        * **Gestión de Configuración**: Mantener información precisa sobre los activos y configuraciones
+        * **Gestión de Niveles de Servicio**: Asegurar que los servicios cumplan con los acuerdos establecidos
+        * **Gestión de la Seguridad de la Información**: Proteger la información y los activos asociados
+        * **Gestión de Proveedores**: Gestionar las relaciones y el rendimiento de los proveedores
+      </TopicConceptCard>
+      <TopicConceptCard title="General Management Practices (Prácticas Generales de Gestión)">
+        1. **Gestión de la Estrategia**: Definir y mantener la estrategia de TI alineada con los objetivos del negocio.
+        2. **Gestión del Portafolio**: Gestionar el portafolio de servicios y proyectos para maximizar el valor.
+        3. **Gestión de la Arquitectura**: Diseñar y mantener la arquitectura tecnológica de la organización.
+        4. **Gestión del Cambio Organizacional**: Gestionar el cambio cultural y organizacional asociado a iniciativas de TI.
+        5. **Gestión del Conocimiento**: Capturar, distribuir y utilizar el conocimiento dentro de la organización.
+        6. **Gestión de la Seguridad de la Información**: Proteger la información y los activos asociados.
+        7. **Gestión de Riesgos**: Identificar, evaluar y mitigar riesgos relacionados con TI.
+        8. **Gestión de la Continuidad del Negocio**: Asegurar la continuidad de las operaciones en caso de interrupciones.
+        9. **Gestión Financiera**: Gestionar los recursos financieros relacionados con TI.
+        10. **Gestión de Proyectos**: Planificar, ejecutar y controlar proyectos de TI.
+        11. **Gestión de la Calidad**: Asegurar que los servicios y procesos cumplen con los estándares de calidad.
+        12. **Gestión de Recursos Humanos**: Gestionar el talento y las competencias del personal de TI.
+        13. **Gestión de la Relación con el Negocio**: Mantener una comunicación efectiva con las partes interesadas del negocio.
+        14. **Gestión de la Innovación**: Fomentar la innovación y la mejora continua en TI.
+      </TopicConceptCard>
+      <TopicConceptCard title="Service Management Practices (Prácticas de gestión de servicios)">
+        1. **Gestión de Niveles de Servicio**: Asegurar que los servicios cumplen con los acuerdos establecidos.
+        2. **Gestión del Catálogo de Servicios**: Mantener un catálogo actualizado de servicios disponibles.
+        3. **Gestión de la Disponibilidad**: Asegurar la disponibilidad de los servicios según lo acordado.
+        4. **Gestión de la Capacidad**: Asegurar que los recursos pueden soportar la demanda actual y futura.
+        5. **Gestión de la Continuidad del Servicio**: Minimizar el impacto de desastres en los servicios TI.
+        6. **Gestión de la Seguridad de la Información**: Proteger la información y los activos asociados.
+        7. **Gestión de Proveedores**: Gestionar las relaciones y el rendimiento de los proveedores.
+        8. **Gestión de Incidentes**: Restaurar el servicio lo antes posible tras una interrupción.
+        9. **Gestión de Problemas**: Identificar y eliminar las causas raíz de los incidentes.
+        10. **Gestión de Cambios**: Controlar el ciclo de vida de todos los cambios para minimizar interrupciones.
+        11. **Gestión de la Configuración**: Mantener información precisa sobre los activos y configuraciones.
+        12. **Gestión de Solicitudes de Servicio**: Gestionar las solicitudes de servicio de los usuarios.
+        13. **Gestión de Eventos**: Monitorizar eventos para detectar y responder a incidentes.
+        14. **Gestión de Accesos**: Controlar el acceso a los servicios TI.
+        15. **Gestión de la Experiencia del Cliente**: Mejorar la satisfacción del cliente con los servicios TI.
+        16. **Gestión de la Demanda**: Armonizar la oferta con las demandas del mercado.
+        17. **Gestión de la Capacidad del Servicio**: Asegurar que los servicios pueden cumplir con los niveles de demanda esperados.
+      </TopicConceptCard>
+      <TopicConceptCard title="Technical Management Practices (Prácticas técnicas de gestión)">
+        1. **Gestión de Despliegue**: Planificar y controlar la entrega de nuevos servicios o cambios.
+        2. **Gestión de Infraestructura y Plataforma**: Gestionar la infraestructura tecnológica y las plataformas utilizadas.
+        3. **Desarrollo de Software**: Diseñar, desarrollar, probar y mantener aplicaciones y software.
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='Ejemplos Prácticos' icon='flask'>
+  <TopicConceptSection>
+    <AccordionRoot type='single'>
+      <TopicCaseStudies topic='topic6' />
+    </AccordionRoot>
+  </TopicConceptSection>
+
+  <TopicConceptSection title="Aplicaciones por Fase del Ciclo de Vida del Servicio">
+    <AccordionRoot type='single'>
+      <AccordionItem>
+        <TopicAccordionTrigger title="Strategy - Definición de Portafolio de Servicios" />
+        <AccordionContent>
+          Definir qué servicios se ofrecen y por qué aportan valor, con enfoque en demanda, costos y priorización.
+
+          **Entregables**:
+          * Portafolio de servicios
+          * Análisis de demanda
+          * Modelos de financiero del servicio
+        </AccordionContent>
+      </AccordionItem>
+
+      <AccordionItem>
+        <TopicAccordionTrigger title="Design - Creación de SLA y Catálogo de Servicios" />
+        <AccordionContent>
+          Diseñar el servicio para que sea entregable y medible, con acuerdos y capacidades necesarias, estableciendo acuerdos claros con clientes sobre niveles de servicio y documentar servicios disponibles.
+
+          **Entregables**:
+          * Catálogo de Servicios
+          * Acuerdos de Nivel de Servicio (SLAs)
+          * Acuerdos Operativos (OLAs)
+          * Diseños de procesos y arquitecturas
+          * Diseños de capacidades y disponibilidad
+        </AccordionContent>
+      </AccordionItem>
+
+      <AccordionItem>
+        <TopicAccordionTrigger title="Transition - Proceso de Gestión de Cambios" />
+        <AccordionContent>
+          Implementar cambios controlados para minimizar riesgos, asegurando que los cambios se planifican, evalúan y aprueban adecuadamente antes de su implementación. Generando una trazabilidad completa de los cambios realizados y una confianza en la estabilidad del entorno de TI.
+
+          **Entregables**:
+          * Registros de Cambios (RFCs)
+          * Evaluaciones de Impacto y Riesgo
+          * Planes de Implementación
+          * Plan de Despliegue
+          * Validación y pruebas post-implementación
+        </AccordionContent>
+      </AccordionItem>
+
+      <AccordionItem>
+        <TopicAccordionTrigger title="Operation - Service Desk y Gestión de Incidencias" />
+        <AccordionContent>
+          Restaurar servicios rápidamente tras interrupciones, gestionando incidentes y problemas para minimizar el impacto en el negocio. Implementando procesos eficientes para la resolución de incidentes y la identificación de causas raíz. Para esto, medir, analizar y reportar el desempeño del servicio que permita mejorar continuamente la calidad y el valor del servicio.
+
+          **Entregables**:
+          * Service Desk Operacional
+          * Gestión de Solicitudes
+          * Registros de Incidentes
+          * Registros de Problemas
+          * Informes de Tendencias y Análisis
+          * Soluciones Temporales y Permanentes
+          * Base de Datos de Errores Conocidos (KEDB)
+        </AccordionContent>
+      </AccordionItem>
+
+      <AccordionItem>
+        <TopicAccordionTrigger title="Continual Improvement - Plan de Mejora del Servicio (SIP)" />
+        <AccordionContent>
+          Identificar y ejecutar mejoras continuas en servicios y procesos, utilizando un enfoque estructurado para evaluar el desempeño actual, identificar oportunidades de mejora y planificar iniciativas que aporten valor a los clientes y calidad al negocio.
+
+          **Entregables**:
+          * Plan de Mejora del Servicio (SIP)
+          * Informes de Evaluación de Desempeño
+          * Análisis de Brechas
+          * Iniciativas de Mejora Prioritizadas
+          * Métricas y KPIs de Mejora
+          * Revisiones Periódicas del Progreso
+        </AccordionContent>
+      </AccordionItem>
+    </AccordionRoot>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='Actividades de Refuerzo' icon='list-check'>
+  <TopicConceptSection
+    title="Mapeo de Procesos ITIL 4"
+    activity
+    estimatedDuration={30}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      Identificar y mapear **prácticas ITIL 4** en una organización real o ficticia, y ubicarlas dentro de la **Cadena de Valor del Servicio** para entender cómo generan valor.
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones paso a paso" status='success' icon='list-numbers'>
+      **Paso 1 &#x2013; Define el contexto**
+
+      1. Elige una organización que conozcas (empresa, universidad, entidad pública, etc.).
+      2. Elige **1 servicio de TI** concreto (ej.: correo institucional, Wi-Fi, mesa de ayuda, hosting, sistema académico, ERP, etc.).
+
+      **Entrega (1&#x2013;2 líneas)**:
+      * Organización: ___
+      * Servicio: ___
+      * Usuarios principales: ___
+
+      ---
+
+      **Paso 2 &#x2013; Identifica cómo “se atiende” el servicio hoy**
+
+      Responde en bullets (sin inventar demasiado, si es ficticio usa supuestos razonables):
+      * ¿Cómo reportan fallas o solicitan algo?
+      * ¿Quién atiende primero?
+      * ¿Cómo se prioriza?
+      * ¿Cómo se aprueban cambios?
+      * ¿Cómo se mide si va bien o mal?
+
+      **Entrega**: 6&#x2013;10 bullets “Así funciona hoy”.
+
+      ---
+
+      **Paso 3 &#x2013; Lista prácticas ITIL 4 presentes**
+
+      Marca cuáles de estas prácticas ya existen (aunque sea informalmente):
+
+      * Sugeridas para empezar (elige 6&#x2013;10):
+      * Service desk (Mesa de servicio)
+      * Incident management (Gestión de incidentes)
+      * Service request management (Gestión de solicitudes)
+      * Change enablement (Habilitación del cambio)
+      * Problem management (Gestión de problemas)
+      * Service level management (Gestión de niveles de servicio)
+      * Monitoring & event management (Monitoreo y eventos)
+      * Service catalog management (Catálogo de servicios)
+      * Information security management (Seguridad de la información)
+      * Continual improvement (Mejora continua)
+
+      **Entrega (checklist)**:
+      * Presentes: ___
+      * Parciales/informales: ___
+      * Ausentes: ___
+
+      ---
+
+      **Paso 4 &#x2013; Mapea prácticas en la Cadena de Valor del Servicio**
+
+      Ubica tus prácticas en estas actividades de la SVC (una práctica puede caer en varias):
+
+      * **Plan**
+      * **Improve**
+      * **Engage**
+      * **Design & Transition**
+      * **Obtain/Build**
+      * **Deliver & Support**
+
+      **Plantilla rápida**:
+
+      | Actividad SVC         | ¿Qué se hace en tu servicio?          | Prácticas ITIL 4 involucradas          |
+      |-----------------------|--------------------------------------|----------------------------------------|
+      | Engage               | ___                                  | ___                                    |
+      | Deliver & Support    | ___                                  | ___                                    |
+      | Improve              | ___                                  | ___                                    |
+
+      ---
+
+      **Paso 5 &#x2013; Reflexiona y concluye**
+
+      1. Elige **3 prácticas faltantes** que más impactan el servicio.
+      2. Prioriza con **MoSCoW**: *Must* / *Should* / *Could* / *Won’t*.
+
+      Entrega:
+      * *Must*: ___
+      * *Should*: ___
+      * *Could*: ___
+
+      **✅ Resultado final esperado**: 1 hoja con (servicio + prácticas + mapeo SVC + top 3 mejoras).
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection
+    title="Diseño de SLA (Service Level Agreement) en ITIL 4"
+    activity
+    estimatedDuration={25}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      Comprender y diseñar un **SLA** básico, medible y revisable para un servicio de TI, alineado a ITIL 4 (valor + medición + mejora continua).
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones paso a paso" status='success' icon='list-numbers'>
+      **Paso 1 &#x2013; Define el servicio y el alcance**
+
+      * Nombre del servicio
+      * Qué incluye / qué NO incluye
+      * Horario de prestación (ej.: 7x24, 8x5)
+      * Canales de soporte (portal, correo, teléfono)
+
+      Entrega: 6&#x2013;8 líneas.
+
+      ---
+
+      **Paso 2 &#x2013; Define necesidades del negocio (SLR)**
+
+      Escribe 3 “Service Level Requirements (SLR)” en lenguaje simple:
+
+      * “Necesitamos que ____”
+      * “Es crítico porque ____”
+      * “Si falla, pasa ____”
+
+      **Entrega**: 3 SLR.
+
+      ---
+
+      **Paso 3 &#x2013; Define 3 métricas y metas (SLOs)**
+
+      Elige **3** y define meta + cómo se mide:
+
+      **Opciones comunes**
+      * **Disponibilidad** (% mensual)
+      * **Tiempo de respuesta** (primera respuesta)
+      * **Tiempo de resolución** (por prioridad)
+      * **Satisfacción del usuario** (CSAT)
+      * **Éxito de cambios** (% cambios sin incidentes)
+
+      **Plantilla de métricas**
+
+      | Métrica | Meta (SLOs) | Cómo se mide | Fuente de datos | Frecuencia |
+      |---------|-------------|--------------|-----------------|------------|
+      | Disponibilidad | 99.5% mensual | (minutos caídos / total) | monitoreo | mensual |
+      | 1ª respuesta P1 | ≤ 15 min | desde ticket creado | herramienta ITSM | semanal |
+      | Resolución P2 | ≤ 8 horas | cierre ticket | herramienta ITSM | semanal |
+
+      ---
+
+      **Paso 4 &#x2013; Define niveles por prioridad**
+
+      Crea una tabla simple de severidad:
+
+      | Prioridad | Descripción | Ejemplo | 1ª respuesta | Resolución |
+      |-----------|-------------|---------|--------------|------------|
+      | P1 (Crítico) | Servicio caído o falla grave | No funciona el sistema de pagos (Servicio caído total) | ≤ 15 min | ≤ 4 horas |
+      | P2 (Alto) | Degradación significativa | Lentitud extrema en la aplicación (Afecta a muchos) | ≤ 30 min | ≤ 8 horas |
+      | P3 (Medio) | Problema menor o consulta | Error en reporte no crítico (Afecta a pocos) | ≤ 1 hora | ≤ 2 días |
+      | P4 (Bajo) | Solicitud de información o mejora | Consulta/mejora sobre uso del sistema | ≤ 4 horas | ≤ 5 días |
+
+      ---
+
+      **Paso 5 &#x2013; Revisión, reportes y consecuencias**
+
+      * ¿Quién revisa el cumplimiento del SLA (rol) y con qué frecuencia (mensual/trimestral)?
+      * ¿Cómo se reporta (reunión, informe escrito, dashboard)?
+      * ¿Qué pasa si no se cumplen los SLOs? (ej.: penalizaciones, plan de mejora, revisión de procesos, acciones correctivas, escalamiento)
+      * ¿Cómo se mejora el SLA con el tiempo? (ej.: revisión anual, feedback de clientes, análisis de tendencias)
+
+      **Entrega**: 4&#x2013;6 líneas.
+
+      **✅ Resultado final esperado**: SLA de 1 página con alcance + SLR + 3 SLO medibles + prioridades + revisión.
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection
+    title="Análisis del “Ciclo de Vida” del Servicio adaptado a ITIL 4"
+    activity
+    estimatedDuration={20}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      Analizar cómo un servicio entrega valor usando **flujo de valor + Cadena de Valor del Servicio + Mejora Continua** (ITIL 4).
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones paso a paso" status='success' icon='list-numbers'>
+      **Paso 1 &#x2013; Elige un servicio implementado recientemente**
+
+      Puede ser real o ficticio (ej.: nuevo sistema de tickets, chat de soporte, nuevo Wi-Fi, nuevo módulo ERP, nuevo correo).
+
+      **Entrega**: Servicio + fecha aproximada + quién lo usa.
+
+      ---
+
+      **Paso 2 &#x2013; Describe el flujo de valor del servicio (Value Stream)**
+
+      Describe el recorrido desde que se identifica la necesidad hasta que el servicio entrega valor en 6&#x2013;10 pasos.
+
+      **Plantilla**:
+      * **Disparador**: ¿Qué inicia el proceso? (ej.: usuario no puede acceder / necesita alta de cuenta)
+      * **Entrada**: ¿Qué información o recursos se necesitan? (ej.: datos del usuario, sistema de autenticación)
+      * **Actividades**: ¿Qué pasos se siguen? (ej.: verificación, aprobación, configuración)
+      * **Salida**: ¿Cuál es el resultado final? (ej.: servicios restaurado / cuenta creada / usuario habilitado)
+      * **Valor entregado**: ¿Cómo se mide el valor? (ej.: tiempo de resolución, satisfacción del usuario, tiempo ahorrado, continuidad del negocio)
+
+      ---
+
+      **Paso 3 &#x2013; Mapea tu flujo a la Cadena de Valor del Servicio (SVC)**
+
+      Para cada 2–3 pasos, indica en qué parte de la SVC cae:
+
+      | Paso del flujo | Actividad SVC | Prácticas ITIL 4 relacionadas |
+      |----------------|---------------|-------------------------------|
+      | Ticket creado | Engage | Service Desk, Incident Management |
+      | Diagnóstico y solución | Deliver & Support | Incident, Monitoring |
+      | Ajuste permanente | Improve | Continual Improvement, Problem |
+
+      ---
+
+      **Paso 4 &#x2013; Propón 2 mejoras usando el modelo de Mejora Continua**
+
+      Responde rápido:
+      1. ¿Dónde estamos ahora? (problema)
+      2. ¿Dónde queremos estar? (meta medible)
+      3. ¿Cómo llegamos? (acción concreta)
+
+      **Entrega (2 mejoras)**:
+      * Mejora 1 (quick win): ___ (meta + acción)
+      * Mejora 2 (estructural): ___ (meta + acción)
+
+      **✅ Resultado final esperado**: flujo de valor + mapeo SVC + 2 mejoras con meta.
+    </TopicConceptCard>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicResourceSection topic='topic6' />
