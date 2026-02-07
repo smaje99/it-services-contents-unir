@@ -7,6 +7,143 @@ color: "#795548"
 publishAt: "2025-11-18 20:00:00"
 ---
 
-## Introducción
-Contenido migrado desde tema1.html…
+import AccordionRoot from '@/components/ui/accordion/AccordionRoot.astro';
+import TopicCaseStudies from '@/components/topic/TopicCaseStudies.astro';
+import TopicConceptCard from '@/components/topic/TopicConceptCard.astro';
+import TopicConceptSection from '@/components/topic/TopicConceptSection.astro';
+import TopicGrid from '@/components/topic/TopicGrid.astro';
+import TopicResourceSection from '@/components/topic/TopicResourceSection.astro';
+import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
+import TopicSelfAssessmentTrigger from '@/components/topic/TopicSelfAssessmentTrigger.astro';
 
+<TopicSectionGroup title='Conceptos Clave' icon='bulb'>
+  <TopicConceptSection title='ISO/IEC 20000-1: Norma Internacional' icon='certificate'>
+    **Definición:** La norma **ISO/IEC 20000-1:2005** fue publicada por ISO y traducida por AENOR como **UNE-ISO/IEC 20000-1:2007**. Representa el consenso internacional en la forma de gestionar los servicios de las TI.
+
+    <TopicGrid>
+      <TopicConceptCard title="Origen y Desarrollo">
+        La serie de normas **ISO/IEC 20000** se creó dentro del grupo de trabajo 25 de ISO/IEC, compuesto por organismos de normalización de más de cuarenta países. AENOR representa a España en este foro.
+      </TopicConceptCard>
+      <TopicConceptCard title="Relación con ITIL">
+        La serie de normas **ISO/IEC 20000** ha refrendado a nivel internacional el catálogo de buenas prácticas **ITIL**, proporcionando un **estándar certificable para la gestión de servicios TI**.
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Estructura de la Serie ISO/IEC 20000' icon='sitemap-filled'>
+    La serie de normas **ISO/IEC 20000** se compone de varias partes, siendo la más relevante la **ISO/IEC 20000-1**, que establece los requisitos para un Sistema de Gestión del Servicio (SGS). Otras partes incluyen guías de implementación, códigos de práctica y requisitos para auditorías. Componiendo una familia de normas que cubren todos los aspectos de la gestión de servicios TI.
+
+    <TopicGrid>
+      <TopicConceptCard title="Normas Principales">
+        * **ISO/IEC 20000-1**: Gestión del servicio TI (Especificaciones)
+        * **ISO/IEC 20000-2**: Código de buenas prácticas
+        * **ISO/IEC TR 20000-3**: Apoyo a la definición del alcance y aplicabilidad
+      </TopicConceptCard>
+      <TopicConceptCard title="Normas de Evaluación">
+        * **ISO/IEC TR 20000-4**: Modelo de referencia de procesos
+        * **ISO/IEC TR 20000-8**: Modelo de valoración de gestión del servicio
+        * **ISO/IEC 20000-5**: Adopción incremental por niveles de madurez
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Sistema de Gestión de Servicio (SGS)' icon='settings-cog'>
+    **Definición**: Un **Sistema de Gestión del Servicio (SGS)** es un conjunto de políticas, procesos, procedimientos, recursos y actividades que una organización implementa para gestionar y entregar servicios de TI de manera efectiva. El SGS se basa en los requisitos establecidos en la norma **ISO/IEC 20000-1** y se alinea con las mejores prácticas de ITIL.
+
+    <TopicGrid>
+      <TopicConceptCard title="Normas Principales">
+        * **ISO/IEC 20000-1**: Gestión del servicio TI (Especificaciones)
+        * **ISO/IEC 20000-2**: Código de buenas prácticas
+        * **ISO/IEC TR 20000-3**: Apoyo a la definición del alcance y aplicabilidad
+      </TopicConceptCard>
+      <TopicConceptCard title="Normas de Evaluación">
+        * **ISO/IEC TR 20000-4**: Modelo de referencia de procesos
+        * **ISO/IEC TR 20000-8**: Modelo de valoración de gestión del servicio
+        * **ISO/IEC 20000-5**: Adopción incremental por niveles de madurez
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Diseño y Transición de Servicios' icon='rocket'>
+    **Misión**: El diseño y transición de servicios es un proceso clave dentro del SGS que se encarga de planificar, diseñar, construir, probar y desplegar nuevos servicios o cambios en los servicios existentes. Este proceso asegura que los servicios cumplan con los requisitos del negocio y se entreguen de manera eficiente y efectiva.
+
+    <TopicGrid>
+      <TopicConceptCard title="Beneficios Principales">
+        * Servicios diseñados para satisfacer necesidades del cliente
+        * Expectativas claras y consistentes
+        * Demandas del negocio atendidas como servicios
+        * Gestión formalizada de requisitos
+        * Control del ciclo completo de diseño y transición
+      </TopicConceptCard>
+      <TopicConceptCard title="Innovación Continua">
+        El diseño y transición de servicios se mueve acorde con la creación y evolución de servicios de negocio, uniendo estrechamente el desarrollo de software y la producción o explotación de servicios.
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Procesos de Provisión del Servicio' icon='truck-loading'>
+    **Misión**: Los procesos de provisión del servicio se encargan de la entrega y soporte de los servicios de TI a los clientes. Estos procesos incluyen la gestión de incidentes, problemas, cambios, liberaciones y configuraciones, entre otros. El objetivo es garantizar que los servicios se entreguen de manera eficiente, cumpliendo con los acuerdos de nivel de servicio (SLA) y satisfaciendo las necesidades del negocio.
+
+    <TopicGrid>
+      <TopicConceptCard title="Procesos Incluidos">
+        * **Gestión del nivel de servicio**: Cumplimiento de SLA
+        * **Generación de informes**: Reportes del servicio
+        * **Continuidad y disponibilidad**: Garantía de funcionamiento
+        * **Presupuesto y contabilidad**: Control financiero
+        * **Gestión de capacidad**: Planificación de recursos
+        * **Gestión de seguridad**: Protección de información
+      </TopicConceptCard>
+      <TopicConceptCard title="Objetivo">
+        Garantizar la entrega eficiente de servicios de TI, cumpliendo con los acuerdos de nivel de servicio (SLA) y satisfaciendo las necesidades del negocio.
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Principios Básicos' icon='circle-check-filled'>
+    **Fundamentos**: El SGS se basa en principios fundamentales como el enfoque al cliente, la mejora continua, la gestión basada en procesos, la responsabilidad de la dirección y la participación del personal. Estos principios guían la implementación y operación del SGS para asegurar que los servicios de TI se entreguen de manera efectiva y eficiente.
+
+    <TopicGrid>
+      <TopicConceptCard title="Principios Fundamentales">
+        * **Servicio**: Enfoque en la provisión de servicios de calidad
+        * **Cliente**: Satisfacción de necesidades del cliente
+        * **Comunicación interna**: Flujo de información efectivo
+        * **Procesos internos**: Estandarización y mejora continua
+      </TopicConceptCard>
+      <TopicConceptCard title="Implicación de la Alta Dirección">
+        La alta dirección debe demostrar liderazgo y compromiso con el SGS, asegurando que se asignen los recursos necesarios, se establezcan objetivos claros y se promueva una cultura de mejora continua en la organización.
+
+        Es imprescindible la implicación de la alta dirección de la organización, ya que sin ella sería imposible aplicar un cambio que revolucione la forma de trabajar de toda la organización.
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Beneficios de la Norma' icon='thumb-up-filled'>
+    **Ventajas**: La implementación de un SGS basado en la norma ISO/IEC 20000-1 ofrece numerosos beneficios, como la mejora de la calidad del servicio, el aumento de la satisfacción del cliente, la optimización de los procesos internos, la reducción de costos operativos y el fortalecimiento de la reputación de la organización. Además, la certificación en esta norma puede proporcionar una ventaja competitiva en el mercado.
+
+    <TopicGrid>
+      <TopicConceptCard title="Problemas Resueltos">
+        * Resolución rápida de incidentes en el servicio
+        * Mejora progresiva de problemas ocultos (hardware y software)
+        * Conocimiento preciso de la configuración de servicios y componentes
+        * Realización de cambios de forma segura y eficiente
+        * Comprensión adecuada de las necesidades del cliente
+      </TopicConceptCard>
+      <TopicConceptCard title="Beneficios Adicionales">
+        * Identificación y control de costes para optimización
+        * Mejora en la provisión de nuevos servicios
+        * Garantía de funcionamiento de servicios críticos en situaciones adversas
+        * Control del soporte externo
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+</ TopicSectionGroup>
+
+<TopicSectionGroup title='Ejemplos Prácticos' icon='flask'>
+  <TopicConceptSection>
+    <AccordionRoot type='single'>
+      <TopicCaseStudies topic='topic7' />
+    </AccordionRoot>
+  </TopicConceptSection>
+</ TopicSectionGroup>
+
+<TopicResourceSection topic='topic7' />

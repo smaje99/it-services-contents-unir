@@ -572,5 +572,165 @@
         ]
       }
     ]
+  },
+  "topic7": {
+    "groups": [
+      {
+        "title": "Vídeos Recomendados",
+        "items": [
+          {
+            "label": "¿Qué es ISO 20000? (YouTube)",
+            "url": "https://www.youtube.com/watch?v=4OguP5_yk0U"
+          },
+          {
+            "label": "Curso (video) — IT Service Management: ISO/IEC 20000-1 (LinkedIn Learning)",
+            "url": "https://www.linkedin.com/learning/it-service-management-iso-iec-20000-1"
+          },
+          {
+            "label": "Video — ISO 20000 Tutorial (YouTube)",
+            "url": "https://www.youtube.com/watch?v=zbLhR7vCaXI"
+          },
+          {
+            "label": "Video/Webinar (ES) — ISO 9001 + ITIL = ISO 20000 (PECB, YouTube)",
+            "url": "https://www.youtube.com/watch?v=IbDIcMIYslU"
+          },
+          {
+            "label": "Video — The YaSM: ISO 20000 Bridge (introducción)",
+            "url": "https://yasm.com/en/videos/yasm-iso-20000-bridge"
+          },
+          {
+            "label": "Webinars — ISO 20000 Webinars (Advisera)",
+            "url": "https://advisera.com/20000academy/webinars/"
+          },
+          {
+            "label": "Webinar 2022/07/26: ISO 20000: Formalizando las buenas prácticas de ITIL, con un sistema de gestión. (YouTube)",
+            "url": "https://www.youtube.com/watch?v=jyGrw9bm-VQ"
+          },
+          {
+            "label": "Introducción a la ISO/IEC 20000-1:2018 AMD-1:2024 Sistemas de Gestión de Servicios (YouTube)",
+            "url": "https://www.youtube.com/watch?v=ZDYtVL9RiOg"
+          }
+        ]
+      },
+      {
+        "title": "Artículos de Interés",
+        "items": [
+          {
+            "label": "Norma oficial — ISO/IEC 20000-1:2018 (requisitos del SMS)",
+            "url": "https://www.iso.org/standard/70636.html"
+          },
+          {
+            "label": "Norma oficial — ISO/IEC 20000-2:2019 (guía para aplicar el SMS)",
+            "url": "https://www.iso.org/standard/72120.html"
+          },
+          {
+            "label": "Norma oficial — ISO/IEC 20000-3:2019 (guía para definir alcance del SMS)",
+            "url": "https://www.iso.org/standard/72121.html"
+          },
+          {
+            "label": "Norma oficial — ISO/IEC 20000-10:2018 (conceptos y vocabulario)",
+            "url": "https://www.iso.org/standard/74316.html"
+          },
+          {
+            "label": "Libro/Guía ISO — ISO/IEC 20000 IT service management: A practical guide (PUB100441)",
+            "url": "https://www.iso.org/publication/PUB100441.html"
+          },
+          {
+            "label": "Artículo ISO — Guidance de ISO/IEC 20000 actualizada (noticia ISO, 2019)",
+            "url": "https://www.iso.org/news/ref2421.html"
+          },
+          {
+            "label": "Artículo — UNE-ISO/IEC 20000-1:2018 “Más allá de los servicios TI” (itSMF España/UNE)",
+            "url": "https://revista.une.org/10/mas-alla-de-los-servicios-ti.html"
+          },
+          {
+            "label": "Artículo/Overview — ISO/IEC 20000-1 Service Management (BSI)",
+            "url": "https://www.bsigroup.com/en-MY/products-and-services/standards/iso-iec-20000-1-service-management/"
+          },
+          {
+            "label": "Capacitación — ISO/IEC 20000 Foundation (PECB)",
+            "url": "https://pecb.com/en/education-and-certification-for-individuals/iso-iec-20000/iso-iec-20000-foundation"
+          },
+          {
+            "label": "Capacitación — ISO/IEC 20000 Lead Implementer (PECB)",
+            "url": "https://pecb.com/en/education-and-certification-for-individuals/iso-iec-20000/iso-iec-20000-lead-implementer"
+          },
+          {
+            "label": "Capacitación — ISO/IEC 20000 Lead Auditor (PECB)",
+            "url": "https://pecb.com/en/education-and-certification-for-individuals/iso-iec-20000/iso-iec-20000-lead-auditor"
+          }
+        ]
+      },
+      {
+        "title": "Herramientas Online",
+        "items": [
+          {
+            "label": "Plantilla/Checklist — Project checklist for ISO 20000 implementation (Advisera)",
+            "url": "https://info.advisera.com/20000academy/free-download/iso-20000-implementation-project-checklist"
+          },
+          {
+            "label": "Diagrama — ISO 20000 Implementation diagram (Advisera, PDF)",
+            "url": "https://info.advisera.com/20000academy/free-download/iso-20000-implementation-diagram"
+          },
+          {
+            "label": "Plantilla — Project plan para implementar el SMS según ISO/IEC 20000-1 (Advisera)",
+            "url": "https://info.advisera.com/20000academy/free-download/project-plan-for-implementation-of-the-service-management-system-according-to-iso-iec-20000-1"
+          },
+          {
+            "label": "Toolkit (documentación) — ISO 20000 Documentation Toolkit (Advisera)",
+            "url": "https://advisera.com/20000academy/iso-20000-documentation-toolkit/"
+          },
+          {
+            "label": "Checklist — ISO Compliance Checklist (Process Street, adaptable a ISO 20000)",
+            "url": "https://www.process.st/templates/iso-compliance-checklist/"
+          },
+          {
+            "label": "Artículo/Checklist — ISO 20000-1:2018 Checklist (QMII)",
+            "url": "https://www.qmii.com/conquering-compliance-your-ultimate-iso-20000-1-2018-checklist/"
+          },
+          {
+            "label": "Plantilla (PDF) — Audit checklist template for ISO/IEC 20000-1:2018",
+            "url": "https://certification-portal.sandbp.net/wp-content/uploads/2022/11/Audit-Checklist-Template-for-ISO-20000.pdf"
+          },
+          {
+            "label": "Herramienta ITSM — ServiceNow IT Service Management (ITSM)",
+            "url": "https://www.servicenow.com/products/itsm.html"
+          },
+          {
+            "label": "Herramienta ITSM — Jira Service Management (Atlassian)",
+            "url": "https://www.atlassian.com/software/jira/service-management"
+          },
+          {
+            "label": "Herramienta ITSM — Freshservice (Freshworks)",
+            "url": "https://www.freshworks.com/freshservice/"
+          },
+          {
+            "label": "Herramienta ITSM (Open Source) — GLPI Project",
+            "url": "https://glpi-project.org/"
+          },
+          {
+            "label": "Herramienta ITSM/CMDB (Open Source) — iTop (Combodo)",
+            "url": "https://combodo.com/"
+          },
+          {
+            "label": "Herramienta Helpdesk (Open Source) — Zammad (Community)",
+            "url": "https://zammad.org/"
+          },
+          {
+            "label": "Herramienta Ticketing (Open Source) — Request Tracker (RT)",
+            "url": "https://requesttracker.com/"
+          }
+        ]
+      },
+      {
+        "title": "Libros Recomendados",
+        "items": [
+          {
+            "label": "Libro — A Guide to ISO/IEC 20000-1:2018 Service Management (ITSM Press, referencia)",
+            "url": "https://www.iberlibro.com/9781912651344/Guide-ISOIEC-20000-1-2018-Service-1912651343/plp"
+          }
+        ]
+      }
+    ]
   }
 }
