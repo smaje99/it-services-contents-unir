@@ -7,6 +7,534 @@ color: "#343a40"
 publishAt: "2025-11-24 18:00:00"
 ---
 
-## Introducción
-Contenido migrado desde tema1.html…
+import AccordionContent from '@/components/ui/accordion/AccordionContent.astro';
+import AccordionItem from '@/components/ui/accordion/AccordionItem.astro';
+import AccordionRoot from '@/components/ui/accordion/AccordionRoot.astro';
+import TopicAccordionTrigger from '@/components/topic/TopicAccordionTrigger.astro';
+import TopicCaseStudies from '@/components/topic/TopicCaseStudies.astro';
+import TopicConceptCard from '@/components/topic/TopicConceptCard.astro';
+import TopicConceptSection from '@/components/topic/TopicConceptSection.astro';
+import TopicGrid from '@/components/topic/TopicGrid.astro';
+import TopicResourceSection from '@/components/topic/TopicResourceSection.astro';
+import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
+import TopicSelfAssessmentTrigger from '@/components/topic/TopicSelfAssessmentTrigger.astro';
 
+<TopicSectionGroup title='Conceptos Clave' icon='bulb'>
+  <TopicConceptSection title='SGAS: Sistema de Gestión de Activos de Software' icon='device-heart-monitor-filled'>
+    **Definición:** Un **SGAS** es un marco de trabajo que permite a las organizaciones gestionar de manera eficiente y efectiva sus activos de software, asegurando el cumplimiento de licencias, optimizando costos y minimizando riesgos asociados al software.
+
+    <TopicGrid>
+      <TopicConceptCard title="Justificación de la Necesidad de un SGAS">
+        La gestión de activos de software es crucial para evitar sanciones legales por incumplimiento de licencias, optimizar el uso de recursos y garantizar la seguridad de la información.
+
+        La falta de disponibilidad de un activo de la entidad de un servicio de TI puede generar un impacto negativo en la prestación del servicio, afectando la satisfacción del cliente y la reputación de la organización.
+
+        Desde el punto de vista económico, la gestión de activos de software permite a las organizaciones **optimizar costos** al evitar compras innecesarias y aprovechar al máximo las licencias adquiridas.
+      </TopicConceptCard>
+      <TopicConceptCard title="Beneficios de Implementar un SGAS">
+        * **Control de riesgos**: Gestión eficiente de activos de software para minimizar riesgos legales y de seguridad
+        * **Mejora en utilización**: Mayor eficiencia y aprovechamiento de los activos de software
+        * **Reducción de costes**: Optimización de recursos y reducción de gastos innecesarios
+        * **Mejora de productividad**: Uso eficiente en términos de tiempo y recursos, lo que aumenta la productividad de los empleados
+        * **Cumplimiento normativo**: Asegura el cumplimiento de licencias y regulaciones relacionadas con el software
+      </TopicConceptCard>
+      <TopicConceptCard title="Relación de Gestión de Configuración">
+        De manera similar a la gestión de configuración, la gestión de activos de software se enfoca en el control y seguimiento de los activos, pero con un enfoque específico en el software. Ambos procesos son complementarios y contribuyen a la eficiencia operativa y al cumplimiento normativo.
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='SAM vs. SGAS' icon='book-2'>
+    **Diferencia fundamental**: Mientras que el **SGAS** se enfoca en la gestión integral de los activos de software, el **SAM** (Software Asset Management) es un componente específico dentro del SGAS que se centra en la gestión de licencias y cumplimiento normativo.
+
+    <TopicGrid>
+      <TopicConceptCard title="SGAS (Sistema de Gestión de Activos de Software)">
+        **Alcance**: Mayor extensión que SAM. Abarca el sistema mediante el cual se hará la gestión del software y sus correspondientes procesos, es decir, la propia disciplina de implementación.
+
+        **Componentes**: Incluye el sistema completo de gestión, procesos, herramientas, políticas y procedimientos.
+      </TopicConceptCard>
+      <TopicConceptCard title="SAM (Software Asset Management)">
+        **Alcance**: Hace referencia a la gestión y a los procesos sin incluir la descripción del sistema mediante el cual se gestionarán los activos de software.
+
+        **Origen**: Basado en el libro "Software Asset Management" de ITIL publicado en 2003.
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Antecedentes Históricos' icon='history'>
+    **Origen**: La gestión de activos de software tiene sus raíces en la necesidad de las organizaciones de controlar y optimizar el uso de software, especialmente con el aumento de la complejidad y la proliferación de aplicaciones en las últimas décadas. En el 2004, la ISO/IEC 19770-1 estableció un marco de referencia para la gestión de activos de software, proporcionando directrices y mejores prácticas para su implementación, con base en el libro "Software Asset Management" de ITIL publicado en 2003.
+
+    <TopicGrid>
+      <TopicConceptCard title="Evolución">
+        * **2003**: Publicación del libro "Software Asset Management" como parte de la biblioteca de ITIL
+        * **2004**: Origen de los sistemas de gestión de activos del software
+        * **2005**: Necesidad establecida por ISO/IEC 20000-1:2005
+        * **2006**: Primera versión de ISO/IEC 19770-1
+        * **2009**: Publicación de ISO/IEC 19770-2
+      </TopicConceptCard>
+      <TopicConceptCard title="Relación con ITIL">
+        Los SGAS se han asimilado a lo establecido en la publicación Software Asset Management de ITIL. A la vez que se implantaban los sistemas de gestión de servicios de tecnología, iba creciendo la necesidad de aplicar los conceptos relacionados con la gestión de los activos de software.
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='ISO/IEC 19770-1:2008 - Parte 1: Procesos' icon='certificate'>
+    **Definición**: La norma ISO/IEC 19770-1:2008 es un estándar internacional que proporciona un marco de referencia para la gestión de activos de software. Establece los requisitos para implementar un sistema de gestión de activos de software (SGAS) efectivo, incluyendo políticas, procesos y procedimientos para la gestión de activos de software. La publicación española de esta norma se titula **"UNE-ISO/IEC 19770-1:2008"**.
+
+    <TopicGrid>
+      <TopicConceptCard title="Estructura del Documento">
+        * Descripción del objeto y campo de aplicación
+        * Conformidad
+        * Términos y definiciones
+        * Descripción de los procesos SAM
+      </TopicConceptCard>
+      <TopicConceptCard title="27 Procesos de Gestión de Activos de Software (SAM)">
+        Los procesos se agrupan en tres niveles:
+        * **Procesos de gestión organizativa**: Aplicables a cualquier tipo de organización, incluyendo aquellas con procesos subcontratados o externalizados
+        * **Procesos centrales**: Procesos fundamentales del sistema
+        * **Interfaces de los procesos principales**: Conexiones entre procesos
+      </TopicConceptCard>
+      <TopicConceptCard title="Uso de la Norma">
+        La primera parte forma el cuerpo fundamental de la norma y se utiliza para:
+        * Implantación del SGAS
+        * Auditoría del sistema
+        * Certificación de la organización
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='ISO/IEC 19770-2:2009 - Parte 2: Etiquetas de Identificación' icon='tags-filled'>
+    **Definición**: La segunda parte de la norma ISO/IEC 19770-2:2009 se centra en las etiquetas de identificación de activos de software. Proporciona un marco para la creación y uso de etiquetas que permiten identificar y rastrear los activos de software de manera eficiente. Estas etiquetas contienen información clave sobre el activo, como su nombre, versión, proveedor, número de serie y fecha de adquisición. La norma propone un formato estándar para estas etiquetas mediante etiquetas *XML (eXtensible Markup Language)*, lo que facilita su integración con sistemas de gestión de activos de software y otras herramientas de TI.
+
+    <TopicGrid>
+      <TopicConceptCard title="Cinco Grupos de Objetivos">
+        * **Proveedores de plataformas**: Sistemas operativos y entornos de ejecución
+        * **Proveedores de software**: Desarrolladores y distribuidores de software
+        * **Proveedores de etiquetas**: Entidades que generan y gestionan etiquetas de identificación
+        * **Proveedores de software de descubrimiento**: Herramientas de inventario y detección
+        * **Usuarios finales**: Organizaciones que utilizan el software y necesitan gestionar sus activos de software
+      </TopicConceptCard>
+      <TopicConceptCard title="Beneficios del Etiquetado">
+        * Identificación automatizada de software
+        * Reducción de errores manuales
+        * Facilidad de inventario y auditoría
+        * Mejora en la gestión de licencias
+        * Integración con sistemas de gestión de activos de software
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Implantación de la Gestión' icon='rocket'>
+    **Proceso**: La implantación de un SGAS implica varias etapas clave, incluyendo la evaluación inicial de los activos de software, el desarrollo de políticas y procedimientos, la selección e implementación de herramientas de gestión, la formación del personal y la monitorización continua del sistema para asegurar su efectividad y cumplimiento.
+
+    <TopicGrid>
+      <TopicConceptCard title="Etapas de Implantación">
+        1. **Definición de objetivos y alcance**:
+            * **Gestión de riesgos**: Identificación y mitigación de riesgos asociados al software.
+            * **Control de costes**: Optimización del gasto en software.
+            * **Ventaja competitiva**: Mejora de la eficiencia operativa.
+
+        2. **Creación de un caso de negocio**:
+            * Justificación económica y estratégica para la implementación del SGAS.
+
+        3. **Planteamiento del proyecto**:
+            * Definición de recursos, cronograma y responsabilidades.
+
+        4. **Definición de procesos**:
+            * **Procesos de gestión organizativa**: Establecimiento de procedimientos para la gestión de activos de software.
+            * **Procesos centrales**: Implementación de procesos fundamentales del SGAS.
+            * **Interfaces de los procesos principales para SAM**: Definición de conexiones entre procesos.
+
+        5. **Política de Software**:
+            * Establecimiento de directrices para el uso y gestión del software en la organización.
+
+        6. **Base de datos de la gestión de configuración (CMDB)**:
+            * Creación y mantenimiento de una base de datos que registre los activos de software y sus relaciones.
+
+        7. **Herramientas de gestión de activos de software**:
+            * Selección e implementación de herramientas tecnológicas para apoyar la gestión de activos de software.
+
+        8. **Formación y certificación profesional** (ISO 20000 e ISO 19770):
+            * Capacitación del personal en las mejores prácticas y estándares de gestión de activos de software.
+      </TopicConceptCard>
+      <TopicConceptCard title="Factores Críticos de Éxito">
+        * **Impulso de la gerencia**: Iniciativa propia desde la alta dirección
+        * **Motivación organizacional**: La necesidad debe calar hasta el escalón más bajo de la organización
+        * **Compromiso**: Participación activa de todos los niveles de la organización
+        * **Recursos adecuados**: Herramientas, formación y tiempo suficientes
+        * **Comunicación efectiva**: Difusión clara de objetivos, beneficios y avances
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Ciclo de Vida de los Activos de Software' icon='refresh'>
+    **Definición**: El ciclo de vida de los activos de software abarca todas las etapas desde la adquisición hasta la disposición final del software. Incluye la planificación, adquisición, implementación, uso, mantenimiento y retiro del software, asegurando una gestión eficiente y efectiva en cada fase.
+
+    <TopicGrid>
+      <TopicConceptCard title="Etapas del Ciclo de Vida">
+        1. **Adquisición**: Evaluación, selección y compra de software según necesidades organizacionales
+        2. **Implementación**: Instalación, configuración y despliegue del software en la infraestructura
+        3. **Mantenimiento**: Actualizaciones, parches, soporte técnico y gestión de versiones
+        4. **Operación**: Uso activo del software, monitoreo de rendimiento y satisfacción de usuarios
+        5. **Actualización**: Migración a nuevas versiones o mejoras del software
+        6. **Retirada**: Desinstalación, migración de datos y disposición final del software
+      </TopicConceptCard>
+      <TopicConceptCard title="Importancia de la Gestión por Etapas">
+        * **Optimización de recursos**: Identificar software infrautilizado o redundante
+        * **Control de costes**: Gestionar renovaciones y evitar licencias innecesarias
+        * **Cumplimiento normativo**: Asegurar uso legal y actualizado del software
+        * **Seguridad**: Mantener software actualizado y sin vulnerabilidades
+        * **Planificación estratégica**: Anticipar necesidades futuras y migraciones
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Gestión de Licencias y Cumplimiento' icon='contract'>
+    **Definición**: La gestión de licencias y cumplimiento es un componente esencial del SGAS que se enfoca en asegurar que la organización cumpla con los términos y condiciones de las licencias de software. Esto implica la monitorización del uso del software, la gestión de renovaciones y la prevención de sanciones legales por incumplimiento.
+
+    <TopicGrid>
+      <TopicConceptCard title="Tipos de Licencias de Software">
+        *. **Por usuario**: Licencia asignada a un usuario específico (Named User)
+        *. **Por dispositivo**: Licencia vinculada a un equipo físico específico
+        *. **Por servidor**: Licencia basada en el número de servidores
+        *. **Por núcleo/procesador**: Licencia según capacidad de procesamiento
+        *. **Concurrente**: Licencia compartida por múltiples usuarios simultáneos
+        *. **Suscripción**: Licencia renovable periódicamente (SaaS)
+        *. **Perpetua**: Licencia de uso indefinido con mantenimiento opcional
+      </TopicConceptCard>
+      <TopicConceptCard title="Auditorías de Cumplimiento">
+        * **Auditorías internas**: Revisión periódica del uso vs. licencias adquiridas
+        * **Auditorías de proveedores**: Verificaciones realizadas por fabricantes de software
+        * **Riesgos de incumplimiento**: Multas, demandas legales, pérdida de reputación
+        * **Documentación**: Mantener registros de todas las licencias y contratos
+      </TopicConceptCard>
+      <TopicConceptCard title="Gestión de Renovaciones">
+        * **Calendario de renovaciones**: Seguimiento de fechas de vencimiento
+        * **Evaluación de uso**: Analizar si se requiere renovar o reducir licencias
+        * **Negociación**: Optimizar costos en renovaciones
+        * **Migración**: Evaluar alternativas más económicas o eficientes
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Optimización de Costes' icon='file-dollar'>
+    **Definición**: La optimización de costes en la gestión de activos de software implica la identificación y eliminación de gastos innecesarios relacionados con el software, así como la maximización del valor obtenido de las licencias adquiridas. Esto se logra a través de una gestión eficiente de las licencias, la evaluación continua del uso del software y la negociación estratégica con proveedores.
+
+    <TopicGrid>
+      <TopicConceptCard title="Estrategias de Optimización">
+        * **Consolidación de licencias**: Unificar licencias similares de diferentes proveedores
+        * **Eliminación de software infrautilizado**: Identificar y retirar software no utilizado
+        * **Negociación con proveedores**: Obtener mejores precios mediante contratos consolidados
+        * **Análisis de ROI**: Evaluar el retorno de inversión de cada activo de software
+        * **Software de código abierto**: Evaluar alternativas open source cuando sea viable
+      </TopicConceptCard>
+      <TopicConceptCard title="Métricas de Optimización">
+        * **Costo por usuario**: Análisis del costo total dividido por número de usuarios
+        * **Tasa de utilización**: Porcentaje de licencias realmente utilizadas
+        * **Software redundante**: Identificación de aplicaciones con funcionalidades duplicadas
+        * **Costos de mantenimiento**: Evaluación de costos anuales de soporte y actualizaciones
+      </TopicConceptCard>
+      <TopicConceptCard title="Beneficios de la Optimización">
+        * Reducción de costos operativos entre 15-30%
+        * Mejora en la eficiencia del uso de recursos
+        * Mejor alineación con objetivos estratégicos
+        * Mayor visibilidad y control financiero
+        * Mayor agilidad para adaptarse a cambios tecnológicos y de mercado
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Seguridad y Gestión de Riesgos' icon='shield-filled'>
+    **Definición**: La seguridad y gestión de riesgos en la gestión de activos de software se refiere a la identificación, evaluación y mitigación de riesgos asociados al uso del software. Esto incluye la protección contra vulnerabilidades, la prevención de accesos no autorizados y la garantía de que el software utilizado cumple con los estándares de seguridad y regulaciones aplicables.
+
+    <TopicGrid>
+      <TopicConceptCard title="Riesgos de Seguridad">
+        * **Vulnerabilidades no parcheadas**: Software desactualizado con vulnerabilidades conocidas
+        * **Software sin soporte (End-of-Life)**: Aplicaciones que ya no reciben actualizaciones de seguridad
+        * **Software no autorizado**: Aplicaciones instaladas sin aprobación (shadow IT)
+        * **Licencias no gestionadas**: Software sin licencia que puede contener malware
+        * **Dependencias obsoletas**: Bibliotecas y componentes desactualizados
+      </TopicConceptCard>
+      <TopicConceptCard title="Gestión de Actualizaciones y Parches">
+        * **Política de parches**: Establecer procesos para aplicar actualizaciones de seguridad
+        * **Testing de actualizaciones**: Probar parches antes del despliegue en producción
+        * **Ventanas de mantenimiento**: Planificar actualizaciones para minimizar impacto
+        * **Automatización**: Implementar actualizaciones automáticas cuando sea seguro
+      </TopicConceptCard>
+      <TopicConceptCard title="Evaluación de Riesgos">
+        * **Inventario de vulnerabilidades**: Identificar software con vulnerabilidades conocidas
+        * **Clasificación de riesgos**: Priorizar según criticidad y exposición
+        * **Plan de mitigación**: Estrategias para reducir o eliminar riesgos
+        * **Monitoreo continuo**: Seguimiento de nuevas vulnerabilidades y amenazas
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Integración con Otros Sistemas' icon='affiliate-filled'>
+    **Definición**: La integración de la gestión de activos de software con otros sistemas de gestión, como la gestión de configuración, la gestión de servicios y la gestión de seguridad, es esencial para garantizar una visión holística y coherente de los activos de software en toda la organización. Esto permite una mejor coordinación entre diferentes áreas y mejora la eficiencia operativa.
+
+    <TopicGrid>
+      <TopicConceptCard title="Integración con ITIL">
+        * **CMDB (*Configuration Management Database*)**: Base de datos centralizada de activos y configuraciones
+        * ***Service Desk***: Relación entre incidencias y activos de software
+        * **Gestión de Cambios**: Evaluar impacto de cambios en activos de software
+        * **Gestión de Problemas**: Identificar patrones relacionados con activos específicos
+        * **Catálogo de Servicios**: Relacionar servicios con activos de software necesarios
+      </TopicConceptCard>
+      <TopicConceptCard title="Integración con ISO/IEC 20000">
+        * **Procesos de gestión de configuración**: Alineación con requisitos de ISO 20000
+        * **Control de cambios**: Integración con procesos de cambio del SGS
+        * **Gestión de nivel de servicio**: Impacto de activos en cumplimiento de SLA
+        * **Mejora continua**: Uso de métricas de activos para mejora de servicios
+      </TopicConceptCard>
+      <TopicConceptCard title="Integración con COBIT">
+        * **Gobierno de activos**: Alineación con objetivos de control de COBIT
+        * **Gestión de riesgos**: Evaluación de riesgos de activos según COBIT
+        * **Gestión de recursos**: Optimización de recursos de TI
+        * **Medición y evaluación**: KPIs de activos alineados con COBIT
+      </TopicConceptCard>
+      <TopicConceptCard title="Integración con Sistemas Empresariales">
+        * **ERP**: Integración con sistemas de gestión empresarial para control de procesos financieros y operativos relacionados con el software
+        * **Financieros**: Conexión con sistemas de contabilidad y presupuestos para seguimiento de costos
+        * **RRHH**: Relación entre usuarios y licencias asignadas para gestión de recursos humanos
+        * **Compras**: Integración con procesos de adquisición para gestión de contratos y proveedores
+        * **CRM**: Relación entre clientes y servicios que requieren software específico
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Automatización e Inteligencia Artificial en SAM' icon='automation'>
+    **Definición**: La automatización e inteligencia artificial (IA) en la gestión de activos de software se refiere al uso de tecnologías avanzadas para mejorar la eficiencia, precisión y capacidad de análisis en la gestión de activos de software. Esto incluye la automatización de tareas repetitivas, el análisis predictivo para optimizar el uso del software y la detección de anomalías para mejorar la seguridad.
+
+    <TopicGrid>
+      <TopicConceptCard title="Descubrimiento Automático de Activos">
+        * **Escaneo de red**: Detección automática de software instalado en la red
+        * **Agentes de inventario**: Software instalado en equipos para recopilar información
+        * **Integración con directorios**: Sincronización con Active Directory u otros sistemas
+        * **Detección de software no autorizado**: Identificación de shadow IT
+      </TopicConceptCard>
+      <TopicConceptCard title="Categorización Inteligente de Activos">
+        * **Machine Learning**: Clasificación automática de software por categorías
+        * **Reconocimiento de patrones**: Identificación de software similar o redundante
+        * **Análisis de uso**: Determinación automática de software activo vs. inactivo
+        * **Normalización de datos**: Unificación de información de diferentes fuentes
+      </TopicConceptCard>
+      <TopicConceptCard title="Predicción y Análisis Predictivo">
+        * **Predicción de necesidades**: Anticipar requerimientos futuros de software
+        * **Análisis de tendencias**: Identificar patrones de uso y crecimiento
+        * **Optimización proactiva**: Recomendaciones automáticas de optimización
+        * **Alertas inteligentes**: Notificaciones sobre riesgos o oportunidades
+      </TopicConceptCard>
+      <TopicConceptCard title="Beneficios de la Automatización e IA">
+        * **Reducción de errores**: Menos errores manuales en inventario
+        * **Ahorro de tiempo**: Automatización de tareas repetitivas
+        * **Mayor precisión**: Datos más actualizados y confiables
+        * **Escalabilidad**: Gestión eficiente de grandes volúmenes de activos
+        * **Decisiones basadas en datos**: Análisis más profundos y objetivos
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='Ejemplos Prácticos' icon='flask'>
+  <TopicConceptSection>
+    <AccordionRoot type='single'>
+      <TopicCaseStudies topic='topic8' />
+    </AccordionRoot>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Aplicaciones en Diferentes Sectores'>
+    <AccordionRoot type='single'>
+      <AccordionItem>
+        <TopicAccordionTrigger title='Empresas de Tecnología' icon='building' />
+        <AccordionContent>
+          **Aplicaciones**:
+          * Control de licencias de IDEs, suites de testing y herramientas DevOps
+          * Reconciliación de uso real vs licencias adquiridas
+          * Automatización del ciclo de vida (alta/cambio/baja)
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem>
+        <TopicAccordionTrigger title='Instituciones Educativas' icon='graduation-cap' />
+        <AccordionContent>
+          **Aplicaciones**:
+          * Gestión de licencias de software académico por semestre/programa
+          * Estandarización de imágenes y despliegue rápido para laboratorios
+          * Control de renovaciones y evidencias de cumplimiento para auditorías
+          * Control de software en dispositivos de estudiantes y profesores
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem>
+        <TopicAccordionTrigger title='Sector Salud' icon='building-hospital' />
+        <AccordionContent>
+          **Aplicaciones**:
+          * Control de software clínico (HCE/LIS/RIS) y administrativo
+          * Gestión de versiones y soporte del proveedor
+          * Integración con continuidad y gestión de cambios para minimizar riesgos en servicios críticos
+        </AccordionContent>
+      </AccordionItem>
+      <AccordionItem>
+        <TopicAccordionTrigger title='Manufactura' icon='building-factory-2' />
+        <AccordionContent>
+          **Aplicaciones**:
+          * Gestión de licencias y versiones MES/SCADA/ERP en plantas de producción
+          * Mapa de dependencias OT/IT y control de cambios para evitar interrupciones
+          * Gestión de fin de soporte y upgrades planificados para minimizar riesgos operativos
+        </AccordionContent>
+      </AccordionItem>
+    </AccordionRoot>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='Actividades de Refuerzo' icon='list-check'>
+  <TopicConceptSection
+    title="Análisis de necesidad de un SGAS/ITAMS"
+    activity
+    estimatedDuration={20}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      Identificar si conviene implementar un **Sistema de Gestión de Activos de Software** (dentro de un ITAMS) y justificarlo con riesgos, costos y beneficios.
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
+      1. **Selecciona la organización y un alcance realista**
+          * Organización: (universidad/empresa/etc.)
+          * Alcance: ***solo software*** (on-premise + SaaS) o “software + firmware” (si aplica).
+          * Fuera de alcance: lo que NO vas a considerar.
+
+      2. **Detecta síntomas y causas** (elige mínimo 5)
+          * Ej.: instalaciones sin control, licencias vencidas, compras duplicadas, software no autorizado, auditorías fallidas, costos ocultos, incompatibilidades.
+
+      3. **Lista rápida de activos**
+
+          Haz un inventario mínimo de **10 software** (los más usados/ críticos):
+          * Nombre | tipo (SaaS/instalable) | área dueña | #usuarios | cómo se licencia | riesgo principal
+
+      4. **Riesgos**
+
+          Completa 5 riesgos en formato: Riesgo &#x21FE; impacto &#x21FE; probabilidad &#x21FE; control
+          * Ej.: “Incumplimiento de licencias &#x21FE; multas/auditoría &#x21FE; media/alta &#x21FE; reconciliación + política + control de instalación”.
+
+      5. **Objetivos estratégicos**
+
+          Define 3 objetivos medibles (ej.: “alcanzar 95% de cumplimiento de licencias en 3 meses”).
+
+      6. **Caso de negocio** (1 página)
+
+          Incluye: problema, alcance, riesgos, objetivos, beneficios, costos aproximados, métricas.
+
+      **Entregable**:
+
+      **1 página** “Caso de negocio SGAS/ITAMS para software” + tabla de inventario mínimo.
+
+      **Checklist de autoevaluación**:
+      * [ ] El alcance está claro (qué entra / qué no).
+      * [ ] Hay evidencia mínima (inventario de 10).
+      * [ ] Riesgos conectados a impactos reales.
+      * [ ] Objetivos medibles (con porcentaje/tiempo).
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection
+    title="Mapeo de “áreas de proceso SAM” (ISO/IEC 19770-1:2017) + relación con ITIL/ISO 20000"
+    activity
+    estimatedDuration={25}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      Comprender la estructura de ISO/IEC 19770-1:2017 identificando áreas de proceso y su implementación gradual por niveles.
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
+      1. Extrae las áreas de proceso
+          * Consulta Anexo A (o material del curso) y anota las 15 áreas de proceso esperadas por la norma.
+
+      2. **Clasifica por niveles**
+
+          Organízalas en los 3 niveles recomendados del Anexo B:
+          * **Trustworthy Data** (datos confiables)
+          * **Life cycle Integration** (integración al ciclo de vida)
+          * **Optimization** (optimización)
+
+      3. **Selecciona 10 áreas prioritarias para una PYME**
+
+          Criterio sugerido: cumplimiento legal + control + ahorro de costos.
+
+      4. **Matriz de relación**
+
+          Mapea cada área prioritaria con:
+          * **Práctica ITIL 4** relacionada (ej.: Change enablement, Service request, Information security, Configuration management, etc.)
+          * “Dónde aporta” en operación (ej.: evitar instalaciones no autorizadas, mejorar soporte, reducir incidentes)
+
+          Plantilla:
+          * Área SAM | Nivel (A/B/C) | Práctica ITIL 4 | Beneficio | Evidencia (registro)
+
+      5. **Conclusión**
+
+          Escribe 5 líneas: “¿Qué 3 áreas implementaría primero y por qué?”
+
+      **Entregable**
+      * Lista de 15 áreas (o las del material)
+      * Clasificación por niveles
+      * Matriz con **10 áreas** priorizadas + conclusión
+
+      **Checklist de autoevaluación**:
+      * [ ] Se respetan los 3 niveles de implementación.
+      * [ ] La priorización tiene criterio (no al azar).
+      * [ ] Cada área queda conectada a una práctica ITIL 4 y a un beneficio observable.
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection
+    title="Diseño de Política de Gestión de Software"
+    activity
+    estimatedDuration={15}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      Diseñar una **política base** que habilite control, cumplimiento y trazabilidad del software (compras, uso, licencias, retiro).
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
+      1. **Estructura mínima de la política**
+
+          Incluye secciones:
+          * Propósito
+          * Alcance (qué software cubre)
+          * Definiciones (licencia, activo, SaaS, usuario autorizado)
+          * Roles y responsabilidades
+          * Reglas del ciclo de vida
+          * Cumplimiento y auditoría
+          * Excepciones y sanciones
+          * Revisión y mejora (cada cuánto se revisa)
+
+      2. **Roles** (mini RACI)
+
+          Define quién: aprueba compras, instala, audita, mantiene inventario, autoriza excepciones.
+
+      3. **Procedimientos básicos**
+
+          Especifica pasos (con bullets) para:
+          * **Adquisición** (solicitud &#x21FE; aprobación &#x21FE; compra)
+          * **Inventario y registro** (qué datos mínimos se guardan)
+          * **Control de licencias** (reconciliación: “lo que tengo vs lo que uso”)
+          * **Instalación y cambios** (solo por canal autorizado)
+          * **Retiro y disposición** (baja de usuarios, revocación, borrado seguro si aplica)
+
+      4. **Métricas**
+
+          Define 3 indicadores:
+          * % software inventariado
+          * % cumplimiento licencias
+          * instalaciones no autorizadas/mes
+
+      **Entregable**
+      * Política (máx. **1 página**) + RACI corto + 3 métricas
+
+      **Checklist de autoevaluación**:
+      * [ ] La política dice “qué se hace” y “quién lo hace”.
+      * [ ] Hay control de instalación y de licencias.
+      * [ ] Incluye auditoría/revisión periódica.
+    </TopicConceptCard>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicResourceSection topic='topic8' />

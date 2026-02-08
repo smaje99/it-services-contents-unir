@@ -732,5 +732,110 @@
         ]
       }
     ]
+  },
+  "topic8": {
+    "groups": [
+      {
+        "title": "Vídeos Recomendados",
+        "items": [
+          {
+            "label": "Video (explicativo): SAM Charter — Bermuda Triangle of SAM (ISO 19770-1 aligned)",
+            "url": "https://www.samcharter.com/resources/awesome-explainer-video/"
+          },
+          {
+            "label": "Cómo empezar con la gestión de activos de software (SAM)",
+            "url": "https://www.youtube.com/watch?v=X0mb4ENjFxY"
+          },
+          {
+            "label": "Gestión de Activos TI 2021 | Optimización de costes y reducción de riesgos",
+            "url": "https://www.youtube.com/watch?v=7ceyNhK2Za8"
+          },
+          {
+            "label": "¿Cómo lograr una gestión de activos de software exitosa?",
+            "url": "https://youtu.be/7dPuHDujl6Q?si=ImklM4H_MxXTQRZP"
+          }
+        ]
+      },
+      {
+        "title": "Estándares Oficiales",
+        "items": [
+          {
+            "label": "Norma (ISO): ISO/IEC 19770-1:2017 — IT Asset Management Systems (Requirements)",
+            "url": "https://www.iso.org/standard/68531.html"
+          },
+          {
+            "label": "Norma (ISO, español): ISO/IEC 19770-1:2017 — Vista previa",
+            "url": "https://www.iso.org/es/contents/data/standard/06/85/68531.html"
+          },
+          {
+            "label": "Enmienda (ISO): ISO/IEC 19770-1:2017/Amd 1:2024 — Climate action changes",
+            "url": "https://www.iso.org/es/contents/data/standard/08/84/88433.html"
+          },
+          {
+            "label": "Norma (ISO): ISO/IEC TS 19770-10:2025 — Guía para implementar ITAM",
+            "url": "https://www.iso.org/standard/86588.html"
+          },
+          {
+            "label": "Norma (ISO, español): ISO/IEC TS 19770-10:2025 — Vista previa",
+            "url": "https://www.iso.org/es/contents/data/standard/08/65/86588.html"
+          },
+          {
+            "label": "Norma (IEC Webstore): ISO/IEC TS 19770-10:2025 — Publicación",
+            "url": "https://webstore.iec.ch/en/publication/107998"
+          }
+        ]
+      },
+      {
+        "title": "Herramientas Online",
+        "items": [
+          {
+            "label": "Proyecto/Referencia: NIST CSRC — Software Identification (SWID) Tagging",
+            "url": "https://csrc.nist.gov/projects/software-identification-swid"
+          },
+          {
+            "label": "Guías: NIST CSRC — SWID Tagging Specifications and Guidelines",
+            "url": "https://csrc.nist.gov/Projects/Software-Identification-SWID/guidelines"
+          },
+          {
+            "label": "Recursos: NIST CSRC — SWID Utilities and Schema",
+            "url": "https://csrc.nist.gov/projects/software-identification-swid/resources"
+          },
+          {
+            "label": "Herramienta (GitHub): NIST — SWID Tools (generación/validación SWID/CoSWID)",
+            "url": "https://github.com/usnistgov/swid-tools"
+          },
+          {
+            "label": "Herramienta (docs): NIST — SWIDVal (validador SWID/CoSWID)",
+            "url": "https://pages.nist.gov/swid-tools/swidval/"
+          },
+          {
+            "label": "Repositorio/Referencia: NVD (NIST) — SWID Tags",
+            "url": "https://nvd.nist.gov/products/swid"
+          },
+
+          {
+            "label": "Herramienta (comercial): Flexera One — IT Asset Management (ITAM/SAM)",
+            "url": "https://www.flexera.com/flexera-one/it-asset-management"
+          },
+          {
+            "label": "Herramienta (comercial): Flexera — FlexNet Manager (optimización de licencias/SAM)",
+            "url": "https://www.flexera.com/products/flexnet-manager"
+          },
+
+          {
+            "label": "Herramienta (open source): GLPI — IT Asset Management / Inventory",
+            "url": "https://glpi-project.org/"
+          },
+          {
+            "label": "Herramienta (open source): OCS Inventory NG — Inventario de TI",
+            "url": "https://ocsinventory-ng.org/"
+          },
+          {
+            "label": "Herramienta (open source): iTop (Combodo) — CMDB/ITSM con gestión de activos",
+            "url": "https://www.combodo.com/itop"
+          }
+        ]
+      }
+    ]
   }
 }
