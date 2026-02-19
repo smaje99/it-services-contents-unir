@@ -11,6 +11,8 @@ import react from "@astrojs/react";
 
 import sitemap from "@astrojs/sitemap";
 
+import mermaid from "astro-mermaid";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://it-services-contents-unir.vercel.app/",
@@ -21,6 +23,15 @@ export default defineConfig({
       rehypePlugins: [rehypeKatex],
     }),
     react(),
-    sitemap()
-  ]
+    sitemap(),
+    mermaid({
+      autoTheme: true,
+    }),
+  ],
+  markdown: {
+    syntaxHighlight: {
+      type: "shiki",
+      excludeLangs: ["mermaid", "math"],
+    }
+  },
 });
