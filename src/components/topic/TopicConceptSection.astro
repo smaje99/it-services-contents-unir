@@ -1,6 +1,8 @@
 ---
 import { Icon } from 'astro-icon/components';
 
+import { durationToTextFormatter } from '@/utils/formatDuration';
+
 import Separator from '../ui/Separator.astro';
 
 interface Props {
@@ -26,7 +28,7 @@ const { title, icon, activity = false, estimatedDuration = 0 } = Astro.props;
             <strong>
               <Icon name='clock-hour-3' /> Duración estimada:
             </strong>{' '}
-            {estimatedDuration} {estimatedDuration === 1 ? 'minuto' : 'minutos'}
+            {durationToTextFormatter(estimatedDuration)}
           </span>
         )}
       </section>
