@@ -1,0 +1,108 @@
+<div id='top' aria-hidden='true'></div>
+
+<a class='scroll-top' href='#top' aria-label='Volver arriba'>
+  <span class='icon' aria-hidden='true'>↑</span>
+  <span class='progress' aria-hidden='true'></span>
+</a>
+
+<style>
+  .scroll-top {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    border-radius: 999px;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    font: 700 1.5625rem/1 system-ui;
+
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+    z-index: 50;
+  }
+
+  .icon {
+    position: relative;
+    z-index: 2;
+    transform: translateY(-1px);
+  }
+
+  /* Aro de progreso */
+  .progress {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+
+    background: conic-gradient(
+      from 90deg,
+      rgba(255, 255, 255, 0.95) 0turn,
+      rgba(255, 255, 255, 0.15) 0turn
+    );
+
+    -webkit-mask: radial-gradient(circle, transparent 62%, #000 63%);
+    mask: radial-gradient(circle, transparent 62%, #000 63%);
+
+    z-index: 1;
+  }
+
+  /* Hover */
+  .scroll-top:hover {
+    transform: translateY(-2px);
+    background: rgba(0, 0, 0, 0.85);
+  }
+
+  /* ===== Scroll-driven animations (si el navegador soporta) ===== */
+  @supports (animation-timeline: scroll()) {
+    /* El botón aparece con el scroll */
+    .scroll-top {
+      opacity: 0;
+      transform: translateY(16px) scale(0.95);
+
+      animation: showBtn linear both;
+      animation-timeline: scroll();
+      /* aparece a partir del ~15% y termina de aparecer al ~25% */
+      animation-range: 5% 25%;
+    }
+
+    @keyframes showBtn {
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+  }
+
+  /* ===== Fallback (sin scroll-driven animations) ===== */
+  @supports not (animation-timeline: scroll()) {
+    .scroll-top {
+      opacity: 0.9;
+    }
+    .progress {
+      display: none;
+    }
+  }
+
+  /* Accesibilidad: reduce motion */
+  @media (prefers-reduced-motion: reduce) {
+    :global(html) {
+      scroll-behavior: auto;
+    }
+    .scroll-top:hover {
+      transform: none;
+    }
+    @supports (animation-timeline: scroll()) {
+      .scroll-top {
+        animation: none;
+        opacity: 1;
+        transform: none;
+      }
+      .progress {
+        animation: none;
+      }
+    }
+  }
+</style>
