@@ -7,6 +7,1179 @@ color: "#6c757d"
 publishAt: "2025-11-01 18:00:00"
 ---
 
-## Introducción
-Contenido migrado desde tema1.html…
+import AccordionContent from '@/components/ui/accordion/AccordionContent.astro';
+import AccordionItem from '@/components/ui/accordion/AccordionItem.astro';
+import AccordionRoot from '@/components/ui/accordion/AccordionRoot.astro';
+import Badge from '@/components/ui/Badge.astro';
+import TopicAccordionTrigger from '@/components/topic/TopicAccordionTrigger.astro';
+import TopicCaseStudies from '@/components/topic/TopicCaseStudies.astro';
+import TopicConceptCard from '@/components/topic/TopicConceptCard.astro';
+import TopicConceptSection from '@/components/topic/TopicConceptSection.astro';
+import TopicGrid from '@/components/topic/TopicGrid.astro';
+import TopicResourceSection from '@/components/topic/TopicResourceSection.astro';
+import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
+import TopicSelfAssessmentTrigger from '@/components/topic/TopicSelfAssessmentTrigger.astro';
 
+<TopicSectionGroup title='Conceptos Clave' icon='bulb'>
+  <TopicConceptSection title='Continuidad del Negocio y Disponibilidad' icon='shield-filled'>
+    **Idea clave**: Una de las claves fundamentales para asegurar la **continuidad del negocio** en el ámbito de los **sistemas de información** es la disponibilidad de los datos en tiempo y forma. La correcta gestión del software ha sido tratada en el tema anterior, asegurándonos de esta manera que los programas gestores de datos son a su vez correctamente gestionados.
+
+    <TopicGrid>
+      <TopicConceptCard title="La Triada de CID de Seguridad de la Información">
+        Uno de los factores integrantes de la triada CID dentro del ámbito de la seguridad de la información es la **disponibilidad**, que junto con la **confidencialidad** y la **integridad** forma el conjunto de las características esenciales a preservar ante eventos no deseados o ataques externos a los sistemas de información.
+
+        * **Confidencialidad**: Protección de información contra acceso no autorizado
+        * **Integridad**: Garantía de que la información no ha sido alterada
+        * **Disponibilidad**: Asegurar que la información y sistemas estén accesibles cuando se necesiten
+      </TopicConceptCard>
+      <TopicConceptCard title="Normativas que Preservan la Disponibilidad">
+        La normativa de seguridad ha hecho hincapié en la necesidad de preservar la disponibilidad de los activos en información de las organizaciones:
+
+        * **ISO 27001**: Sistema de gestión de seguridad de la información
+        * **ISO 20000-1**: Sistema de gestión de servicios TI
+        * **ITIL**: Recomendaciones para gestión de servicios TI
+        * **COBIT**: Procesos de control y gobierno de TI
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Norma UNE 71599-2:2010' icon='certificate'>
+    **Definición**: Tal es la importancia del mantenimiento de la continuidad del negocio para las organizaciones que ha sido preciso desarrollar un estándar específico, la **Norma UNE 71599-2:2010**, para tratar de manera formal la implementación, gestión y mejora continua del aseguramiento de la continuidad del negocio.
+
+    <TopicGrid>
+      <TopicConceptCard title="Alcance de la Norma">
+        La norma UNE 71599-2:2010 proporciona un marco para:
+
+        * Implementación de sistemas de gestión de continuidad del negocio
+        * Gestión holística de amenazas potenciales
+        * Aumento de la capacidad de resistencia organizacional
+        * Respuesta eficaz ante interrupciones
+        * Protección de partes interesadas, reputación y marca
+      </TopicConceptCard>
+      <TopicConceptCard title="Estructura de la Serie UNE 71599">
+        * **UNE 71599-1:2010**: Gestión de la continuidad del negocio. Parte 1: Código de práctica
+        * **UNE 71599-2:2010**: Gestión de la continuidad del negocio. Parte 2: Especificaciones
+        * **UNE-ISO 31000:2010**: Gestión del riesgo. Principios y directrices
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Implementación de un BCM' icon='sitemap-filled'>
+    **Definición según UNE 71599-2:2010**: La **gestión de la continuidad del negocio** es un *«proceso holístico que identifica amenazas potenciales para la organización, así como el impacto en las operaciones del negocio que dichas amenazas, en caso de materializarse, puedan causar, y que proporciona un marco para aumentar la capacidad de resistencia de la organización para dar una respuesta eficaz que salvaguarde los intereses de sus principales partes interesadas, la reputación, la marca y las actividades de creación de valor»*.
+
+    <TopicGrid>
+      <TopicConceptCard title="Alcance del BCM">
+        De la definición de la norma podemos observar que la recomendación de buenas prácticas abarca más allá de la gestión y uso de las TIC, pues puede haber procesos involucrados en la gestión del negocio en los que no intervengan las TIC y a los que necesariamente es preciso prestar la atención debida para asegurar la correcta continuidad del negocio.
+      </TopicConceptCard>
+      <TopicConceptCard title="Problemas que Afectan la Continuidad">
+        Se entiende por un problema o incidente que afecta a la continuidad del negocio, cualquier evento interno o externo, provocado o natural, que interrumpe uno o más de los procesos de negocio.
+
+        * **Eventos internos**: Fallos de sistemas, errores humanos, sabotaje interno
+        * **Eventos externos**: Desastres naturales, ataques cibernéticos, fallos de proveedores
+        * **Eventos provocados**: Ataques maliciosos, sabotaje, terrorismo
+        * **Eventos naturales**: Terremotos, inundaciones, huracanes, incendios
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Pasos para la Implementación de un BCM' icon='git-merge'>
+    **Proceso estructurado**: La implementación de un BCM pasará por los siguientes pasos:
+
+    <TopicConceptCard title="1. Planificación del BCM">
+      Establecer el alcance, objetivos, recursos necesarios y estructura organizacional para la gestión de continuidad del negocio.
+    </TopicConceptCard>
+    <TopicConceptCard title="2. Análisis de Impacto en el Negocio (BIA)">
+      Proceso crítico que incluye:
+
+      * **Obtención de información**: Recopilar datos sobre procesos de negocio, dependencias y recursos
+      * **Determinación de la criticidad**: Clasificar procesos según su importancia para el negocio
+      * **Plazo máximo tolerable de interrupción (MTPD)**: Tiempo máximo que un proceso puede estar inactivo sin causar daño crítico
+      * **Objetivo de tiempo de recuperación (RTO)**: Tiempo máximo aceptable para restaurar un proceso tras una interrupción
+      * **Objetivo de punto de recuperación (RPO)**: Punto máximo en el tiempo al que se puede recuperar la información sin pérdida crítica
+
+      El BIA es fundamental para identificar los procesos críticos y establecer prioridades en la gestión de continuidad del negocio.
+    </TopicConceptCard>
+    <TopicConceptCard title="3. Evaluación de Riesgos">
+      Identificar y evaluar amenazas potenciales, su probabilidad de ocurrencia y el impacto que tendrían en las operaciones del negocio.
+    </TopicConceptCard>
+    <TopicConceptCard title="4. Desarrollo de las Estrategias de Continuidad">
+      Desarrollar estrategias para mitigar riesgos y asegurar la continuidad de los procesos críticos, incluyendo:
+
+      * **Redundancia**: Implementar sistemas y recursos duplicados para garantizar la disponibilidad
+      * **Diversificación**: Utilizar múltiples proveedores o ubicaciones para reducir la dependencia de un solo punto de falla
+      * **Resiliencia**: Diseñar procesos y sistemas que puedan adaptarse y recuperarse rápidamente de interrupciones
+
+      Al definir las estrategias de continuidad, es importante considerar tanto las necesidades del negocio como los recursos disponibles, buscando un equilibrio entre costo y efectividad.
+      Estas estrategias de respuesta y recuperación  deben basarse en los resultados del análisis de impacto y riegos realizados previamente, para asegurar que se abordan adecuadamente las amenazas más críticas y se cumplen los objetivos de recuperación establecidos, considerando siempre el contexto específico de la organización y sus necesidades particulares como:
+
+      * **Tamaño de la organización**: Las estrategias deben ser escalables y adaptarse a la complejidad de la organización
+      * **Sector de actividad**: Diferentes sectores pueden tener requisitos específicos de continuidad del negocio
+      * **Recursos disponibles**: Las estrategias deben ser realistas y factibles dentro de los recursos financieros, humanos y tecnológicos de la organización
+      * **Requisitos regulatorios**: Cumplir con las normativas aplicables en materia de continuidad del negocio y gestión de riesgos
+      * **Expectativas de las partes interesadas**: Considerar las necesidades y expectativas de clientes, proveedores, empleados y otras partes interesadas clave
+      * **Cultura organizacional**: Fomentar una cultura de resiliencia y conciencia sobre la importancia de la continuidad del negocio en toda la organización
+      * **Evolución tecnológica**: Adaptar las estrategias de continuidad a los cambios tecnológicos y las nuevas amenazas emergentes en el entorno digital. Dentro de este contexto, la gestión de la continuidad del negocio debe ser un proceso dinámico y en constante evolución, que se adapte a las necesidades cambiantes de la organización y a las amenazas emergentes en el entorno empresarial. Adoptando:
+
+          * **Enfoque proactivo**: Anticipar y prepararse para posibles interrupciones antes de que ocurran
+          * **Enfoque reactivo**: Responder de manera efectiva a las interrupciones cuando ocurran, minimizando el impacto en el negocio
+          * **Centros de respaldo**: Establecer ubicaciones alternativas para operaciones críticas en caso de interrupciones en la ubicación principal
+          * **Pruebas y simulacros**: Realizar pruebas regulares de los planes de continuidad para asegurar su efectividad y preparar al personal para responder adecuadamente en caso de una interrupción real
+          * **Virtualización y nube**: Utilizar tecnologías de virtualización y servicios en la nube para mejorar la flexibilidad y capacidad de recuperación de los sistemas de información
+          * **Automatización**: Implementar soluciones automatizadas para la recuperación de sistemas y datos, reduciendo el tiempo de inactividad y minimizando errores humanos durante el proceso de recuperación
+          * **Replicación de datos**: Implementar estrategias de replicación de datos para asegurar que la información crítica esté disponible en múltiples ubicaciones, reduciendo el riesgo de pérdida de datos en caso de un desastre
+          * **Proveedores de servicios alternativos**: Establecer acuerdos con proveedores de servicios alternativos para asegurar la continuidad de las operaciones en caso de interrupciones en los servicios principales
+    </TopicConceptCard>
+    <TopicConceptCard title="5. Desarrollo del Plan de Continuidad del Negocio (BCP)">
+      Documentar procedimientos detallados para responder a interrupciones y restaurar operaciones, incluyendo:
+
+      * **Procedimientos de activación**: Definir criterios claros para activar el plan de continuidad del negocio en caso de una interrupción
+      * **Roles y responsabilidades**: Asignar responsabilidades específicas a los miembros del equipo para garantizar una respuesta coordinada y efectiva
+      * **Procedimientos de comunicación**: Establecer canales y protocolos de comunicación internos y externos durante una interrupción
+      * **Procedimientos de recuperación**: Detallar los pasos para restaurar sistemas, aplicaciones y datos críticos
+      * **Plan de vuelta a la normalidad**: Definir acciones para retornar a las operaciones normales una vez superada la interrupción
+    </TopicConceptCard>
+    <TopicConceptCard title="6. Concienciación y Capacitación">
+      Formar y capacitar al personal sobre sus roles y responsabilidades en el BCM, asegurando que todos comprendan los procedimientos.
+
+      * **Programas de formación**: Desarrollar programas de formación específicos para diferentes roles dentro de la organización, asegurando que el personal esté preparado para responder adecuadamente en caso de una interrupción
+      * **Simulacros y ejercicios**: Realizar simulacros regulares para poner a prueba los planes de continuidad y preparar al personal para situaciones de emergencia, identificando áreas de mejora y fortaleciendo la capacidad de respuesta de la organización
+      * **Comunicación continua**: Mantener una comunicación constante sobre la importancia de la continuidad del negocio y las responsabilidades de cada miembro del equipo, fomentando una cultura de resiliencia y conciencia sobre la importancia de la continuidad del negocio en toda la organización
+    </TopicConceptCard>
+    <TopicConceptCard title="7. Pruebas y Ejercicios">
+      Realizar pruebas regulares del BCP para asegurar su efectividad y actualizarlo según sea necesario para reflejar cambios en el negocio o en el entorno de amenazas.
+
+      * **Pruebas regulares**: Realizar pruebas periódicas del plan de continuidad del negocio para evaluar su efectividad y preparar al personal para responder adecuadamente en caso de una interrupción real. Dentro de las cuales podremos realizar:
+
+          * **Pruebas de mesa**: Simulaciones teóricas para revisar procedimientos y roles sin necesidad de ejecutar acciones físicas
+          * **Pruebas de simulacro**: Ejercicios prácticos que simulan una interrupción real para evaluar la capacidad de respuesta del equipo y la efectividad del plan
+
+              * **Simulacros de emergencia**: Simulacros que involucran a todo el personal y simulan una situación de emergencia real, evaluando la coordinación y respuesta de la organización en su conjunto
+              * **Simulacros parciales**: Simulacros que se centran en un área específica o un proceso crítico, permitiendo evaluar la capacidad de respuesta en situaciones más controladas y específicas
+              * **Simulacros completos**: Simulacros que involucran a toda la organización y simulan una interrupción completa, evaluando la capacidad de respuesta en situaciones de alta complejidad y presión
+          * **Pruebas de recuperación**: Evaluar la capacidad de restaurar sistemas, aplicaciones y datos críticos dentro de los objetivos de tiempo establecidos para los resultados de las pruebas y simulacros para identificar áreas de mejora y fortalecer la capacidad de respuesta de la organización, incorporando las lecciones aprendidas en la actualización del plan de continuidad del negocio
+    </TopicConceptCard>
+    <TopicConceptCard title="8. Mantenimiento y Actualización (Mejora Continua)">
+      Evaluar y mejorar continuamente el BCM para adaptarse a cambios en el negocio, el entorno de amenazas y las mejores prácticas.
+
+      * **Monitoreo y evaluación**: Implementar mecanismos para monitorear la efectividad del BCM en tiempo real, evaluando su desempeño durante interrupciones reales o simulacros, y utilizando esta información para identificar áreas de mejora
+      * **Revisión periódica**: Establecer un calendario regular para revisar y actualizar el BCM, asegurando que se mantenga alineado con los objetivos del negocio, las amenazas emergentes y las mejores prácticas en gestión de continuidad del negocio
+      * **Incorporación de lecciones aprendidas**: Analizar los resultados de las pruebas, simulacros y eventos reales para identificar lecciones aprendidas, incorporándolas en la actualización del plan de continuidad del negocio para fortalecer la capacidad de respuesta de la organización
+      * **Adopción de nuevas tecnologías**: Evaluar e incorporar nuevas tecnologías que puedan mejorar la capacidad de recuperación y resiliencia de la organización, como soluciones de automatización, inteligencia artificial o servicios en la nube, asegurando que el BCM evolucione con las necesidades cambiantes del negocio y el entorno tecnológico
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Desafíos en la Implementación del BCM' icon='alert-triangle-filled'>
+    **Realidad organizacional**: A pesar de la concienciación del daño que puede causar la falta de disponibilidad de datos o información en la organización, hoy en día son pocas las empresas que hayan desarrollado su BCM dentro del marco de las mejores prácticas de la organización.
+
+    <TopicGrid>
+      <TopicConceptCard title="Razones de la Falta de Implementación">
+        * **Falta de compromiso de la gerencia**: Ausencia de apoyo ejecutivo y recursos asignados
+        * **Falta de conocimientos**: Desconocimiento de metodologías y mejores prácticas
+        * **Falta de recursos**: Limitaciones presupuestarias y de personal
+        * **Mezcla de factores**: Combinación de las razones anteriores
+      </TopicConceptCard>
+      <TopicConceptCard title="Factores Críticos de Éxito">
+        * **Compromiso ejecutivo**: Apoyo visible y activo de la alta dirección
+        * **Asignación de recursos**: Presupuesto y personal dedicado
+        * **Formación adecuada**: Capacitación en metodologías y herramientas
+        * **Enfoque gradual**: Implementación por fases priorizando procesos críticos
+        * **Comunicación efectiva**: Transmitir la importancia del BCM a toda la organización
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Métricas y Objetivos de Recuperación (Profundización)' icon='chart-line'>
+    **Realidad organizacional**: A pesar de la concienciación del daño que puede causar la falta de disponibilidad de datos o información en la organización, hoy en día son pocas las empresas que hayan desarrollado su BCM dentro del marco de las mejores prácticas de la organización.
+
+    <TopicConceptCard title="RTO vs RPO: Ejemplos Prácticos">
+      **RTO (*Recovery Time Objective* - Objetivo de Tiempo de Recuperación)**: Tiempo máximo aceptable para restaurar un proceso o servicio tras una interrupción.
+
+      **RPO (*Recovery Point Objective* - Objetivo de Punto de Recuperación)**: Punto máximo en el tiempo al que se puede recuperar la información sin pérdida crítica de datos.
+
+      **Comparativa RTO/RPO por Nivel de Criticidad**:
+      * **Procesos Críticos**: **RTO**: Minutos a pocas horas, **RPO**: Casi en tiempo real (segundos o minutos)
+
+        **Ejemplo**: Un sistema de pago en línea puede tener un **RTO de 1 hora** (debe restaurarse en 1 hora para evitar pérdidas significativas) y un **RPO de 15 minutos** (se pueden perder hasta 15 minutos de transacciones sin causar un impacto crítico)
+
+        Requiere replicación de datos en tiempo real y *Hot Site* para asegurar la disponibilidad continua.
+      * **Procesos Altos**: **RTO**: Horas a días, **RPO**: Horas
+
+        **Ejemplo**: Un sistema de gestión de inventarios puede tener un **RTO de 4 horas** (debe restaurarse en 4 horas para evitar interrupciones significativas) y un **RPO de 1 hora** (se pueden perder hasta 1 hora de datos sin causar un impacto crítico)
+
+        Requiere replicación de datos (*backups*) frecuentemente (ej. cada hora) y *Warm Site* para asegurar una recuperación rápida.
+      * **Procesos Medios**: **RTO**: Días, **RPO**: Días
+
+        **Ejemplo**: Un sistema de gestión de recursos humanos puede tener un **RTO de 24 horas** (debe restaurarse en 24 horas para evitar interrupciones significativas) y un **RPO de 12 horas** (se pueden perder hasta 12 horas de datos sin causar un impacto crítico)
+
+        Requiere backups diarios y *Warm/Cold Site* para asegurar la recuperación en un plazo razonable.
+      * **Procesos Bajos**: **RTO**: Días a semanas, **RPO**: Días a semanas
+
+        **Ejemplo**: Un sistema de gestión de documentos puede tener un **RTO de 72 horas** (debe restaurarse en 72 horas para evitar interrupciones significativas) y un **RPO de 24 horas** (se pueden perder hasta 24 horas de datos sin causar un impacto crítico)
+
+        Requiere backups regulares (ej. diarios o semanales) y *Cold Site* para asegurar la recuperación en un plazo más flexible.
+
+      **Importancia de RTO y RPO**: Establecer objetivos claros de RTO y RPO es fundamental para diseñar estrategias de continuidad del negocio efectivas, asegurando que los recursos y esfuerzos se enfoquen en restaurar los procesos críticos dentro de los tiempos aceptables para minimizar el impacto en el negocio.
+
+      **Relación con la Matriz de Criticidad**: Los objetivos de RTO y RPO deben alinearse con la criticidad de los procesos, asegurando que los procesos más críticos tengan objetivos de recuperación más estrictos para garantizar la continuidad del negocio.
+
+      **Relación entre RTO y RPO**: En general, el RPO debe ser igual o menor que el RTO, ya que no tiene sentido restaurar un proceso dentro del RTO si se pierde una cantidad de datos que excede el RPO, lo que podría causar un impacto crítico en el negocio. RPO determina la frecuencia de los backups y la estrategia de replicación de datos, mientras que RTO determina la estrategia e infraestructura de recuperación, y el tipo de sitio de respaldo necesario para cumplir con los objetivos de continuidad del negocio.
+    </TopicConceptCard>
+    <TopicConceptCard title="MTBF y MTTR">
+      **MTBF (*Mean Time Between Failures* - Tiempo Medio Entre Fallos)**: Tiempo promedio que transcurre entre fallos consecutivos de un sistema o componente.
+
+      **MTTR (*Mean Time To Repair* - Tiempo Medio de Reparación)**: Tiempo promedio requerido para reparar un sistema después de un fallo.
+
+      **Fórmula de Disponibilidad**: $\text{Disponibilidad (\%)} = \left( \frac{\text{MTBF}}{\text{MTBF} + \text{MTTR}} \right) \times 100\%$
+
+      **Ejemplo**: Si $ \text{MTBF} = 720 \text{ horas} $ y $ \text{MTTR} = 8 \text{ horas} $, entonces $\text{Disponibilidad} = \left( \frac{720}{720 + 8} \right) \times 100\% \approx 98.9\% $
+
+      **Aplicación**: Estas métricas ayudan a calcular el nivel de disponibilidad de sistemas críticos y a identificar áreas que requieren mejoras.
+    </TopicConceptCard>
+    <TopicConceptCard title="MAO / MTPD (Maximum Acceptable Outage / Maximum Tolerable Period of Disruption)">
+      **Definición**: Tiempo máximo que un proceso de negocio puede estar inactivo antes de que el impacto sea inaceptable o irreversible.
+
+      **Diferencia con RTO**: MTPD es el tiempo máximo antes de que ocurra un daño crítico, mientras que RTO es el tiempo objetivo para recuperar el proceso.
+
+      **Ejemplo**: Un sistema de facturación puede tener un MTPD de 48 horas (después de este tiempo, el negocio sufre daño irreparable), pero un RTO de 24 horas (objetivo de recuperación).
+
+      **Importancia**: El MTPD debe ser siempre mayor que el RTO para proporcionar un margen de seguridad.
+    </TopicConceptCard>
+    <TopicConceptCard title="Matriz de Criticidad de Procesos">
+      **Definición**: Herramienta visual que clasifica los procesos de negocio según su nivel de importancia y criticidad para la organización.
+
+      **Niveles de Criticidad**: Se pueden clasificar en categorías como:
+      * **Críticos**: Procesos esenciales para la operación del negocio, con alto impacto severamente en caso de interrupción
+
+        Tiempo de recuperación muy corto (RTO) y punto de recuperación cercano (RPO). En minutos o pocas horas, dependiendo del proceso
+
+        Ejemplo: Procesos de producción, sistemas de pago, atención al cliente
+      * **Altos**: Procesos importantes pero no esenciales, con impacto significativo pero manejable en caso de interrupción
+
+        Tiempo de recuperación moderado (RTO) y punto de recuperación razonable (RPO). En horas o días, dependiendo del proceso
+
+        Ejemplo: Procesos de recursos humanos, gestión de inventarios, CRM, sistemas de correo electrónico, sistemas de gestión de finanzas
+      * **Medios**: Procesos que contribuyen al negocio pero no son críticos, con impacto moderado en caso de interrupción
+
+        Tiempo de recuperación más flexible (RTO) y punto de recuperación menos crítico (RPO). En días o semanas, dependiendo del proceso
+
+        Ejemplo: Procesos de marketing, gestión de redes sociales, sistemas de colaboración interna
+      * **Bajos**: Procesos de apoyo o administrativos, con impacto mínimo en caso de interrupción
+
+        Tiempo de recuperación más flexible (RTO) y punto de recuperación menos crítico (RPO). En días o semanas, dependiendo del proceso
+
+        Ejemplo: Procesos de mantenimiento de instalaciones, gestión de documentos, sistemas de gestión de proyectos
+
+      **Uso**: La matriz ayuda a priorizar recursos y esfuerzos en la implementación del BCM, enfocándose primero en procesos críticos.
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Tipos de Centros de Respaldo (Disaster Recovery Sites)' icon='database-export'>
+      **Definición**: Un centro de respaldo o sitio de recuperación ante desastres es una ubicación alternativa donde se pueden restaurar las operaciones críticas del negocio en caso de una interrupción en la ubicación principal.
+
+      La elección del tipo de centro de respaldo dependerá de los objetivos de recuperación establecidos (RTO y RPO), el presupuesto disponible y la criticidad de los procesos que se desean proteger.
+
+    <TopicConceptCard title="Comparativa de Tipos de Centros de Respaldo">
+      * ***Hot Site***: Centro de respaldo completamente equipado y listo para operar en cualquier momento, con datos replicados en tiempo real. Proporciona la recuperación más rápida, pero también es el más costoso.
+
+        **RTO**: Minutos a pocas horas, dependiendo del proceso
+        **RPO**: Casi en tiempo real (segundos o minutos)
+
+        * ✓ Completamente operativo
+        * ✓ Datos en tiempo real
+        * ✗ Costo muy elevado
+      * ***Warm Site***: Centro de respaldo parcialmente equipado, con algunos sistemas y datos replicados, pero que requiere cierta configuración y tiempo para estar completamente operativo. Ofrece un equilibrio entre costo y tiempo de recuperación.
+
+        **RTO**: Horas a días, dependiendo del proceso
+        **RPO**: Horas, dependiendo de la frecuencia de replicación
+
+        * ✓ Equipamiento parcial configurable
+        * ✓ Datos replicados con cierta frecuencia
+        * ✓ Costo moderado
+        * ✗ Requiere tiempo para configurar y restaurar operaciones
+      * ***Cold Site***: Centro de respaldo sin equipamiento ni datos replicados, que requiere tiempo significativo para configurar y restaurar las operaciones. Es el más económico, pero también el que tiene el tiempo de recuperación más largo.
+
+        **RTO**: Días a semanas, dependiendo del proceso
+        **RPO**: Días a semanas, dependiendo de la frecuencia de backups
+
+        * ✓ Costo bajo
+        * ✗ Sin equipamiento ni datos replicados
+        * ✗ Requiere tiempo significativo para configurar y restaurar operaciones
+        * ✗ Recuperación más lenta
+
+        * ***Mobile Site***: Centro de respaldo móvil que puede ser transportado a la ubicación del desastre, proporcionando flexibilidad y rapidez en la recuperación, aunque con limitaciones en capacidad y recursos.
+
+          **RTO**: Horas a días, dependiendo del proceso
+          **RPO**: Horas (variable), dependiendo de la frecuencia de replicación
+
+          * ✓ Flexibilidad para ubicarse cerca del desastre (geográficamente)
+          * ✓ Rápida implementación con equipamiento preconfigurado
+          * ✗ Capacidad limitada
+          * ✗ Recursos limitados
+
+        * ***Mirrored Site***: Centro de respaldo que replica completamente los sistemas y datos en tiempo real, proporcionando una recuperación instantánea en caso de interrupción, aunque con un costo muy elevado.
+
+          **RTO**: Casi instantáneo (segundos o minutos)
+          **RPO**: Casi en tiempo real (segundos o minutos)
+
+          * ✓ Replicación completa en tiempo real
+          * ✓ Recuperación instantánea y sin pérdida de datos
+          * ✗ Costo extremadamente alto
+    </TopicConceptCard>
+    <TopicConceptCard title="Guía de Selección">
+      * ***Hot Site***: Procesos críticos con RTO < 1 hora y RPO < 15 minutos
+
+      * ***Warm Site***: Procesos importantes con RTO de 4-24 horas y RPO de 1-4 horas
+
+      * ***Cold Site***: Procesos de bajo nivel de criticidad con RTO > 24 horas
+
+      * ***Mobile Site***: Organizaciones con múltiples ubicaciones o desastres geográficos específicos
+
+      * ***Mirrored Site***: Sistemas críticos que no pueden tolerar pérdida de datos ni tiempo de inactividad
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Estrategias de Recuperación Técnicas' icon='rotate-dot'>
+    **Definición**: Las estrategias de recuperación técnicas son métodos y tecnologías específicas utilizadas para restaurar sistemas, datos y servicios después de una interrupción. La selección de estrategias depende de los RTO y RPO requeridos.
+
+    <TopicConceptCard title="Backup y Restauración">
+      **Definición**: Estrategia básica que consiste en realizar copias de seguridad periódicas de datos y sistemas para restaurarlos cuando sea necesario.
+
+      **Tipos de Backup**:
+
+      * **Backup Completo**: Copia de todos los datos y sistemas. Más lento pero más seguro. Requerido periódicamente.
+      * **Backup Incremental**: Copia solo de los cambios desde el último backup (completo o incremental). Más rápido, requiere cadena completa para restaurar.
+      * **Backup Diferencial**: Copia de cambios desde el último backup completo. Balance entre velocidad y facilidad de restauración.
+
+      **Consideraciones**: Frecuencia de backups determinada por RPO, almacenamiento fuera del sitio, pruebas periódicas de restauración
+    </TopicConceptCard>
+    <TopicConceptCard title="Replicación de Datos">
+      **Definición**: Proceso de copiar datos en tiempo real o casi en tiempo real a un sitio secundario para mantener sincronización.
+
+      **Tipos de Replicación**:
+
+      * **Replicación Síncrona**: Datos escritos simultáneamente en sitio primario y secundario. RPO = 0, pero puede afectar rendimiento.
+      * **Replicación Asíncrona**: Datos escritos primero en sitio primario, luego replicados. Mejor rendimiento pero posible pérdida mínima de datos.
+      * **Replicación Near-Sync**: Compromiso entre síncrona y asíncrona, con replicación en intervalos muy cortos.
+
+      **Aplicación**: Sistemas críticos que requieren RPO muy bajo, bases de datos transaccionales
+    </TopicConceptCard>
+    <TopicConceptCard title="Failover">
+      **Definición**: Proceso de cambiar automáticamente o manualmente de un sistema primario a uno secundario cuando el primario falla.
+
+      **Tipos de Failover**:
+
+      * **Failover Automático**: Cambio automático sin intervención humana. Requiere monitoreo continuo y detección de fallos.
+      * **Failover Manual**: Cambio iniciado por personal técnico. Más control pero requiere tiempo de respuesta.
+
+      **Componentes**: Sistemas de monitoreo, detección de fallos, mecanismos de conmutación, pruebas periódicas
+    </TopicConceptCard>
+    <TopicConceptCard title="Load Balancing y Alta Disponibilidad">
+      **Load Balancing**: Distribución de carga de trabajo entre múltiples servidores o sistemas para evitar sobrecarga y proporcionar redundancia.
+
+      **Alta Disponibilidad**: Diseño de sistemas con redundancia para minimizar tiempo de inactividad mediante múltiples componentes activos.
+
+      **Técnicas**:
+
+      * Clusters de servidores
+      * Distribución geográfica de recursos
+      * Redundancia de componentes críticos
+      * Monitoreo proactivo y auto-recuperación
+    </TopicConceptCard>
+    <TopicConceptCard title="Virtualización y Cloud Computing">
+      **Virtualización**: Creación de versiones virtuales de servidores, almacenamiento y redes que pueden migrarse rápidamente entre hardware físico.
+
+      **Cloud Computing**: Uso de recursos informáticos remotos distribuidos geográficamente para proporcionar alta disponibilidad y recuperación rápida.
+
+      **Ventajas para BCM**:
+
+      * Migración rápida de máquinas virtuales
+      * Escalabilidad bajo demanda
+      * Redundancia geográfica automática
+      * Reducción de costos de infraestructura física
+      * *Backup* y *snapshots* automatizados
+
+      **Modelos**: IaaS (*Infrastructure as a Service*), PaaS (*Platform as a Service*), SaaS (*Software as a Service*)
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Diferencias Conceptuales Importantes' icon='vocabulary'>
+    En el ámbito de la **gestión de la continuidad del negocio**, es importante entender las diferencias conceptuales entre términos relacionados pero distintos, para evitar confusiones y asegurar una implementación efectiva de las estrategias de continuidad.
+
+    <TopicConceptCard title="BCP vs. DRP (Disaster Recovery Plan)">
+      **Comparación Visual**:
+
+      * **BCP (Business Continuity Plan)**: Enfoque holístico que abarca todos los aspectos del negocio para asegurar la continuidad de las operaciones, incluyendo procesos, personas, tecnología y comunicaciones.
+
+        **Alcance**: Todos los procesos de negocio, no solo los relacionados con TI (TI y no TI).
+
+        **Enfoque**: Proactivo y preventivo, con énfasis en la preparación y mitigación de riesgos. Manteniendo la continuidad de las operaciones completas durante y después de una interrupción, minimizando el impacto en el negocio.
+
+        **Objetivo**: Asegurar la continuidad de las operaciones del negocio en su totalidad, incluyendo procesos críticos y no críticos, para proteger la reputación, la marca y los intereses de las partes interesadas.
+
+        **Duración**: A largo plazo, abarcando desde la preparación hasta la recuperación completa y el retorno a la normalidad.
+
+      * **DRP (Disaster Recovery Plan)**: Enfoque específico en la recuperación de sistemas de TI y datos después de una interrupción, con un enfoque más reactivo.
+
+        **Alcance**: Principalmente sistemas de TI e infraestructura crítica, y datos críticos para el negocio.
+
+        **Enfoque**: Reactivo, con énfasis en la recuperación rápida de sistemas y datos después de una interrupción, minimizando el tiempo de inactividad y la pérdida de datos.
+
+        **Objetivo**: Restaurar los sistemas de TI y datos críticos para el negocio lo más rápido posible después de una interrupción, asegurando que las operaciones puedan continuar con un impacto mínimo.
+
+        **Duración**: A corto plazo, centrado en la fase de recuperación inmediata después de una interrupción. Con un enfoque técnico y operativo, que se integra dentro del marco más amplio del BCP para asegurar la continuidad del negocio en su totalidad.
+
+      **Relación**: El DRP es un componente esencial del BCP, ya que se enfoca en la recuperación de los sistemas de TI y datos críticos, pero el BCP abarca un enfoque más amplio que incluye todos los aspectos del negocio para asegurar la continuidad de las operaciones en su totalidad.
+
+      **Importancia de la Distinción**: Entender las diferencias entre BCP y DRP es crucial para diseñar e implementar estrategias de continuidad del negocio efectivas, asegurando que se aborden adecuadamente tanto los aspectos técnicos como los operativos para proteger el negocio en su totalidad.
+    </TopicConceptCard>
+    <TopicConceptCard title="Crisis Management vs. Business Continuity">
+      ***Crisis Management* (Gestión de Crisis)**: Enfoque en la gestión de situaciones de crisis que pueden afectar a la organización, con un enfoque en la comunicación, la toma de decisiones y la gestión de la reputación durante una crisis.
+
+      * **Enfoque**: Reactivo e inmediato, centrado en la gestión de la crisis en sí misma, incluyendo la comunicación con las partes interesadas, la toma de decisiones rápidas y efectivas, y la protección de la reputación de la organización durante una crisis.
+      * **Duración**: A corto plazo, centrado en la fase de respuesta inmediata a una crisis, con un enfoque en la gestión de la situación de crisis y sus impactos inmediatos.
+      * **Objetivo**: Gestionar la crisis de manera efectiva para minimizar el impacto en la organización, proteger la reputación y mantener la confianza de las partes interesadas durante y después de la crisis.
+      * **Ámbito**: Se aplica a situaciones de crisis que pueden afectar a la organización, como desastres naturales, incidentes de seguridad, escándalos de reputación, entre otros.
+
+      ***Business Continuity* (Continuidad del Negocio)**: Enfoque en asegurar la continuidad de las operaciones del negocio durante y después de una interrupción, con un enfoque en la preparación, mitigación de riesgos y recuperación de procesos críticos.
+
+      * **Enfoque**: Proactivo y preventivo, con énfasis en la preparación y mitigación de riesgos para asegurar la continuidad de las operaciones del negocio durante y después de una interrupción, minimizando el impacto en el negocio.
+      * **Duración**: De mediano a largo plazo, abarcando desde la preparación hasta la recuperación completa y el retorno a la normalidad, con un enfoque en la continuidad de las operaciones del negocio en su totalidad.
+      * **Objetivo**: Asegurar la continuidad de las operaciones del negocio en su totalidad, incluyendo procesos críticos y no críticos, para proteger la reputación, la marca y los intereses de las partes interesadas a largo plazo.
+      * **Ámbito**: Se aplica a todas las áreas del negocio, incluyendo procesos, personas, tecnología y comunicaciones, para asegurar la continuidad de las operaciones del negocio en su totalidad durante y después de una interrupción. Se aplica al ámbito de recuperación operativa en la Planificación Estratégica de Continuidad del Negocio.
+
+      **Relación**: La gestión de crisis y la continuidad del negocio son disciplinas complementarias que se enfocan en diferentes aspectos de la respuesta a interrupciones, pero ambas son esenciales para proteger a la organización y asegurar su resiliencia a largo plazo. La gestión de crisis se centra en la respuesta inmediata a una crisis, mientras que la continuidad del negocio se enfoca en asegurar la continuidad de las operaciones durante y después de una interrupción, con un enfoque más amplio que abarca todos los aspectos del negocio.
+
+      **Importancia de la Distinción**: Entender las diferencias entre gestión de crisis y continuidad del negocio es crucial para diseñar e implementar estrategias efectivas que aborden tanto la respuesta inmediata a una crisis como la continuidad de las operaciones a largo plazo, asegurando la resiliencia y el éxito sostenido de la organización.
+    </TopicConceptCard>
+    <TopicConceptCard title="Continuidad vs. Resiliencia">
+      **Continuidad del Negocio**: Enfoque en asegurar la continuidad de las operaciones del negocio durante y después de una interrupción, con un enfoque en la preparación, mitigación de riesgos y recuperación de procesos críticos.
+
+      * **Enfoque**: Proactivo y preventivo, con énfasis en la preparación y mitigación de riesgos para asegurar la continuidad de las operaciones del negocio durante y después de una interrupción, minimizando el impacto en el negocio.
+      * **Duración**: De mediano a largo plazo, abarcando desde la preparación hasta la recuperación completa y el retorno a la normalidad, con un enfoque en la continuidad de las operaciones del negocio en su totalidad.
+      * **Objetivo**: Asegurar la continuidad de las operaciones del negocio en su totalidad, incluyendo procesos críticos y no críticos, para proteger la reputación, la marca y los intereses de las partes interesadas a largo plazo.
+
+      **Resiliencia Organizacional**: Capacidad de una organización para anticipar, prepararse, responder y adaptarse a cambios e interrupciones, manteniendo su capacidad para operar y recuperarse rápidamente.
+
+      * **Enfoque**: Holístico e integrado, con énfasis en desarrollar capacidades organizacionales que permitan anticipar, prepararse, responder y adaptarse a cambios e interrupciones de manera efectiva.
+      * **Duración**: A largo plazo, centrado en el desarrollo continuo de capacidades organizacionales para mejorar la resiliencia a lo largo del tiempo.
+      * **Objetivo**: Desarrollar una organización que pueda anticipar, prepararse, responder y adaptarse a cambios e interrupciones de manera efectiva, manteniendo su capacidad para operar y recuperarse rápidamente ante cualquier desafío o amenaza.
+
+      **Diferencia Clave**: La continuidad del negocio se enfoca en asegurar la continuidad de las operaciones durante y después de una interrupción específica, mientras que la resiliencia organizacional se enfoca en desarrollar capacidades a largo plazo para anticipar, prepararse, responder y adaptarse a cualquier tipo de cambio o interrupción, con un enfoque más amplio que abarca todos los aspectos de la organización.
+
+      **Importancia de la Distinción**: Entender las diferencias entre continuidad del negocio y resiliencia organizacional es crucial para diseñar e implementar estrategias efectivas que aborden tanto la continuidad de las operaciones durante interrupciones específicas como el desarrollo de capacidades a largo plazo para mejorar la resiliencia organizacional, asegurando el éxito sostenido de la organización en un entorno dinámico y desafiante.
+    </TopicConceptCard>
+    <TopicConceptCard title="Business Continuity vs. IT Continuity">
+      **Business Continuity**: Enfoque en asegurar la continuidad de las operaciones del negocio durante y después de una interrupción, con un enfoque en la preparación, mitigación de riesgos y recuperación de procesos críticos.
+
+      * **Alcance**: Toda la organización, incluyendo procesos, personas, tecnología y comunicaciones, para asegurar la continuidad de las operaciones del negocio en su totalidad durante y después de una interrupción.
+      * **Enfoque**: Proactivo y preventivo, con énfasis en la preparación y mitigación de riesgos para asegurar la continuidad de las operaciones del negocio durante y después de una interrupción, minimizando el impacto en el negocio.
+      * **Responsabilidad**: Liderada por la alta dirección y el equipo de continuidad del negocio, con participación de todas las áreas de la organización para asegurar un enfoque integral y coordinado.
+      * **Ejemplos**: Planificación de la continuidad del negocio, análisis de impacto en el negocio, estrategias de recuperación, comunicación de crisis, formación y concienciación, pruebas y ejercicios, mantenimiento y actualización del plan de continuidad del negocio.
+
+      **IT Continuity**: Enfoque específico en asegurar la continuidad de los sistemas de TI y datos críticos durante y después de una interrupción, con un enfoque en la recuperación rápida de sistemas y datos.
+
+      * **Alcance**: Principalmente sistemas de TI e infraestructura crítica, y datos críticos para el negocio, para asegurar la continuidad de las operaciones de TI durante y después de una interrupción.
+      * **Enfoque**: Reactivo, con énfasis en la recuperación rápida de sistemas y datos después de una interrupción, minimizando el tiempo de inactividad y la pérdida de datos.
+      * **Responsabilidad**: Liderada por el equipo de TI y el equipo de continuidad del negocio, con participación de otras áreas de la organización según sea necesario para asegurar la recuperación de los sistemas de TI y datos críticos.
+      * **Ejemplos**: Planificación de la recuperación ante desastres (DRP), estrategias de backup y restauración, replicación de datos, failover, load balancing, alta disponibilidad, virtualización y cloud computing.
+
+      **Relación**: La continuidad de TI es un componente esencial de la continuidad del negocio, ya que se enfoca en asegurar la continuidad de los sistemas de TI y datos críticos, pero la continuidad del negocio abarca un enfoque más amplio que incluye todos los aspectos del negocio para asegurar la continuidad de las operaciones en su totalidad durante y después de una interrupción.
+
+      **Importancia de la Distinción**: Entender las diferencias entre continuidad del negocio y continuidad de TI es crucial para diseñar e implementar estrategias efectivas que aborden tanto la continuidad de las operaciones del negocio en su totalidad como la continuidad de los sistemas de TI y datos críticos, asegurando la resiliencia y el éxito sostenido de la organización en un entorno dinámico y desafiante.
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Análisis de Impacto en el Negocio (BIA) - Metodología Detallada' icon='report-analytics'>
+    **Definición**: El Business Impact Analysis (BIA) es un proceso sistemático que identifica y evalúa los efectos potenciales de una interrupción en procesos críticos de negocio. Es fundamental para establecer prioridades y objetivos de recuperación.
+
+    <TopicConceptCard title="Metodología Paso a Paso del BIA">
+      **BIA** es un proceso estructurado que se compone de varias etapas clave para identificar y evaluar el impacto de las interrupciones en los procesos de negocio, estableciendo prioridades y objetivos de recuperación claros.
+
+      **Flujo del Proceso de BIA**:
+
+      1. **Preparación**: Definir el alcance, objetivos, equipo y herramientas del BIA, asegurando la participación de todas las áreas relevantes de la organización.
+      2. **Identificación de Procesos**: Listar todos los procesos de negocio, clasificándolos según su función y área, para asegurar una cobertura completa.
+      3. **Recopilación de Información**: Recolectar datos sobre cada proceso, incluyendo recursos utilizados, dependencias, tiempos de recuperación actuales y costos asociados, utilizando entrevistas, cuestionarios y análisis de documentación.
+      4. **Análisis de Impacto**: Evaluar el impacto potencial de una interrupción en cada proceso, considerando aspectos financieros, operativos, legales, reputacionales y de seguridad, para determinar la criticidad de cada proceso.
+      5. **Determinación de Objetivos de Recuperación**: Establecer RTO, RPO y MTPD para cada proceso basado en su criticidad y el impacto evaluado, asegurando que los objetivos sean realistas y alineados con las capacidades de la organización.
+      6. **Documentación y Validación**: Documentar los hallazgos del BIA y validarlos con los stakeholders clave para asegurar que sean precisos y útiles para la planificación de continuidad del negocio.
+    </TopicConceptCard>
+    <TopicConceptCard title="Identificación de Dependencias Entre Procesos">
+      **Definición**: Mapear las relaciones e interdependencias entre diferentes procesos de negocio para entender el impacto en cascada de interrupciones.
+
+      **Tipos de Dependencias**:
+
+      * **Dependencias de Entrada**: Procesos que proporcionan insumos necesarios
+      * **Dependencias de Salida**: Procesos que requieren los resultados
+      * **Dependencias de Recursos**: Compartir recursos (personal, sistemas, infraestructura)
+      * **Dependencias de Tiempo**: Secuencias temporales críticas
+
+      **Herramientas**: Diagramas de flujo, mapas de procesos, matrices de dependencias
+    </TopicConceptCard>
+    <TopicConceptCard title="Cálculo de Impacto Financiero">
+      Evaluar el impacto financiero de una interrupción en términos de costos directos e indirectos, considerando tanto las pérdidas inmediatas como las consecuencias a largo plazo.
+
+      **Componentes del Impacto Financiero**:
+
+      * **Pérdida de ingresos:** Ventas perdidas durante la interrupción
+      * **Costos adicionales**: Horas extras, contratación temporal, servicios externos
+      * **Multas y penalizaciones**: Por incumplimiento de contratos o regulaciones
+      * **Costos de recuperación**: Restauración de sistemas y procesos
+      * *Pérdida de oportunidades*: Negocios futuros perdidos
+
+      **Métricas**: Pérdida financiera por hora/día de interrupción, impacto en resultados trimestrales/anuales
+    </TopicConceptCard>
+    <TopicConceptCard title="Identificación de Single Points of Failure (SPOF)">
+      **Definición**: Componentes, sistemas o procesos únicos cuya falla causaría la interrupción completa de un servicio o proceso crítico.
+
+      **Tipos de SPOF**:
+
+      * **SPOF Tecnológicos**: Servidores únicos, enlaces de red únicos, sistemas sin redundancia
+      * **SPOF Humanos**: Personal clave sin suplentes, conocimiento concentrado en una persona
+      * **SPOF de Procesos**: Procesos críticos sin alternativas
+      * **SPOF de Proveedores**: Dependencia de un único proveedor crítico
+
+      **Mitigación**: Identificar SPOF y desarrollar estrategias de redundancia, suplentes o alternativas
+    </TopicConceptCard>
+    <TopicConceptCard title="Mapeo de Procesos Críticos e Interdependencias">
+      **Objetivo**: Crear un mapa visual que muestre procesos críticos, sus relaciones y el flujo de dependencias.
+
+      **Elementos del Mapa**:
+
+      * Procesos identificados con nivel de criticidad
+      * Flechas mostrando dependencias
+      * Recursos compartidos identificados
+      * Rutas críticas destacadas
+
+      **Beneficios**: Visualización clara de impacto en cascada, identificación de procesos prioritarios, planificación de recuperación ordenada
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Análisis de Impacto en el Negocio (BIA) - Metodología Detallada' icon='timeline-event-exclamation'>
+    **Definición**: La **gestión de riesgos en continuidad del negocio** implica identificar, evaluar y gestionar amenazas potenciales que podrían interrumpir las operaciones. Es un componente fundamental del BCM.
+
+    <TopicConceptCard title="Matriz de Riesgos: Probabilidad vs Impacto">
+      **Definición**: Herramienta visual que clasifica riesgos según su probabilidad de ocurrencia y el impacto que tendrían en la organización.
+
+      **Matriz de Riesgos**:
+
+      | Impacto \ Probabilidad | Baja           | Media          | Alta           | Crítica        |
+      |------------------------|----------------|----------------|----------------|----------------|
+      | **Alta**                | <Badge>Bajo Riesgo</Badge>    | <Badge variant="success">Riesgo Moderado</Badge> | <Badge variant="warning">Alto Riesgo</Badge>    | <Badge variant="danger">Riesgo Crítico</Badge> |
+      | **Media**               | <Badge>Bajo Riesgo</Badge>    | <Badge variant="success">Riesgo Moderado</Badge> | <Badge variant="warning">Alto Riesgo</Badge>    | <Badge variant="danger">Riesgo Crítico</Badge> |
+      | **Baja**                | <Badge>Bajo Riesgo</Badge>    | <Badge>Bajo Riesgo</Badge>    | <Badge variant="success">Riesgo Moderado</Badge>  | <Badge variant="warning">Alto Riesgo</Badge>    |
+
+      **Categorías de Riesgo**:
+
+      * <Badge>Bajo Riesgo</Badge>: Riesgos con baja probabilidad e impacto, que pueden ser monitorizados y gestionados con controles básicos.
+      * <Badge variant="success">Riesgo Moderado</Badge>: Riesgos con probabilidad o impacto moderados, que requieren medidas de mitigación específicas y monitoreo regular.
+      * <Badge variant="warning">Alto Riesgo</Badge>: Riesgos con alta probabilidad o impacto, que requieren atención prioritaria y estrategias de mitigación robustas.
+      * <Badge variant="danger">Riesgo Crítico</Badge>: Riesgos con alta probabilidad e impacto crítico, que requieren atención inmediata y planes de contingencia detallados.
+
+      ---
+
+      **Uso**: Priorizar recursos y esfuerzos en gestión de riesgos según nivel de criticidad. Los riesgos en la esquina superior derecha (Alta probabilidad + Alto/Crítico impacto) requieren atención inmediata.
+
+      **Importancia**: La matriz de riesgos ayuda a visualizar y comunicar los riesgos de manera efectiva, facilitando la toma de decisiones informada sobre cómo gestionar cada riesgo en función de su probabilidad e impacto.
+
+      **Recomendación**: Revisar y actualizar la matriz de riesgos periódicamente para reflejar cambios en el entorno, nuevas amenazas o cambios en la organización.
+
+      ---
+
+      **Ejemplo**: Un riesgo de ciberataque con alta probabilidad y alto impacto se clasificaría como <Badge variant="warning">Alto Riesgo</Badge>, mientras que un riesgo de incendio en una ubicación remota con baja probabilidad y bajo impacto se clasificaría como <Badge>Bajo Riesgo</Badge>.
+    </TopicConceptCard>
+    <TopicConceptCard title="Escenarios de Amenazas">
+      **Categorías de Amenazas**:
+
+      1. **Amenazas Naturales**:
+
+      * Terremotos, tsunamis
+      * Inundaciones, huracanes
+      * Incendios forestales
+      * Tormentas severas
+      * Pandemias
+      2. **Amenazas Tecnológicas**:
+
+      * Fallos de hardware
+      * Fallos de software
+      * Interrupciones de red
+      * Pérdida de datos
+      * Fallos de proveedores de servicios
+      3. **Amenazas Humanas**:
+
+      * Errores humanos
+      * Sabotaje interno
+      * Huelgas
+      * Pérdida de personal clave
+      4. **Amenazas Cibernéticas**:
+
+      * Ataques de ransomware
+      * Denegación de servicio (DDoS)
+      * Brechas de seguridad
+      * Acceso no autorizado
+    </TopicConceptCard>
+    <TopicConceptCard title="Análisis de Vulnerabilidades">
+      **Definición**: Proceso de identificar debilidades en sistemas, procesos o infraestructura que podrían ser explotadas por amenazas.
+
+      **Áreas de Análisis**:
+
+      * **Vulnerabilidades Técnicas**: Sistemas sin parches, configuraciones inseguras, falta de redundancia
+      * **Vulnerabilidades de Proceso**: Procesos sin documentación, falta de procedimientos alternativos
+      * **Vulnerabilidades Organizacionales**: Falta de capacitación, dependencia de personal clave
+      * **Vulnerabilidades Físicas**: Infraestructura vulnerable, ubicaciones de riesgo
+
+      **Herramientas**: Auditorías de seguridad, evaluaciones técnicas, análisis de procesos
+    </TopicConceptCard>
+    <TopicConceptCard title="Estrategias de Gestión de Riesgos">
+      1. **Mitigación**: Reducir probabilidad o impacto del riesgo mediante controles y medidas preventivas
+      2. **Transferencia**: Transferir el riesgo a terceros mediante seguros o contratos
+      3. **Aceptación**: Aceptar el riesgo cuando el costo de mitigación excede el impacto potencial
+      4. **Evitación**: Eliminar la actividad o proceso que genera el riesgo
+
+      **Selección de Estrategia**: Basada en análisis costo-beneficio, nivel de riesgo, recursos disponibles y apetito al riesgo de la organización
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Plan de Comunicación Durante Incidentes' icon='speakerphone'>
+    **Definición**: El **plan de comunicación durante incidentes** establece procedimientos y canales para comunicar información relevante a todas las partes interesadas durante una interrupción o crisis. Es crítico para mantener la confianza y gestionar la situación efectivamente.
+
+    <TopicGrid>
+      <TopicConceptCard title="Estructura del Plan de Comunicación">
+        **Componentes Principales**:
+
+        * **Equipo de Comunicación**: Personal designado responsable de comunicaciones
+        * **Canales de Comunicación**: Múltiples medios y métodos de comunicación
+        * **Mensajes Predefinidos**: Templates y guiones para diferentes escenarios
+        * **Cronograma de Comunicación**: Cuándo y con qué frecuencia comunicar
+        * **Procedimientos de Activación**: Cómo activar el plan de comunicación
+      </TopicConceptCard>
+      <TopicConceptCard title="Stakeholders Internos y Externos">
+        **Stakeholders Internos**:
+
+        * **Alta Dirección**: Información estratégica y decisiones críticas
+        * **Empleados**: Instrucciones, estado de operaciones, seguridad
+        * **Equipos Técnicos**: Información técnica detallada, procedimientos
+        * **Recursos Humanos**: Impacto en personal, políticas de trabajo remoto
+
+        **Stakeholders Externos**:
+
+        * **Clientes**: Estado de servicios, expectativas, alternativas
+        * **Proveedores**: Impacto en cadenas de suministro, necesidades
+        * **Reguladores**: Cumplimiento, reportes requeridos
+        * **Medios**: Comunicados oficiales, gestión de imagen
+        * **Accionistas**: Impacto financiero, medidas tomadas
+      </TopicConceptCard>
+      <TopicConceptCard title="Canales de Comunicación Alternativos">
+        **Importancia**: Durante incidentes, los canales normales pueden estar inoperativos, requiriendo alternativas.
+
+        **Canales Primarios**:
+
+        * Correo electrónico corporativo
+        * Teléfono (fijo y móvil)
+        * Sistemas de mensajería interna
+        * Intranet corporativa
+
+        **Canales Alternativos**:
+
+        * Teléfonos móviles personales
+        * Correo electrónico personal
+        * Redes sociales corporativas
+        * Líneas telefónicas de emergencia
+        * Radio de emergencia
+        * Centro de llamadas externo
+        * Página web de estado/incidentes
+
+        **Consideraciones**: Mantener lista actualizada de contactos, probar canales alternativos periódicamente
+      </TopicConceptCard>
+      <TopicConceptCard title="Mensajes Predefinidos y Plantillas">
+        **Objetivo**: Preparar mensajes para diferentes escenarios para comunicar rápida y consistentemente.
+
+        **Tipos de Mensajes**:
+
+        * **Notificación Inicial**: Informar sobre el incidente, estado actual
+        * **Actualizaciones de Estado**: Progreso en resolución, expectativas
+        * **Instrucciones**: Qué hacer, dónde ir, cómo proceder
+        * **Comunicado de Resolución**: Confirmación de restauración, próximos pasos
+
+        **Elementos de un Mensaje Efectivo**:
+
+        * Claro y conciso
+        * Información relevante y actualizada
+        * Tono apropiado al contexto
+        * Próximos pasos o acciones requeridas
+        * Información de contacto para preguntas
+      </TopicConceptCard>
+      <TopicConceptCard title="Gestión de Medios y Relaciones Públicas Durante Crisis">
+        **Importancia**: La comunicación pública durante crisis puede afectar significativamente la reputación de la organización.
+
+        **Principios**:
+
+        * **Transparencia**: Proporcionar información precisa y oportuna
+        * **Consistencia**: Mensaje unificado a través de todos los canales
+        * **Proactividad**: Comunicar antes de que los medios busquen información
+        * **Empatía**: Reconocer impacto en clientes y partes interesadas
+
+        **Estructura**:
+
+        * Portavoz designado y capacitado
+        * Comunicados de prensa preparados
+        * Página web de estado de incidentes
+        * Redes sociales monitoreadas y gestionadas
+        * Línea directa para medios
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Tipos de Pruebas y Ejercicios' icon='test-pipe-2-filled'>
+    **Definición**: Las pruebas y ejercicios son fundamentales para validar la efectividad del BCP y asegurar que el personal conoce sus roles y procedimientos. Sin pruebas regulares, un plan puede volverse obsoleto o inefectivo.
+
+    <TopicConceptCard title="Escalera de Complejidad de Pruebas">
+      | Tipo de Prueba                | Descripción                                                                                     | Complejidad | Costo  | Frecuencia Recomendada | Riesgo de Ejecución |
+      |-------------------------------|-------------------------------------------------------------------------------------------------|-------------|--------|------------------------|---------------------|
+      | ***Desktop Exercise***         | Revisión de procedimientos en un entorno de oficina, sin interrupción real.                     | <Badge>Baja</Badge>        | <Badge>Bajo</Badge>   | Anual                  | <Badge>Bajo</Badge>                |
+      | ***Walkthrough***              | Simulación de escenarios específicos con participación activa, pero sin interrupción real.     | <Badge variant="success">Media</Badge>       | <Badge variant="success">Moderado</Badge> | Anual o Semestral      | <Badge>Bajo</Badge>                |
+      | ***Simulation***               | Ejercicio completo con roles asignados, simulando interrupciones reales.                        | <Badge variant="warning">Alta</Badge>        | <Badge variant="warning">Alto</Badge>   | Anual o Semestral      | <Badge variant="success">Moderado</Badge>            |
+      | ***Full Interruption Test***   | Prueba completa que interrumpe operaciones reales, validando la recuperación en condiciones reales. | <Badge variant="danger">Muy Alta</Badge>    | <Badge variant="danger">Muy Alto</Badge> | Cada 2-3 años          | <Badge variant="warning">Alto</Badge>                |
+    </TopicConceptCard>
+    <TopicConceptCard title="Guía de Selección de Tipo de Prueba">
+      ***Desktop Exercise***: Ideal para planes nuevos, actualizaciones o validación inicial de comprensión
+
+      ***Walkthrough***: Útil para verificar procedimientos detallados y disponibilidad de recursos
+
+      ***Simulation***: Recomendado para probar componentes específicos y entrenar personal
+
+      ***Full Interruption Test***: Solo cuando se requiere validación completa, con aprobación ejecutiva y plan de aborto
+    </TopicConceptCard>
+  </TopicConceptSection>
+  <TopicConceptSection title='Plan de Vuelta a la Normalidad' icon='home-dot'>
+    **Definición**: El plan de vuelta a la normalidad establece los procedimientos para retornar las operaciones desde el sitio de respaldo o modo de recuperación al sitio principal y operaciones normales. Es crítico para evitar riesgos adicionales durante la transición.
+
+    <TopicGrid>
+      <TopicConceptCard title="Proceso de Transición a la Normalidad">
+        1. **Preparación**: Validar sitio principal, preparar cronograma, comunicar plan de transición a stakeholders
+        2. **Migración de Datos**: Sincronizar y validar integridad de datos entre sitio de respaldo y sitio principal
+        3. **Activación**: Encender sistemas en sitio principal, validar funcionalidad y rendimiento
+        4. **Transición**: Redirigir tráfico y transicionar personal al sitio principal, monitorear estabilidad
+      </TopicConceptCard>
+      <TopicConceptCard title="Criterios para Determinar Cuándo Volver a Operaciones Normales">
+        **Factores de Evaluación**:
+
+        * **Estabilidad del Sitio Principal**: Infraestructura restaurada y estable
+        * **Validación de Sistemas**: Sistemas probados y funcionando correctamente
+        * **Disponibilidad de Recursos**: Personal, equipos y suministros disponibles
+        * **Condiciones Externas**: Factores externos que causaron la interrupción resueltos
+        * **Capacidad Operativa**: Capacidad de manejar carga de trabajo normal
+
+        **Proceso de Decisión**: Evaluación formal por equipo de gestión, aprobación ejecutiva, comunicación a stakeholders
+      </TopicConceptCard>
+      <TopicConceptCard title="Validación de Sistemas Antes del Retorno">
+        **Checklist de Validación**:
+
+        * **Infraestructura Física**: Edificio, energía, climatización, seguridad
+        * **Infraestructura de Red**: Conectividad, ancho de banda, redundancia
+        * **Sistemas de TI**: Servidores, bases de datos, aplicaciones
+        * **Datos**: Integridad, sincronización, backups actuales
+        * **Seguridad**: Controles de acceso, *firewalls*, monitoreo
+        * **Comunicaciones**: Teléfonos, correo, sistemas de mensajería
+
+        **Pruebas Requeridas**: Pruebas funcionales, pruebas de carga, pruebas de seguridad, validación de *backups*
+      </TopicConceptCard>
+      <TopicConceptCard title="Comunicación del Retorno a la Normalidad">
+        **Stakeholders a Informar**:
+
+        * **Personal Interno**: Confirmar retorno a operaciones normales, nuevos procedimientos si aplica
+        * **Clientes**: Confirmar restauración completa de servicios, agradecer paciencia
+        * **Proveedores**: Restablecer procesos normales, actualizar contactos
+        * **Reguladores**: Reportar resolución del incidente si es requerido
+        * **Medios**: Comunicado oficial sobre resolución
+
+        **Elementos del Comunicado**:
+
+        * Confirmación de restauración completa
+        * Fecha y hora de retorno a normalidad
+        * Información sobre servicios restaurados
+        * Contacto para preguntas o problemas
+        * Agradecimiento por paciencia y comprensión
+      </TopicConceptCard>
+      <TopicConceptCard title="Lecciones Aprendidas y Mejora Continua">
+        **Proceso Post-Incidente**:
+
+        1. **Reunión de Lecciones Aprendidas**
+
+        * Revisar cronología del incidente
+        * Identificar qué funcionó bien
+        * Identificar áreas de mejora
+        * Documentar problemas encontrados
+        2. **Análisis de Causa Raíz**
+
+        * Determinar causas del incidente
+        * Identificar factores contribuyentes
+        * Evaluar efectividad de respuesta
+        3. **Actualización del Plan**
+
+        * Incorporar lecciones aprendidas
+        * Actualizar procedimientos
+        * Mejorar documentación
+        * Actualizar contactos y recursos
+        4. **Mejora Continua**
+
+        * Revisar y actualizar regularmente
+        * Incorporar cambios organizacionales
+        * Actualizar según nuevas amenazas
+        * Mantener el plan vivo y relevante
+      </TopicConceptCard>
+    </TopicGrid>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='Otras Normas - Continuidad del Negocio' icon='table-spark'>
+  <TopicConceptSection title="Comparativa de Normas y Estándares de Continuidad del Negocio" icon="scale">
+    Además de la norma UNE 71599-2:2010, existen otros estándares y marcos de referencia reconocidos internacionalmente para la gestión de la continuidad del negocio. La siguiente tabla presenta una comparativa de las principales normas disponibles:
+
+    <TopicGrid>
+      <TopicConceptCard title="ISO 22301:2019 - Seguridad y Resiliencia - Sistemas de Gestión de Continuidad del Negocio">
+        **Descripción**: Estándar internacional que especifica los requisitos para establecer, implementar, mantener y mejorar un sistema de gestión de continuidad del negocio (BCMS).
+
+        **Organización**: *International Organization for Standardization* (ISO)
+
+        **Enfoque**: Proporciona un marco estructurado para la gestión de la continuidad del negocio, incluyendo análisis de impacto en el negocio, evaluación de riesgos, estrategias de continuidad, planes de respuesta a incidentes y mejora continua.
+
+        **Alcance y Características**:
+
+        * Estándar internacional para sistemas de gestión de continuidad del negocio
+        * Enfoque en procesos de negocio críticos
+        * Certificable por organismos acreditados
+        * Estructura basada en ciclo PDCA
+
+        **Aplicabilidad**:
+
+        * Organizaciones de todos los tamaños y sectores
+        * Requisito común en contratos y licitaciones
+        * Certificación reconocida internacionalmente
+      </TopicConceptCard>
+      <TopicConceptCard title="NIST SP 800-34 Rev. 1 - Contingency Planning Guide for Federal Information Systems">
+        **Descripción**: Guía publicada por el National Institute of Standards and Technology (NIST) que proporciona directrices para la planificación de contingencia en sistemas de información federales.
+
+        **Organización**: *National Institute of Standards and Technology* (NIST)
+
+        **Enfoque**: Proporciona un marco para desarrollar planes de contingencia específicos para sistemas de información, incluyendo análisis de impacto, estrategias de recuperación, pruebas y mantenimiento.
+
+        **Alcance y Características**:
+
+        * Guía de continuidad de operaciones para sistemas de información federales
+        * Enfoque en planificación de continuidad de TI
+        * Metodología estructurada paso a paso
+        * Incluye plantillas y ejemplos prácticos
+
+        **Aplicabilidad**:
+
+        * Agencias federales de EE.UU.
+        * Organizaciones con enfoque en seguridad de la información
+        * Relevante para planificación de continuidad en TI
+      </TopicConceptCard>
+      <TopicConceptCard title="BS 25999-2:2007 - Business Continuity Management Systems - Requirements">
+        **Descripción**: Norma británica que especifica los requisitos para un sistema de gestión de continuidad del negocio (BCMS), que sirvió como base para el desarrollo de la ISO 22301.
+
+        **Organización**: *British Standards Institution* (BSI)
+
+        **Enfoque**: Proporciona un marco para la gestión de la continuidad del negocio, incluyendo análisis de impacto, evaluación de riesgos, estrategias de continuidad, planes de respuesta a incidentes y mejora continua.
+
+        **Alcance y Características**:
+
+        * Norma británica para sistemas de gestión de continuidad del negocio
+        * Enfoque en procesos de negocio críticos
+        * Certificable por organismos acreditados
+        * Estructura basada en ciclo PDCA
+        * Predecesora de ISO 22301, con enfoque similar pero menos adoptada internacionalmente
+
+        **Aplicabilidad**:
+
+        * Organizaciones en el Reino Unido
+        * Relevante para organizaciones que buscan certificación en continuidad del negocio
+        * Base histórica para desarrollo de ISO 22301
+        * Referencia para implementaciones previas al 2012
+      </TopicConceptCard>
+      <TopicConceptCard title="FFIEC 101 - Business Continuity Planning for Financial Institutions">
+        **Descripción**: Guía desarrollada por el Federal Financial Institutions Examination Council (FFIEC) que proporciona directrices específicas para la planificación de continuidad del negocio en instituciones financieras.
+
+        **Organización**: *Federal Financial Institutions Examination Council* (FFIEC)
+
+        **Enfoque**: Proporciona un marco para desarrollar planes de continuidad del negocio específicos para el sector financiero, incluyendo análisis de impacto, evaluación de riesgos, estrategias de continuidad, pruebas y mantenimiento.
+
+        **Alcance y Características**:
+
+        * Guía de continuidad de operaciones para instituciones financieras
+        * Enfoque en riesgos y amenazas específicos del sector financiero
+        * Requisitos regulatorios para entidades financieras
+        * Énfasis en resiliencia y recuperación
+        * Metodología estructurada paso a paso
+        * Incluye plantillas y ejemplos prácticos
+
+        **Aplicabilidad**:
+
+        * Instituciones financieras reguladas por FFIEC en EE.UU.
+        * Relevante para bancos, cooperativas de crédito, compañías de seguros y otras entidades financieras
+        * Relevante para planificación de continuidad en el sector financiero
+        * Enfoque específico en riesgos financieros y cibernéticos
+      </TopicConceptCard>
+      <TopicConceptCard title="ITIL Continuity Management">
+        **Descripción**: Parte del marco de mejores prácticas ITIL (*Information Technology Infrastructure Library*) que se enfoca en la gestión de la continuidad de los servicios de TI.
+
+        **Organización**: *AXELOS* (anteriormente parte de la OGC - *Office of Government Commerce*)
+
+        **Enfoque**: Proporciona directrices para asegurar la continuidad de los servicios de TI, incluyendo análisis de impacto, evaluación de riesgos, estrategias de continuidad, planes de respuesta a incidentes y mejora continua.
+
+        **Alcance y Características**:
+
+        * Parte del marco ITIL para gestión de servicios de TI
+        * Enfoque específico en continuidad de servicios de TI
+        * Integración con otros procesos ITIL (gestión de incidentes, problemas, cambios)
+        * No certificable como norma independiente, pero parte integral del marco ITIL
+        * Mejores prácticas para servicios tecnológicos
+        * Enfoque en continuidad de servicios tecnológicos, con énfasis en recuperación rápida y minimización de impacto en usuarios finales
+
+        **Aplicabilidad**:
+
+        * Organizaciones que implementan ITIL para gestión de servicios de TI
+        * Relevante para planificación de continuidad en el ámbito de TI
+        * Enfoque específico en continuidad de servicios tecnológicos
+        * Complementario a normas más amplias de continuidad del negocio, proporcionando un enfoque detallado para la continuidad de TI
+      </TopicConceptCard>
+    </TopicGrid>
+
+    <TopicConceptCard title="Notas Importantes sobre Normas de Continuidad del Negocio">
+      * **UNE 71599-2:2010** es el estándar español específico para gestión de continuidad del negocio, alineado con las mejores prácticas internacionales.
+      * **ISO 22301** es el estándar internacional más ampliamente adoptado y reconocido globalmente.
+      * ***ITIL Continuity Management*** se enfoca específicamente en servicios de TI, mientras que otros marcos tienen un alcance más amplio.
+      * La selección del marco adecuado depende del sector, tamaño de la organización, requisitos regulatorios y objetivos específicos.
+      * Muchas organizaciones combinan múltiples marcos para cubrir diferentes aspectos de la continuidad del negocio.
+    </TopicConceptCard>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='Casos de Estudio' icon='flask'>
+  <TopicConceptSection>
+    <AccordionRoot type='single'>
+      <TopicCaseStudies topic='topic9' />
+    </AccordionRoot>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='Actividades de Refuerzo' icon='list-check'>
+  <TopicConceptSection
+    title="Actividad 1: BIA orientado a Servicios TI (UNE 71599-2:2010)"
+    activity
+    estimatedDuration={120}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      **Propósito**: que el estudiante entienda continuidad desde lo que más ve en informática: **servicios TI**, no solo “procesos de negocio”.
+
+      **Resultados de aprendizaje**
+
+      * Diferenciar **proceso de negocio vs servicio TI** y cómo se encadenan.
+      * Estimar **impactos por horizonte temporal** y derivar **MTPD, RTO, RPO**.
+      * Identificar **dependencias técnicas** (apps, datos, red, proveedores, personas).
+
+      **Contexto (elige 1 caso)**
+
+      * Plataforma de agendamiento (salud),
+      * e-commerce local,
+      * universidad (matrícula virtual),
+      * fintech simple,
+      * empresa de logística.
+
+      > **Regla**: define mínimo **6 servicios TI** (no “módulos”): ej. Autenticación, API principal, BD, correo/notificaciones, pagos, monitoreo.
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
+      1. **Catálogo de servicios TI (mini)**: nombre, dueño del servicio, usuarios, horario, SLA actual (si no existe, proponer uno).
+
+      2. **Mapa de dependencias (obligatorio)**:
+
+          * Servicio &#x21FE; aplicaciones &#x21FE; datos &#x21FE; infraestructura &#x21FE; proveedores (cloud/ISP/SMS/email).
+          * Marca “punto único de falla” (SPOF).
+
+      3. **BIA por servicio (no por proceso)**: para cada servicio, completa:
+
+          * Impacto **operativo / financiero / legal / reputacional** (escala 1&#x2013;5).
+          * Impacto por tiempo: **0&#x2013;2h / 2&#x2013;8h / 8&#x2013;24h / 1&#x2013;3d / >3d**.
+
+      4. **Deriva los objetivos UNE típicos**:
+
+          * **MTPD** (máximo tolerable sin el servicio).
+          * **RTO** (tiempo objetivo para restaurar el servicio).
+          * **RPO** (máxima pérdida de datos tolerable).
+
+      5. **Clasifica criticidad** (Alta/Media/Baja) con una regla explícita (ej. “Alta si MTPD ≤ 8h o impacto legal ≥4”).
+
+      6. **Valida supuestos**: lista 5 supuestos y 5 riesgos del análisis (ej. “dependemos de un solo ISP”).
+
+      **Entregables**
+
+      * Tabla BIA (servicio, impactos, MTPD/RTO/RPO, criticidad).
+      * Mapa de dependencias (diagrama simple o tabla tipo CMDB).
+      * 1 párrafo: “los 3 servicios más críticos y por qué”.
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection
+    title="Actividad 2: Estrategias de continuidad y recuperación para TI (UNE 71599-2:2010)"
+    activity
+    estimatedDuration={180}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      **Propósito**: pasar de “objetivos” a “decisiones técnicas” (arquitectura + operación).
+
+      **Resultados de aprendizaje**
+
+      * Proponer estrategias que **cumplan RTO/RPO** con costos y complejidad reales.
+      * Comparar enfoques: ***backup/restore* vs *standby* vs activo-activo**, y alternativas operativas.
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
+      1. Selecciona los **3 servicios TI más críticos** del BIA.
+
+      2. Para cada servicio, plantea **3 estrategias** (mínimo 1 por cada categoría):
+
+          * **Tecnología**: *backups*, replicación, multi-zona/región, *clustering*, IaC, *snapshots*, colas.
+          * **Proceso**: *runbook*, escalamiento, cambios de emergencia, priorización, “degradación controlada”.
+          * **Personas/proveedores**: turnos, contactos, acuerdos (OLA/UC), soporte 24/7, proveedor alterno.
+
+      3. Evalúa cada estrategia con una **matriz ponderada** (ejemplo de criterios):
+
+          * Cumple RTO (0&#x2013;5) y cumple RPO (0&#x2013;5)
+          * Costo (0&#x2013;5, invertido)
+          * Complejidad operativa (0&#x2013;5, invertido)
+          * Riesgo (0&#x2013;5, invertido)
+          * Dependencia de proveedor / *lock-in* (0&#x2013;5, invertido)
+
+      4. Define para la estrategia ganadora:
+
+          * Recursos (humanos y técnicos)
+          * Pre-requisitos (automatización, monitoreo, *backups* probados)
+          * Tiempo de implementación (semanas)
+          * Riesgos residuales (qué sigue quedando vulnerable)
+
+      **Escenarios obligatorios (aplica los 3)**
+
+      * Caída total de BD o corrupción lógica
+      * Caída del proveedor *cloud*/ISP (indisponibilidad regional)
+      * Incidente de ciberseguridad (ransomware o borrado malicioso)
+
+      **Entregables**
+
+      * Matriz de decisión por servicio + recomendación final.
+      * “Arquitectura de continuidad” (diagrama simple: primario/backup/replica).
+      * Lista priorizada de mejoras (backlog) con 5&#x2013;10 ítems.
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection
+    title="Actividad 3: Diseño del Plan de Continuidad y Runbooks de DR para Servicios TI"
+    activity
+    estimatedDuration={240}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      **Propósito**: que el estudiante produzca un plan aplicable (no solo texto), con guías operativas.
+
+      **Resultados de aprendizaje**
+
+      * Construir un plan con **activación, roles, comunicaciones, procedimientos**.
+      * Redactar ***runbooks*** (pasos técnicos verificables) y criterios de “servicio recuperado”.
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
+      1. Estructura mínima del plan:
+
+          * Alcance (servicios TI cubiertos) y exclusiones
+          * Objetivos (RTO/RPO por servicio)
+          * Roles y responsabilidades (**RACI**)
+          * Criterios de activación (cuándo se declara contingencia)
+
+      2. **Organización del equipo (*rol-play* recomendado)**:
+
+          * *Incident Commander*
+          * *Service Owner*(s)
+          * Responsable de *Infra/Cloud*
+          * Responsable de Seguridad
+          * Comunicaciones
+
+      3. **Plan de comunicaciones (con plantillas)**:
+
+          * Interno (TI + directivos)
+          * Usuarios/Clientes
+          * Proveedores críticos
+          * Autoridades/regulador (si aplica)
+
+      4. **Runbooks (obligatorio 2)**:
+
+          * ***Runbook* A**: restauración de BD (incluye verificación de integridad)
+          * ***Runbook* B**: caída de aplicación/API (incluye *rollback* / despliegue alterno)
+
+          Cada runbook debe tener:
+
+          * Pre-chequeos (alertas, evidencia, alcance)
+          * Pasos numerados (con comandos/acciones)
+          * Punto de no retorno
+          * Validación (qué pruebas confirman recuperación)
+          * Post-incidente (acciones de *hardening*)
+
+      5. **Plan de pruebas y simulacros**:
+
+          * *Tabletop* (discusión guiada)
+          * Prueba técnica controlada (restore en entorno de prueba)
+          * Frecuencia y responsables
+
+      **Entregables**
+
+      * Documento del plan (10&#x2013;15 páginas o equivalente).
+      * 2 runbooks técnicos (máximo 2 páginas cada uno, ultra accionables).
+      * RACI + árbol de escalamiento (quién llama a quién).
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection
+    title="Actividad 4. Pruebas, mejora continua y comparación con marcos (en clave TI)"
+    activity
+    estimatedDuration={120}
+  >
+    <TopicConceptCard title="Objetivo" status='info' icon='target-arrow'>
+      **Propósito**: cerrar el ciclo: **probar &#x21FE; medir &#x21FE; mejorar**, y ubicar UNE 71599-2 dentro del ecosistema (ISO/ITIL/COBIT/NIST).
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Instrucciones" status='success' icon='list-numbers'>
+      1. Ejecuta un ***tabletop exercise*** (30&#x2013;45 min) con un guion:
+
+          * “*Ransomware* cifra el servidor de BD” o “caída regional del cloud”
+          * Decisiones: activar plan, comunicaciones, priorización de servicios
+
+      2. Redacta un *After Action Report* (AAR):
+
+          * Qué funcionó / qué falló
+          * “Brechas” (*gaps*) del plan
+          * Acciones correctivas con responsable y fecha
+
+      3. **Matriz de correspondencia (comparación)**: cruza tus artefactos con:
+
+          * ISO 22301 (BCMS)
+          * ISO/IEC 27031 (continuidad TI)
+          * ITIL 4 (gestión de continuidad/ disponibilidad/ incidentes)
+          * COBIT (gobierno y objetivos de control)
+          * NIST (*contingency planning* / respuesta)
+          * UNE 71599-2:2010 (BIA + estrategias)
+
+      4. Concluye con una recomendación:
+
+          * “Si la organización es pequeña/mediana/grande… ¿qué adopto primero y por qué?”
+          * *Roadmap* 30-60-90 días (mínimo 6 acciones)
+
+      **Entregables**
+
+      * Guion del ejercicio + AAR.
+      * Matriz comparativa (marco &#x21FE; qué aporta &#x21FE; qué me falta).
+      * *Roadmap* 30-60-90 días (mínimo 6 acciones).
+    </TopicConceptCard>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicResourceSection topic='topic9' />

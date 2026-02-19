@@ -837,5 +837,208 @@
         ]
       }
     ]
+  },
+  "topic9": {
+    "groups": [
+      {
+        "title": "Vídeos Recomendados",
+        "items": [
+          {
+            "label": "YouTube: Fundamentos de ISO 22301 para continuidad de negocio (webinar)",
+            "url": "https://www.youtube.com/watch?v=zcTPVT9i4Ws"
+          },
+          {
+            "label": "YouTube: ISO 22301 - ciclo de vida de la continuidad de negocio",
+            "url": "https://www.youtube.com/watch?v=6XytMOOmoSY"
+          },
+          {
+            "label": "YouTube: ISO 22301 versión 2019 (planes de contingencia)",
+            "url": "https://www.youtube.com/watch?v=DaOVHpM16rs"
+          },
+          {
+            "label": "YouTube Playlist: ISO 22301 Sistema de Continuidad del Negocio",
+            "url": "https://www.youtube.com/playlist?list=PLRDY734dj_F-t7A6rlTC9jOMzzFXV1_Nr"
+          },
+          {
+            "label": "YouTube: Tutorial BIA (plantilla) + cálculo RTO/RPO",
+            "url": "https://www.youtube.com/watch?v=lWzUlA_tafk"
+          },
+          {
+            "label": "YouTube: Introducción a la Continuidad del negocio (ISO 22301)",
+            "url": "https://www.youtube.com/watch?v=2SyanSiDJnU"
+          },
+          {
+            "label": "YouTube: Buenas prácticas en continuidad TIC (menciona ISO/NIST/INCIBE)",
+            "url": "https://www.youtube.com/watch?v=f-g0GPkdX3Q"
+          }
+        ]
+      },
+      {
+        "title": "Normativas / guías técnicas",
+        "items": [
+          {
+            "label": "UNE 71599-2:2010 (ficha oficial de la norma en UNE)",
+            "url": "https://www.une.org/encuentra-tu-norma/busca-tu-norma/norma?c=N0046145"
+          },
+          {
+            "label": "BOE: referencia a UNE 71599-1/2 (mención en resolución)",
+            "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2010-18888"
+          },
+          {
+            "label": "Presentación: Continuidad de Negocio (UNE 71599 / BS 25999) - SlideShare",
+            "url": "https://es.slideshare.net/slideshow/continuidad-de-negocio-une-71599-bs-25999/8122728"
+          },
+          {
+            "label": "ISO 22301 (visión general oficial ISO - BCMS)",
+            "url": "https://www.iso.org/obp/ui/en/#iso:pub:PUB100442"
+          },
+          {
+            "label": "NIST SP 800-34 Rev.1: Contingency Planning Guide for Federal Information Systems (PDF)",
+            "url": "https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-34r1.pdf"
+          },
+          {
+            "label": "NIST CSRC: SP 800-34 Rev.1 (página oficial)",
+            "url": "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final"
+          },
+          {
+            "label": "ISO: ISO/IEC 27031 (página oficial del estándar)",
+            "url": "https://www.iso.org/standard/27031"
+          }
+        ]
+      },
+      {
+        "title": "Organizaciones / hubs oficiales útiles",
+        "items": [
+          {
+            "label": "Guía BIA (Análisis de Impacto de Negocio) - ICETEX (PDF)",
+            "url": "https://web.icetex.gov.co/documents/20122/770686/e2-1-17-analisis-de-impacto-de-negocio-bia-v1.pdf"
+          },
+          {
+            "label": "Modelo metodológico BIA (Gestión Estratégica TI) - MinAmbiente Colombia (PDF)",
+            "url": "https://somosig.minambiente.gov.co/files/mod_documentos/documentos/DS-E-GET-22/DS-E-GET-22_copia_controlada.pdf"
+          },
+          {
+            "label": "AEC: Continuidad del negocio (artículo/centro de conocimiento)",
+            "url": "https://www.aec.es/conocimiento/centro-del-conocimiento/continuidad-del-negocio/"
+          },
+          {
+            "label": "INCIBE: Plan de Contingencia y Continuidad (enfoque TIC) (PDF)",
+            "url": "https://www.incibe.es/sites/default/files/contenidos/dosieres/metad_plan_de_contingencia_y_continuidad_de_negocio.pdf"
+          },
+          {
+            "label": "INCIBE: Plan de Contingencia y Continuidad de Negocio (landing con recursos)",
+            "url": "https://www.incibe.es/empresas/que-te-interesa/plan-contingencia-continuidad-negocio"
+          },
+          {
+            "label": "INCIBE: Fases de un Plan de Continuidad de Negocio (artículo)",
+            "url": "https://www.incibe.es/empresas/blog/fases-plan-continuidad-negocio"
+          },
+          {
+            "label": "ENISA: Business and IT Continuity (PDF)",
+            "url": "https://www.enisa.europa.eu/sites/default/files/publications/enisa_business_it_continuity_v1.51.pdf"
+          }
+        ]
+      },
+      {
+        "title": "Artículos de Interés",
+        "items": [
+          {
+            "label": "Advisera: ¿Qué es BS 25999? (contexto histórico y relación con continuidad)",
+            "url": "https://advisera.com/27001academy/es/what-is-bs-25999/"
+          },
+          {
+            "label": "Dataguard: ISO 27031 para Disaster Recovery (artículo)",
+            "url": "https://www.dataguard.com/blog/iso-27031-it-disaster-recovery-plan"
+          },
+          {
+            "label": "Atlassian ITSM: IT Service Continuity Management (ITSCM) (ITIL 4)",
+            "url": "https://www.atlassian.com/itsm/incident-management/itscm"
+          },
+          {
+            "label": "IT Process Wiki: IT Service Continuity Management (ITIL)",
+            "url": "https://wiki.en.it-processmaps.com/index.php/IT_Service_Continuity_Management"
+          },
+          {
+            "label": "ISACA: Disaster Recovery & Business Continuity (cloud start-ups) (artículo)",
+            "url": "https://www.isaca.org/resources/news-and-trends/isaca-now-blog/2023/disaster-recovery-and-business-continuity-preparedness-for-cloud-based-start-ups"
+          },
+
+          {
+            "label": "Microsoft Engineering Playbook: Disaster Recovery & Continuity (guía)",
+            "url": "https://microsoft.github.io/code-with-engineering-playbook/non-functional-requirements/disaster-recovery/"
+          },
+          {
+            "label": "Azure Site Recovery (documentación oficial)",
+            "url": "https://learn.microsoft.com/en-us/azure/site-recovery/"
+          },
+          {
+            "label": "Azure: arquitectura de DR Azure-to-Azure (documentación oficial)",
+            "url": "https://learn.microsoft.com/en-us/azure/site-recovery/azure-to-azure-architecture"
+          },
+          {
+            "label": "GitHub: Azure Business Continuity Guide (BCDR) (repositorio)",
+            "url": "https://github.com/Azure/BusinessContinuityGuide"
+          },
+          {
+            "label": "AWS Whitepaper: Disaster Recovery options in the cloud (Workloads on AWS)",
+            "url": "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html"
+          }
+        ]
+      },
+      {
+        "title":"Herramientas Online",
+        "items": [
+          {
+            "label": "ServiceNow: Business Continuity Management (producto)",
+            "url": "https://www.servicenow.com/products/business-continuity-management.html"
+          },
+          {
+            "label": "ServiceNow Docs: Business Continuity Management overview",
+            "url": "https://www.servicenow.com/docs/r/washingtondc/governance-risk-compliance/grc-business-continuity-management-components/business-continuity-mangmt-overview.html"
+          },
+          {
+            "label": "Fusion Risk Management: Business Continuity Management Software",
+            "url": "https://www.fusionrm.com/solutions/business-continuity-management/"
+          },
+          {
+            "label": "Veeam: About Veeam Backup & Replication (documentación)",
+            "url": "https://helpcenter.veeam.com/docs/vbr/userguide/overview.html"
+          },
+          {
+            "label": "Zerto: Overview of Disaster Recovery Operations (documentación)",
+            "url": "https://help.zerto.com/bundle/Admin.VC.HTML/page/Overview_of_Disaster_Recovery_Operations.htm"
+          },
+          {
+            "label": "Zerto: Platform Architecture Guide (PDF)",
+            "url": "https://www.zerto.com/myzerto/wp-content/uploads/2021/03/Zerto-Platform-Architecture-Guide.pdf"
+          }
+        ]
+      },
+      {
+        "title": "Libros Recomendados",
+        "items": [
+          {
+            "label": "Libro: A Manager's Guide to ISO 22301 (Amazon)",
+            "url": "https://www.amazon.com/-/es/Managers-Guide-22301-Governance-Publishing/dp/1849284679"
+          },
+          {
+            "label": "Libro: The Definitive Handbook of Business Continuity Management (Amazon)",
+            "url": "https://www.amazon.com/Definitive-Handbook-Business-Continuity-Management/dp/0470670142"
+          },
+          {
+            "label": "Libro: The Disaster Recovery Handbook (Amazon)",
+            "url": "https://www.amazon.com/Disaster-Recovery-Handbook-Step-Step/dp/0814472400"
+          },
+          {
+            "label": "Libro: Business Continuity Management: Global Best Practices (Andrew Hiles) (Google Books)",
+            "url": "https://books.google.com/books?id=8KoZDAAAQBAJ&printsec=frontcover"
+          },
+          {
+            "label": "Libro: Business Continuity Management: A Practical Guide to Organization Resilience and ISO 22301 (Wiley)",
+            "url": "https://www.wiley.com/en-nz/Business%2BContinuity%2BManagement%3A%2BA%2BPractical%2BGuide%2Bto%2BOrganization%2BResilience%2Band%2BISO%2B22301%2C%2B2nd%2BEdition-p-00447651"
+          }
+        ]
+      }
+    ]
   }
 }
