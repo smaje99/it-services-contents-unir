@@ -13,3 +13,360 @@ badges:
     variant: 'secondary'
     icon: 'rocket'
 ---
+
+import TopicConceptCard from '@/components/topic/TopicConceptCard.astro';
+import TopicConceptSection from '@/components/topic/TopicConceptSection.astro';
+import TopicGrid from '@/components/topic/TopicGrid.astro';
+import TopicSectionGroup from '@/components/topic/TopicSectionGroup.astro';
+
+<TopicSectionGroup title='¿Qué es n8n?' icon='book-filled'>
+  <TopicConceptSection title='Definición' icon='info-circle-filled'>
+    n8n es una herramienta de automatización de flujos de trabajo que permite conectar aplicaciones y servicios sin necesidad de programación. Es una plataforma de código abierto que facilita la creación de flujos de trabajo personalizados para automatizar tareas repetitivas y mejorar la eficiencia.
+    Su nombre proviene de "n8n" que significa "*node to node*", reflejando su capacidad para conectar diferentes aplicaciones y servicios a través de nodos en un flujo de trabajo visual.
+    En el presente, n8n es ampliamente utilizado por empresas y desarrolladores para automatizar procesos, integrar sistemas y mejorar la productividad.
+
+    <TopicConceptCard title="Analogía" icon="bulb" status="warning">
+     Imagina n8n como un 'chef de cocina' que sigue una receta (flujo) paso a paso: recibe ingredientes (datos), los procesa (transforma), los combina (integra servicios) y produce un plato final (resultado).
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Características Principales' icon='info-circle-filled'>
+    n8n es una plataforma visual de automatización que permite crear flujos de trabajo mediante una interfaz de arrastrar y soltar. Es especialmente útil para automatizar procesos empresariales, integraciones entre sistemas y tareas repetitivas.
+
+    <TopicConceptCard title="Características Clave">
+      * Interfaz visual intuitiva (*drag & drop*)
+      * Más de 400 integraciones pre-construidas
+      * Código abierto y auto-hospedable
+      * Versión cloud gratuita disponible
+      * Soporte para lógica condicional y loops
+      * Manejo de errores y reintentos automáticos
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='¿Por qué usar n8n?' icon='info-circle-filled'>
+    n8n permite automatizar procesos que normalmente requieren intervención manual, ahorrando tiempo, reduciendo errores y mejorando la eficiencia operativa.
+
+    <TopicConceptCard title="Beneficios">
+      * Ahorro de tiempo en tareas repetitivas
+      * Reducción de errores humanos
+      * Integración entre diferentes sistemas
+      * Automatización de procesos complejos
+      * Escalabilidad de operaciones
+      * Mejora en la productividad
+    </TopicConceptCard>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='Conceptos Fundamentales' icon='book-filled'>
+  <TopicConceptSection title='Workflow (Flujo de Trabajo)' icon='info-circle-filled'>
+    Un workflow en n8n es una secuencia de nodos que representan tareas o acciones específicas. Cada nodo puede realizar una función, como enviar un correo electrónico, transformar datos o interactuar con una API. Los workflows permiten automatizar procesos complejos al encadenar múltiples nodos de manera lógica.
+
+    <TopicConceptCard title="Componentes">
+      * Nodos conectados en secuencia
+      * Lógica de decisión (condiciones)
+      * Manejo de datos entre nodos
+      * Manejo de errores
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Ejemplo de Workflow" status='info' icon='code'>
+      Un flujo que recibe datos de software &#x21FE; los clasifica &#x21FE; calcula riesgos &#x21FE; los guarda en Google Sheets &#x21FE; genera un reporte.
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Node (Nodo)' icon='info-circle-filled'>
+    Un nodo en n8n es una unidad de trabajo que realiza una tarea específica dentro de un workflow. Cada nodo tiene una función definida, como enviar un correo electrónico, realizar una solicitud HTTP o procesar datos. Los nodos se conectan entre sí para formar un flujo de trabajo completo.
+
+    <TopicConceptCard title="Tipos">
+      * **Trigger Nodes**: Inician el flujo (Manual, *Webhook*, *Cron*, etc.)
+      * **Action Nodes**: Realizan acciones (*Google Sheets*, Email, *HTTP Request*, etc.)
+      * **Core Nodes**: Procesan datos (*Set*, *Function*, *If*, *Switch*, etc.)
+      * **Integration Nodes**: Conectan con servicios externos (*Google*, *Slack*, etc.)
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Ejemplo de Nodo" status='info' icon='code'>
+      En nuestro flujo de inventario: Manual Trigger &#x21FE; Set &#x21FE; Function &#x21FE; Google Sheets. Cada uno es un nodo diferente.
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Connection (Conexión)' icon='info-circle-filled'>
+    Una conexión en n8n es el enlace entre dos nodos que permite el flujo de datos y la ejecución secuencial de tareas. Las conexiones definen el orden en que se ejecutan los nodos y cómo se transfieren los datos entre ellos. Pueden incluir condiciones para controlar el flujo del proceso.
+
+    <TopicConceptCard title="Características">
+      * Los datos pasan de un nodo al siguiente
+      * Un nodo puede tener múltiples conexiones de salida
+      * Las conexiones pueden ser condicionales (*If, Switch*)
+      * Los datos se transforman en cada nodo
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Trigger (Disparador)' icon='info-circle-filled'>
+    Un trigger en n8n es un tipo de nodo que inicia la ejecución de un workflow. Puede ser activado manualmente por el usuario o automáticamente por eventos específicos, como la llegada de un correo electrónico, una solicitud HTTP o un evento programado. Los triggers son esenciales para iniciar procesos automatizados en n8n.
+
+    <TopicConceptCard title="Tipos">
+      * **Manual Trigger**: Se ejecuta cuando tú lo activas
+      * **Webhook**: Se activa cuando recibe una petición HTTP
+      * **Cron**: Se ejecuta automáticamente en horarios programados
+      * **Schedule**: Similar a Cron, con opciones más flexibles
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Execution (Ejecución)' icon='info-circle-filled'>
+    La ejecución en n8n se refiere al proceso de llevar a cabo las tareas definidas en un workflow. Cuando un trigger inicia un workflow, los nodos se ejecutan en el orden definido por las conexiones, procesando datos y realizando acciones según lo configurado. La ejecución puede ser monitoreada y depurada para asegurar que el flujo de trabajo funcione correctamente.
+
+    <TopicConceptCard title="Información disponible durante la ejecución">
+      * **Estado**: Éxito, Error, o En ejecución
+      * Datos procesados en cada nodo
+      * Tiempo de ejecución
+      * Logs y mensajes de error
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Item (Elemento de Datos)' icon='info-circle-filled'>
+    Un item en n8n es una unidad de datos que se procesa a través de los nodos en un workflow. Cada item puede contener múltiples campos y valores, y se transfiere de un nodo a otro durante la ejecución del flujo de trabajo. Los items permiten manejar y transformar datos de manera eficiente dentro de n8n.
+
+    <TopicConceptCard title="Estructura de un Item" status='info'>
+      Los items tienen una estructura JSON:
+      ```json
+      [
+        {
+          "nombre": "Microsoft Office",
+          "version": "2021",
+          "costo": 120
+        },
+        {
+          "nombre": "Adobe Photoshop",
+          "version": "2022",
+          "costo": 240
+        }
+      ]
+      ```
+    </TopicConceptCard>
+
+    <TopicConceptCard title="Acceso" status='info'>
+      En los nodos Function, accedes a los datos con: `$input.all()` o `$json.fieldName`.
+    </TopicConceptCard>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='Tipos de Nodos Principales' icon='book-filled'>
+  <TopicConceptSection title='Nodos Trigger (Disparadores)' icon='info-circle-filled'>
+    Los nodos trigger en n8n son aquellos que inician la ejecución de un workflow. Pueden ser activados manualmente por el usuario o automáticamente por eventos específicos, como la llegada de un correo electrónico, una solicitud HTTP o un evento programado. Los triggers son esenciales para iniciar procesos automatizados en n8n.
+
+    <TopicConceptCard title="Ejemplos:">
+      * **Manual Trigger**: Para ejecución manual durante pruebas
+      * **Webhook**: Para recibir datos desde aplicaciones externas
+      * **Cron**: Para ejecución programada (diaria, semanal, etc.)
+      * **Schedule**: Para horarios más complejos
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Nodos Core (Núcleo)' icon='info-circle-filled'>
+    Los nodos core en n8n son aquellos que realizan las acciones principales dentro de un workflow. Estos nodos procesan y transforman los datos que fluyen entre los nodos trigger, permitiendo realizar tareas como manipulación de datos, integración con APIs, envío de correos electrónicos, entre otros.
+
+    <TopicConceptCard title="Ejemplos:">
+      * **Set**: Define o modifica valores de datos
+      * **Function**: Ejecuta código JavaScript personalizado
+      * **If**: Toma decisiones basadas en condiciones
+      * **Switch**: Enruta datos por diferentes caminos según condiciones
+      * **Code**: Similar a Function, con más opciones
+      * **Merge**: Combina datos de múltiples fuentes
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Nodos de Integración' icon='info-circle-filled'>
+    Los nodos de integración en n8n son aquellos que permiten conectar con servicios externos como APIs, bases de datos, correos electrónicos, entre otros. Estos nodos facilitan la integración de sistemas y la automatización de procesos complejos; como Google Sheets, Slack, Salesforce, bases de datos, etc.
+
+    <TopicConceptCard title="Ejemplos:">
+      * **Google Sheets**: Leer y escribir en hojas de cálculo
+      * **Gmail**: Enviar y recibir emails
+      * **HTTP Request**: Hacer peticiones a APIs
+      * **Database**: Conectar con bases de datos
+      * **Slack**: Enviar mensajes a canales
+      * **Webhook (Response)**: Responder a peticiones HTTP
+    </TopicConceptCard>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='¿Cómo Funciona n8n?' icon='book-filled'>
+  <TopicConceptSection title='Flujo de Datos' icon='info-circle-filled'>
+    En n8n, el flujo de datos se mueve a través de los nodos conectados en un workflow. Cuando un trigger inicia el proceso, los datos se transfieren de un nodo a otro según las conexiones definidas. Cada nodo puede transformar, procesar o integrar los datos antes de pasarlos al siguiente nodo.
+
+    <TopicConceptCard title="Proceso:">
+      1. El trigger inicia el flujo y genera datos iniciales
+      2. Cada nodo recibe los datos del nodo anterior
+      3. El nodo procesa/transforma los datos según su configuración
+      4. Los datos procesados se pasan al siguiente nodo
+      5. El proceso continúa hasta el final del flujo
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Sintaxis de Expresiones' icon='info-circle-filled'>
+    n8n utiliza expresiones para acceder y manipular datos dentro de los nodos. Las expresiones se escriben en JavaScript y permiten realizar operaciones como acceder a campos específicos, transformar datos o tomar decisiones basadas en condiciones.
+
+    <TopicConceptCard title="Proceso:">
+      * `{{ $json.nombre }}` - Accede al campo 'nombre'
+      * `{{ $json.costo_anual }}` - Accede al campo 'costo_anual'
+      * `{{ $now }}` - Fecha y hora actual
+      * `{{ $workflow.name }}` - Nombre del flujo
+      * `{{ $execution.id }}` - ID de la ejecución
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Manejo de Errores' icon='info-circle-filled'>
+    n8n permite manejar errores de manera eficiente dentro de los workflows. Puedes configurar nodos para que, en caso de error, ejecuten acciones específicas como reintentos automáticos, enviar notificaciones o redirigir el flujo a un camino alternativo.
+
+    <TopicConceptCard title="Estrategias:">
+      * **Continue on Fail**: Continuar aunque un nodo falle
+      * **Retry on Fail**: Reintentar automáticamente
+      * **Error Trigger**: Nodo especial que se activa en errores
+      * **Try-Catch**: Capturar y manejar errores específicos
+    </TopicConceptCard>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='Casos de Uso Comunes' icon='book-filled'>
+  <TopicConceptSection title='Automatización de Procesos' icon='info-circle-filled'>
+    n8n es ideal para automatizar procesos empresariales, como la gestión de inventarios, el seguimiento de clientes, la generación de reportes, entre otros. Al conectar diferentes sistemas y servicios, puedes crear flujos de trabajo que ahorran tiempo y reducen errores.
+
+    <TopicConceptCard title="Ejemplos:">
+      * Sincronización de datos entre sistemas
+      * Procesamiento de formularios y envío de respuestas
+      * Generación automática de reportes
+      * Notificaciones automáticas basadas en eventos
+      * Backup automático de datos
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Integración entre Sistemas' icon='info-circle-filled'>
+    n8n facilita la integración entre diferentes sistemas y servicios, permitiendo que trabajen juntos de manera eficiente. Puedes conectar aplicaciones como Google Sheets, Slack, Salesforce, entre otros, para crear flujos de trabajo personalizados que mejoren la productividad y la colaboración.
+
+    <TopicConceptCard title="Ejemplo:">
+      Un flujo que recibe datos de un formulario web, los procesa y los guarda en Google Sheets, luego envía una notificación a Slack con la información procesada.
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Automatización de Tareas Repetitivas' icon='info-circle-filled'>
+    n8n es perfecto para automatizar tareas repetitivas que consumen tiempo y recursos. Al configurar flujos de trabajo que se ejecutan automáticamente, puedes liberar tiempo para enfocarte en tareas más estratégicas y creativas.
+
+    <TopicConceptCard title="Ejemplo:">
+      Un flujo que se ejecuta diariamente para enviar un resumen de ventas por correo electrónico, o un flujo que monitorea una carpeta y procesa archivos nuevos automáticamente.
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Gestión de Activos de Software' icon='info-circle-filled'>
+    n8n puede ser utilizado para gestionar activos de software, como licencias, versiones, costos, entre otros. Al automatizar la recopilación y el procesamiento de datos relacionados con los activos de software, puedes mantener un control eficiente y actualizado de tu inventario.
+
+    <TopicConceptCard title="Beneficios:">
+      * Control centralizado de activos de software
+      * Automatización de reportes de inventario
+      * Seguimiento de licencias y versiones
+      * Reducción de errores humanos en la gestión de activos
+      * Mejora en la toma de decisiones basada en datos actualizados
+      * Inventario siempre actualizado sin intervención manual
+      * Análisis de costos y riesgos automatizado
+      * Generación de reportes personalizados para stakeholders
+      * Alerta automática de vencimientos o cambios en el inventario
+      * Integración con sistemas de gestión de activos existentes
+    </TopicConceptCard>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='Ventajas y Limitaciones' icon='book-filled'>
+  <TopicConceptSection title='Ventajas de n8n' icon='info-circle-filled'>
+    n8n ofrece numerosas ventajas, como su interfaz visual intuitiva, su amplia gama de integraciones pre-construidas, su naturaleza de código abierto y su capacidad para manejar procesos complejos de manera eficiente.
+
+    <TopicConceptCard title="Ventajas:">
+      * **Código abierto**: Puedes auto-hospedarlo o usar la versión cloud
+      * **Interfaz visual**: No necesitas programar mucho código
+      * **Gran cantidad de integraciones**: Más de 400 servicios
+      * **Flexible**: Permite lógica compleja con nodos Function
+      * **Gratuidad**: La versión cloud tiene un plan gratuito generoso
+      * **Comunidad activa**: Muchos recursos y ejemplos disponibles
+      * **Escalabilidad**: Desde flujos simples hasta procesos empresariales complejos
+      * **Manejo de errores**: Opciones avanzadas para asegurar la fiabilidad
+      * **Automatización eficiente**: Ahorra tiempo y reduce errores
+      * **Integración fácil**: Conecta sistemas sin necesidad de código
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Limitaciones de n8n' icon='info-circle-filled'>
+    Aunque n8n es una herramienta poderosa, también tiene algunas limitaciones, como la curva de aprendizaje inicial, la necesidad de conocimientos técnicos para flujos complejos y posibles limitaciones en la versión gratuita.
+
+    <TopicConceptCard title="Limitaciones:">
+      * Curva de aprendizaje para usuarios sin experiencia técnica
+      * Requiere conocimientos de JavaScript para flujos avanzados
+      * Limitaciones en la versión gratuita (ejecuciones mensuales, etc.)
+      * Puede ser excesivo para tareas muy simples
+      * Dependencia de la comunidad para soporte y actualizaciones
+      * Posibles problemas de rendimiento con flujos muy complejos
+      * Necesidad de monitoreo y mantenimiento en auto-hospedaje
+      * Integraciones personalizadas pueden requerir desarrollo adicional
+      * No es ideal para procesos que requieren alta seguridad sin configuración adecuada
+      * Puede no ser adecuado para empresas con políticas estrictas de software
+      * Dependencia de conexiones externas para integraciones, lo que puede generar puntos de falla
+      * Limitaciones en la personalización de la interfaz para usuarios avanzados
+      * Complejidad en la gestión de versiones y cambios en flujos de trabajo a medida que crecen en tamaño y complejidad
+      * Los flujos de trabajo dependen totalmente de la herramienta, lo que puede ser un riesgo si n8n experimenta problemas técnicos o cambios en su modelo de negocio
+      * La necesidad de configurar y mantener un entorno de ejecución, especialmente en auto-hospedaje, puede ser un desafío para algunos usuarios o empresas sin recursos técnicos dedicados
+    </TopicConceptCard>
+  </TopicConceptSection>
+</TopicSectionGroup>
+
+<TopicSectionGroup title='Mejores Prácticas' icon='book-filled'>
+  <TopicConceptSection title='Diseño de Flujos de Trabajo' icon='info-circle-filled'>
+    Al diseñar flujos de trabajo en n8n, es importante seguir algunas mejores prácticas para asegurar que sean eficientes, fáciles de mantener y escalables. Esto incluye organizar los nodos de manera lógica, utilizar nombres descriptivos para los nodos y conexiones, y documentar el flujo de trabajo para facilitar su comprensión y mantenimiento.
+
+    <TopicConceptCard title="Mejores prácticas:">
+      * Organiza los nodos de manera lógica y clara
+      * Usa nombres descriptivos para nodos y conexiones
+      * Documenta el flujo de trabajo con comentarios y descripciones
+      * Divide flujos complejos en sub-flujos para mejorar la legibilidad
+      * Utiliza nodos de manejo de errores para asegurar la fiabilidad
+      * Prueba cada parte del flujo de trabajo de manera incremental
+      * Mantén un control de versiones para los flujos de trabajo
+      * Revisa y optimiza los flujos regularmente para mejorar el rendimiento
+      * Evita la duplicación de nodos y lógica para mantener el flujo limpio
+      * Utiliza variables y expresiones para evitar hardcoding de valores
+      * Considera la seguridad al manejar datos sensibles en los flujos de trabajo
+      * Monitorea las ejecuciones para identificar y resolver problemas rápidamente
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Manejo de Datos' icon='info-circle-filled'>
+    El manejo de datos en n8n es crucial para asegurar que los flujos de trabajo funcionen correctamente y que los datos se procesen de manera eficiente. Es importante utilizar nodos adecuados para transformar y manipular los datos, así como asegurarse de que los datos se transfieran correctamente entre los nodos. Además, es fundamental considerar la seguridad al manejar datos sensibles, utilizando prácticas como el cifrado y el acceso controlado.
+
+    <TopicConceptCard title="Recomendaciones:">
+      * Utiliza nodos de transformación de datos para asegurar que los datos estén en el formato correcto
+      * Asegúrate de que los datos se transfieran correctamente entre nodos utilizando conexiones
+      * Considera la seguridad al manejar datos sensibles, utilizando cifrado y acceso controlado
+      * Valida los datos antes de procesarlos para evitar errores en el flujo de trabajo
+      * Utiliza variables y expresiones para manejar datos de manera flexible
+      * Mantén un registro de los datos procesados para facilitar la depuración y el monitoreo
+      * Evita el manejo de grandes volúmenes de datos en un solo nodo para mejorar el rendimiento
+      * Utiliza nodos de manejo de errores para gestionar problemas relacionados con los datos
+      * Considera la privacidad y el cumplimiento de regulaciones al manejar datos personales
+      * Revisa y optimiza el manejo de datos regularmente para mejorar la eficiencia y la seguridad
+      * Utiliza nodos de almacenamiento temporal para manejar datos intermedios de manera eficiente
+      * Prueba el manejo de datos con diferentes escenarios para asegurar que el flujo de trabajo sea robusto y confiable
+      * Documenta el manejo de datos en el flujo de trabajo para facilitar su comprensión y mantenimiento
+    </TopicConceptCard>
+  </TopicConceptSection>
+
+  <TopicConceptSection title='Debugging (Depuración)' icon='info-circle-filled'>
+    La depuración en n8n es un proceso esencial para identificar y resolver problemas en los flujos de trabajo. n8n proporciona herramientas para monitorear las ejecuciones, revisar los datos procesados en cada nodo y analizar los logs de errores. Es importante utilizar estas herramientas de manera efectiva para asegurar que los flujos de trabajo funcionen correctamente y para mejorar la eficiencia en la resolución de problemas.
+
+    <TopicConceptCard title="Recomendaciones:">
+      * Utiliza la función de monitoreo de ejecuciones para revisar el estado de cada nodo y los datos procesados
+      * Revisa los logs de errores para identificar problemas específicos en los nodos
+      * Prueba cada parte del flujo de trabajo de manera incremental para identificar dónde ocurren los problemas
+      * Utiliza nodos de manejo de errores para gestionar problemas de manera eficiente
+      * Documenta los problemas encontrados y las soluciones implementadas para facilitar futuras depuraciones
+      * Considera la posibilidad de utilizar herramientas externas de monitoreo y logging para flujos de trabajo complejos
+      * Revisa y optimiza los flujos de trabajo regularmente para prevenir problemas futuros
+      * Utiliza variables y expresiones para facilitar la depuración de datos en los nodos
+      * Mantén un registro de las ejecuciones para identificar patrones de errores y mejorar la eficiencia
+      * Considera la seguridad al depurar flujos de trabajo que manejan datos sensibles, asegurándote de no exponer información confidencial en los logs
+      * Prueba el flujo de trabajo con diferentes escenarios para asegurar que sea robusto y confiable en diversas situaciones
+    </TopicConceptCard>
+  </TopicConceptSection>
+</TopicSectionGroup>
