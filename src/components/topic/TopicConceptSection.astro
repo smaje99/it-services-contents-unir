@@ -132,5 +132,14 @@ const { title, icon, activity = false, estimatedDuration = 0 } = Astro.props;
       font-style: italic;
       margin-block: 16px;
     }
+
+    pre[data-language] {
+      padding: 16px;
+
+      & span {
+        font-size: 1.2rem;
+        line-height: 1;
+      }
+    }
   }
 </style>
