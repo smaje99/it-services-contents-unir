@@ -1,9 +1,11 @@
 ---
 import { Icon } from 'astro-icon/components';
+
+import { withBaseUrl } from '@/utils/path';
 ---
 
 <header class='header'>
-  <a href='/'>
+  <a href={withBaseUrl('')}>
     <h1 data-heading='icon'><Icon name='graduation-cap' /> Proyecto de Aula</h1>
   </a>
   <h2>Servicios de Tecnologías de la Información</h2>

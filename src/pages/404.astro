@@ -1,24 +1,24 @@
 ---
 import LinkButton from '@/components/ui/link/LinkButton.astro';
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import { withBaseUrl } from '@/utils/path';
+
+const description =
+  'La página que buscas no existe o fue movida. Vuelve al inicio o explora los temas del curso.';
 ---
 
-<BaseLayout
-  title='404 - Página no encontrada | Proyecto de Aula'
-  description='La página que buscas no existe o fue movida. Vuelve al inicio o explora los temas del curso.'
->
+<BaseLayout title='404 - Página no encontrada | Proyecto de Aula' description={description}>
   <section class='not-found'>
     <p class='not-found__code' aria-hidden='true'>404</p>
 
     <h2>Página no encontrada</h2>
     <p class='not-found__desc'>
-      La página que buscas no existe o fue movida. Vuelve al inicio o explora los temas
-      del curso.
+      La página que buscas no existe o fue movida. Vuelve al inicio o explora los temas del curso.
     </p>
 
     <div class='not-found__actions' data-actions>
-      <LinkButton href='/'> Volver al inicio </LinkButton>
-      <LinkButton href='/temas' variant='outline'> Ver temas </LinkButton>
+      <LinkButton href={withBaseUrl('/')}> Volver al inicio </LinkButton>
+      <LinkButton href={withBaseUrl('/temas')} variant='outline'> Ver temas </LinkButton>
     </div>
   </section>
 </BaseLayout>
@@ -28,7 +28,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
     width: min(42rem, 100%);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-lg, 1rem);
-    background-color: var(--bf-soft);
+    background-color: var(--bg-soft);
     padding: 2rem;
     margin-inline: auto;
     margin-block-start: 4rem;

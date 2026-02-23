@@ -1,19 +1,21 @@
 ---
 import { Icon } from 'astro-icon/components';
 
+import { normalizePath, withBaseUrl } from '@/utils/path';
+
 const tabs = [
-  { id: 'overview', label: 'Inicio', icon: 'home', href: '/' },
-  { id: 'topics', label: 'Temas', icon: 'list', href: '/temas' },
-  { id: 'progress', label: 'Progreso', icon: 'chart-line', href: '/progreso' },
+  { id: 'overview', label: 'Inicio', icon: 'home', href: withBaseUrl('') },
+  { id: 'topics', label: 'Temas', icon: 'list', href: withBaseUrl('temas') },
+  { id: 'progress', label: 'Progreso', icon: 'chart-line', href: withBaseUrl('progreso') },
 ];
 
-const current = Astro.url.pathname;
+const current = normalizePath(Astro.url.pathname);
 ---
 
 <nav class='nav-tabs'>
   {
     tabs.map((tab) => (
-      <a href={tab.href} class={`nav-tab ${current === tab.href ? 'active' : ''}`}>
+      <a href={tab.href} class={`nav-tab ${current === normalizePath(tab.href) ? 'active' : ''}`}>
         <Icon name={tab.icon} />
         {tab.label}
       </a>

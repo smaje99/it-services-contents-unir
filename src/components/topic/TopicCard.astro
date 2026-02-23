@@ -1,6 +1,8 @@
 ---
 import { Icon } from 'astro-icon/components';
 
+import { withBaseUrl } from '@/utils/path';
+
 import CardDescription from '../ui/card/CardDescription.astro';
 import CardFooter from '../ui/card/CardFooter.astro';
 import CardHeader from '../ui/card/CardHeader.astro';
@@ -18,7 +20,7 @@ interface Props {
 }
 
 const { title, description, icon, color, status, slug } = Astro.props;
-const topicUrl = `/temas/${slug}`;
+const topicUrl = withBaseUrl(`/temas/${slug}`);
 ---
 
 <CardRoot class='topic-card' data-status={status ? 'completed' : 'pending'}>
@@ -35,13 +37,8 @@ const topicUrl = `/temas/${slug}`;
   <CardFooter class='topic-footer'>
     <small class='topic-status'>{status ? 'Completado' : 'Pendiente'}</small>
 
-    <LinkButton
-      href={topicUrl}
-      variant='outline'
-      size='sm'
-      ariaLabel={`Ir al tema: ${title}`}
-    >
-      Ver tema →
+    <LinkButton href={topicUrl} variant='outline' size='sm' ariaLabel={`Ir al tema: ${title}`}>
+      Ver tema &#x21FE;
     </LinkButton>
   </CardFooter>
 </CardRoot>

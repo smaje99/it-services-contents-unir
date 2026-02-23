@@ -2,6 +2,7 @@
 import { Icon } from 'astro-icon/components';
 
 import type { TopicId } from '@/types/topic';
+import { withBaseUrl } from '@/utils/path';
 
 import LinkButton from '../ui/link/LinkButton.astro';
 
@@ -12,7 +13,11 @@ interface Props {
 const { topic } = Astro.props;
 ---
 
-<LinkButton href={`/temas/${topic}?self-assessment=1`} size='lg' class='self-assessment-link'>
+<LinkButton
+  href={withBaseUrl(`/temas/${topic}?self-assessment=1`)}
+  size='lg'
+  class='self-assessment-link'
+>
   <Icon name='location-check' />
   <slot />
 </LinkButton>

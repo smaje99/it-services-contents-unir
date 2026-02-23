@@ -48,9 +48,7 @@ export function buildSelfAssessmentSchema(assessment: SelfAssessment) {
     });
 }
 
-export type SelfAssessmentFormValues = z.infer<
-  ReturnType<typeof buildSelfAssessmentSchema>
->;
+export type SelfAssessmentFormValues = z.infer<ReturnType<typeof buildSelfAssessmentSchema>>;
 
 /** Scores the self-assessment based on the provided answers. */
 export function scoreSelfAssessment(assessment: SelfAssessment, answers: number[]) {
